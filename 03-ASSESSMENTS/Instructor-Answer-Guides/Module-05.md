@@ -1,0 +1,81 @@
+# Elite Dispatcher Academy — Module 05 Instructor Answer Guide
+
+**Load Boards & Freight Sourcing**
+
+Integrated Final — August 11, 2026
+
+## Knowledge Check Answer Key
+
+### Part A
+
+1. **b** — Section 4.
+2. **b** — Section 3.
+3. **b** — Section 8.
+4. **c** — Section 7.
+5. **b** — Section 11.
+6. **c** — Section 15.
+7. **c** — Section 16.
+8. **b** — Section 19.
+
+### Part B
+
+9. **False** — Section 17. FOUND ≠ AVAILABLE; direct confirmation is required.
+10. **False** — Section 3. Contract terms vary and are not always fixed-rate.
+11. **False** — Section 11. FCFS operates within actual facility hours, not around the clock.
+12. **False** — Section 15. No universal age threshold exists; platform behavior varies.
+13. **False** — Section 16. Duplicate-looking postings have several possible explanations; verify before concluding fraud.
+
+### Part C
+
+14. **BAD FIT / REJECT** — Scenario S-05-01 pattern.
+15. **NEEDS MORE INFORMATION / VERIFY** — Scenario S-05-04.
+16. **GOOD CANDIDATE** — ready to route to the next stage.
+17. **GOOD CANDIDATE as to endorsement qualification** — contrast with Scenario S-05-09. Other checklist items still need confirming for a complete booking decision.
+
+### Part D — Sample Reasoning
+
+18. FOUND means a posting exists and looks potentially relevant; VERIFIED AVAILABLE means the posting party or platform has actually confirmed the freight is still open. The distinction matters because pursuing, pricing, or committing to a load that's already covered wastes time and can damage carrier/broker relationships — see Scenario S-05-12.
+
+19. There is no universal age threshold that makes a posting “definitely gone” — platform refresh and removal behavior varies, and age is only a priority signal (Section 15), not proof of unavailability. The correct response is to verify directly, not assume from age alone.
+
+20. A dispatcher sourcing for one specific represented carrier they have an ongoing relationship with is consistent with the carrier-side agency model. It could become a Module 02 problem if the dispatcher instead solicited freight generally for an undefined network, secured freight before identifying a carrier for it, or allocated shipper freight among multiple competing represented carriers — activity that starts to look like arranging transportation generally rather than sourcing for one carrier.
+
+## Instructor Safety / Publication Notes
+
+### Current-Date Platform Material
+Section 5 — DAT One, Truckstop, Trucker Path/TruckLoads, and 123Loadboard descriptions are current as of August 11, 2026 and were independently verified during production. Reverify before publication if there is meaningful delay; platform features and market position change.
+
+### Platform-Specific Claims
+Automated filters, load recommendations, broker credit displays, and booking functionality vary by platform and subscription tier; do not present them as universal.
+
+### Carrier-Policy Items — Not Law
+- Search radius.
+- Lane restrictions and home-time commitments.
+
+### Legal / Contract-Specific Items
+Any platform booking mechanic with its own terms.
+
+### Module 02 Shipper-Direct Boundary
+Section 19 must remain consistent with Module 02's bona-fide-agent/broker framework; do not let this module imply broader shipper-direct latitude than Module 02 establishes.
+
+### Module 06 Fraud Boundary
+Sections 16 and 18 flag and route; they do not investigate. Keep this boundary explicit so students don't attempt fraud analysis before Module 06.
+
+### Module 07/08 Rate Boundary
+Deadhead is introduced as a sourcing variable only; profitability/rate math is deferred to Module 07 and negotiation to Module 08.
+
+### Module 11 HOS Boundary
+The Search Workflow routes HOS-feasibility questions to Module 11 rather than answering them here.
+
+## Verification Status Note
+
+Current-date platform material in Section 5 was independently verified as active and accurately described during production. No unresolved factual conflicts were identified. Reconfirm this material before publication if there is meaningful delay because load-board platform features, pricing, and market position can change faster than curriculum revision cycles.
+
+## Module 05 Dependency Controls
+
+- FACT-M05-001 through FACT-M05-010 are part of the Module 05 controlled research chain; FACT-M05-003 is explicitly integrated into Section 9.
+- Module 11 import: verified pickup/delivery windows and transit details feed HOS/ELD feasibility analysis.
+- Module 12 import: the broker/posting-party communication channel established during sourcing feeds load-monitoring communication continuity.
+- Current-date platform material must be reverified before publication if there is meaningful delay after August 11, 2026.
+
+Elite Dispatcher Academy | Module 05 | Instructor Answer Guide
