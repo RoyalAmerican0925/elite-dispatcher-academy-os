@@ -1,43 +1,23 @@
-# Current Status
+# Current Project Status
 
 ## Repository State
+The GitHub repository is connected, writable, and is the designated source of truth for the Elite Dispatcher Academy OS project.
 
-Repository initialized and designated as the source-of-truth for the Elite Dispatcher Academy, EAOS, and TKE work.
+## Confirmed Direction
+The project has two coordinated targets: a near-term sellable trucking dispatcher academy and a long-term EAOS/TKE platform. The near-term academy is the first implementation of the larger architecture.
 
-## Confirmed Existing Course Work
+## Existing Work
+Substantial planning and curriculum work predates this repository. Known developed student-manual work includes Modules 01, 02, 04, 05, and 06. Additional prior work must be recovered and audited rather than recreated blindly.
 
-The project already includes completed or substantially developed course assets outside GitHub, including student-manual work for multiple modules. These files must be migrated, cataloged, and quality-checked before being marked publication-ready in this repository.
+## Current Workstream
+Phase One — Recover and Control.
 
-Known developed module work includes at least:
-
-- Module 01 — Foundation / dispatcher role and course framework.
-- Module 02 — Legal boundaries / compliance-related foundations.
-- Module 04 — Existing student-manual work located in the File Library.
-- Module 05 — Existing student-manual work located in the File Library.
-- Module 06 — Existing student-manual work located in the File Library, including dependencies feeding later modules.
-
-Additional prior planning and production may exist in earlier ChatGPT conversations and user files and should be recovered rather than recreated blindly.
+Active tasks are to establish project-control files, recover existing plans, inventory curriculum and supporting assets, identify gaps and duplicates, establish module and asset IDs, document dependencies, and define acceptance criteria.
 
 ## Status Vocabulary
+Use these lifecycle states: PLANNED, IN_PROGRESS, DRAFT_COMPLETE, REVIEWED, VERIFIED, PUBLICATION_READY, PUBLISHED, SUPERSEDED.
 
-Use only these states when tracking assets:
-
-- `PLANNED` — defined but not yet produced.
-- `IN_PROGRESS` — actively being developed.
-- `DRAFT_COMPLETE` — full draft exists but has not passed final QA.
-- `VERIFIED` — checked against project standards and dependencies.
-- `PUBLICATION_READY` — approved for the student-facing product.
-- `SUPERSEDED` — retained for history but replaced by a newer source.
+No asset should be marked PUBLICATION_READY until its content, dependencies, terminology, factual claims, formatting, and required testing have been checked.
 
 ## Immediate Priorities
-
-1. Recover and catalog existing planning documents and course assets.
-2. Build the authoritative module map and syllabus.
-3. Define acceptance criteria for manuals, assessments, student tools, and simulations.
-4. Migrate existing module content into the repository without losing source provenance.
-5. Identify missing modules and missing asset types.
-6. Build the sellable academy first while keeping all data structures compatible with the future EAOS/TKE architecture.
-
-## Important Rule
-
-Do not assume that earlier chat planning equals a finished deliverable. Planning, drafted files, verified files, and publication-ready assets must remain separate states.
+One: finish the project-control layer. Two: create the near-term academy specification and module map. Three: inventory and migrate existing curriculum. Four: inventory assessments and student tools. Five: document EAOS/TKE architecture. Six: establish the simulation/game backlog. Seven: establish software and dashboard requirements.
