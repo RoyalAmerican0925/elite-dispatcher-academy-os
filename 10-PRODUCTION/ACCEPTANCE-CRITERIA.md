@@ -1,74 +1,25 @@
-# Acceptance Criteria
+# Production Acceptance Criteria
 
 ## Purpose
+These criteria prevent a planned or merely drafted asset from being mistaken for a finished course deliverable.
 
-These criteria determine when an academy asset may advance from draft status to production-ready status.
+## Universal Requirements
+Every production asset must have a clear purpose, stable ID or name, version/status, intended audience, module/system ownership, dependency references where applicable, consistent terminology, and source/provenance information for factual or regulatory claims.
 
-## Universal Asset Criteria
+## Student Manual
+A student manual must fully address approved learning objectives; explain what, why, when, how, application, common failure modes, detection, response, and measurement where relevant; use realistic dispatcher examples; distinguish legal/compliance information from business practice; contain no placeholders; include scenario practice and assessment; and pass factual, instructional, dependency, and formatting review.
 
-An asset must:
+## Assessment
+Questions must map to taught objectives. Answer keys must be unambiguous. Distractors must be plausible without being deceptive. Scenario questions must contain enough facts to make the intended decision defensible. Passing standards and remediation rules must be defined before publication.
 
-1. Have a stable ID or file name.
-2. State its module or system ownership.
-3. Use approved terminology consistently.
-4. Respect upstream and downstream dependencies.
-5. Distinguish law/regulation, guidance, industry practice, platform-specific behavior, carrier policy, academy convention, and instructional synthesis.
-6. Flag date-sensitive claims for reverification.
-7. Avoid unsupported absolutes and invented thresholds.
-8. Identify unresolved context or verification gaps explicitly.
-9. Match the intended audience and learning level.
-10. Be version-controlled and distinguish superseded versions.
+## Worksheet, Checklist, Template, or SOP
+The tool must have a defined operational use, clear instructions, required fields or actions, and a realistic workflow. It must not imply authority the dispatcher does not have.
 
-## Curriculum Criteria
+## Simulation or Game
+The learning objective, rules, inputs, decisions, scoring, feedback, success/failure conditions, and debrief must be documented. A playable software asset must also have deterministic test cases where practical and be functionally tested before PUBLICATION_READY status.
 
-A module is not production-ready until it includes:
-
-- clear learning outcomes
-- complete instructional content
-- defined terminology
-- examples and application
-- common errors / failure modes
-- scenario practice
-- knowledge check or assessment
-- answer key / scoring guidance where applicable
-- import/export dependency map
-- source or fact references for regulated/date-sensitive material
-- transition to the next module
-
-## Assessment Criteria
-
-Assessments must:
-
-- map questions to learning outcomes
-- include an answer key and rationale where appropriate
-- avoid testing material not taught or supplied as prerequisite knowledge
-- use scenario-based decision making for higher-level skills
-- separate recall, application, and integrated performance
-- define passing standards before publication
-
-## Simulation and Game Criteria
-
-Interactive training must:
-
-- state the skill being trained
-- define inputs, choices, scoring, and failure conditions
-- avoid rewarding legally unsafe or operationally unrealistic behavior
-- provide feedback explaining why a decision succeeded or failed
-- include deterministic test cases where practical
-- function correctly before being marked production-ready
+## Regulatory or Legal Content
+Time-sensitive claims must identify authoritative sources and an as-of date where appropriate. The course must distinguish law/regulation, guidance, industry practice, platform behavior, carrier policy, academy convention, and instructional synthesis. It must distinguish dispatcher functions from carrier, broker, driver, shipper, or other regulated roles.
 
 ## Publication Gate
-
-Before publication, complete a final current-date verification pass for regulatory, platform, fee, penalty, filing, authority, insurance, HOS, medical-certification, and other time-sensitive statements.
-
-## Status Advancement
-
-PLANNED → DRAFTED: first complete working version exists.
-
-DRAFTED → REVIEWED: architecture/content review completed.
-
-REVIEWED → VERIFIED: factual, legal/regulatory, dependency, and technical checks completed as applicable.
-
-VERIFIED → PRODUCTION-READY: formatting, audience, assessment, and QA requirements satisfied.
-
-PRODUCTION-READY → PUBLISHED: released through the approved delivery channel.
+An asset can become PUBLICATION_READY only after content review, terminology review, dependency review, factual/source review, instructional review, formatting/QA review, and required technical testing are complete. A final current-date verification pass is required for regulatory and other time-sensitive statements.
