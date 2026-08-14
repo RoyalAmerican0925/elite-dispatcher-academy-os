@@ -1,8 +1,98 @@
-FIRST-USE LOCATION: Module 06, Section 7
+### Double Brokering
 
-RELATED TERMS: Risk Classification
+**APPROVED DEFINITION:** Commonly used industry term for unauthorized re-brokering, including a carrier transferring freight to another carrier without the original broker's/shipper's knowledge.
 
-NOTES: Appropriate when verification cannot resolve a material issue.
+**CLASSIFICATION:** LEGAL / INDUSTRY TERMINOLOGY — QUALIFIED
+
+**FIRST-USE LOCATION:** Module 06, Section 14
+
+**RELATED TERMS:** Co-Brokering
+
+**NOTES:** Not provable from duplicate listings alone.
+
+### Unauthorized Brokerage
+
+**APPROVED DEFINITION:** Brokering activity conducted without required FMCSA broker authority.
+
+**CLASSIFICATION:** LAW / REGULATION
+
+**FIRST-USE LOCATION:** Module 02 (established), referenced here
+
+**RELATED TERMS:** Broker Authority
+
+**NOTES:** See Module 02 for consequences framework.
+
+### Broker Impersonation / Carrier Impersonation
+
+**APPROVED DEFINITION:** Fraudulently posing as a legitimate broker or carrier to misdirect freight or payment.
+
+**CLASSIFICATION:** FRAUD PATTERN
+
+**FIRST-USE LOCATION:** Module 06, Section 3
+
+**RELATED TERMS:** BEC, Contact Verification
+
+**NOTES:** Addressed through the verification workflow, not accusation.
+
+### DNU (Do-Not-Use)
+
+**APPROVED DEFINITION:** An internal carrier policy list of brokers or contacts a company has chosen not to work with.
+
+**CLASSIFICATION:** CARRIER POLICY / INTERNAL RISK CONTROL
+
+**FIRST-USE LOCATION:** Module 06, Section 16
+
+**RELATED TERMS:** Risk Classification
+
+**NOTES:** Not a government blacklist.
+
+### Credit Indicator / Days-to-Pay
+
+**APPROVED DEFINITION:** Financial signals reflecting a broker's payment history and risk profile, often provided by factoring companies or platforms.
+
+**CLASSIFICATION:** INDUSTRY PRACTICE / CARRIER POLICY
+
+**FIRST-USE LOCATION:** Module 06, Section 15 (FACT-M06-007)
+
+**RELATED TERMS:** DNU
+
+**NOTES:** One risk factor among several — not a fraud determination.
+
+### Payment Redirection
+
+**APPROVED DEFINITION:** A fraud pattern involving a request to change payment instructions, often via a compromised or spoofed contact channel.
+
+**CLASSIFICATION:** CYBERSECURITY / OPERATIONAL BEST PRACTICE
+
+**FIRST-USE LOCATION:** Module 06, Section 17
+
+**RELATED TERMS:** BEC, Callback Verification
+
+**NOTES:** Always requires trusted-channel verification before any change.
+
+### Red Flag / Material Mismatch
+
+**APPROVED DEFINITION:** An observation warranting further verification (red flag) or a significant unresolved inconsistency (material mismatch) in the verification workflow.
+
+**CLASSIFICATION:** OPERATIONAL RISK TERM
+
+**FIRST-USE LOCATION:** Module 06, Section 2
+
+**RELATED TERMS:** Risk Classification
+
+**NOTES:** Neither term alone constitutes proof of fraud.
+
+### Escalation
+
+**APPROVED DEFINITION:** Referring an issue beyond a dispatcher's authority or competency to carrier ownership, management, compliance, or another specialist.
+
+**CLASSIFICATION:** OPERATIONAL PROCESS
+
+**FIRST-USE LOCATION:** Module 06, Section 7
+
+**RELATED TERMS:** Risk Classification
+
+**NOTES:** Appropriate when verification cannot resolve a material issue.
 
 # Appendix B: Module 06 Dependency Map
 
