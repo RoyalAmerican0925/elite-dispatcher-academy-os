@@ -13,10 +13,15 @@ Before migration, the source manuals were scanned for material that does not bel
 
 The migrated manuals remain subject to factual/current-date review before PUBLICATION_READY status, especially Modules 02, 04, 05, and 06 where legal, regulatory, FMCSA-system, or platform-specific information may change.
 
+## Assessment Recovery Status
+Instructor answer guides for Modules 01 through 06 are present in `03-ASSESSMENTS/Instructor-Answer-Guides/`. Module 04 and Module 06 were reconciled against the identified Google Drive sources on August 18, 2026. Both repository copies are clean normalized Markdown. The Module 06 repository copy intentionally excludes AI coordination metadata found in the Drive source. These guides remain DRAFT_COMPLETE pending source, dependency, factual/current-date, and instructional verification.
+
+Provenance and duplicate-version review remains open for the Module 01, 02, 03, and 05 instructor guides.
+
 ## Current Workstream
 Phase One — Recover and Control, transitioning into Phase Two — Complete Core Academy.
 
-The next recovery targets are instructor answer guides, quizzes/exams, worksheets, checklists, templates, SOPs, flashcards, and other existing academy assets in Google Drive. Those assets must be inventoried, contamination-checked, deduplicated, and placed into their correct repository areas.
+The next recovery targets are standalone quizzes/exams, worksheets, checklists, templates, SOPs, flashcards, and other existing academy assets in Google Drive. Instructor-guide recovery has moved into provenance, duplicate-version, dependency, and verification review rather than basic file migration.
 
 ## Status Vocabulary
 Use these lifecycle states: PLANNED, IN_PROGRESS, DRAFT_COMPLETE, REVIEWED, VERIFIED, PUBLICATION_READY, PUBLISHED, SUPERSEDED.
@@ -24,4 +29,4 @@ Use these lifecycle states: PLANNED, IN_PROGRESS, DRAFT_COMPLETE, REVIEWED, VERI
 No asset should be marked PUBLICATION_READY until its content, dependencies, terminology, factual claims, formatting, and required testing have been checked.
 
 ## Immediate Priorities
-One: finish recovery of existing Drive assets. Two: reconcile duplicate or split curriculum files into controlled canonical sources. Three: inventory assessments and instructor materials. Four: inventory student tools. Five: complete current-date verification of regulated and platform-specific content. Six: establish the simulation/game backlog. Seven: establish software and dashboard requirements.
+One: inventory and recover standalone assessments and student tools from Drive. Two: complete provenance and duplicate-version review for instructor guides Modules 01, 02, 03, and 05. Three: reconcile duplicate or split curriculum files into controlled canonical sources. Four: complete current-date verification of regulated and platform-specific content. Five: establish the simulation/game backlog. Six: establish software and dashboard requirements.
