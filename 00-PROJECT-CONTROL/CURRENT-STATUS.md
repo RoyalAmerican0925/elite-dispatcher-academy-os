@@ -1,51 +1,156 @@
 # Current Project Status
 
 ## Repository State
+
 The GitHub repository is connected, writable, and is the designated source of truth for the Elite Dispatcher Academy OS project.
 
 ## Confirmed Direction
-The project has two coordinated targets: a near-term sellable trucking dispatcher academy and a long-term EAOS/TKE platform. The near-term academy is the first implementation of the larger architecture.
 
-## Curriculum Migration Status
-Student-manual content for Modules 01 through 06 has been recovered from Google Drive and migrated into `02-CURRICULUM/Module-01` through `Module-06`.
-
-Before migration, the source manuals were scanned for material that does not belong in student-facing curriculum, including chat transcript labels, AI names, AI handoff/configuration language, context-packet language, and email-style `TO:` / `FROM:` / `RE:` headers. No such contamination was found in the six student manuals selected for migration. Architecture documents, AI configuration prompts, and coordination documents located elsewhere in Drive were not migrated into the curriculum folders.
-
-The migrated manuals remain subject to factual/current-date review before PUBLICATION_READY status, especially Modules 02, 04, 05, and 06 where legal, regulatory, FMCSA-system, or platform-specific information may change.
-
-## Assessment Recovery Status (updated 2026-08-20)
-Instructor Answer Guides for Modules 01–06 are recovered and present in `03-ASSESSMENTS/Instructor-Answer-Guides/`.
-
-Student-facing Knowledge Check quizzes for Modules 01–06 are extracted into `03-ASSESSMENTS/Module-Quizzes/`. Module 06's 12-scenario Scenario Lab is extracted into `03-ASSESSMENTS/Scenario-Labs/Module-06-Scenario-Lab.md`. Both were individually verified against their instructor keys with no discrepancies found; all remain DRAFT_COMPLETE pending QA.
-
-A module-level exam blueprint exists at `03-ASSESSMENTS/Module-Exams/EXAM-BLUEPRINT-Modules-01-06.md`, defining objectives, item types/counts, scenario coverage, critical-failure items, passing standards, and date-sensitive flags per module.
-
-**Graded exams built so far (against the blueprint, with new items — not copies of the Knowledge Checks):**
-- **Module 01 Exam** (`03-ASSESSMENTS/Module-Exams/Module-01-Exam.md` + `Module-01-Exam-Answer-Key.md`): 22 items, 80% passing standard, no critical-failure items, no date-sensitive content.
-- **Module 03 Exam** (`03-ASSESSMENTS/Module-Exams/Module-03-Exam.md` + `Module-03-Exam-Answer-Key.md`): 22 items, 85% passing standard, **includes one mandatory critical-failure item** (Item 20, illegal axle-weight distribution despite legal gross weight) that must be answered correctly independent of overall score, per the blueprint's explicit critical-failure design for this module.
-
-Both are tagged DRAFT_COMPLETE — instructor review and QA still required before PUBLICATION_READY.
-
-**Not yet built:** exams for Modules 02, 04, 05, 06. Per the blueprint, Modules 04 and 06 should not have exam items authored until their date-sensitive FMCSA content (Module 04's NRII exemption, Module 06's Motus/SAFER/Legacy L&I and BMC-85 content) is reverified against current primary sources — Module 02 and Module 05 have no hard regulatory blocker and can proceed next. Also still outstanding: broader practical/scenario assessments beyond Module 06's Scenario Lab, scoring rubrics beyond the per-exam remediation tables already included, and remediation rules at the program level.
-
-See `agents/CLAUDE-EXTRACTION-COMPLETE-2026-08-19.md` and the ChatGPT completion handoff in `agents/` for prior detail.
-
-## Student Tools Recovery Status (updated 2026-08-19)
-Controlled pilot resources RES-LE-001, RES-LE-004, and RES-LE-024A are recovered into `04-STUDENT-TOOLS/LE-001-Pilot/`, and RES-LE-021A (instructor guide) into `03-ASSESSMENTS/Instructor-Guides/`, all tagged DRAFT_COMPLETE pending QA.
-
-The LE-001 mapping question is resolved in `00-PROJECT-CONTROL/LE-001-PILOT-MAPPING-DECISION.md` after review of the original Drive sources `CURR-PILOT-001` and `TKE-PILOT-001`.
-
-**Decision:** preserve the LE pilot namespace (`MOD-LE-001`, `LES-LE-*`, `OBJ-LE-*`, `RES-LE-*`) as a standalone controlled pilot architecture. Do not renumber the recovered LE-001 resources into Module 05 or any other single current module. `LES-LE-001` has a strong conceptual crosswalk to Module 05, but the full pilot deliberately spans current Modules 02, 03, 04, 05, 06, 07, 10, 11, and 15. Formal reuse/adaptation into current-module asset IDs is deferred to a lesson-level curriculum integration pass.
+The project has two coordinated targets: a near-term sellable trucking dispatcher academy and a long-term EAOS/TKE platform. The near-term academy is the first implementation of the larger architecture. Near-term assets must remain compatible with future EAOS/TKE IDs, dependencies, source controls, assessment logic, simulations, and publication workflows.
 
 ## Current Workstream
-Phase One — Recover and Control, transitioning into Phase Two — Complete Core Academy.
 
-Remaining recovery targets: worksheets/checklists/templates/SOPs/flashcards beyond the LE-001-Pilot set already recovered, and any additional academy assets still in Google Drive.
+**Phase One — Recover and Control is substantially complete for the known Module 01–06 core materials and is transitioning into Phase Two — Complete Core Academy.**
 
-## Status Vocabulary
-Use these lifecycle states: PLANNED, IN_PROGRESS, DRAFT_COMPLETE, REVIEWED, VERIFIED, PUBLICATION_READY, PUBLISHED, SUPERSEDED.
+No asset is PUBLICATION_READY merely because it exists. Continue using:
 
-No asset should be marked PUBLICATION_READY until its content, dependencies, terminology, factual claims, formatting, and required testing have been checked.
+PLANNED → IN_PROGRESS → DRAFT_COMPLETE → REVIEWED → VERIFIED → PUBLICATION_READY → PUBLISHED → SUPERSEDED.
+
+## Curriculum Migration Status
+
+Student-manual content for Modules 01–06 has been recovered from Google Drive and migrated into `02-CURRICULUM/Module-01` through `Module-06`.
+
+Before migration, the selected student manuals were checked for chat transcripts, AI coordination/handoff language, configuration prompts, context-packet text, and email-style `TO:` / `FROM:` / `RE:` contamination. None was found in the selected manuals. Architecture/configuration/coordination documents elsewhere in Drive were not placed into student curriculum folders.
+
+The manuals remain subject to current-date/factual review before PUBLICATION_READY, especially Modules 02, 04, 05, and 06.
+
+## Module 01–06 Assessment Status — Updated 2026-08-19
+
+### Knowledge Checks
+
+Student-facing Knowledge Checks for Modules 01–06 are extracted into `03-ASSESSMENTS/Module-Quizzes/`. They were checked against the recovered instructor answer guides and remain DRAFT_COMPLETE pending QA.
+
+### Module 06 Scenario Lab
+
+The 12-scenario student practice lab is extracted to:
+
+`03-ASSESSMENTS/Scenario-Labs/Module-06-Scenario-Lab.md`
+
+The student file contains no instructor classifications/answers. Scenario IDs/fact patterns were reconciled against the instructor guide. Status: DRAFT_COMPLETE.
+
+### Graded Module Exams
+
+The controlled exam blueprint exists at:
+
+`03-ASSESSMENTS/Module-Exams/EXAM-BLUEPRINT-Modules-01-06.md`
+
+**All six Module 01–06 graded exams and separate instructor answer keys now exist.** They use new items rather than verbatim copies of diagnostic Knowledge Checks.
+
+| Module | Exam standard | Critical-failure control | Status |
+|---|---:|---|---|
+| 01 | 80% | None | DRAFT_COMPLETE |
+| 02 | 85% | allocation-of-traffic critical item | DRAFT_COMPLETE |
+| 03 | 85% | illegal axle-distribution critical item | DRAFT_COMPLETE |
+| 04 | 85% | required hazmat/CDL endorsement critical item | DRAFT_COMPLETE |
+| 05 | 80% | shipper-direct/brokerage-boundary critical item | DRAFT_COMPLETE |
+| 06 | 90% | payment-redirection + unsupported-fraud-conclusion critical items | DRAFT_COMPLETE |
+
+### Practical Assessments
+
+New graded practical/scenario assessments exist for Modules 01–05 under:
+
+`03-ASSESSMENTS/Practical-Assessments/`
+
+They are supported by:
+
+`03-ASSESSMENTS/Practical-Assessments/Modules-01-05-Instructor-Scoring-Guide.md`
+
+Module 06 already has a practice Scenario Lab; a separate secure/summative Module 06 practical remains to be designed if required by the final program architecture.
+
+### Program Scoring / Remediation
+
+A program-level policy now exists at:
+
+`03-ASSESSMENTS/PROGRAM-ASSESSMENT-SCORING-AND-REMEDIATION-POLICY.md`
+
+It defines diagnostic vs. graded assessment roles, pass thresholds, critical-failure overrides, objective-level remediation routing, retesting with materially different scenarios/items, rubric scale, metadata, current-date controls, and answer-key separation.
+
+## Regulatory Verification — Modules 04 and 06
+
+Live current-source verification was completed before authoring the Module 04 and Module 06 exams and recorded in:
+
+`00-PROJECT-CONTROL/REGULATORY-VERIFICATION-2026-08-19-M04-M06.md`
+
+Verified for current item-writing:
+
+- NRII temporary nationwide paper-MEC exemption: April 11 through October 11, 2026; temporary paper-MEC reliance conditions remain date-sensitive.
+- Motus is the current FMCSA registration environment; legacy L&I is historical-review only for current filing purposes.
+- $750,000 public-liability baseline for the defined non-hazardous for-hire property-carrier category at/above 10,001 lb GVWR.
+- $75,000 broker BMC-84/BMC-85 financial-security framework.
+- 30-day BMC-85 trustee/provider replacement period after an ineligibility determination.
+
+### Module 06 Timeline Discrepancy Requiring Reconciliation
+
+Current 49 CFR § 387.307(e)(5)–(6) uses a **7-business-day** FMCSA notice/suspension response period. A separate § 387.307(b) rule concerns trust assets capable of liquidation within **7 calendar days**.
+
+Older Module 06 student/instructor prose currently uses a 7-calendar-day shortfall/replenishment description and must be corrected in a controlled regulatory-content reconciliation pass. Newly authored Module 06 exam material uses the verified current distinction and does not repeat the stale wording.
+
+A final current-source verification pass is still mandatory before PUBLICATION_READY.
+
+## Student Tools Recovery Status — Updated 2026-08-19
+
+Recovered controlled pilot assets remain:
+
+- `RES-LE-001` — Load Information Capture Workbook & Worksheet
+- `RES-LE-004` — Clarification Question Quick Guide & Job Aid
+- `RES-LE-024A` — Flashcard & Retrieval Practice Set
+- `RES-LE-021A` — Instructor Guide & Facilitation Notes
+
+The LE pilot namespace remains governed by:
+
+`00-PROJECT-CONTROL/LE-001-PILOT-MAPPING-DECISION.md`
+
+Do not silently renumber the pilot into Module 05. The pilot spans multiple current modules and remains controlled evidence/supporting architecture until a formal integration pass.
+
+A new targeted Drive recovery audit exists at:
+
+`04-STUDENT-TOOLS/RECOVERY-AUDIT-2026-08-19.md`
+
+Targeted searches confirmed the previously recovered LE resources but did not identify additional completed standalone copies of several architecture-required assets such as the Load Evaluation Calculator, Calculation Worksheet, Formula Reference Card, Integrated Load Evaluation Worksheet, Risk/Assumption Log, and related tools. Production prompts/configuration documents were deliberately not migrated as student assets.
+
+Those missing tools remain PLANNED until actual completed sources are found or new controlled assets are authored.
+
+## Simulation / Game Planning
+
+A controlled simulation/game backlog now exists at:
+
+`05-SIMULATIONS-AND-GAMES/SIMULATION-BACKLOG.md`
+
+It defines progressive simulation families from missing-information capture and equipment fit through broker verification, rate math, negotiation, trip/HOS planning, exception management, billing/POD, and the end-to-end dispatch capstone, plus testing and EAOS/TKE compatibility requirements.
+
+Backlog entries are PLANNED; they are not claims of implemented/playable software.
+
+## Software / Dashboard Requirements
+
+A requirements baseline now exists at:
+
+`09-SOFTWARE/ACADEMY-SOFTWARE-AND-DASHBOARD-REQUIREMENTS.md`
+
+It defines the future student application, assessment engine, practical/scenario scoring, simulation runtime, instructor/operations dashboards, remediation queue, content-readiness/current-date controls, roles/permissions, audit history, TKE integration, security/privacy baseline, and phased MVP→EAOS/TKE implementation path.
+
+This is a PLANNED specification. No software is considered implemented until code exists and functional tests pass.
 
 ## Immediate Priorities
-One: build exams for Modules 02 and 05 against the blueprint (no hard regulatory-date blocker). Two: reverify Module 04's NRII paper-MEC exemption status and Module 06's Motus/SAFER/Legacy L&I and BMC-85 content against current FMCSA sources, then build exams for those two modules. Three: build practical/scenario assessments (beyond Module 06's Scenario Lab), program-level scoring rubrics, and remediation rules for Modules 01–06. Four: reconcile duplicate or split curriculum files into controlled canonical sources. Five: finish recovery of any remaining Drive assets (worksheets, checklists, templates, SOPs, flashcards beyond LE-001-Pilot). Six: establish the simulation/game backlog. Seven: establish software and dashboard requirements.
+
+1. Perform QA/instructor review on the six graded Module Exams, practicals, scoring policy, and their objective/remediation mappings.
+2. Correct the stale Module 06 7-calendar-day shortfall prose in the student manual and instructor guide using the current regulatory verification record, then dependency-check all affected Module 06 assets.
+3. Build or recover the highest-priority missing student tools identified in `04-STUDENT-TOOLS/RECOVERY-AUDIT-2026-08-19.md`, starting with the calculation/formula and integrated-load-evaluation tools needed by later modules/simulations.
+4. Decide/build a separate Module 06 summative practical if the final assessment architecture requires one beyond the existing practice Scenario Lab.
+5. Continue controlled curriculum production for Modules 07–15 in dependency order.
+6. Prototype Wave 1 simulations from `SIMULATION-BACKLOG.md` as low-tech validated designs before investing in playable software.
+7. Convert the software requirements baseline into an implementation plan only after near-term academy content/assessment requirements are sufficiently stable.
+8. Continue duplicate/split curriculum reconciliation and final current-date publication verification.
+
+## Publication Gate
+
+Nothing listed above should be promoted to PUBLICATION_READY until the applicable content, terminology, dependency, factual/source, instructional, formatting/accessibility, and technical-testing gates have passed.
