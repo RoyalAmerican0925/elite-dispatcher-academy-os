@@ -86,7 +86,7 @@ Classification: **ESCALATE / PASS IF RISK UNRESOLVED.** Accumulating inconsisten
 Section 4 (Motus/SAFER/Legacy L&I) is an active modernization area; reverify before publication.
 
 ### BMC-85 2026 Rules
-The 30-day trustee-replacement window applies to trustee-ineligibility determinations. It is distinct from the separate 7-calendar-day rule for financial-security shortfalls below $75,000. Do not conflate these timelines.
+The 30-day trustee-replacement window applies to trustee-ineligibility determinations. It is distinct from the FMCSA notice/suspension response period for financial-security shortfalls below $75,000, which is **7 business days** under current 49 CFR § 387.307(e)(5)–(6) — not 7 calendar days. A separate, unrelated **7-calendar-day** standard applies only to how quickly BMC-85 trust assets must be convertible to cash under § 387.307(b) (asset liquidity, not the notice-response timeline). Do not conflate any of these three timelines with each other. **Correction applied 2026-08-19** per `00-PROJECT-CONTROL/REGULATORY-VERIFICATION-2026-08-19-M04-M06.md` — this guide previously described the shortfall notice/suspension period as 7 calendar days, which did not match current eCFR text.
 
 ### Fraud vs. Red-Flag Distinction
 No scenario in this module should conclude with an unsupported fraud determination. Use VERIFY, HOLD, ESCALATE, DO NOT USE, or DO NOT BOOK based on verified facts and policy.
@@ -103,12 +103,12 @@ Detailed factoring mechanics remain Module 14's territory. Module 06 only teache
 ## Primary Source Control
 
 - FMCSA Registration Modernization materials: verify the current Motus/SAFER/Legacy L&I roles before launch.
-- FMCSA Broker and Freight Forwarder Financial Responsibility materials: verify BMC-85 trustee eligibility, the 30-day replacement window, and the separate 7-calendar-day financial-security replenishment rule before launch.
+- FMCSA Broker and Freight Forwarder Financial Responsibility materials: verify BMC-85 trustee eligibility, the 30-day replacement window, and the separate 7-business-day financial-security shortfall notice/suspension period before launch.
 - 49 CFR § 387.307 and 49 U.S.C. § 13906: broker financial-responsibility baseline.
 - 49 CFR Part 371: broker authority/records requirements and current interpretive guidance.
 
 ## Verification Status Note
 
-Core current-date facts in this chapter — Motus's role as FMCSA's current registration environment, the January 16, 2026 BMC-85 trustee-eligibility rule and 30-day cure window, the separate 7-day financial-security-shortfall rule, and the $75,000 broker financial-security requirement — were independently checked against FMCSA and primary regulatory sources during production. Reconfirm them at the pre-publication gate because the 2026 registration and financial-responsibility environment is still evolving.
+Core current-date facts in this chapter — Motus's role as FMCSA's current registration environment, the January 16, 2026 BMC-85 trustee-eligibility rule and 30-day cure window, the 7-business-day financial-security-shortfall notice/suspension rule (corrected 2026-08-19 from a previously stated 7-calendar-day figure), and the $75,000 broker financial-security requirement — were independently checked against FMCSA and primary regulatory sources during production. Reconfirm them at the pre-publication gate because the 2026 registration and financial-responsibility environment is still evolving.
 
 Elite Dispatcher Academy | Module 06 | Instructor Answer Guide
