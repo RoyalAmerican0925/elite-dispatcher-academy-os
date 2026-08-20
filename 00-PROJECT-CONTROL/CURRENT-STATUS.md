@@ -24,7 +24,7 @@ Before migration, the selected student manuals were checked for chat transcripts
 
 The manuals remain subject to current-date/factual review before PUBLICATION_READY, especially Modules 02, 04, 05, and 06.
 
-## Module 01–06 Assessment Status — Updated 2026-08-19
+## Module 01–06 Assessment Status — Updated 2026-08-20
 
 ### Knowledge Checks
 
@@ -89,13 +89,15 @@ Verified for current item-writing:
 - $75,000 broker BMC-84/BMC-85 financial-security framework.
 - 30-day BMC-85 trustee/provider replacement period after an ineligibility determination.
 
-### Module 06 Timeline Discrepancy Requiring Reconciliation
+### Module 06 Timeline Discrepancy — RESOLVED 2026-08-20
 
-Current 49 CFR § 387.307(e)(5)–(6) uses a **7-business-day** FMCSA notice/suspension response period. A separate § 387.307(b) rule concerns trust assets capable of liquidation within **7 calendar days**.
+Current 49 CFR § 387.307(e)(5)–(6) uses a **7-business-day** FMCSA notice/suspension response period. A separate § 387.307(b) rule concerns trust assets capable of liquidation within **7 calendar days** — an unrelated asset-liquidity requirement, not the notice-response timeline.
 
-Older Module 06 student/instructor prose currently uses a 7-calendar-day shortfall/replenishment description and must be corrected in a controlled regulatory-content reconciliation pass. Newly authored Module 06 exam material uses the verified current distinction and does not repeat the stale wording.
+`02-CURRICULUM/Module-06/Student-Manual-Part-01.md` and `03-ASSESSMENTS/Instructor-Answer-Guides/Module-06.md` previously described the shortfall/replenishment timeline as 7 calendar days. **Both files were corrected on 2026-08-20** to use the current 7-business-day figure for the notice/suspension response period, while explicitly preserving 7 calendar days only for the separate asset-liquidity requirement, so a reader isn't left to guess which "7 days" applies where. The newly authored Module 06 exam (`Module-06-Exam-Answer-Key.md`) already used the correct distinction and needed no change; it was checked and confirms consistency with the corrected source files.
 
-A final current-source verification pass is still mandatory before PUBLICATION_READY.
+Dependency check performed: the Module 06 Knowledge Check does not reference this timeline at all, so no further downstream correction was needed there.
+
+A final current-source verification pass is still mandatory before PUBLICATION_READY — this correction resolves the known repository-internal discrepancy but does not substitute for a pre-launch reconfirmation against live FMCSA/eCFR sources.
 
 ## Student Tools Recovery Status — Updated 2026-08-19
 
@@ -143,7 +145,7 @@ This is a PLANNED specification. No software is considered implemented until cod
 ## Immediate Priorities
 
 1. Perform QA/instructor review on the six graded Module Exams, practicals, scoring policy, and their objective/remediation mappings.
-2. Correct the stale Module 06 7-calendar-day shortfall prose in the student manual and instructor guide using the current regulatory verification record, then dependency-check all affected Module 06 assets.
+2. ~~Correct the stale Module 06 7-calendar-day shortfall prose~~ — **DONE 2026-08-20.**
 3. Build or recover the highest-priority missing student tools identified in `04-STUDENT-TOOLS/RECOVERY-AUDIT-2026-08-19.md`, starting with the calculation/formula and integrated-load-evaluation tools needed by later modules/simulations.
 4. Decide/build a separate Module 06 summative practical if the final assessment architecture requires one beyond the existing practice Scenario Lab.
 5. Continue controlled curriculum production for Modules 07–15 in dependency order.
