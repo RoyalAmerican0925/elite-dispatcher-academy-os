@@ -52,6 +52,6 @@ Current regulatory references verified through August 27, 2026. Recheck date-sen
   2. Financial-security shortfall (below $75,000): a **7-business-day** replenishment window after FMCSA notice.
   3. Trust-asset liquidity: qualifying trust assets must independently be liquidatable to cash within **7 calendar days** — an ongoing asset-quality standard, not a notice-response deadline.
 - Separately, current FMCSA compliance guidance identifies a **two-business-day** notification requirement for trust providers/sureties to notify FMCSA of specified security-reduction events — a provider obligation, distinct from the broker's own timelines above.
-- Unauthorized brokerage penalty: current 2026 inflation-adjusted maximum is **$13,676** per knowing violation under 49 CFR § 1022.4, verified August 27, 2026. This figure has already been revised more than once in 2026 (an earlier table listed $13,647) — do not present any single number as permanently fixed. Recheck at publication.
+- Unauthorized brokerage penalty: current checked 2026 inflation-adjusted maximum is **$13,676** per knowing violation under **49 CFR Part 386, Appendix B(g)(2)**. Treat this figure as date-sensitive and recheck the current FMCSA penalty schedule at publication; do not present any single number as permanently fixed.
 
 MODULE 02 — FINAL INSTRUCTOR ANSWER GUIDE | Verified through August 27, 2026
