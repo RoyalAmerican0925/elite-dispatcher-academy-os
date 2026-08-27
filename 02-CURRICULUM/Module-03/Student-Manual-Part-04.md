@@ -36,6 +36,14 @@ A combination weighs 79,000 lb gross — under the 80,000 lb baseline — but 36
 
 36,000 lb on a tandem axle group exceeds the general federal 34,000 lb Interstate tandem limit (FACT-M03-002), even though gross weight is 79,000 lb. Legal weight redistribution or another appropriate correction is required before movement. Depending on the facts, corrective action may involve tandem adjustment, fifth-wheel adjustment, freight repositioning/reloading, or another lawful solution performed by the appropriate qualified personnel. The dispatcher's role is to identify and escalate the problem, not perform the physical adjustment.
 
+### S-03-13: Overwidth Freight Against Nominal 102-Inch Equipment
+
+A piece of rigid freight measures 104 inches wide. The assigned trailer is nominally rated for the standard 102-inch National Network legal width.
+
+**Classification:** NEEDS MORE INFORMATION / STOP-VERIFY BEFORE BOOKING — not automatically illegal, and not automatically bookable.
+
+At 104 inches, this freight exceeds the standard 102-inch National Network width figure (FACT-M03-003) by 2 inches. This does NOT automatically mean the load is illegal and cannot move — overwidth freight can potentially move with appropriate permits, specific routing, and possibly different equipment, depending on the specific states and jurisdictions the route passes through. It also does NOT mean a permit is guaranteed to be available for every route or every state; actual jurisdictions and route control the outcome, and this module does not promise that every overwidth load can obtain a permit. Before booking, the dispatcher must STOP and VERIFY: which states and routes are involved, whether those jurisdictions permit this specific overwidth condition, what permit process and lead time apply, whether the carrier's equipment and driver are set up for oversize movement, and whether the route has any additional restrictions. This is a genuine escalation point, not a simple pass/fail based on the 102-inch figure alone — see Myth 12 in Section 28\.
+
 # 30\. Module 03 Knowledge Check
 
 Diagnostic check — not a graded exam. Use it to confirm your understanding before moving to Module 04\.
@@ -122,37 +130,53 @@ Diagnostic check — not a graded exam. Use it to confirm your understanding bef
 
 * d) No equipment is required
 
+9\. An X endorsement means:
+
+* a) The same thing as an H endorsement
+
+* b) A combined tank-vehicle-plus-hazardous-materials qualification, required when a driver operates a placarded-hazmat tank vehicle
+
+* c) A driver has completed general commercial driving training only
+
+* d) A load is automatically exempt from hazmat placarding
+
 ## Part B — True / False (explanation required)
 
-9\. An 800-mile solo-driver load is automatically illegal under federal Hours of Service.
+10\. An 800-mile solo-driver load is automatically illegal under federal Hours of Service.
 
-10\. Reefer trailers generally have the same usable interior space as similarly sized dry vans.
+11\. Reefer trailers generally have the same usable interior space as similarly sized dry vans.
 
-11\. Fitting on a flatbed deck is sufficient, by itself, to confirm a load can legally move.
+12\. Fitting on a flatbed deck is sufficient, by itself, to confirm a load can legally move.
 
-12\. All Conestoga trailers can be crane-loaded from above.
+13\. All Conestoga trailers can be crane-loaded from above.
 
-13\. GVWR is best defined casually as "the manufacturer's maximum safe weight."
+14\. GVWR is best defined casually as "the manufacturer's maximum safe weight."
+
+15\. Freight wider than 102 inches is automatically illegal and cannot move under any circumstances.
 
 ## Part C — Equipment-Fit Classification
 
 Classify each as GOOD FIT, BAD FIT, NEEDS MORE INFORMATION, or SPECIALIZED / ESCALATE.
 
-14\. 78,000 lb gross combination weight, axle distribution not yet confirmed.
+16\. 78,000 lb gross combination weight, axle distribution not yet confirmed.
 
-15\. Temperature-sensitive produce offered against a conventional dry van.
+17\. Temperature-sensitive produce offered against a conventional dry van.
 
-16\. A rigid 108-inch-wide item against a 104-inch door opening.
+18\. A rigid 108-inch-wide item against a 104-inch door opening.
 
-17\. A placarded hazmat load with a driver who holds a valid H endorsement, but no other shipment or carrier-qualification details are provided.
+19\. A placarded hazmat load with a driver who holds a valid H endorsement, but no other shipment or carrier-qualification details are provided.
+
+20\. A rigid 104-inch-wide item against nominal 102-inch equipment, with no route, state, or permit information yet provided.
 
 ## Part D — Short Reasoning
 
-18\. Explain, in your own words, why "under 80,000 lb" does not automatically mean a load is legal.
+21\. Explain, in your own words, why "under 80,000 lb" does not automatically mean a load is legal.
 
-19\. A new dispatcher says: "It's a 53-foot van, so it can obviously hold 45,000 lb." What's wrong with this reasoning?
+22\. A new dispatcher says: "It's a 53-foot van, so it can obviously hold 45,000 lb." What's wrong with this reasoning?
 
-20\. Why does this module teach "I need more information" as an acceptable, professional answer rather than a sign of weakness?
+23\. Why does this module teach "I need more information" as an acceptable, professional answer rather than a sign of weakness?
+
+24\. Explain why "wider than 102 inches" does not automatically mean a load cannot move, and what a dispatcher must verify before concluding either way.
 
 **Module 03 Completion**  
-You should now be able to recognize common truck and trailer types, identify basic freight-to-equipment fit issues, separate gross-weight checks from axle/legal compliance, and use STOP / VERIFY / ESCALATE when required facts are missing. Proceed to Module 04 after completing the Module 03 Knowledge Check.
+You should now be able to recognize common truck and trailer types, identify basic freight-to-equipment fit issues, separate gross-weight checks from axle/legal compliance, distinguish H, N, and X endorsements, recognize that overwidth freight requires verification rather than automatic rejection, and use STOP / VERIFY / ESCALATE when required facts are missing. Proceed to Module 04 after completing the Module 03 Knowledge Check.
