@@ -5,7 +5,7 @@
 **Distinct from:** `03-ASSESSMENTS/Module-Quizzes/Module-01-Knowledge-Check.md` — this is a graded exam with new items testing the same objectives, not a copy of the diagnostic knowledge check
 **Answer key:** `03-ASSESSMENTS/Module-Exams/Module-01-Exam-Answer-Key.md` (instructor only)
 **Passing standard:** 80% (18 of 22 items correct). No critical-failure items in this module per the blueprint.
-**Date-sensitive content:** None. This module's content (role definitions, terminology) is not tied to a current-date regulatory figure.
+**Publication control — current-source reverification required:** This module's role-definition and terminology content (broker/carrier/dispatcher/driver, USDOT vs. operating authority concepts, interstate/intrastate concepts) is comparatively stable. However, items referencing Motus terminology, docket-number practices, USDOT-number suffix practices, and current FMCSA registration procedures (Items 5–8) are tied to FMCSA's active registration-modernization environment and must be reverified against current FMCSA sources before PUBLICATION_READY and again before each academy launch cycle — this environment can change independent of this exam's revision date. Do not treat this module as having zero date-sensitive content.
 
 ---
 
