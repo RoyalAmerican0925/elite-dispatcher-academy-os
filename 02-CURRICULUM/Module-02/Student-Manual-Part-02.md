@@ -32,11 +32,19 @@ Tax classification does not independently determine broker status. FMCSA's guida
 
 **FACT-M02-006.** For introductory context only — this is not a broker-licensing course. Property brokers must generally satisfy FMCSA registration requirements, which as of 2026 include broker operating authority registration, designation of a process agent using Form BOC-3, and financial security of $75,000 using either a surety bond (Form BMC-84) or a qualifying trust fund (Form BMC-85).
 
-CURRENT 2026 RULE — VERIFIED AUGUST 11, 2026: Effective January 16, 2026, FMCSA updated the eligibility requirements for entities that may serve as BMC-85 trust providers. If FMCSA determines that a trust provider is ineligible, an affected broker or freight forwarder generally has 30 days to obtain a replacement filing from a qualified provider or face suspension of operating authority. Separately, when available financial security falls below $75,000, the broker or freight forwarder generally has seven business days after FMCSA notice to replenish the security before suspension procedures apply.
+CURRENT 2026 RULE — VERIFIED AUGUST 27, 2026: Effective January 16, 2026, FMCSA updated the eligibility requirements for entities that may serve as BMC-85 trust providers. This section covers three distinct timelines — keep them separate, because they answer three different questions:
+
+1. **Trustee ineligibility — 30-day cure window.** If FMCSA determines that a trust provider is ineligible, an affected broker or freight forwarder generally has 30 days to obtain a replacement filing from a qualified provider or face suspension of operating authority.
+2. **Financial-security shortfall — 7 business days after notice.** Separately, when available financial security falls below $75,000, the broker or freight forwarder generally has seven **business** days after FMCSA notice to replenish the security before suspension procedures apply.
+3. **Trust-asset liquidity — 7 calendar days.** This is a different requirement from either of the above: qualifying BMC-85 trust assets must independently satisfy the rule's liquidity requirements, including the ability to be liquidated to cash within seven **calendar** days. This is an asset-quality standard the trust must meet on an ongoing basis — not a response deadline triggered by an FMCSA notice.
+
+**IMPORTANT:** Do not interchange "business days" and "calendar days" across these three rules — they are not the same timeline measured two ways. The 30-day cure window, the 7-business-day shortfall-replenishment window, and the 7-calendar-day trust-asset-liquidity standard are three separate requirements answering three separate questions.
+
+Separately, current FMCSA compliance guidance identifies a two-business-day notification requirement for trust providers or sureties to notify FMCSA of specified security-reduction events — this is a notification obligation placed on the *provider*, distinct from the broker's own replenishment or cure timelines above.
 
 The purpose of this section is narrow: to show students that broker status is a distinct, separately regulated role with its own registration and financial-security obligations — not to teach the mechanics of becoming a broker.
 
-Source classification: REGULATION (49 CFR § 387.307) — current requirements effective January 16, 2026; verified August 11, 2026\.
+Source classification: REGULATION (49 CFR § 387.307) — current requirements effective January 16, 2026; verified August 27, 2026\.
 
 # 19\. Unauthorized Brokerage: Consequences
 
@@ -44,7 +52,7 @@ Source classification: REGULATION (49 CFR § 387.307) — current requirements e
 
 This liability applies jointly and severally to the corporate entity or partnership involved, and individually to the officers, directors, and principals of that entity.
 
-CURRENT 2026 PENALTY — VERIFIED AUGUST 11, 2026: The statute states a maximum civil penalty of $10,000 per knowing violation, but the inflation-adjusted maximum currently codified for 2026 is $13,647 per violation under 49 CFR § 1022.4. A January 2026 adjustment initially listed $14,020, but the Surface Transportation Board revised the 2026 table effective May 5, 2026; the current 2026 amount is $13,647. Because civil monetary penalty schedules can be revised, verify the current table again at the academy's final publication/release gate.
+CURRENT 2026 PENALTY — VERIFIED AUGUST 27, 2026: The statute states a maximum civil penalty of $10,000 per knowing violation, but the inflation-adjusted maximum currently codified for 2026 is $13,676 per violation under 49 CFR § 1022.4. This figure has been revised more than once during 2026 — an earlier 2026 table listed $13,647 — which is exactly why this section teaches the *concept* of an inflation-adjusted, periodically-revised maximum rather than asking students to memorize a single number as permanent. Because civil monetary penalty schedules can be revised again, verify the current table once more at the academy's final publication/release gate.
 
 Two things this section deliberately does not do: it does not use the phrase "piercing the corporate veil" (that phrase does not appear in the statute's text, even though some commentary uses it informally), and it does not tell students that specific personal assets — a house, a car, a bank account — will necessarily be seized. The statute establishes a liability framework; it does not itself describe asset seizure mechanics, which depend on separate collection proceedings.
 
