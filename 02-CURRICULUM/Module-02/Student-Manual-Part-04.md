@@ -114,7 +114,7 @@ No formula entries are applicable to Module 02\.
 
 **RELATED TERMS:** BMC-84, Broker Authority
 
-NOTES: Updated trustee-eligibility requirements took effect January 16, 2026\. Current rule verified August 11, 2026; recheck at the final publication gate because this is date-sensitive regulatory material.
+NOTES: Updated trustee-eligibility requirements took effect January 16, 2026\. Three distinct timelines apply and must not be interchanged: a 30-day cure window for trustee ineligibility, a 7-business-day replenishment window after an FMCSA financial-security-shortfall notice, and a separate 7-calendar-day trust-asset-liquidity standard the trust must meet on an ongoing basis. Current rule verified August 27, 2026; recheck at the final publication gate because this is date-sensitive regulatory material.
 
 ### BOC-3
 
@@ -198,7 +198,7 @@ Module 02 Fact IDs used:
 
 **Appendix C: Sources & Verification Note**  
 • Core federal authorities used in this module include 49 U.S.C. § 13102, 49 CFR § 371.2, 49 U.S.C. § 14916, 49 CFR § 387.307, and FMCSA final guidance published at 88 FR 39368 (June 16, 2023).  
-• The BMC-85 trustee-eligibility and financial-security implementation rules effective January 16, 2026 were rechecked against current FMCSA materials on August 11, 2026\.  
-• The 2026 inflation-adjusted maximum civil penalty for a knowing violation under 49 U.S.C. § 14916(a) is $13,647 per violation as currently codified in 49 CFR § 1022.4 after the May 5, 2026 revision.  
+• The BMC-85 trustee-eligibility and financial-security implementation rules effective January 16, 2026 were rechecked against current FMCSA materials on August 27, 2026\. Three distinct BMC-85-related timelines apply — a 30-day trustee-ineligibility cure window, a 7-business-day financial-security-shortfall replenishment window, and a separate 7-calendar-day trust-asset-liquidity standard — and must not be conflated with one another.  
+• The 2026 inflation-adjusted maximum civil penalty for a knowing violation under 49 U.S.C. § 14916(a) is $13,676 per violation as currently codified in 49 CFR § 1022.4, verified August 27, 2026. This figure has been revised more than once during 2026 (an earlier table listed $13,647); do not present any single figure as permanently fixed.  
 • Regulatory and penalty information is date-sensitive. The Academy should re-verify current federal sources immediately before publication and whenever the course is updated.  
-**MODULE 02 — FINAL INTEGRATED STUDENT EDITION | Verified through August 11, 2026**
+**MODULE 02 — FINAL INTEGRATED STUDENT EDITION | Verified through August 27, 2026**
