@@ -10,7 +10,7 @@
 | Broker/bona fide agent interpretive guidance | FMCSA GUIDANCE (interpretive, not binding law) | 88 FR 39368 (June 16, 2023) | Dispatch-service functional framing, allocation-of-traffic definition, multi-carrier analysis, non-overlap examples, compensation/money-flow factors, myths | Part 01–Part 02, Sections 7–17, 20 |
 | Broker financial responsibility | REGULATION | 49 CFR § 387.307 | $75,000 financial security (BMC-84/BMC-85), January 16, 2026 trustee-eligibility update, 30-day cure window, 7-business-day shortfall window, 7-calendar-day trust-asset-liquidity standard, 2-business-day provider notification requirement | Part 02, Section 18 |
 | Unauthorized brokerage civil liability | STATUTE | 49 U.S.C. § 14916 | Civil-penalty framework, entity and individual officer/director/principal liability (FACT-M02-007) | Part 02, Section 19 |
-| Current civil penalty schedule | REGULATION | 49 CFR § 1022.4 | 2026 inflation-adjusted maximum civil penalty figure | Part 02, Section 19 |
+| Current FMCSA civil penalty schedule | REGULATION | 49 CFR Part 386, Appendix B(g)(2) | Current inflation-adjusted maximum penalty for knowingly operating as a broker in violation of applicable registration or financial-security requirements | Part 02, Section 19 |
 
 ## Notes on Source Hierarchy
 
