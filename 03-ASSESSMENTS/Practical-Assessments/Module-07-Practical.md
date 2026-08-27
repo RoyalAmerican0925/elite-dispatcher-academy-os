@@ -2,7 +2,7 @@
 
 **Status:** DRAFT_COMPLETE — QA and instructor review required before PUBLICATION_READY
 **Built from:** `02-CURRICULUM/Module-07/Student-Manual-Part-03.md` (Sections 15–17)
-**Answer key:** Scoring guidance included in `03-ASSESSMENTS/Instructor-Answer-Guides/Module-07.md`
+**Answer key:** `03-ASSESSMENTS/Practical-Assessments/Module-07-Practical-Scoring-Guide.md`
 **Format:** Follows the Modules 01–05 practical-assessment pattern — student works through realistic desk scenarios and produces a written recommendation, scored against the `Modules-01-05-Instructor-Scoring-Guide.md` 0–3 rubric scale.
 
 ---
@@ -37,6 +37,6 @@ Revenue: $2,050 · Loaded miles: 500 · Origin deadhead: 200 · Destination dead
 
 ## Scoring
 
-Scored on the 0–3 rubric per dimension defined in `03-ASSESSMENTS/Practical-Assessments/Modules-01-05-Instructor-Scoring-Guide.md`, applied to the following dimensions: calculation accuracy, correct use of effective RPM (not loaded RPM alone), correct terminology (no "profit" mislabeling), inclusion of a positioning factor, and correct handling of the not-yet-earned Load 3 detention clause.
+Scored on the 0–3 rubric per dimension defined in `03-ASSESSMENTS/Practical-Assessments/Modules-01-05-Instructor-Scoring-Guide.md`, with Module 07-specific expected calculations and scoring guidance in `03-ASSESSMENTS/Practical-Assessments/Module-07-Practical-Scoring-Guide.md`. Dimensions are: calculation accuracy, correct use of effective RPM (not loaded RPM alone), correct terminology (no "profit" mislabeling), inclusion of a positioning factor, and correct handling of the not-yet-earned Load 3 detention clause.
 
 **Critical-failure note:** A memo that treats Load 3's detention pay as guaranteed, already-earned revenue is a critical failure on this practical, regardless of other scoring — this mirrors the accessorial-verification discipline taught in Section 13. The existence of a documented detention term does not mean detention has already occurred or that the payment has already been earned.
