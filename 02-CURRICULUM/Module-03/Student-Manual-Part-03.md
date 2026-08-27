@@ -1,10 +1,14 @@
 * An H (hazardous materials) endorsement on a driver's CDL applies in specified regulated circumstances, not universally to every hazmat load.
 
+* An N (tank vehicle) endorsement applies to driving a vehicle that, as defined under applicable federal rules, is designed to transport liquid or gaseous materials in a permanently or temporarily attached tank with a capacity above the regulated threshold — this endorsement is about the vehicle configuration (a tank), not about the material being hazardous.
+
+* An X endorsement is the combined tank-vehicle-plus-hazardous-materials qualification — required when a driver will operate a tank vehicle that is also carrying hazardous materials requiring placarding. X is not a separate, third type of material-handling qualification; it specifically means both the H and N requirements apply to the same load at the same time.
+
 * FMCSA Hazmat Safety Permits apply only to certain high-hazard materials and quantities.
 
 * Placarding requirements depend on the specific material and quantity involved.
 
-**\[FACT-SPECIFIC\]** Do not teach "any hazmat \= registration \+ H endorsement \+ HMSP." That oversimplifies four separate, condition-specific requirements into one blanket rule. Do not teach students to independently classify an unfamiliar hazardous material from a safety data sheet (SDS) — that's a specialized qualification, not a dispatcher skill this module builds. The correct dispatcher response to a hazmat load is: STOP, VERIFY, ESCALATE — using the shipment's actual supplied transportation information (proper shipping description, UN/NA number, hazard class/division, packing group where applicable, shipping paper, placarding information, and required carrier/driver qualifications) rather than guessing. Detailed hazmat instruction is outside this module.
+**\[FACT-SPECIFIC\]** Do not teach "any hazmat \= registration \+ H endorsement \+ HMSP." That oversimplifies four separate, condition-specific requirements into one blanket rule. Do not teach "H and X mean the same thing" — H covers hazardous materials generally; X specifically means the load requires both the tank-vehicle (N) and hazardous-materials (H) qualifications together, which is a narrower and more specific requirement than H alone. A driver holding only an H endorsement does not satisfy a load that requires X. Do not teach students to independently classify an unfamiliar hazardous material from a safety data sheet (SDS) — that's a specialized qualification, not a dispatcher skill this module builds. The correct dispatcher response to a hazmat load is: STOP, VERIFY, ESCALATE — using the shipment's actual supplied transportation information (proper shipping description, UN/NA number, hazard class/division, packing group where applicable, shipping paper, placarding information, and required carrier/driver qualifications) rather than guessing. Where a proposed shipment requires a qualification or endorsement the assigned driver does not possess, the correct response is DO NOT BOOK that driver for that load — not a workaround, and not something the dispatcher personally resolves. Detailed hazmat instruction is outside this module.
 
 # 26\. Load-to-Equipment Fit Checklist
 
@@ -157,6 +161,26 @@ A useful beginner relationship for thinking through available cargo weight:
 **Why it matters:** Assuming universal dock-loading capability can cause a dispatcher to book a load the assigned equipment can't actually accommodate.
 
 *Classification: INDUSTRY PRACTICE*
+
+### Myth 11: "H and X endorsements mean the same thing."
+
+**Why it sounds plausible:** Both endorsements relate to hazardous materials, so it's easy to assume they're interchangeable.
+
+**Correct principle:** H covers hazardous materials generally. X specifically means the load requires both the tank-vehicle (N) and hazardous-materials (H) qualifications together — a narrower, combined requirement. A driver holding only H does not satisfy a load requiring X.
+
+**Why it matters:** Confusing the two can result in dispatching a driver who is qualified for general hazmat but not for a tank-vehicle hazmat load specifically — see Section 25\.
+
+*Classification: LAW / REGULATION*
+
+### Myth 12: "Anything wider than 102 inches is automatically illegal."
+
+**Why it sounds plausible:** 102 inches is repeatedly taught as the federal National Network width figure, so it's easy to assume it's a hard ceiling.
+
+**Correct principle:** Overwidth freight is not automatically illegal — it requires additional analysis and may be movable with appropriate permits, routing, and equipment, depending on the specific states and routes involved. Not every overwidth load can obtain a permit, and actual jurisdictions and route control the outcome — see Scenario S-03-13.
+
+**Why it matters:** Treating 102 inches as an absolute ceiling can cause a dispatcher to wrongly reject freight that could legally move with the right permit and routing — or, in the opposite direction, to assume any overwidth load can simply get a permit without actually checking.
+
+*Classification: FEDERAL LAW / STATE-SPECIFIC (permit process and route control)*
 
 # 29\. Scenario Lab
 
