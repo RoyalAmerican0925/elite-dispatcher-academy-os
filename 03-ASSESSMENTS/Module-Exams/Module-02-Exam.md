@@ -5,7 +5,7 @@
 **Distinct from:** `03-ASSESSMENTS/Module-Quizzes/Module-02-Knowledge-Check.md` — all items below are new.  
 **Answer key:** `03-ASSESSMENTS/Module-Exams/Module-02-Exam-Answer-Key.md`  
 **Passing standard:** 85% (23 of 26) **and Critical Item 20 must be correct.**  
-**Current-source note:** $75,000 broker financial security and related 2026 rules were rechecked before item writing; see `00-PROJECT-CONTROL/REGULATORY-VERIFICATION-2026-08-19-M04-M06.md`.
+**Current-source control:** Module 02 legal/regulatory content was rechecked and repaired through August 27, 2026. See `00-PROJECT-CONTROL/MODULE-02-REGULATORY-SOURCE-REGISTER.md` and `00-PROJECT-CONTROL/MODULE-02-DATE-SENSITIVE-CLAIM-REGISTER.md`. Item 6 uses the current $75,000 broker financial-security baseline and must be reverified at the publication gate.
 
 ## Risk-Tier Key for Scenario Questions
 
