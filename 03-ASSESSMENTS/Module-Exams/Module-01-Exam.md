@@ -11,7 +11,7 @@
 
 ## Part A — Roles: Broker, Carrier, Dispatcher, Driver
 
-1. A company that arranges transportation between a shipper and a carrier, without ever taking possession of the freight itself, is functioning as a:
+1. A company that, for compensation, arranges transportation between a shipper and an authorized motor carrier rather than itself providing the motor-carrier transportation is functioning as a:
    a) Motor carrier
    b) Freight broker
    c) Consignee
