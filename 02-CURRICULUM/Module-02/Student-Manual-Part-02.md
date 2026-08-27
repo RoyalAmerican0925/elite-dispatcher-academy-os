@@ -52,11 +52,11 @@ Source classification: REGULATION (49 CFR § 387.307) — current requirements e
 
 This liability applies jointly and severally to the corporate entity or partnership involved, and individually to the officers, directors, and principals of that entity.
 
-CURRENT 2026 PENALTY — VERIFIED AUGUST 27, 2026: The statute states a maximum civil penalty of $10,000 per knowing violation, but the inflation-adjusted maximum currently codified for 2026 is $13,676 per violation under 49 CFR § 1022.4. This figure has been revised more than once during 2026 — an earlier 2026 table listed $13,647 — which is exactly why this section teaches the *concept* of an inflation-adjusted, periodically-revised maximum rather than asking students to memorize a single number as permanent. Because civil monetary penalty schedules can be revised again, verify the current table once more at the academy's final publication/release gate.
+CURRENT 2026 PENALTY — VERIFIED AUGUST 27, 2026: The statute states a maximum civil penalty of $10,000 per knowing violation, while the current inflation-adjusted FMCSA maximum is **$13,676 per violation under 49 CFR Part 386, Appendix B(g)(2)**. This amount is date-sensitive and can change through future civil-penalty inflation adjustments. Students should learn the liability framework rather than memorize one permanent number; the Academy must recheck the current FMCSA penalty schedule at the final publication/release gate.
 
 Two things this section deliberately does not do: it does not use the phrase "piercing the corporate veil" (that phrase does not appear in the statute's text, even though some commentary uses it informally), and it does not tell students that specific personal assets — a house, a car, a bank account — will necessarily be seized. The statute establishes a liability framework; it does not itself describe asset seizure mechanics, which depend on separate collection proceedings.
 
-*Source classification: STATUTE (49 U.S.C. § 14916\)*
+*Source classification: STATUTE (49 U.S.C. § 14916) / REGULATION (49 CFR Part 386, Appendix B(g)(2))*
 
 # 20\. Common Dispatching Legal Myths
 
