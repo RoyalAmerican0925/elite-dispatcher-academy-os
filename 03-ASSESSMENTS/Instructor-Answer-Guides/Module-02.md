@@ -4,7 +4,7 @@
 
 For instructor use only. Not for distribution with the student edition.
 
-Current regulatory references verified through August 11, 2026. Recheck date-sensitive regulatory material at the publication gate.
+Current regulatory references verified through August 27, 2026. Recheck date-sensitive regulatory material at the publication gate.
 
 ## Answer Key
 
@@ -47,7 +47,11 @@ Current regulatory references verified through August 11, 2026. Recheck date-sen
 - Do not teach any numerical carrier limit as a federal safe harbor. The analysis turns on conduct, relationship, and allocation of traffic.
 - Do not teach percentage compensation, written contract labels, 1099 status, or freight-money handling as a single-factor legal test.
 - Keep statute, regulation, and FMCSA interpretive guidance visibly distinct.
-- BMC-85 rules effective January 16, 2026: current FMCSA materials confirm updated trustee eligibility. An ineligible provider can trigger a 30-day replacement window; financial security below $75,000 can trigger a seven-business-day replenishment window after notice.
-- Unauthorized brokerage penalty: current 2026 inflation-adjusted maximum is $13,647 per knowing violation under 49 CFR § 1022.4, after the May 5, 2026 revision. Recheck at publication.
+- **BMC-85 rules effective January 16, 2026 — three distinct timelines, do not interchange them:**
+  1. Trustee ineligibility: a **30-day** replacement/cure window.
+  2. Financial-security shortfall (below $75,000): a **7-business-day** replenishment window after FMCSA notice.
+  3. Trust-asset liquidity: qualifying trust assets must independently be liquidatable to cash within **7 calendar days** — an ongoing asset-quality standard, not a notice-response deadline.
+- Separately, current FMCSA compliance guidance identifies a **two-business-day** notification requirement for trust providers/sureties to notify FMCSA of specified security-reduction events — a provider obligation, distinct from the broker's own timelines above.
+- Unauthorized brokerage penalty: current 2026 inflation-adjusted maximum is **$13,676** per knowing violation under 49 CFR § 1022.4, verified August 27, 2026. This figure has already been revised more than once in 2026 (an earlier table listed $13,647) — do not present any single number as permanently fixed. Recheck at publication.
 
-MODULE 02 — FINAL INSTRUCTOR ANSWER GUIDE | Verified through August 11, 2026
+MODULE 02 — FINAL INSTRUCTOR ANSWER GUIDE | Verified through August 27, 2026
