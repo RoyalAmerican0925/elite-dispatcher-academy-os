@@ -25,6 +25,16 @@ Accessorial payments — detention, layover, TONU (truck-ordered-not-used), lump
 
 Accessorial income can be real and can matter to a load's economics — but it is documentation-dependent, not a number you should ever assume in advance.
 
+## 13A. Regulatory Note — Broker Transaction Records
+
+Federal broker recordkeeping rules are relevant to rate mathematics because the transaction record required by **49 CFR § 371.3** includes specified financial information. Among other required items, the broker's record must show the amount of compensation received by the broker for the brokerage service and the payer, specified compensation for non-brokerage services, and the amount of freight charges collected by the broker and the date the carrier was paid. The rule also requires brokers to retain the required records for three years.
+
+Under **49 CFR § 371.3(c), each party to a brokered transaction has the right to review the transaction record required by that section.** That review right should be stated precisely: it is a right to review the record required by § 371.3. Do not turn it into a broader claim that every private commercial document or every shipper-broker contract must automatically be disclosed.
+
+Why this matters to a dispatcher: accurate rate records help the carrier distinguish documented transaction amounts from guesses, assumptions, or informal claims. A dispatcher should preserve the carrier's rate confirmation and other relevant transaction documentation and route legal or contract-specific questions to the carrier or qualified counsel rather than improvising a legal conclusion.
+
+Primary source: 49 CFR Part 371, § 371.3 — Records to be kept by brokers: https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-371
+
 # 14. Factoring and Quick-Pay Economics
 
 Factoring and quick-pay both trade a fee for faster access to cash. Neither has a fixed "standard" rate — do not teach or memorize:
@@ -180,7 +190,7 @@ Using the Load-Comparison Worksheet, evaluate this pair and recommend which load
 
 The Module 07 Knowledge Check (20 questions covering formulas, vocabulary, and scenario classification) is available as a standalone file: `03-ASSESSMENTS/Module-Quizzes/Module-07-Knowledge-Check.md`. This is a diagnostic check, not a graded exam.
 
-A separate graded Module 07 Exam and Practical Assessment exist under `03-ASSESSMENTS/Module-Exams/` and `03-ASSESSMENTS/Practical-Assessments/` respectively, following the same structure established for Modules 01–06.
+A separate graded Module 07 Exam and Practical Assessment exist under `03-ASSESSMENTS/Module-Exams/` and `03-ASSESSMENTS/Practical-Assessments/` respectively, following the same structure established for earlier modules.
 
 # 24. Module Summary
 
