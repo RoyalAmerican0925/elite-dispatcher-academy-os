@@ -11,16 +11,18 @@
 
 You are the dispatcher for a carrier running one dry-van truck. Three loads have been offered for the truck's next move. Use the Calculation Worksheet and Load-Comparison Worksheet to evaluate all three, then write a short recommendation memo to the carrier (150–300 words) stating which load you'd present as the strongest option and why — including at least one number-based reason and at least one non-numeric (positioning or documentation) reason.
 
+**Important:** All fuel prices, fee percentages, and dollar amounts in this practical are fictional instructional assumptions supplied for the exercise. They are not presented as current market averages or standard industry rates.
+
 ## Load Data
 
 **Load 1**
-Revenue: $1,750 · Loaded miles: 620 · Origin deadhead: 55 · Destination deadhead: 30 (relevant — delivers to a low-freight-volume area) · Truck MPG: 6.7 · Fuel price: $3.85/gal (per current EIA figure, provided) · Tolls: $0 · Dispatcher fee: 5% (per agreement on file) · No factoring.
+Revenue: $1,750 · Loaded miles: 620 · Origin deadhead: 55 · Destination deadhead: 30 (relevant — delivers to a low-freight-volume area) · Truck MPG: 6.7 · **Illustrative fuel price: $3.85/gal** · Tolls: $0 · Dispatcher fee: 5% (per fictional agreement for this exercise) · No factoring.
 
 **Load 2**
-Revenue: $1,600 · Loaded miles: 590 · Origin deadhead: 10 · No destination deadhead relevant (delivers to a high-freight-volume area) · Truck MPG: 6.7 · Fuel price: $3.85/gal · Tolls: $35 · Dispatcher fee: 5% · Factoring fee: 2%.
+Revenue: $1,600 · Loaded miles: 590 · Origin deadhead: 10 · No destination deadhead relevant (delivers to a high-freight-volume area) · Truck MPG: 6.7 · **Illustrative fuel price: $3.85/gal** · Tolls: $35 · Dispatcher fee: 5% (per fictional agreement for this exercise) · Factoring fee: 2% (per fictional agreement for this exercise).
 
 **Load 3**
-Revenue: $2,050 · Loaded miles: 500 · Origin deadhead: 200 · Destination deadhead: 0 · Truck MPG: 6.7 · Fuel price: $3.85/gal · Tolls: $0 · Dispatcher fee: 5% · No factoring. Rate confirmation states detention pays after 2 free hours at $45/hour, but no detention has occurred yet at time of evaluation.
+Revenue: $2,050 · Loaded miles: 500 · Origin deadhead: 200 · Destination deadhead: 0 · Truck MPG: 6.7 · **Illustrative fuel price: $3.85/gal** · Tolls: $0 · Dispatcher fee: 5% (per fictional agreement for this exercise) · No factoring. The fictional rate confirmation used for this assessment states detention pays after 2 free hours at $45/hour, but no detention has occurred yet at time of evaluation. This term is specific to the exercise and is not an industry-wide detention rule.
 
 ## What You Must Produce
 
@@ -31,10 +33,10 @@ Revenue: $2,050 · Loaded miles: 500 · Origin deadhead: 200 · Destination dead
    - Cites at least one specific number from your calculations.
    - Addresses next-load positioning for at least one load.
    - Does not label any dollar figure "profit."
-   - Does not assume the detention pay in Load 3 will be earned — treats it as a documented term only, not guaranteed revenue.
+   - Does not assume the detention pay in Load 3 will be earned — treats it as a documented exercise term only, not guaranteed revenue.
 
 ## Scoring
 
-Scored on the 0–3 rubric per dimension defined in `03-ASSESSMENTS/Practical-Assessments/Modules-01-05-Instructor-Scoring-Guide.md`, applied to the following dimensions: calculation accuracy, correct use of effective RPM (not loaded RPM alone), correct terminology (no "profit" mislabeling), inclusion of a positioning factor, and correct handling of the undocumented/not-yet-earned Load 3 detention clause.
+Scored on the 0–3 rubric per dimension defined in `03-ASSESSMENTS/Practical-Assessments/Modules-01-05-Instructor-Scoring-Guide.md`, applied to the following dimensions: calculation accuracy, correct use of effective RPM (not loaded RPM alone), correct terminology (no "profit" mislabeling), inclusion of a positioning factor, and correct handling of the not-yet-earned Load 3 detention clause.
 
-**Critical-failure note:** A memo that treats Load 3's detention pay as guaranteed, already-earned revenue is a critical failure on this practical, regardless of other scoring — this mirrors the accessorial-verification discipline taught in Section 13 and tested as a critical item in the Module 04 and Module 06 exams.
+**Critical-failure note:** A memo that treats Load 3's detention pay as guaranteed, already-earned revenue is a critical failure on this practical, regardless of other scoring — this mirrors the accessorial-verification discipline taught in Section 13. The existence of a documented detention term does not mean detention has already occurred or that the payment has already been earned.
