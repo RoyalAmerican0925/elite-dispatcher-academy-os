@@ -11,7 +11,7 @@ Dispatcher application: As a dispatcher, you sit inside this ecosystem as the co
 2. Who Moves the Freight: The Principal Parties
 A load rarely involves just two parties. Below are the roles you'll interact with constantly. Read each definition, then look at how they connect in the load lifecycle in Section 8.
 Shipper
-The shipper owns the freight and needs it moved. A shipper could be a manufacturer, a distributor, a retailer, or any business with goods to transport. The shipper is typically the origin point of the load.
+The shipper is the party that tenders or sends the freight for transportation from the origin. A shipper may be the owner of the goods, but ownership is not what defines the role. A shipper could be a manufacturer, distributor, retailer, warehouse, or another party responsible for originating the shipment.
 Receiver / Consignee
 The receiver, also called the consignee, is who the freight is being delivered to. This might be a warehouse, a store, another manufacturer, or an end customer's facility.
 Motor Carrier
