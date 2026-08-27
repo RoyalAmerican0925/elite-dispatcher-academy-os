@@ -4,8 +4,8 @@
 **Built from:** `03-ASSESSMENTS/Module-Exams/EXAM-BLUEPRINT-Modules-01-06.md` (Module 03 section)
 **Distinct from:** `03-ASSESSMENTS/Module-Quizzes/Module-03-Knowledge-Check.md` — new scenarios, not a copy of the diagnostic knowledge check
 **Answer key:** `03-ASSESSMENTS/Module-Exams/Module-03-Exam-Answer-Key.md` (instructor only)
-**Passing standard:** 85% (19 of 22 items), **and Item 20 (critical-failure) must be answered correctly regardless of overall score.**
-**Date-sensitive content:** None flagged — core federal weight/size figures (23 CFR § 658.17) were independently verified during production of the source material and are stable federal figures.
+**Passing standard:** 85% (21 of 24 items), **and Item 20 (critical-failure) must be answered correctly regardless of overall score.**
+**Current-source control:** Core federal weight/size and CDL-endorsement rules are regulatory content. State oversize/overwidth permit requirements vary by jurisdiction and route. Reverify regulated figures and applicable state-specific requirements before PUBLICATION_READY and before using the material operationally.
 
 ---
 
@@ -120,3 +120,17 @@ Classify each as GOOD FIT, BAD FIT, NEEDS MORE INFORMATION, or SPECIALIZED / ESC
 21. Explain, in your own words, why a combination can be under the 80,000 lb federal gross weight baseline and still be illegal to operate. Use the concept of axle-group limits in your answer.
 
 22. A new dispatcher says: "The trailer is rated for this weight, so the load is definitely legal." Identify what is missing from this reasoning and explain why it matters.
+
+## Part G — Endorsement & Overwidth Decision Control
+
+23. Which statement correctly distinguishes the CDL endorsements taught in this module?
+    a) H is Tank Vehicle, N is Hazardous Materials, and X is passenger/hazmat combined
+    b) H is Hazardous Materials, N is Tank Vehicle, and X combines Tank Vehicle and Hazardous Materials qualifications
+    c) H and X mean exactly the same thing
+    d) N and X are interchangeable whenever freight is placarded
+
+24. A rigid load is documented as 104 inches wide and is proposed for movement on nominal 102-inch equipment. No permit, specialized-equipment confirmation, or route/jurisdiction review has been completed. What is the best dispatcher decision?
+    a) GOOD FIT — only trailer width matters
+    b) BAD FIT forever — freight over 102 inches can never move legally
+    c) SPECIALIZED / ESCALATE — stop and verify equipment suitability, jurisdictions, route, carrier capability, and applicable permit requirements before booking
+    d) GOOD FIT — the broker's posting proves legal movement
