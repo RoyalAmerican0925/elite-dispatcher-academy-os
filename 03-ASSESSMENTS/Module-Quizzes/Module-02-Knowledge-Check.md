@@ -4,7 +4,7 @@
 **Extracted from:** `02-CURRICULUM/Module-02/Student-Manual-Part-03.md` (§23)
 **Answer key:** `03-ASSESSMENTS/Instructor-Answer-Guides/Module-02.md`
 **Extraction verified:** 2026-08-18 — all 20 questions cross-checked against the instructor answer guide; numbering, content, and section references match with no discrepancies.
-**Date-sensitive content note:** The source manual carries a "Verified through August 11, 2026" tag for regulatory figures referenced in this module (BMC-85 trustee rules, penalty amounts). Recheck before publication if this quiz is updated independently of the manual.
+**Current-source control:** Module 02 legal/regulatory claims were rechecked and repaired through August 27, 2026. See `00-PROJECT-CONTROL/MODULE-02-REGULATORY-SOURCE-REGISTER.md` and `00-PROJECT-CONTROL/MODULE-02-DATE-SENSITIVE-CLAIM-REGISTER.md`. Reverify date-sensitive regulatory material at the publication gate.
 **Note:** This is a diagnostic check, not a graded exam, per the source manual's own framing.
 
 ---
