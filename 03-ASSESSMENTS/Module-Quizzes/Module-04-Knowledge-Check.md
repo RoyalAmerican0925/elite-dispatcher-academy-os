@@ -3,7 +3,7 @@
 **Status:** DRAFT_COMPLETE — QA required before PUBLICATION_READY
 **Extracted from:** `02-CURRICULUM/Module-04/Student-Manual-Part-03.md` (§26)
 **Answer key:** `03-ASSESSMENTS/Instructor-Answer-Guides/Module-04.md`
-**Extraction verified:** 2026-08-28 — all 22 questions cross-checked against the instructor answer guide; numbering, content, and section/fact-ID references match with no discrepancies. Item 9 and Item 22 were added per Gemini G-011 QA findings to cover the paper-MEC VERIFY/CONDITIONAL PROCEED pattern (not a simple PROCEED).
+**Extraction verified:** 2026-08-28 — all 22 questions cross-checked against the instructor answer guide; numbering, content, and section/fact-ID references match with no discrepancies. Items 9 and 22 cover the paper-MEC VERIFY/CONDITIONAL PROCEED pattern rather than a simple PROCEED.
 
 **⚠️ TIME-SENSITIVE CONTENT — ACTIVE EXPIRATION WINDOW:** Questions 1, 2, 5, and 9 (and their answer key entries) depend on FMCSA systems and rules with a scheduled expiration. Specifically:
 - The nationwide paper-MEC (Medical Examiner's Certificate) exemption referenced in Questions 5 and 9 is effective **April 11 through October 11, 2026 only**. As of this update (August 28, 2026), that window is still open but closes in under two months.
