@@ -85,7 +85,7 @@ For Items 13–22 choose the best operational classification: **READY / PROCEED*
 
 18. A dispatcher is asked to keep the carrier's full DQ file, run the carrier's drug/alcohol compliance program, and make qualification determinations outside the dispatcher's approved scope.
 
-19. During the current NRII exemption period, a newly issued paper MEC is 30 days old and otherwise valid under the exemption terms; no conflicting disqualification information is known.
+19. During the current NRII exemption period, a newly issued paper MEC is 30 days old and appears facially valid under the exemption window, but the electronic medical-certification record has not yet updated. The dispatcher has not yet verified the certificate/driver match or confirmed the carrier's process.
 
 20. A carrier's COI shows appropriate insurance information, but the dispatcher has not checked the current authority/registration source at all.
 
