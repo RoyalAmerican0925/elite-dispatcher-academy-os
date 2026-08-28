@@ -13,7 +13,7 @@
 3. **a** — Legacy L&I is historical-review only; current Motus filings are not reflected there.
 4. **b** — A COI summarizes represented insurance information but does not independently prove authority/current filing status.
 5. **c — $750,000.** Current 49 CFR § 387.9 / FMCSA guidance verified before item writing.
-6. **a.** The current nationwide exemption is April 11–October 11, 2026 and permits paper-MEC reliance for up to 60 days after issuance under its terms.
+6. **a.** The current nationwide exemption is April 11–October 11, 2026 and permits covered CDL/CLP holders and motor carriers to rely on a paper MEC for up to 60 days after issuance under its terms.
 7. **b** — Name differences can be legitimate; verify the relationship instead of assuming fraud.
 8. **b** — LPOA authority is limited to its actual written scope and applicable law.
 
@@ -32,7 +32,7 @@
 16. **STOP / ESCALATE** — Conflicting payment directions from an untrusted channel require independent verification; do not redirect funds.
 17. **NEEDS MORE INFORMATION / VERIFY** — Actual availability/status and reliable contact information are operationally necessary.
 18. **STOP / ESCALATE** — The request exceeds the dispatcher's defined scope and intrudes into carrier compliance administration.
-19. **READY / PROCEED as to the supplied medical-certification issue** — During the verified exemption period, a valid paper MEC 30 days after issuance remains within the temporary up-to-60-day reliance window, absent conflicting facts.
+19. **NEEDS MORE INFORMATION / VERIFY** — A 30-day-old paper MEC falls within the current exemption's up-to-60-day window, but the dispatcher should verify the certificate/driver match and carrier process rather than independently declaring medical qualification. The exemption applies to covered CDL/CLP holders and motor carriers; it does not convert the dispatcher into the legal compliance authority.
 20. **NEEDS MORE INFORMATION / VERIFY** — COI information does not replace a current authority/registration check.
 21. **STOP / ESCALATE** — Payment redirection from an unverified channel must be callback-verified through a trusted contact before action.
 22. **c — DO NOT DISPATCH. CRITICAL.** A driver lacking the required H/X endorsement cannot be dispatched on the stated placarded hazmat load. **Any other answer fails the exam regardless of overall score.**
@@ -68,4 +68,5 @@ A student who scores 23 or more but misses Item 22 does not pass and must comple
 - Items 2–3: Motus / Legacy L&I — reverify before `PUBLICATION_READY` because FMCSA modernization remains active.
 - Item 5: $750,000 BIPD baseline — verified against current 49 CFR § 387.9 and FMCSA insurance guidance.
 - Items 6, 19, 26: NRII temporary exemption — **do not use after October 11, 2026 without reverification.**
+- Current FMCSA exemption applies April 11–October 11, 2026 to covered CDL/CLP holders and motor carriers for paper-MEC reliance up to 60 days after issuance.
 - Live-source record: `00-PROJECT-CONTROL/REGULATORY-VERIFICATION-2026-08-19-M04-M06.md`.
