@@ -27,4 +27,4 @@ This module consistently distinguishes six categories, and content is labeled ac
 
 ## Review Instructions
 
-Before PUBLICATION_READY, an instructor or subject-matter reviewer should independently confirm each citation above against its live source. Items 5 and 6 (NRII exemption, UCR) are the highest-priority reverification targets given their active, date-sensitive status — see the companion Date-Sensitive Claim Register.
+Before PUBLICATION_READY, an instructor or subject-matter reviewer should independently confirm each citation above against its live source. The highest-priority reverification targets are Motus/legacy-L&I system status and the temporary NRII exemption because both are active 2026 transition items. UCR should also be rechecked whenever state-administration details are taught — see the companion Date-Sensitive Claim Register.
