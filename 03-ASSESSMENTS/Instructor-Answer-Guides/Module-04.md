@@ -2,7 +2,7 @@
 
 **Carrier & Driver Onboarding**
 
-Updated Instructor Edition — August 28, 2026 (Gemini G-011 QA pass)
+Updated Instructor Edition — August 28, 2026
 
 ## Knowledge Check Answer Key
 
