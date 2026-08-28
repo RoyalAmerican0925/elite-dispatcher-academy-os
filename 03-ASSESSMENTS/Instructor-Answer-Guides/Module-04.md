@@ -2,7 +2,7 @@
 
 **Carrier & Driver Onboarding**
 
-Final Instructor Edition — August 11, 2026
+Updated Instructor Edition — August 28, 2026 (Gemini G-011 QA pass)
 
 ## Knowledge Check Answer Key
 
@@ -16,34 +16,37 @@ Final Instructor Edition — August 11, 2026
 6. **b** — Section 9.
 7. **b** — Section 7 (FACT-M04-004).
 8. **b** — Section 14.
+9. **b** — Scenario S-04-13. The paper MEC may be acceptable under the exemption, but the dispatcher must verify the certificate, driver match, and carrier process rather than treating the paper document alone as a final determination. The dispatcher is not the legal compliance authority for medical certification.
 
 ### Part B
 
-9. **False** — Section 6. Disregarded-LLC naming differences are normal; VERIFY/RESOLVE, not automatic fraud.
-10. **False** — Section 4. Cargo insurance is commonly required contractually, not federally required for most general-property carriers.
-11. **False** — Section 3. UCR is the carrier's own registration responsibility.
-12. **False** — Section 15. LPOA authority is limited to its written scope.
-13. **False** — Section 2. SAFER is a supplemental snapshot tool, not a complete answer source for every question.
+10. **False** — Section 6. Disregarded-LLC naming differences are normal; VERIFY/RESOLVE, not automatic fraud.
+11. **False** — Section 4. Cargo insurance is commonly required contractually, not federally required for most general-property carriers.
+12. **False** — Section 3. UCR is the carrier's own registration responsibility.
+13. **False** — Section 15. LPOA authority is limited to its written scope.
+14. **False** — Section 2. SAFER is a supplemental snapshot tool, not a complete answer source for every question.
 
 ### Part C
 
-14. **DO NOT DISPATCH until resolved** — Scenario S-04-02.
-15. **DO NOT DISPATCH** — Scenario S-04-07.
-16. **NEEDS MORE INFORMATION / PAYMENT SETUP INCOMPLETE** — Scenario S-04-05.
-17. **STOP / do not redirect / verify through trusted contact** — Scenario S-04-06.
+15. **DO NOT DISPATCH until resolved** — Scenario S-04-02.
+16. **DO NOT DISPATCH** — Scenario S-04-07.
+17. **NEEDS MORE INFORMATION / PAYMENT SETUP INCOMPLETE** — Scenario S-04-05.
+18. **STOP / do not redirect / verify through trusted contact** — Scenario S-04-06.
 
 ### Part D — Sample Reasoning
 
-18. The DQ file is the carrier's required compliance record under applicable law; the dispatch profile is the narrower operational information a dispatcher actually needs to plan and communicate. Building a DQ file would mean taking on compliance recordkeeping duties that belong to the motor carrier, not the dispatcher — see Section 7.
+19. The DQ file is the carrier's required compliance record under applicable law; the dispatch profile is the narrower operational information a dispatcher actually needs to plan and communicate. Building a DQ file would mean taking on compliance recordkeeping duties that belong to the motor carrier, not the dispatcher — see Section 7.
 
-19. The current exemption is temporary and scheduled to expire October 11, 2026. FMCSA has said it does not anticipate additional nationwide NRII waivers or exemptions after the six-month period, but that is not a guaranteed future procedure. The academy must reverify FMCSA's then-current process rather than assume a fixed post-expiration paper-certificate rule.
+20. The current exemption is temporary and scheduled to expire October 11, 2026. FMCSA has said it does not anticipate additional nationwide NRII waivers or exemptions after the six-month period, but that is not a guaranteed future procedure. The academy must reverify FMCSA's then-current process rather than assume a fixed post-expiration paper-certificate rule.
 
-20. A COI is not proof of current operating authority, doesn't guarantee coverage hasn't changed, and isn't a substitute for current verification — see Section 5 and Scenario S-04-02, where a clean-looking COI coexists with inactive operating authority.
+21. A COI is not proof of current operating authority, doesn't guarantee coverage hasn't changed, and isn't a substitute for current verification — see Section 5 and Scenario S-04-02, where a clean-looking COI coexists with inactive operating authority.
+
+22. "Dated within 60 days" only confirms the paper MEC falls within the exemption's *time* window — it does not by itself confirm the certificate belongs to the correct driver, that the carrier's process is otherwise sound, or that no other disqualifying fact exists. Treating the date alone as sufficient skips the verification step Scenario S-04-13 is built around, and puts the dispatcher in the position of making an independent regulatory determination that isn't theirs to make — see Section 8 and Scenario S-04-13.
 
 ## Instructor Safety & Publication-Control Notes
 
 - **Current FMCSA systems:** As of May 14, 2026, legacy L&I is historical-only and does not reflect current Motus filings. SAFER is supplemental; teach students to use the current FMCSA source appropriate to the fact being checked.
-- **NRII medical certification:** The nationwide paper-MEC exemption is effective April 11 through October 11, 2026 and allows reliance on paper MECs for up to 60 days after issuance. Reverify FMCSA procedure before publication after the exemption date.
+- **NRII medical certification:** The nationwide paper-MEC exemption is effective April 11 through October 11, 2026 and allows reliance on paper MECs for up to 60 days after issuance. **A paper MEC within this window is grounds for VERIFY / CONDITIONAL PROCEED, never a simple, unverified PROCEED** — see Scenario S-04-13. Reverify FMCSA procedure before publication after the exemption date.
 - **Insurance:** Keep the $750,000 federal BIPD floor limited to the described non-hazardous for-hire property-carrier category. Cargo and other coverages may be contractual, state-specific, or business choices.
 - **W-9 identity checks:** A name difference is not automatically fraud. Disregarded-entity tax structures may explain legitimate differences; verify the relationship.
 - **DQ file boundary:** Do not turn dispatcher onboarding into motor-carrier DQ/Clearinghouse/drug-alcohol compliance administration.
@@ -121,7 +124,7 @@ APPROVED DEFINITION: The FMCSA framework for secure electronic transmission of m
 CLASSIFICATION: CURRENT-DATE MATERIAL / FEDERAL SYSTEM
 FIRST-USE LOCATION: Module 04, Section 8 (FACT-M04-005)
 RELATED TERMS: Medical Examiner's Certificate
-NOTES: Subject to an active temporary exemption through October 11, 2026 — reverify before/after that date.
+NOTES: Subject to an active temporary exemption through October 11, 2026 — reverify before/after that date. A paper MEC within the exemption window supports VERIFY/CONDITIONAL PROCEED, not an automatic PROCEED — see Scenario S-04-13.
 
 ### NOA (Notice of Assignment)
 APPROVED DEFINITION: A notice commonly used to inform an account debtor that payment rights have been assigned to a factoring company.
@@ -144,4 +147,4 @@ NOTES: Scope-limited; not a blanket signing authority.
 - Module 03: equipment vocabulary and Load-to-Equipment Fit Checklist pattern, extended into the equipment profile.
 - FACT-M04-001 through FACT-M04-006.
 
-Elite Dispatcher Academy | Module 04 | Instructor Answer Guide | August 2026
+Elite Dispatcher Academy | Module 04 | Instructor Answer Guide | Updated August 28, 2026
