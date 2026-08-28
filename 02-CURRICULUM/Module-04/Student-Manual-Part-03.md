@@ -40,6 +40,16 @@ Classification: STOP / VERIFY / ESCALATE.
 
 An inconsistency is not automatic proof of fraud, but it is enough to stop the onboarding decision. Verify the document and entity information directly with authoritative or trusted sources before proceeding.
 
+S-04-13: Paper MEC Presented During the NRII Exemption Window
+
+It is July 2026. A driver's electronic CDLIS medical-certification record shows as expired or not yet updated, but the driver presents a paper Medical Examiner's Certificate dated 20 days ago.
+
+Classification: VERIFY / CONDITIONAL PROCEED — NOT a simple PROCEED, and NOT a dispatcher-level final determination.
+
+The paper MEC may be acceptable under the temporary April 11–October 11, 2026 NRII exemption, since 20 days is within the exemption's 60-day paper-reliance window (Section 8, FACT-M04-005). But the dispatcher's job here is to verify the certificate and the carrier's process — confirm the MEC's issue date, confirm it corresponds to the correct driver, and confirm the carrier's own understanding of current FMCSA procedure — not to independently declare the driver medically qualified as a final regulatory determination. The dispatcher is not the legal compliance authority for medical certification; that responsibility remains the carrier's. If anything about the certificate, the driver match, or the carrier's process is unclear, route to VERIFY / ESCALATE rather than proceeding on the paper document alone.
+
+**IMPORTANT:** Do not teach this scenario as a simple PROCEED. "The paper MEC is dated within 60 days, so proceed" skips the verification step this module is built around, and it puts the dispatcher in the position of making an independent regulatory determination — exactly what Section 8 warns against.
+
 ## 26. Module 04 Knowledge Check
 
 Diagnostic check — not a graded exam.
@@ -126,39 +136,51 @@ c) Ignore all future payment instructions from that carrier
 
 d) Forward the email to the driver for approval
 
+9. A driver presents a paper MEC dated within the current NRII exemption's 60-day window, but the electronic CDLIS record has not yet updated. The correct dispatcher response is:
+
+a) Automatically PROCEED — the paper document alone settles the question
+
+b) VERIFY the certificate, driver match, and carrier process, then proceed only if confirmed — this is not a final dispatcher determination
+
+c) Automatically DO NOT DISPATCH — any electronic/paper mismatch is disqualifying
+
+d) Ignore the electronic record entirely going forward
+
 ### Part B — True / False (explanation required)
 
-9. A W-9 name that differs from the FMCSA-registered name always indicates fraud.
+10. A W-9 name that differs from the FMCSA-registered name always indicates fraud.
 
-10. Cargo insurance is federally required for all general-property for-hire carriers.
+11. Cargo insurance is federally required for all general-property for-hire carriers.
 
-11. UCR is a filing the dispatcher is automatically responsible for on the carrier's behalf.
+12. UCR is a filing the dispatcher is automatically responsible for on the carrier's behalf.
 
-12. An LPOA automatically authorizes a dispatcher to sign any document on the carrier's behalf.
+13. An LPOA automatically authorizes a dispatcher to sign any document on the carrier's behalf.
 
-13. SAFER alone is sufficient to answer any registration, authority, or insurance question about a carrier.
+14. SAFER alone is sufficient to answer any registration, authority, or insurance question about a carrier.
 
 ### Part C — Scenario Classification
 
-14. A carrier's COI looks complete, but a current Motus lookup shows inactive operating authority.
+15. A carrier's COI looks complete, but a current Motus lookup shows inactive operating authority.
 
-15. A driver holds a Class B CDL and is proposed for a combination requiring Class A.
+16. A driver holds a Class B CDL and is proposed for a combination requiring Class A.
 
-16. A carrier's factoring relationship is stated but no NOA or remittance instructions are on file.
+17. A carrier's factoring relationship is stated but no NOA or remittance instructions are on file.
 
-17. An email requests a payment redirect that conflicts with the existing NOA on file.
+18. An email requests a payment redirect that conflicts with the existing NOA on file.
 
 ### Part D — Short Reasoning
 
-18. Explain the difference between the DQ file and the dispatch profile, and why a dispatcher shouldn't try to build the former.
+19. Explain the difference between the DQ file and the dispatch profile, and why a dispatcher shouldn't try to build the former.
 
-19. Why does this module tell students not to assume a fixed "15-day rule" will apply automatically after October 11, 2026?
+20. Why does this module tell students not to assume a fixed "15-day rule" will apply automatically after October 11, 2026?
 
-20. A new dispatcher says: "The COI looks fine, so I don't need to check anything else." What's wrong with this reasoning?
+21. A new dispatcher says: "The COI looks fine, so I don't need to check anything else." What's wrong with this reasoning?
+
+22. A new dispatcher says: "The paper MEC is dated within 60 days, so I can just proceed without checking anything else." What's wrong with this reasoning?
 
 ## 27. Module Summary
 
-You should now be able to build a carrier operational profile and a driver dispatch profile, distinguish both from the carrier's DQ file, verify carrier registration and authority using current FMCSA sources (Motus, not legacy L&I), recognize insurance documents and what a COI can't prove, recognize UCR, W-9, and factoring/NOA issues without overstepping into legal interpretation, verify CDL class and endorsement compatibility, apply the current 2026 medical-certification transition rules with appropriate caution, build equipment and communication profiles, track expirations, recognize payment-redirection and identity-mismatch risks, and apply STOP / VERIFY / ESCALATE throughout.
+You should now be able to build a carrier operational profile and a driver dispatch profile, distinguish both from the carrier's DQ file, verify carrier registration and authority using current FMCSA sources (Motus, not legacy L&I), recognize insurance documents and what a COI can't prove, recognize UCR, W-9, and factoring/NOA issues without overstepping into legal interpretation, verify CDL class and endorsement compatibility, apply the current 2026 medical-certification transition rules with appropriate caution — including verifying rather than automatically clearing a paper MEC — build equipment and communication profiles, track expirations, recognize payment-redirection and identity-mismatch risks, and apply STOP / VERIFY / ESCALATE throughout.
 
 ## 28. Transition to Module 05
 
