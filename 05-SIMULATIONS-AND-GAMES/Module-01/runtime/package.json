@@ -1,0 +1,8 @@
+{
+  "name": "elite-dispatcher-academy-sim-001",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test runtime.test.mjs"
+  }
+}
