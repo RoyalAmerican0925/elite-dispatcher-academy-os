@@ -1,0 +1,345 @@
+// SIM-001 content data module.
+// Source of truth for wording: 05-SIMULATIONS-AND-GAMES/Module-01/Module-01-Simulation-Student.md
+// and Module-01-Simulation-Instructor-Guide.md. This file intentionally contains ONLY data
+// (no rendering, no runtime state) so it can be reused by future simulations' tooling and by
+// automated tests without touching the DOM.
+
+export const STAGES = [
+  { id: "SIM01-S1", title: "New Freight File", decisionIds: ["SIM01-D01", "SIM01-D02"] },
+  { id: "SIM01-S2", title: "Who Does What?", decisionIds: ["SIM01-D03", "SIM01-D04", "SIM01-D05"] },
+  { id: "SIM01-S3", title: "Carrier Identity Check", decisionIds: ["SIM01-D06"] },
+  { id: "SIM01-S4", title: "Dispatch Desk Decisions", decisionIds: ["SIM01-D07", "SIM01-D08", "SIM01-D09", "SIM01-D10"] },
+  { id: "SIM01-S5", title: "Freight & Document Flow", decisionIds: ["SIM01-D11", "SIM01-D12"] },
+  { id: "SIM01-S6", title: "Missing Information Event", decisionIds: ["SIM01-D13"] },
+];
+
+// Artifacts are rendered as "cards" at the point in the stage where they're referenced.
+export const ARTIFACTS = {
+  freightOpportunityNotice: {
+    title: "Freight Opportunity Notice",
+    lines: [
+      "From: Prairie Freight Brokers",
+      "To: North Star Transport Dispatch",
+      "Re: Truckload — Omaha, NE to Des Moines, IA",
+      "",
+      "We have a truckload available from Blue River Foods (shelf-stable food products, Omaha, NE) to a regional grocery distribution center in Des Moines, IA. Reference #PFB-40217. Let us know if North Star can cover this.",
+    ],
+  },
+  carrierProfileCard: {
+    title: "Carrier Profile Card — North Star Transport",
+    lines: [
+      "Legal Name: North Star Transport LLC",
+      "USDOT Number: 9284471 (fictional, for training only)",
+      "MC Operating Authority: MC-558213 (fictional, for training only) — Property Carrier",
+      "Equipment on file: Dry van, 53-foot",
+    ],
+  },
+  driverDispatchMessage: {
+    title: "Driver Dispatch Message",
+    lines: [
+      "From: North Star Driver (assigned to this load)",
+      "To: Dispatch",
+      "\"Hey, what time am I picking up at Blue River tomorrow, and what's the dock number?\"",
+    ],
+  },
+  brokerContactCard: {
+    title: "Broker Contact Card",
+    lines: [
+      "Prairie Freight Brokers calls: \"Just confirming North Star is still good for load PFB-40217, pickup tomorrow morning.\"",
+    ],
+  },
+  receiverEtaRequest: {
+    title: "Receiver Call",
+    lines: ["The Des Moines distribution center calls asking when the truck will arrive."],
+  },
+  traineeQuestion: {
+    title: "Trainee Question",
+    lines: [
+      "A brand-new trainee dispatcher asks you: \"Wait, so who actually drives the truck — is that you, or the broker, or who?\"",
+    ],
+  },
+  freightRecordUpdate: {
+    title: "Freight Record Update — PFB-40217",
+    lines: [
+      "Pickup location: Blue River Foods, Omaha, NE",
+      "Delivery location: Regional grocery distribution center — Des Moines, IA",
+      "Receiver contact name: [not provided]",
+      "Dock/appointment instructions: [not provided]",
+    ],
+  },
+};
+
+// competency codes: A Freight-party identification, B Role/responsibility understanding,
+// C Arranging vs physically transporting, D Dispatcher-role understanding,
+// E USDOT vs operating-authority, F Freight-flow understanding,
+// G Document/payment-flow understanding, H Verification judgment
+export const COMPETENCY_LABELS = {
+  A: "Identifying the parties",
+  B: "Understanding who does what",
+  C: "Arranging vs. physically transporting freight",
+  D: "The dispatcher's role",
+  E: "USDOT number vs. operating authority",
+  F: "Sequencing freight flow",
+  G: "Classifying document/payment flow",
+  H: "Verifying rather than assuming",
+};
+
+export const DECISIONS = {
+  "SIM01-D01": {
+    id: "SIM01-D01",
+    stageId: "SIM01-S1",
+    type: "matching",
+    competency: "A",
+    artifact: "freightOpportunityNotice",
+    prompt: "Based on the notice above, match each party to its role.",
+    items: ["Blue River Foods", "Prairie Freight Brokers", "North Star Transport", "The grocery distribution center in Des Moines"],
+    options: ["Shipper", "Broker", "Motor Carrier", "Consignee/Receiver"],
+    correctMap: {
+      "Blue River Foods": "Shipper",
+      "Prairie Freight Brokers": "Broker",
+      "North Star Transport": "Motor Carrier",
+      "The grocery distribution center in Des Moines": "Consignee/Receiver",
+    },
+    correctFeedback:
+      "Blue River Foods = Shipper (it manufactures the goods and needs them moved). Prairie Freight Brokers = Broker (it arranged the transportation; it does not own the freight or the truck). North Star Transport = Motor Carrier (the company being asked to physically move the freight). The Des Moines distribution center = Consignee/Receiver (the party the freight is being delivered to).",
+    remediation:
+      "This is a common beginner mix-up. The shipper has the freight, the broker arranges the move without touching the freight, the carrier is asked to move the freight, and the receiver is who gets it.",
+  },
+  "SIM01-D02": {
+    id: "SIM01-D02",
+    stageId: "SIM01-S1",
+    type: "choice",
+    competency: "B",
+    prompt:
+      "The notice doesn't mention two more roles you'll need for this load: the dispatcher and the driver. Who fills each role, based on what you know about North Star Transport's structure?",
+    choices: [
+      { key: "A", text: "The dispatcher and driver are both employees of Prairie Freight Brokers" },
+      { key: "B", text: "The dispatcher coordinates the load for North Star; a North Star driver physically drives the truck" },
+      { key: "C", text: "The dispatcher is you, and the driver is also you" },
+      { key: "D", text: "Blue River Foods assigns both roles" },
+    ],
+    correctKey: "B",
+    correctFeedback:
+      "You (the dispatcher) coordinate this load on behalf of North Star Transport — the motor carrier you work for. A separate person, North Star's driver, physically operates the truck.",
+    remediation:
+      "The dispatcher and driver both work in service of the motor carrier (North Star) in this scenario, not the broker — and they are two distinct roles, not the same person or role as each other.",
+  },
+  "SIM01-D03": {
+    id: "SIM01-D03",
+    stageId: "SIM01-S2",
+    type: "matching",
+    competency: "A",
+    prompt: "Match each action to the role that actually performs it.",
+    items: [
+      "Manufactures the food products",
+      "Arranges transportation between Blue River and a carrier",
+      "Agrees to transport the freight as the motor carrier",
+      "Coordinates the load on the carrier's behalf",
+      "Physically drives the truck",
+      "Receives the shipment at the destination",
+      "Provides accelerated payment after invoicing",
+    ],
+    options: ["Shipper", "Broker", "Motor Carrier", "Dispatcher", "Driver", "Receiver", "Factoring Company"],
+    correctMap: {
+      "Manufactures the food products": "Shipper",
+      "Arranges transportation between Blue River and a carrier": "Broker",
+      "Agrees to transport the freight as the motor carrier": "Motor Carrier",
+      "Coordinates the load on the carrier's behalf": "Dispatcher",
+      "Physically drives the truck": "Driver",
+      "Receives the shipment at the destination": "Receiver",
+      "Provides accelerated payment after invoicing": "Factoring Company",
+    },
+    correctFeedback: "Each action maps to exactly one role, matching the role definitions from Module 01.",
+    remediation: "Review the role definitions before retrying — several actions here are commonly swapped, especially dispatcher vs. driver.",
+  },
+  "SIM01-D04": {
+    id: "SIM01-D04",
+    stageId: "SIM01-S2",
+    type: "choice",
+    competency: "C",
+    prompt: "Which statement correctly describes the difference between Prairie Freight Brokers and North Star Transport?",
+    choices: [
+      { key: "A", text: "They do the same job, just with different names" },
+      { key: "B", text: "Prairie Freight Brokers arranges transportation without transporting the freight itself; North Star Transport actually transports it" },
+      { key: "C", text: "Prairie Freight Brokers owns the truck; North Star Transport just handles paperwork" },
+      { key: "D", text: "There is no meaningful difference — both are \"the trucking company\"" },
+    ],
+    correctKey: "B",
+    correctFeedback:
+      "This is the single most important distinction in Module 01: arranging transportation is not the same as physically transporting it.",
+    remediation: "This mixes up the two roles. A broker arranges; a carrier transports. Neither owns what the other does.",
+  },
+  "SIM01-D05": {
+    id: "SIM01-D05",
+    stageId: "SIM01-S2",
+    type: "choice",
+    competency: "D",
+    prompt: "Which statement correctly describes your role as North Star's dispatcher in this specific load?",
+    choices: [
+      { key: "A", text: "You are effectively acting as a second broker for this load" },
+      { key: "B", text: "In this scenario, you are coordinating this load on behalf of North Star Transport, the motor carrier" },
+      { key: "C", text: "You are legally the same as the driver" },
+      { key: "D", text: "Your role only exists after delivery, for invoicing purposes" },
+    ],
+    correctKey: "B",
+    correctFeedback:
+      "In this scenario, you are coordinating this load specifically on behalf of North Star Transport. A later module covers the deeper legal-boundary analysis between dispatching and brokering in full.",
+    remediation: "Your role in this scenario is coordination on behalf of the motor carrier, not equivalent to the broker or the driver.",
+  },
+  "SIM01-D06": {
+    id: "SIM01-D06",
+    stageId: "SIM01-S3",
+    type: "choice",
+    competency: "E",
+    artifact: "carrierProfileCard",
+    prompt: "Which statement correctly distinguishes the USDOT number from the MC operating authority shown above?",
+    choices: [
+      { key: "A", text: "They're two numbers for the exact same thing — either one proves the same fact" },
+      {
+        key: "B",
+        text:
+          "A USDOT number and operating authority are distinct regulatory concepts — the USDOT number is used by FMCSA in identifying and tracking a regulated entity, while certain for-hire interstate operations require separate operating authority; the presence of one does not automatically prove the other",
+      },
+      { key: "C", text: "The USDOT number is only used for drivers, not companies" },
+      { key: "D", text: "Having a USDOT number automatically means North Star can haul any type of for-hire interstate freight" },
+    ],
+    correctKey: "B",
+    correctFeedback:
+      "A USDOT number and operating authority are related but distinct — a company can have a USDOT number without that number, by itself, proving it holds the specific operating authority a given operation requires.",
+    remediation:
+      "These each treat the two concepts as interchangeable or treat one as automatic proof of the other, which isn't accurate.",
+  },
+  "SIM01-D07": {
+    id: "SIM01-D07",
+    stageId: "SIM01-S4",
+    type: "choice",
+    competency: "D",
+    artifact: "driverDispatchMessage",
+    prompt: "What should you do?",
+    choices: [
+      { key: "A", text: "Tell the driver you don't have that information and to figure it out himself" },
+      { key: "B", text: "Provide the driver the pickup details you have on file for this load, since coordinating this information for the driver is part of your role" },
+      { key: "C", text: "Tell the driver to call Prairie Freight Brokers directly and handle it himself" },
+      { key: "D", text: "Ignore the message — that's not your job" },
+    ],
+    correctKey: "B",
+    correctFeedback: "Coordinating operational information between the carrier's driver and the rest of the load is core dispatcher work.",
+    remediation: "Leaving the driver to sort out pickup details alone, or ignoring the request, isn't consistent with the coordinating role.",
+  },
+  "SIM01-D08": {
+    id: "SIM01-D08",
+    stageId: "SIM01-S4",
+    type: "choice",
+    competency: "D",
+    artifact: "brokerContactCard",
+    prompt: "What should you do?",
+    choices: [
+      { key: "A", text: "Confirm the load is still on, since you're the dispatcher coordinating it for North Star" },
+      { key: "B", text: "Tell them you're not authorized to speak to brokers at all" },
+      { key: "C", text: "Refuse to answer because talking to a broker makes you the broker" },
+      { key: "D", text: "Transfer the call to the driver" },
+    ],
+    correctKey: "A",
+    correctFeedback:
+      "Communicating with a broker about a load your carrier is handling is a normal, expected part of the dispatcher's coordinating role in this scenario — it does not, by itself, make you a broker. Actual brokerage analysis depends on the full relationship and conduct involved, which a later module covers in depth.",
+    remediation: "This overcorrects. Communicating with the broker about your own carrier's load is exactly the kind of coordination a dispatcher does.",
+  },
+  "SIM01-D09": {
+    id: "SIM01-D09",
+    stageId: "SIM01-S4",
+    type: "choice",
+    competency: "D",
+    artifact: "receiverEtaRequest",
+    prompt: "What should you do?",
+    choices: [
+      { key: "A", text: "Refuse to give any information since they're not \"your\" customer" },
+      { key: "B", text: "Provide the best verified/current ETA available from the carrier's operational information, or verify before communicating if the information is uncertain" },
+      { key: "C", text: "Tell them to call Blue River Foods instead" },
+      { key: "D", text: "Make up a time so they stop calling" },
+    ],
+    correctKey: "B",
+    correctFeedback: "Coordinating with the receiver on delivery timing is normal, expected dispatcher work — using accurate, verified information, not a guess.",
+    remediation: "Refusing to engage, redirecting unnecessarily, or inventing a time are all worse choices than providing accurate information or verifying first.",
+  },
+  "SIM01-D10": {
+    id: "SIM01-D10",
+    stageId: "SIM01-S4",
+    type: "choice",
+    competency: "C",
+    artifact: "traineeQuestion",
+    prompt: "How do you answer?",
+    choices: [
+      { key: "A", text: "\"I do, technically — dispatchers drive too.\"" },
+      { key: "B", text: "\"The driver does. I coordinate the load; the driver operates the truck.\"" },
+      { key: "C", text: "\"The broker's driver does.\"" },
+      { key: "D", text: "\"Nobody drives it, it's all electronic now.\"" },
+    ],
+    correctKey: "B",
+    correctFeedback: "A good check that you've internalized the core Module 01 distinction.",
+    remediation: "These all confuse roles that Module 01 keeps separate.",
+  },
+  "SIM01-D11": {
+    id: "SIM01-D11",
+    stageId: "SIM01-S5",
+    type: "sequencing",
+    competency: "F",
+    prompt: "Put these events in the correct order.",
+    items: [
+      { key: "driver-transports", text: "North Star's driver picks up and transports the freight" },
+      { key: "freight-ready", text: "Blue River Foods has freight ready to move" },
+      { key: "receiver-pod", text: "Receiver receives shipment; delivery documentation (POD) is created" },
+      { key: "broker-arranges", text: "Prairie Freight Brokers arranges transportation with North Star" },
+      { key: "invoice-submitted", text: "North Star submits its invoice and POD to its factoring company" },
+      { key: "dispatcher-coordinates", text: "North Star's dispatcher coordinates the carrier-side activity" },
+    ],
+    correctOrder: ["freight-ready", "broker-arranges", "dispatcher-coordinates", "driver-transports", "receiver-pod", "invoice-submitted"],
+    correctFeedback:
+      "Blue River has freight ready → Prairie Freight Brokers arranges the move with North Star → the dispatcher coordinates North Star's side → the driver physically transports it → the receiver gets it and POD is generated → North Star submits its invoice and POD to the factoring company.",
+    remediation: "A common error is placing the dispatcher's coordination after the driver's physical transport — coordination happens before the truck moves.",
+  },
+  "SIM01-D12": {
+    id: "SIM01-D12",
+    stageId: "SIM01-S5",
+    type: "matching",
+    competency: "G",
+    prompt: "Match each event to its flow type.",
+    items: [
+      "The driver physically transporting the freight",
+      "Prairie Freight Brokers arranging the load with North Star",
+      "The POD being created at delivery",
+      "North Star submitting its invoice to the factoring company",
+    ],
+    options: ["Physical Freight Flow", "Communication/Arrangement Flow", "Document Flow", "Payment/Factoring Flow"],
+    correctMap: {
+      "The driver physically transporting the freight": "Physical Freight Flow",
+      "Prairie Freight Brokers arranging the load with North Star": "Communication/Arrangement Flow",
+      "The POD being created at delivery": "Document Flow",
+      "North Star submitting its invoice to the factoring company": "Payment/Factoring Flow",
+    },
+    correctFeedback:
+      "Some events reasonably touch more than one flow type — the invoice submission is both a document action and a payment action. Factoring is part of this fictional scenario because North Star happens to use a factoring company; not every real trucking transaction involves factoring.",
+    remediation: "Review the four flow types and where each event fits before retrying.",
+  },
+  "SIM01-D13": {
+    id: "SIM01-D13",
+    stageId: "SIM01-S6",
+    type: "choice",
+    competency: "H",
+    artifact: "freightRecordUpdate",
+    prompt: "You need to give the driver final delivery instructions before he leaves tonight. What do you do?",
+    choices: [
+      { key: "A", text: "Make a reasonable guess at the dock/appointment details so the driver isn't held up" },
+      { key: "B", text: "Tell the driver to just show up and figure it out on arrival" },
+      { key: "C", text: "Recognize that this is missing information you don't have enough to safely rely on, and verify it with Prairie Freight Brokers or the receiver before finalizing instructions" },
+      { key: "D", text: "Use the details from a different load you handled last week, since deliveries are usually similar" },
+    ],
+    correctKey: "C",
+    correctFeedback:
+      "This is the most important lesson in this simulation. When required operational information is missing or uncertain, do not invent it — verify the information through an appropriate source before relying on it.",
+    remediation:
+      "Each of the other options fills a real gap with something other than verified fact — a guess, an assumption, or borrowed information from an unrelated load. STOP → VERIFY → DO NOT ASSUME.",
+    escalateAfterAttempts: 2,
+  },
+};
+
+export const DECISION_ORDER = STAGES.flatMap((s) => s.decisionIds);
