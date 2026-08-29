@@ -6,6 +6,7 @@ import { DECISIONS, STAGES, ARTIFACTS, COMPETENCY_LABELS } from "./content.js";
 import {
   createInitialState,
   normalizePersistedState,
+  getResponseValidationError,
   submitAttempt,
   shouldAdvance,
   getNextDecisionId,
@@ -42,6 +43,7 @@ function saveState(state) {
 let state = loadState() || createInitialState();
 let pendingResponse = null;
 let feedbackVisible = false;
+let validationMessage = null;
 
 const root = document.getElementById("app");
 
@@ -159,16 +161,6 @@ function renderResponseControl(decision) {
   return null;
 }
 
-function isResponseComplete(decision) {
-  if (decision.type === "choice") return typeof pendingResponse === "string";
-  if (decision.type === "matching") {
-    if (!pendingResponse || typeof pendingResponse !== "object") return false;
-    return decision.items.every((item) => !!pendingResponse[item]);
-  }
-  if (decision.type === "sequencing") return Array.isArray(pendingResponse);
-  return false;
-}
-
 function renderProgress(decisionId) {
   const { current, total } = getProgress(decisionId);
   const stage = getStageForDecision(decisionId);
@@ -198,12 +190,14 @@ function renderFeedback(decisionId, correct) {
         const next = getNextDecisionId(decisionId);
         pendingResponse = null;
         feedbackVisible = false;
+        validationMessage = null;
         if (next) state = { ...state, currentDecisionId: next };
         else state = { ...state, status: computeSimulationStatus(state), completedAt: Date.now() };
         saveState(state);
         renderCurrent();
       } else {
         feedbackVisible = false;
+        validationMessage = null;
         renderCurrent();
       }
     },
@@ -223,10 +217,19 @@ function renderDecisionScreen(decisionId) {
 
   if (!feedbackVisible) {
     container.appendChild(renderResponseControl(decision));
+    if (validationMessage) {
+      container.appendChild(el("p", { class: "validation-message", role: "alert", "aria-live": "assertive" }, validationMessage));
+    }
     container.appendChild(el("button", {
       type: "button", class: "btn btn-primary",
       onclick: () => {
-        if (!isResponseComplete(decision)) return;
+        const validationError = getResponseValidationError(decision, pendingResponse);
+        if (validationError) {
+          validationMessage = validationError;
+          renderCurrent();
+          return;
+        }
+        validationMessage = null;
         state = submitAttempt(state, decisionId, pendingResponse, Date.now());
         saveState(state);
         feedbackVisible = true;
@@ -297,6 +300,7 @@ function renderResetControl() {
       state = createInitialState();
       pendingResponse = null;
       feedbackVisible = false;
+      validationMessage = null;
       saveState(state);
       renderCurrent();
     },
