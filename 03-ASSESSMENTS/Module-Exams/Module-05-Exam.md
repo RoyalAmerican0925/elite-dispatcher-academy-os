@@ -4,8 +4,9 @@
 **Built from:** `03-ASSESSMENTS/Module-Exams/EXAM-BLUEPRINT-Modules-01-06.md` (Module 05)  
 **Distinct from:** `03-ASSESSMENTS/Module-Quizzes/Module-05-Knowledge-Check.md` — all items below are new.  
 **Answer key:** `03-ASSESSMENTS/Module-Exams/Module-05-Exam-Answer-Key.md`  
-**Passing standard:** 80% (21 of 26) **and Critical Item 24 must be correct.**  
+**Passing standard:** 80% (24 of 30) **and Critical Item 24 must be correct.**  
 **Platform-control note:** This exam tests sourcing concepts rather than current subscription-tier/platform feature claims.
+**C-013-FINAL update:** Items 27–30 (Part F) added to test Part 07 application-level judgment (rate confirmation review, entity/contact verification, credit/factoring, HOS-timing feasibility) that was previously untested on the graded exam. Question count changed from 26 to 30; passing threshold recalculated accordingly (80% held constant).
 
 ---
 
@@ -108,3 +109,29 @@ For Items 13–23 classify the opportunity as **GOOD CANDIDATE**, **BAD FIT / RE
 25. Explain why FOUND and VERIFIED AVAILABLE must remain separate statuses in a professional sourcing workflow.
 
 26. A dispatcher says, "This posting fits the lane and equipment, so I'm ready to book it." Identify at least three other sourcing-stage facts that should be confirmed before the opportunity is routed forward.
+
+## Part F — Rate Confirmation, Verification, Credit & Timing Judgment
+
+27. A rate confirmation arrives showing a different pickup appointment window than what was verbally negotiated with the broker. Every other field matches. What is the correct action?
+   a) Sign it — minor scheduling differences don't matter once the document arrives
+   b) STOP, do not sign, and verify the discrepancy with the broker before proceeding
+   c) Assume the rate confirmation is correct and the verbal conversation was wrong, without contacting the broker
+   d) Ignore the rate confirmation and proceed on the verbal terms only
+
+28. A broker's MC number checks out as active. An email arrives from an address the dispatcher hasn't corresponded with before, requesting a change to remittance instructions. What is the correct next step?
+   a) Proceed — an active MC number is sufficient to trust the email
+   b) Verify the request through a previously trusted, established contact channel before acting on it
+   c) Reply directly to the new email address to confirm
+   d) Ignore the request permanently without any verification
+
+29. A carrier's factor declines to purchase an invoice from a particular broker. What does this most directly indicate?
+   a) The broker has been proven to have committed fraud
+   b) A private financial-risk decision by the factor — not a legal or safety determination about the broker
+   c) The broker has lost its FMCSA operating authority
+   d) The carrier is now barred from working with that broker under federal law
+
+30. A posting requires delivery 700 miles from the current driver location within a tight window. What is the correct sourcing-stage response to the timing?
+   a) Calculate whether 700 miles is achievable using only distance and elapsed time, and reject automatically if it exceeds 11 hours of driving
+   b) Verify the driver's actual current hours, duty status, and route/appointment feasibility before committing to the schedule
+   c) Ignore timing feasibility — it is not a sourcing-stage concern
+   d) Assume feasibility since the broker posted the load with that window
