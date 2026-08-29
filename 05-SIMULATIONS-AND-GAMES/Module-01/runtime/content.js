@@ -13,7 +13,6 @@ export const STAGES = [
   { id: "SIM01-S6", title: "Missing Information Event", decisionIds: ["SIM01-D13"] },
 ];
 
-// Artifacts are rendered as "cards" at the point in the stage where they're referenced.
 export const ARTIFACTS = {
   freightOpportunityNotice: {
     title: "Freight Opportunity Notice",
@@ -44,9 +43,7 @@ export const ARTIFACTS = {
   },
   brokerContactCard: {
     title: "Broker Contact Card",
-    lines: [
-      "Prairie Freight Brokers calls: \"Just confirming North Star is still good for load PFB-40217, pickup tomorrow morning.\"",
-    ],
+    lines: ["Prairie Freight Brokers calls: \"Just confirming North Star is still good for load PFB-40217, pickup tomorrow morning.\""],
   },
   receiverEtaRequest: {
     title: "Receiver Call",
@@ -54,9 +51,7 @@ export const ARTIFACTS = {
   },
   traineeQuestion: {
     title: "Trainee Question",
-    lines: [
-      "A brand-new trainee dispatcher asks you: \"Wait, so who actually drives the truck — is that you, or the broker, or who?\"",
-    ],
+    lines: ["A brand-new trainee dispatcher asks you: \"Wait, so who actually drives the truck — is that you, or the broker, or who?\""],
   },
   freightRecordUpdate: {
     title: "Freight Record Update — PFB-40217",
@@ -69,10 +64,6 @@ export const ARTIFACTS = {
   },
 };
 
-// competency codes: A Freight-party identification, B Role/responsibility understanding,
-// C Arranging vs physically transporting, D Dispatcher-role understanding,
-// E USDOT vs operating-authority, F Freight-flow understanding,
-// G Document/payment-flow understanding, H Verification judgment
 export const COMPETENCY_LABELS = {
   A: "Identifying the parties",
   B: "Understanding who does what",
@@ -100,18 +91,15 @@ export const DECISIONS = {
       "North Star Transport": "Motor Carrier",
       "The grocery distribution center in Des Moines": "Consignee/Receiver",
     },
-    correctFeedback:
-      "Blue River Foods = Shipper (it manufactures the goods and needs them moved). Prairie Freight Brokers = Broker (it arranged the transportation; it does not own the freight or the truck). North Star Transport = Motor Carrier (the company being asked to physically move the freight). The Des Moines distribution center = Consignee/Receiver (the party the freight is being delivered to).",
-    remediation:
-      "This is a common beginner mix-up. The shipper has the freight, the broker arranges the move without touching the freight, the carrier is asked to move the freight, and the receiver is who gets it.",
+    correctFeedback: "Blue River Foods = Shipper (it manufactures the goods and needs them moved). Prairie Freight Brokers = Broker (it arranged the transportation; it does not own the freight or the truck). North Star Transport = Motor Carrier (the company being asked to physically move the freight). The Des Moines distribution center = Consignee/Receiver (the party the freight is being delivered to).",
+    remediation: "This is a common beginner mix-up. The shipper has the freight, the broker arranges the move without touching the freight, the carrier is asked to move the freight, and the receiver is who gets it.",
   },
   "SIM01-D02": {
     id: "SIM01-D02",
     stageId: "SIM01-S1",
     type: "choice",
     competency: "B",
-    prompt:
-      "The notice doesn't mention two more roles you'll need for this load: the dispatcher and the driver. Who fills each role, based on what you know about North Star Transport's structure?",
+    prompt: "The notice doesn't mention two more roles you'll need for this load: the dispatcher and the driver. Who fills each role, based on what you know about North Star Transport's structure?",
     choices: [
       { key: "A", text: "The dispatcher and driver are both employees of Prairie Freight Brokers" },
       { key: "B", text: "The dispatcher coordinates the load for North Star; a North Star driver physically drives the truck" },
@@ -119,16 +107,15 @@ export const DECISIONS = {
       { key: "D", text: "Blue River Foods assigns both roles" },
     ],
     correctKey: "B",
-    correctFeedback:
-      "You (the dispatcher) coordinate this load on behalf of North Star Transport — the motor carrier you work for. A separate person, North Star's driver, physically operates the truck.",
-    remediation:
-      "The dispatcher and driver both work in service of the motor carrier (North Star) in this scenario, not the broker — and they are two distinct roles, not the same person or role as each other.",
+    correctFeedback: "You (the dispatcher) coordinate this load on behalf of North Star Transport — the motor carrier you work for. A separate person, North Star's driver, physically operates the truck.",
+    remediation: "The dispatcher and driver both work in service of the motor carrier (North Star) in this scenario, not the broker — and they are two distinct roles, not the same person or role as each other.",
   },
   "SIM01-D03": {
     id: "SIM01-D03",
     stageId: "SIM01-S2",
     type: "matching",
     competency: "A",
+    competencies: ["A", "B"],
     prompt: "Match each action to the role that actually performs it.",
     items: [
       "Manufactures the food products",
@@ -165,8 +152,7 @@ export const DECISIONS = {
       { key: "D", text: "There is no meaningful difference — both are \"the trucking company\"" },
     ],
     correctKey: "B",
-    correctFeedback:
-      "This is the single most important distinction in Module 01: arranging transportation is not the same as physically transporting it.",
+    correctFeedback: "This is the single most important distinction in Module 01: arranging transportation is not the same as physically transporting it.",
     remediation: "This mixes up the two roles. A broker arranges; a carrier transports. Neither owns what the other does.",
   },
   "SIM01-D05": {
@@ -182,8 +168,7 @@ export const DECISIONS = {
       { key: "D", text: "Your role only exists after delivery, for invoicing purposes" },
     ],
     correctKey: "B",
-    correctFeedback:
-      "In this scenario, you are coordinating this load specifically on behalf of North Star Transport. A later module covers the deeper legal-boundary analysis between dispatching and brokering in full.",
+    correctFeedback: "In this scenario, you are coordinating this load specifically on behalf of North Star Transport. A later module covers the deeper legal-boundary analysis between dispatching and brokering in full.",
     remediation: "Your role in this scenario is coordination on behalf of the motor carrier, not equivalent to the broker or the driver.",
   },
   "SIM01-D06": {
@@ -195,19 +180,13 @@ export const DECISIONS = {
     prompt: "Which statement correctly distinguishes the USDOT number from the MC operating authority shown above?",
     choices: [
       { key: "A", text: "They're two numbers for the exact same thing — either one proves the same fact" },
-      {
-        key: "B",
-        text:
-          "A USDOT number and operating authority are distinct regulatory concepts — the USDOT number is used by FMCSA in identifying and tracking a regulated entity, while certain for-hire interstate operations require separate operating authority; the presence of one does not automatically prove the other",
-      },
+      { key: "B", text: "A USDOT number and operating authority are distinct regulatory concepts — the USDOT number is used by FMCSA in identifying and tracking a regulated entity, while certain for-hire interstate operations require separate operating authority; the presence of one does not automatically prove the other" },
       { key: "C", text: "The USDOT number is only used for drivers, not companies" },
       { key: "D", text: "Having a USDOT number automatically means North Star can haul any type of for-hire interstate freight" },
     ],
     correctKey: "B",
-    correctFeedback:
-      "A USDOT number and operating authority are related but distinct — a company can have a USDOT number without that number, by itself, proving it holds the specific operating authority a given operation requires.",
-    remediation:
-      "These each treat the two concepts as interchangeable or treat one as automatic proof of the other, which isn't accurate.",
+    correctFeedback: "A USDOT number and operating authority are related but distinct — a company can have a USDOT number without that number, by itself, proving it holds the specific operating authority a given operation requires.",
+    remediation: "These each treat the two concepts as interchangeable or treat one as automatic proof of the other, which isn't accurate.",
   },
   "SIM01-D07": {
     id: "SIM01-D07",
@@ -240,8 +219,7 @@ export const DECISIONS = {
       { key: "D", text: "Transfer the call to the driver" },
     ],
     correctKey: "A",
-    correctFeedback:
-      "Communicating with a broker about a load your carrier is handling is a normal, expected part of the dispatcher's coordinating role in this scenario — it does not, by itself, make you a broker. Actual brokerage analysis depends on the full relationship and conduct involved, which a later module covers in depth.",
+    correctFeedback: "Communicating with a broker about a load your carrier is handling is a normal, expected part of the dispatcher's coordinating role in this scenario — it does not, by itself, make you a broker. Actual brokerage analysis depends on the full relationship and conduct involved, which a later module covers in depth.",
     remediation: "This overcorrects. Communicating with the broker about your own carrier's load is exactly the kind of coordination a dispatcher does.",
   },
   "SIM01-D09": {
@@ -293,8 +271,7 @@ export const DECISIONS = {
       { key: "dispatcher-coordinates", text: "North Star's dispatcher coordinates the carrier-side activity" },
     ],
     correctOrder: ["freight-ready", "broker-arranges", "dispatcher-coordinates", "driver-transports", "receiver-pod", "invoice-submitted"],
-    correctFeedback:
-      "Blue River has freight ready → Prairie Freight Brokers arranges the move with North Star → the dispatcher coordinates North Star's side → the driver physically transports it → the receiver gets it and POD is generated → North Star submits its invoice and POD to the factoring company.",
+    correctFeedback: "Blue River has freight ready → Prairie Freight Brokers arranges the move with North Star → the dispatcher coordinates North Star's side → the driver physically transports it → the receiver gets it and POD is generated → North Star submits its invoice and POD to the factoring company.",
     remediation: "A common error is placing the dispatcher's coordination after the driver's physical transport — coordination happens before the truck moves.",
   },
   "SIM01-D12": {
@@ -316,8 +293,10 @@ export const DECISIONS = {
       "The POD being created at delivery": "Document Flow",
       "North Star submitting its invoice to the factoring company": "Payment/Factoring Flow",
     },
-    correctFeedback:
-      "Some events reasonably touch more than one flow type — the invoice submission is both a document action and a payment action. Factoring is part of this fictional scenario because North Star happens to use a factoring company; not every real trucking transaction involves factoring.",
+    acceptedMapValues: {
+      "North Star submitting its invoice to the factoring company": ["Payment/Factoring Flow", "Document Flow"],
+    },
+    correctFeedback: "Some events reasonably touch more than one flow type — the invoice submission is both a document action and a payment action. Factoring is part of this fictional scenario because North Star happens to use a factoring company; not every real trucking transaction involves factoring.",
     remediation: "Review the four flow types and where each event fits before retrying.",
   },
   "SIM01-D13": {
@@ -334,10 +313,8 @@ export const DECISIONS = {
       { key: "D", text: "Use the details from a different load you handled last week, since deliveries are usually similar" },
     ],
     correctKey: "C",
-    correctFeedback:
-      "This is the most important lesson in this simulation. When required operational information is missing or uncertain, do not invent it — verify the information through an appropriate source before relying on it.",
-    remediation:
-      "Each of the other options fills a real gap with something other than verified fact — a guess, an assumption, or borrowed information from an unrelated load. STOP → VERIFY → DO NOT ASSUME.",
+    correctFeedback: "This is the most important lesson in this simulation. When required operational information is missing or uncertain, do not invent it — verify the information through an appropriate source before relying on it.",
+    remediation: "Each of the other options fills a real gap with something other than verified fact — a guess, an assumption, or borrowed information from an unrelated load. STOP → VERIFY → DO NOT ASSUME.",
     escalateAfterAttempts: 2,
   },
 };
