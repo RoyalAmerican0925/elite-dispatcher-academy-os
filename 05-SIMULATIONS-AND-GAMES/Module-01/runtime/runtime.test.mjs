@@ -15,6 +15,7 @@ import {
   computeFinalMasteryScore,
   computeRemediationCount,
   computeCompetencyStatus,
+  normalizePersistedState,
 } from './logic.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -123,4 +124,36 @@ test('remediated correct response reports Mastered After Remediation', () => {
   state = submitAttempt(state, id, correctResponse(decision));
   assert.equal(computeCompetencyStatus(state).E, 'Mastered After Remediation');
   assert.equal(computeRemediationCount(state), 1);
+});
+
+test('corrupt persisted state is rejected instead of crashing the runtime', () => {
+  assert.equal(normalizePersistedState(null), null);
+  assert.equal(normalizePersistedState({}), null);
+  assert.equal(normalizePersistedState({ simulationId: 'SIM-999', decisions: {} }), null);
+  assert.equal(normalizePersistedState({ simulationId: 'SIM-001', currentDecisionId: 'BAD', decisions: {} }), null);
+});
+
+test('legacy or partial persisted state is normalized to the current schema', () => {
+  const legacy = createInitialState();
+  legacy.startedAt = 1000;
+  legacy.currentDecisionId = 'SIM01-D06';
+  legacy.decisions['SIM01-D02'] = {
+    firstAttemptResponse: 'A',
+    firstAttemptCorrect: false,
+    attemptCount: 1,
+    finalResponse: 'A',
+    finalCorrect: false,
+  };
+  delete legacy.decisions['SIM01-D13'];
+  legacy.status = 'COMPLETE';
+
+  const normalized = normalizePersistedState(legacy);
+  assert.ok(normalized);
+  assert.equal(normalized.currentDecisionId, 'SIM01-D06');
+  assert.equal(normalized.startedAt, 1000);
+  assert.equal(normalized.status, 'IN_PROGRESS');
+  assert.equal(normalized.decisions['SIM01-D02'].firstAttemptResponse, 'A');
+  assert.equal(normalized.decisions['SIM01-D02'].attemptCount, 1);
+  assert.ok(normalized.decisions['SIM01-D13']);
+  assert.equal(normalized.decisions['SIM01-D13'].attemptCount, 0);
 });
