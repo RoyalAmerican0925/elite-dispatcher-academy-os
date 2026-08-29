@@ -3,6 +3,7 @@
 **Instructor use only.** Keep separate from the student edition.  
 **Corresponds to:** `03-ASSESSMENTS/Module-Exams/Module-05-Exam.md`  
 **Status:** DRAFT_COMPLETE — QA and instructor review required before PUBLICATION_READY
+**Updated:** August 29, 2026 (C-013-FINAL) — synced to 30-item exam (was 26); passing threshold recalculated.
 
 ## Answer Key
 
@@ -48,11 +49,21 @@
 
 26. **Expected:** Any three or more relevant facts such as exact origin/destination, pickup and delivery dates/times/windows, commodity, weight, equipment details, availability confirmation, special instructions, appointment method, carrier lane/home-time restrictions, broker/contact identity, or other material operating conditions. The answer should show the learner does not jump from lane/equipment fit directly to booking.
 
+### Part F — Rate Confirmation, Verification, Credit & Timing Judgment
+
+27. **b** — A material discrepancy (a different pickup appointment window than negotiated) requires STOP, do not sign, verify with the broker — per Section 26. Signing over a real discrepancy, assuming the document is automatically right, or ignoring the document entirely are all incorrect.
+
+28. **b** — An unfamiliar contact requesting a remittance change is verified through a previously trusted, established channel — not the new email itself, and not simply trusted because the MC number checks out (entity verification ≠ contact verification, Section 30).
+
+29. **b** — A factor decline is a private financial-risk decision by the factor. It does not itself prove fraud, does not establish a loss of FMCSA authority, and does not create a federal bar on working with that broker — Section 28.
+
+30. **b** — The correct response is to verify the driver's actual hours, duty status, and route/appointment feasibility — not to calculate an automatic violation from mileage/time alone, not to ignore timing, and not to assume feasibility from the posting alone — Section 29.
+
 ## Scoring
 
-Passing standard: **80% = 21/26**, **and Item 24 must be correct.**
+Passing standard: **80% = 24/30**, **and Item 24 must be correct.**
 
-A student who reaches 21/26 but misses Item 24 does not pass and must complete legal-boundary remediation before retesting.
+A student who reaches 24/30 but misses Item 24 does not pass and must complete legal-boundary remediation before retesting.
 
 ## Remediation Routing
 
@@ -63,6 +74,10 @@ A student who reaches 21/26 but misses Item 24 does not pass and must complete l
 | 13–23 | Module 05 sourcing-screen workflow/scenarios and Module 03 equipment-fit imports |
 | **24 (critical)** | **Module 02 dispatcher/broker boundary + Module 05 Section 19 shipper-direct sourcing boundary; mandatory remediation before retest** |
 | 25–26 | FOUND vs. VERIFIED AVAILABLE, missing-information framework, and search-workflow sections |
+| 27 | Section 26, Rate Confirmation Review |
+| 28 | Section 30, Entity vs. Contact Verification |
+| 29 | Section 28, Broker Credit/Payment Risk & Factoring Basics |
+| 30 | Section 29, HOS/Timing Feasibility Awareness |
 
 ## Current-Date Control
 
