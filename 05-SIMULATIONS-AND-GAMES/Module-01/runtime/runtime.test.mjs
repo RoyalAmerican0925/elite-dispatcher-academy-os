@@ -165,3 +165,21 @@ test('commercial UX returns a clear validation message for incomplete answers', 
   assert.equal(getResponseValidationError(DECISIONS['SIM01-D11'], DECISIONS['SIM01-D11'].correctOrder), null);
   assert.equal(getResponseValidationError(DECISIONS['SIM01-D02'], 'B'), null);
 });
+
+test('D03 contributes to both instructor-defined competencies A and B', () => {
+  const decision = DECISIONS['SIM01-D03'];
+  assert.deepEqual(decision.competencies, ['A', 'B']);
+
+  let state = createInitialState();
+  state = submitAttempt(state, 'SIM01-D03', wrongResponse(decision));
+  state = submitAttempt(state, 'SIM01-D03', correctResponse(decision));
+  const statuses = computeCompetencyStatus(state);
+  assert.equal(statuses.A, 'In Progress');
+  assert.equal(statuses.B, 'In Progress');
+});
+
+test('D12 accepts the documented overlapping Document Flow classification for invoice submission', () => {
+  const decision = DECISIONS['SIM01-D12'];
+  const overlapResponse = { ...decision.correctMap, 'North Star submitting its invoice to the factoring company': 'Document Flow' };
+  assert.equal(evaluateResponse('SIM01-D12', overlapResponse), true);
+});
