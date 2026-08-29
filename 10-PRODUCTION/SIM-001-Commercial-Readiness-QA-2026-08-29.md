@@ -24,7 +24,7 @@ GitHub Actions workflow: `SIM-001 Runtime Tests`
 
 Latest verified run on 2026-08-29:
 - Result: PASS
-- Tests: 11
+- Tests: 13
 - Failures: 0
 
 Automated checks cover:
@@ -38,7 +38,9 @@ Automated checks cover:
 8. competency status after remediation;
 9. corrupt persisted-state rejection;
 10. legacy/partial persisted-state normalization;
-11. incomplete-response validation messaging.
+11. incomplete-response validation messaging;
+12. D03 alignment with instructor-defined competencies A and B;
+13. D12 acceptance of the documented overlapping Document Flow interpretation for invoice submission.
 
 ## Commercial runtime controls verified in code
 - First-attempt evidence is immutable after retry.
@@ -49,9 +51,21 @@ Automated checks cover:
 - Corrupt or unrelated saved state is rejected safely.
 - Reset requires explicit confirmation and clears first-attempt history.
 - Choice, matching, and sequencing interactions remain distinct.
-- Incomplete submissions now produce explicit student-facing guidance instead of failing silently.
+- Incomplete submissions produce explicit student-facing guidance instead of failing silently.
 - Feedback uses text in addition to visual styling.
 - Sequencing has button controls and does not require drag-and-drop.
+
+## Source-to-runtime content lock review
+A direct comparison was performed between the coded runtime content and the approved Module 01 Simulation Student and Instructor materials.
+
+Two substantive alignment defects were found and repaired:
+
+1. **SIM01-D03 competency mapping** — the Instructor Guide classifies D03 under competencies A/B, while the runtime previously recorded only competency A. The runtime now supports multiple competency assignments and D03 contributes to both A and B.
+2. **SIM01-D12 overlapping flow classification** — the approved Student/Instructor materials explicitly state that the invoice submission can reasonably be read as both a document action and a payment/factoring action. The runtime previously accepted only `Payment/Factoring Flow`. It now accepts both documented interpretations for that item.
+
+Regression tests were added before the repairs and now pass.
+
+Remaining intentional difference: the Instructor Guide's runtime handoff includes student ID/name among eventual overall persistence fields. The current standalone browser runtime does not collect identity because durable student-record capture is reserved for the Academy delivery/LMS integration rather than local browser storage.
 
 ## Contamination scan
 Repository search performed for customer-facing contamination terms including:
@@ -102,21 +116,18 @@ This should integrate with the Academy's selected LMS/student-account architectu
 ### 4. Deployment QA — OPEN
 The runtime must be deployed through the actual student delivery environment and tested from the same route/interface customers will use. GitHub source files are not themselves the commercial delivery surface.
 
-### 5. Final source-to-runtime content lock — OPEN
-Before publication, perform one final comparison of `content.js` against the approved Module 01 simulation Student and Instructor materials to confirm no runtime wording drift occurred after code QA.
-
 ## Current gate determination
 - Curriculum/content layer: PASS
 - Runtime logic: PASS
 - Automated regression suite: PASS
 - Persistence hardening: PASS
 - Basic commercial UX validation: PASS
+- Source-to-runtime content lock: PASS
 - Contamination scan: PASS
 - Browser/device QA: OPEN
 - Manual accessibility QA: OPEN
 - Durable student-record integration: OPEN
 - Production deployment QA: OPEN
-- Final content-lock review: OPEN
 
 ## Current recommendation
 **REVISE — RELEASE-INTEGRATION AND HUMAN BROWSER QA STILL REQUIRED**
