@@ -36,7 +36,6 @@ export function normalizePersistedState(candidate) {
 
   const fresh = createInitialState();
   const decisions = {};
-
   for (const id of DECISION_ORDER) {
     const saved = candidate.decisions[id];
     const base = fresh.decisions[id];
@@ -56,7 +55,6 @@ export function normalizePersistedState(candidate) {
   return normalized;
 }
 
-/** Returns a student-facing validation message for incomplete response controls, or null when complete. */
 export function getResponseValidationError(decision, response) {
   if (!decision || typeof decision !== "object") return "This decision cannot be loaded. Please refresh the simulation.";
 
@@ -78,6 +76,12 @@ export function getResponseValidationError(decision, response) {
   return "This decision type is not supported. Please contact your instructor.";
 }
 
+function matchesAcceptedValue(decision, item, responseValue) {
+  const accepted = decision.acceptedMapValues?.[item];
+  if (Array.isArray(accepted)) return accepted.includes(responseValue);
+  return responseValue === decision.correctMap[item];
+}
+
 export function evaluateResponse(decisionId, response) {
   const decision = DECISIONS[decisionId];
   if (!decision) throw new Error(`Unknown decision: ${decisionId}`);
@@ -86,7 +90,7 @@ export function evaluateResponse(decisionId, response) {
 
   if (decision.type === "matching") {
     if (!response || typeof response !== "object") return false;
-    return decision.items.every((item) => response[item] === decision.correctMap[item]);
+    return decision.items.every((item) => matchesAcceptedValue(decision, item, response[item]));
   }
 
   if (decision.type === "sequencing") {
@@ -141,12 +145,10 @@ export function getNextDecisionId(decisionId) {
 
 export function computeSimulationStatus(state) {
   const records = Object.values(state.decisions);
-  const anyReviewRequired = records.some((r) => r.instructorReviewRequired);
-  if (anyReviewRequired) return "INSTRUCTOR_REVIEW_REQUIRED";
+  if (records.some((r) => r.instructorReviewRequired)) return "INSTRUCTOR_REVIEW_REQUIRED";
 
   const allFinalCorrect = DECISION_ORDER.every((id) => state.decisions[id].finalCorrect === true);
   if (allFinalCorrect) return "COMPLETE";
-
   return "IN_PROGRESS";
 }
 
@@ -164,11 +166,18 @@ export function computeRemediationCount(state) {
   return DECISION_ORDER.filter((id) => state.decisions[id].remediationUsed).length;
 }
 
+function decisionCompetencies(decision) {
+  if (Array.isArray(decision.competencies) && decision.competencies.length) return decision.competencies;
+  return [decision.competency];
+}
+
 export function computeCompetencyStatus(state) {
   const byCompetency = {};
   for (const id of DECISION_ORDER) {
     const decision = DECISIONS[id];
-    (byCompetency[decision.competency] ||= []).push(id);
+    for (const competency of decisionCompetencies(decision)) {
+      (byCompetency[competency] ||= []).push(id);
+    }
   }
 
   const result = {};
