@@ -29,11 +29,6 @@ export function createInitialState() {
   };
 }
 
-/**
- * Validates and upgrades browser-persisted state to the current SIM-001 schema.
- * Invalid/corrupt/unrelated data returns null so the UI can safely start a fresh attempt.
- * Existing first-attempt evidence is preserved; missing fields/decisions receive safe defaults.
- */
 export function normalizePersistedState(candidate) {
   if (!candidate || typeof candidate !== "object" || candidate.simulationId !== "SIM-001") return null;
   if (!candidate.decisions || typeof candidate.decisions !== "object") return null;
@@ -59,6 +54,28 @@ export function normalizePersistedState(candidate) {
   normalized.status = computeSimulationStatus(normalized);
   if (normalized.status === "IN_PROGRESS") normalized.completedAt = null;
   return normalized;
+}
+
+/** Returns a student-facing validation message for incomplete response controls, or null when complete. */
+export function getResponseValidationError(decision, response) {
+  if (!decision || typeof decision !== "object") return "This decision cannot be loaded. Please refresh the simulation.";
+
+  if (decision.type === "choice") {
+    return typeof response === "string" && response.length > 0 ? null : "Select one answer before submitting.";
+  }
+
+  if (decision.type === "matching") {
+    if (!response || typeof response !== "object" || Array.isArray(response)) return "Complete every match before submitting.";
+    return decision.items.every((item) => Boolean(response[item])) ? null : "Complete every match before submitting.";
+  }
+
+  if (decision.type === "sequencing") {
+    return Array.isArray(response) && response.length === decision.correctOrder.length
+      ? null
+      : "Place every event in the sequence before submitting.";
+  }
+
+  return "This decision type is not supported. Please contact your instructor.";
 }
 
 export function evaluateResponse(decisionId, response) {
