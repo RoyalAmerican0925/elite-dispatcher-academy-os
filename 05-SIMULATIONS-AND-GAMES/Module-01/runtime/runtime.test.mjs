@@ -16,6 +16,7 @@ import {
   computeRemediationCount,
   computeCompetencyStatus,
   normalizePersistedState,
+  getResponseValidationError,
 } from './logic.js';
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -156,4 +157,11 @@ test('legacy or partial persisted state is normalized to the current schema', ()
   assert.equal(normalized.decisions['SIM01-D02'].attemptCount, 1);
   assert.ok(normalized.decisions['SIM01-D13']);
   assert.equal(normalized.decisions['SIM01-D13'].attemptCount, 0);
+});
+
+test('commercial UX returns a clear validation message for incomplete answers', () => {
+  assert.match(getResponseValidationError(DECISIONS['SIM01-D02'], null), /select/i);
+  assert.match(getResponseValidationError(DECISIONS['SIM01-D01'], {}), /complete/i);
+  assert.equal(getResponseValidationError(DECISIONS['SIM01-D11'], DECISIONS['SIM01-D11'].correctOrder), null);
+  assert.equal(getResponseValidationError(DECISIONS['SIM01-D02'], 'B'), null);
 });
