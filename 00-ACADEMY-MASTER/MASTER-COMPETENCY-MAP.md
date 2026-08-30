@@ -1,35 +1,85 @@
 # Elite Dispatcher Academy — Master Competency Map
 
-## Competency ID Convention
-`M##-C##` = module competency. Example: `M01-C03`.
+The Academy is organized around observable occupational performance, not content volume.
 
-Simulation decisions should trace to competency IDs. Assessments and practical scoring dimensions should also trace to the same competency system.
+## Program-level competency domains
 
-## Module 01 — Verified Rebuild Competencies
-- M01-C01 — Distinguish principal freight parties and roles without assuming freight ownership.
-- M01-C02 — Trace the physical freight flow.
-- M01-C03 — Trace the information/communication flow.
-- M01-C04 — Trace the document flow.
-- M01-C05 — Trace the payment flow at a foundational level.
-- M01-C06 — Read a basic dispatch file and identify operationally relevant facts.
-- M01-C07 — Use foundational operating vocabulary correctly.
-- M01-C08 — Distinguish USDOT identification from operating-authority concepts at the taught level.
-- M01-C09 — Recognize that same-state geography alone does not always settle interstate/intrastate classification.
-- M01-C10 — Distinguish dispatcher function from driver, carrier, broker, shipper/receiver, factor, and forwarder functions at the taught level.
-- M01-C11 — Classify facts as KNOWN / UNKNOWN / VERIFY.
-- M01-C12 — Sequence the foundational carrier-side load lifecycle.
-- M01-C13 — Apply STOP → IDENTIFY → TRACE → VERIFY → HAND OFF when information or scope is insufficient.
-- M01-C14 — Recognize when specialized later-module workflow or escalation is required.
-- M01-C15 — Correct common beginner misconceptions using operational reasoning.
+### P01 — Industry and role fluency
+Identify freight participants, explain relationships accurately, use professional terminology and avoid ownership/authority assumptions.
 
-## Modules 02–07
-Module-level competencies exist across current curriculum/assessment work but must be consolidated into this master register during each premium-depth audit rather than reconstructed from memory. Status: **NEEDS CONSOLIDATION**.
+### P02 — Dispatch information management
+Read a dispatch/freight file, distinguish known/unknown/unverified information, trace information sources and document next actions.
 
-## Modules 08–15
-**SCOPE VERIFY.** Populate only after live module scope and curriculum evidence are established.
+### P03 — Legal/role-boundary awareness
+Recognize dispatcher, carrier, broker and other role boundaries; identify conditions requiring verification or escalation rather than unsupported legal conclusions.
 
-## Evidence Requirement
-Each competency eventually requires a row in the dependency matrix showing:
-`Teach | Demonstrate | Practice | Assess | Practical | Simulation | Record | Later dependency | Status`.
+### P04 — Equipment and freight compatibility
+Evaluate equipment, commodity, temperature, dimensions, weight/axles, qualifications and facility constraints before treating a load as compatible.
 
-A competency is not considered fully integrated merely because it appears in the manual.
+### P05 — Carrier/driver onboarding support
+Organize onboarding information, detect missing/conflicting records, authenticate sensitive changes and respect carrier/compliance ownership boundaries.
+
+### P06 — Freight sourcing and opportunity screening
+Search and filter opportunities, compare basic fit, distinguish entity from contact verification, recognize suspicious/incomplete information and document a defensible next step.
+
+### P07 — Broker/fraud verification
+Perform structured verification, distinguish indicators from proof, preserve evidence and stop/escalate when identity or transaction integrity cannot be established.
+
+### P08 — Load economics and profitability
+Calculate and explain load economics using total trip miles, carrier-specific costs, accessorials, payment costs and positioning considerations.
+
+### P09+ — Later occupational domains
+SCOPE VERIFY. Create only after Modules 08–15 are directly verified.
+
+## Cross-cutting competencies
+
+### X01 — Professional language
+Use industry terminology precisely in speech, writing, notes, worksheets and simulations.
+
+### X02 — Verification discipline
+Separate fact, assumption, missing information and verified information.
+
+### X03 — Decision discipline
+Use structured workflows; STOP/VERIFY/ESCALATE/HAND OFF when required.
+
+### X04 — Document literacy
+Recognize what operational question a document answers, what it does not establish, and what action follows.
+
+### X05 — Communication
+Produce concise, factual, role-appropriate professional communication with a clear next action.
+
+### X06 — Evidence/source literacy
+Know when a current authoritative source or direct verification is required instead of relying on memory, a screenshot, a platform field or a third party.
+
+### X07 — Error recognition and recovery
+Recognize common beginner mistakes, explain why they are weak, correct them and document remediation.
+
+### X08 — Integrated work performance
+Combine multiple competency domains under realistic incomplete-information conditions.
+
+## Evidence ladder
+A competency is not considered demonstrated merely because it appeared in a manual.
+
+1. Taught
+2. Demonstrated by example
+3. Practiced with guidance
+4. Checked for understanding
+5. Applied independently
+6. Demonstrated in practical work
+7. Demonstrated under simulation conditions
+8. Transferred into later integrated work
+
+## Current module mapping
+| Module | Primary domains | Cross-cutting emphasis | Current control state |
+|---|---|---|---|
+| 01 | P01, P02 | X01, X02, X03, X04 | Premium rebuild active |
+| 02 | P03 | X01, X02, X03, X05, X06 | Premium re-audit required |
+| 03 | P04 | X01, X02, X03, X06, X07 | Premium re-audit; SIM-003 active |
+| 04 | P05 | X01, X02, X03, X04, X05 | Premium re-audit; SIM-004 planned |
+| 05 | P06 | X01, X02, X03, X05, X06 | Regular closeout pending |
+| 06 | P07 target | X01, X02, X03, X05, X06 | Research/reconciliation gate |
+| 07 | P08 | X01, X02, X05, X08 | Production draft/full audit |
+| 08–15 | SCOPE VERIFY | SCOPE VERIFY | Do not invent |
+
+## Graduation rule
+Final graduation architecture must prove integrated competency rather than course attendance alone. Exact thresholds and capstone dependencies are finalized only after the complete module map is verified.
