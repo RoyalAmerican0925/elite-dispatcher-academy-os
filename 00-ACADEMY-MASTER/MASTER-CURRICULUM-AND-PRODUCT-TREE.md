@@ -1,233 +1,435 @@
 # Elite Dispatcher Academy — Master Curriculum & Product Tree
 
-## 0. Academy Governance
-- Reputation & Craftsmanship Standard — PLANNED CONTROL
-- Professional Language Standard — PLANNED CONTROL
-- Master Competency Map — PLANNED CONTROL
-- Product Dependency Map — PLANNED CONTROL
-- Assessment Architecture — PLANNED CONTROL
-- Simulation Architecture — PLANNED CONTROL
-- Release Readiness Matrix — PLANNED CONTROL
+**Role:** Academy-wide controlling architecture
+**Status:** ACTIVE MASTER CONTROL — branch build
+**Rule:** This tree records verified reality, approved architecture, known gaps and release dependencies. Unknown scope is labeled; it is never invented.
 
-## 1. Student Entry & Program Foundations — PLANNED / INVENTORY REQUIRED
-- Welcome and orientation
-- How to use the Academy
-- Program outcomes and competency expectations
-- Technology requirements
-- Professional conduct and communication expectations
-- Assessment, passing, remediation, and retake rules
-- Simulation orientation
-- Student progress/competency record
-- Graduation/certificate requirements
+## Status vocabulary
+- VERIFIED EXISTS
+- NEEDS AUDIT
+- NEEDS UPGRADE
+- PLANNED
+- MISSING
+- SCOPE VERIFY
+- BUILD COMPLETE — RELEASE QA DEFERRED
 
-## 2. Curriculum Spine
+---
 
-### Module 01 — Trucking Industry Foundations — EXISTS / NEEDS UPGRADE
-**Occupational purpose:** Build the mental model required to read a basic freight situation and correctly identify parties, flows, information, documents, and the dispatcher's carrier-side role.
+# A. Academy governance and quality
 
-Required product branch:
-- Outcomes/competencies
-- Student Manual — EXISTS; premium rebuild active on separate branch
-- Professional vocabulary — EXISTS IN CONTENT; must synchronize to master dictionary
-- Four-flow model: freight / information / documents / payment — NEEDS UPGRADE/ALIGNMENT
-- Dispatch-file reading and known/unknown/verify discipline — NEEDS UPGRADE/ALIGNMENT
-- Student tools — EXISTS; expansion/alignment active
-- Knowledge check — EXISTS; premium alignment required
-- Module exam — EXISTS; premium alignment required
-- Practical assessment — EXISTS; premium alignment required
-- SIM-001 Freight Movement Desk — EXISTS; BUILD COMPLETE — RELEASE QA DEFERRED; premium alignment audit required
-- Instructor/scoring resources — EXISTS; alignment required
-- Sources/date controls — EXISTS/EXPANDING
-- Premium-depth QA — REQUIRED
+## A1. Master controls
+- Module Deliverable Standard
+- Master Competency Map
+- Product Dependency Map
+- Assessment Architecture
+- Simulation Architecture
+- Student Journey Map
+- Release Readiness Matrix
+- Academy Content Quality Gate
 
-### Module 02 — Dispatcher Role & Legal Boundaries — EXISTS / NEEDS PREMIUM AUDIT
-- Manual/instruction — EXISTS
-- Student tools — EXISTS
-- Knowledge check — EXISTS
-- Exam — EXISTS
-- Practical: Agency Boundary Decision Desk — EXISTS
-- SIM-002 Agency Boundary Desk — BUILD COMPLETE — RELEASE QA DEFERRED
-- Instructor/scoring/source controls — EXISTS
-- Premium-depth re-audit — REQUIRED
+## A2. Reputation & craftsmanship standard
+Every released component must demonstrate accuracy, instructional value, professional presentation and craftsmanship appropriate for a product whose creator publicly stands behind it.
 
-### Module 03 — Trucks, Trailers, Freight & Equipment — EXISTS / NEEDS PREMIUM AUDIT
-- Manual/instruction — EXISTS
-- Equipment/freight-fit tools — EXISTS
-- Knowledge check/exam — EXISTS
-- Practical: Equipment & Freight Fit Desk — EXISTS
-- SIM-003 Load Compatibility Desk — ACTIVE BUILD
-- Instructor/scoring/source controls — EXISTS
-- Premium-depth re-audit — REQUIRED
+## A3. Premium-content controls
+Every major component must pass:
+- Occupational Necessity Test
+- Google Test
+- Employment Test
+- Buyer Test
+- Professional Language Test
+- Evidence Test
+- Workflow Test
+- Practice Test
+- Assessment Trace Test
+- Simulation Test
+- Presentation Test
+- Contamination Test
 
-### Module 04 — Carrier & Driver Onboarding — EXISTS / NEEDS PREMIUM AUDIT
-- Manual/instruction — EXISTS
-- Onboarding/verification tools — EXISTS
-- Knowledge check/exam — EXISTS
-- Practical assessment — EXISTS
-- SIM-004 Carrier Onboarding Command Desk — PLANNED
-- Instructor/scoring/source controls — EXISTS
-- Premium-depth re-audit — REQUIRED
+---
 
-### Module 05 — Load Boards & Freight Sourcing — EXISTS / ACTIVE REPAIR
-- Manual/instruction — EXISTS
-- Student sourcing/verification tools — EXISTS / REPAIR ACTIVE
-- Knowledge check/exam — EXISTS / ALIGNMENT ACTIVE
-- Practical assessment — EXISTS / CLOSEOUT REPAIR REQUIRED
-- SIM-005 Live Load Search Desk — PLANNED
-- Instructor/scoring/source controls — EXISTS / CLOSEOUT ACTIVE
-- Premium-depth re-audit — REQUIRED after regular closeout
+# B. Program / student onboarding
 
-### Module 06 — Broker Verification & Fraud Prevention — EXISTS / RESEARCH AUTHORIZED
-- Manual/instruction — EXISTS
-- Exact production completeness — INVENTORY/RESEARCH REQUIRED
-- Scenario/assessment assets — PARTIAL; verify live repo
-- Practical assessment — MISSING from known practical-assessment inventory; verify
-- SIM-006 — PLANNED; exact simulation scope must follow verified curriculum
-- Production expansion remains controlled by research/reconciliation workflow
+## B1. Program orientation — PLANNED / inventory required
+- Academy welcome
+- program purpose and outcomes
+- how the learning sequence works
+- how to use manuals, tools, assessments and simulations
+- student technology requirements
+- professional conduct expectations
+- source/current-information notice
 
-### Module 07 — Rate Mathematics & Profitability — EXISTS / PRODUCTION DRAFT
-- Manual/instruction — EXISTS
-- Worked examples/scenarios — EXISTS
-- Exam + answer key — EXISTS
-- Practical + scoring guide — EXISTS
-- Student tools — VERIFY COMPLETENESS
-- SIM-007 Profitability Decision Desk — PLANNED
-- Commercial/premium-depth gate — REQUIRED
-
-### Module 08 — SCOPE VERIFY
-Program continuity indicates negotiation as the intended area, but the live `02-CURRICULUM` inventory currently verified only Modules 01–07. Do not lock the title or detailed competencies until live production evidence is established.
-- Manual — SCOPE VERIFY
-- Tools — SCOPE VERIFY
-- Assessments — SCOPE VERIFY
-- Practical — SCOPE VERIFY
-- SIM-008 — PLANNED; scope verification required
-
-### Modules 09–14 — SCOPE VERIFY
-Each module must receive the full product branch only after exact live curriculum scope is verified:
-- occupational outcome and competency map
-- manual/lessons
-- professional vocabulary
-- realistic examples/artifacts
-- student tools/job aids
-- embedded practice/scenario labs
-- knowledge check
-- exam
-- practical
-- simulation
+## B2. Learning and assessment orientation
+- knowledge checks
+- exams
+- practical assessments
+- simulations
 - remediation
-- instructor/scoring resources
-- sources/date controls
-- premium-depth QA
+- competency evidence
+- completion/graduation rules
 
-### Module 15 — SCOPE VERIFY / CAPSTONE DEPENDENCY
-Do not invent a module title. If the verified program architecture assigns Module 15 as the integrated capstone, synchronize it here; otherwise keep the capstone as a separate graduation layer.
+## B3. Simulation orientation
+- simulation purpose
+- fictional training data conventions
+- first-attempt versus corrected mastery
+- STOP/VERIFY expectations
+- accessibility and technical-use instructions
 
-## 3. Professional Language & Industry Fluency — ACADEMY-WIDE
-- Master Professional Dictionary
-- Acronym & Abbreviation Dictionary
-- Module-by-module terminology introduction map
-- Correct term / plain-English meaning / industry usage
-- Dispatcher significance
-- Common misuse and consequence
-- Related terms
-- Regulatory distinction/source note when applicable
-- Phone language
-- Broker communication
-- Carrier/owner communication
-- Driver communication
-- Facility/shipper/receiver communication
-- Email and written dispatch notes
-- Load-board shorthand
-- Professional-language assessment criteria
+## B4. Student progress system — RELEASE LAYER
+- module completion
+- assessment scores
+- practical competency
+- simulation competency
+- remediation status
+- capstone eligibility
+- graduation status
 
-## 4. Assessment System
-For every module:
-- embedded practice
-- knowledge check
-- scenario/application work
-- module exam
-- practical assessment
-- simulation evidence
-- remediation
-- competency record
+---
 
-Assessment rule: no assessed competency without taught/practiced preparation; no major taught occupational competency may disappear without evidence of mastery.
+# C. Professional Language & Industry Fluency Layer
 
-## 5. Simulation System
-- SIM-001 Freight Movement Desk — BUILD COMPLETE — RELEASE QA DEFERRED; alignment audit required
-- SIM-002 Agency Boundary Desk — BUILD COMPLETE — RELEASE QA DEFERRED
-- SIM-003 Load Compatibility Desk — ACTIVE
-- SIM-004 Carrier Onboarding Command Desk — PLANNED
-- SIM-005 Live Load Search Desk — PLANNED
-- SIM-006 — PLANNED / SCOPE VERIFY
-- SIM-007 Profitability Decision Desk — PLANNED
-- SIM-008 — PLANNED / SCOPE VERIFY
-- SIM-009 through SIM-014 — PLANNED / SCOPE VERIFY
-- SIM-015 or separate Capstone Full-Shift Simulation — architecture decision follows verified Module 15 scope
+## C1. Master Professional Dictionary
+For high-value terms capture:
+1. term;
+2. plain-English meaning;
+3. precise industry meaning;
+4. how professionals use it;
+5. dispatcher significance;
+6. common beginner misuse;
+7. related terms;
+8. example in context;
+9. regulatory/source note where applicable;
+10. first module introduced;
+11. later competency connection.
 
-Every simulation requires realistic fictional artifacts, progressive events, meaningful decisions, incomplete information where appropriate, consequences, remediation, competency tracking, persistence/runtime controls where digital, instructor/scoring controls, and release QA.
+## C2. Master Acronym Dictionary
+Central control for acronyms/abbreviations such as FMCSA, USDOT, MC, BOL, POD, TONU, RPM, FCFS and later verified vocabulary.
 
-## 6. Graduation / Capstone Layer — PLANNED
-- Integrated dispatcher workflow
-- Multiple concurrent responsibilities where curriculum supports them
-- Freight opportunity evaluation
-- Carrier/driver/equipment fit
-- Verification and fraud controls
-- Communication and professional language
-- Rate/profitability reasoning
-- Documents and status management
-- Exceptions/escalation
-- Final competency evidence
-- Completion determination
+## C3. Professional communication
+- broker calls
+- driver communication
+- carrier/owner communication
+- facility communication
+- professional email
+- dispatch notes
+- verification language
+- escalation language
+- language that distinguishes fact / assumption / unknown / allegation
 
-## 7. Customer-Facing Product Package — PLANNED
-- Branded student manuals
-- Branded worksheets/job aids
-- Branded assessments
-- Simulation student packets
-- Digital simulations
-- Student progress dashboard/record
-- Instructor materials separated from student access
-- Certificate/completion package
-- Accessible/mobile/desktop delivery
+## C4. Language progression
+Introduce → Contrast → Hear/Read → Use → Correct → Transfer.
+Professional terminology is assessed, not decorative.
 
-## 8. Production & Technology Layer
-### GitHub — SOURCE OF TRUTH
-- curriculum
+---
+
+# D. Module production branches
+
+## MODULE 01 — Trucking Industry Foundations
+**Status:** VERIFIED EXISTS / PREMIUM REBUILD ACTIVE
+
+**Student capability:** Read a basic freight file; identify parties; trace physical, information, document and payment flows; identify known/unknown/verify facts; use foundational terminology; select a safe next action.
+
+**Instruction**
+- Student Manual Parts 01–03 — VERIFIED EXISTS / PREMIUM SYNCHRONIZATION
+- Premium Reading-the-Dispatch-Desk expansion — exists on dedicated M01 rebuild branch; reconciliation required
+- ecosystem roles
+- four flows
+- dispatch-file information model
+- operating vocabulary
+- foundational document recognition
+- multiple contrasting freight files
+- STOP → IDENTIFY → TRACE → VERIFY → HAND OFF
+
+**Tools**
+- Freight Role Map Worksheet — VERIFIED EXISTS
+- Load Lifecycle Sequencing Worksheet — VERIFIED EXISTS
+- Dispatch File Intake & Verification Map — premium rebuild branch
+- four-flow / STOP aids — synchronize during rebuild
+
+**Assessment**
+- Knowledge check — EXISTS / PREMIUM AUDIT
+- Exam — EXISTS / PREMIUM AUDIT
+- Practical: Blue River Foods Freight Movement Role Map — EXISTS / UPGRADE
+- Instructor/scoring materials — EXISTS / SYNC
+
+**Simulation**
+- SIM-001 Freight Movement Desk — BUILD COMPLETE — RELEASE QA DEFERRED
+- curriculum-alignment audit required after M01 premium rebuild
+
+**Open gate:** contradiction repair + source control + full instruction/tool/assessment/SIM synchronization + premium QA.
+
+---
+
+## MODULE 02 — Dispatcher Role & Legal Boundaries
+**Status:** VERIFIED EXISTS / EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT REQUIRED
+
+**Student capability:** Distinguish carrier-side dispatch coordination from broker/arrangement risk, reason from facts, recognize insufficient information, and escalate rather than invent a legal conclusion.
+
+**Instruction/language:** dispatcher, broker, bona fide agent, authority, agency, allocation, compensation, representation, escalation.
+
+**Tools:** decision tool + STOP — IDENTIFY — CHECK — ESCALATE.
+
+**Assessment:** KC 20; practical Agency Boundary Decision Desk; shared 18-point scoring guide; 26-item exam with mandatory critical item; instructor package.
+
+**Simulation:** SIM-002 Agency Boundary Desk — BUILD COMPLETE — RELEASE QA DEFERRED; premium-depth audit pending.
+
+**Open gate:** premium re-audit; source-sensitive categorical language review; assembled release QA later.
+
+---
+
+## MODULE 03 — Trucks, Trailers, Freight & Equipment
+**Status:** VERIFIED EXISTS / EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT REQUIRED
+
+**Student capability:** Evaluate load compatibility using equipment, commodity, temperature, dimensions, weight/axles, driver qualifications, facility constraints and missing information.
+
+**Tools:** Load Fit Verification Checklist; STOP-VERIFY-ESCALATE; Weight & Dimension Verification Worksheet.
+
+**Assessment:** KC; 24-item exam; Equipment & Freight Fit Desk practical; instructor/scoring materials.
+
+**Simulation:** SIM-003 Load Compatibility Desk — ACTIVE BUILD TRACK.
+
+**Open gate:** premium-depth audit + SIM-003 content/runtime completion + release QA later.
+
+---
+
+## MODULE 04 — Carrier & Driver Onboarding
+**Status:** VERIFIED EXISTS / EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT REQUIRED
+
+**Student capability:** Build/review an onboarding file, identify missing/conflicting information, authenticate sensitive changes, recognize carrier/compliance boundaries and escalate appropriately.
+
+**Language:** COI, W-9, DQ, CDL, endorsements, MEC, NRII, UCR, NOA, factoring, payment direction, authentication.
+
+**Assessment:** KC/exam/practical/instructor package — VERIFIED EXISTS; Lone Star Ridge practical includes identity/payment/qualification conflicts.
+
+**Simulation:** SIM-004 Carrier Onboarding Command Desk — PLANNED.
+
+**Open gate:** premium re-audit + SIM-004 + release QA later.
+
+---
+
+## MODULE 05 — Load Boards & Freight Sourcing
+**Status:** VERIFIED EXISTS / REGULAR CLOSEOUT PENDING / PREMIUM RE-AUDIT REQUIRED
+
+**Student capability:** Search, filter, screen and document freight opportunities while separating entity verification from contact verification and treating fraud indicators as indicators rather than unsupported proof.
+
+**Language:** load board, posting, lane, radius, equipment filter, deadhead, rate, RPM, broker authority, BMC-84/BMC-85, rate confirmation, double brokering, entity verification, contact verification, shortlist.
+
+**Assessment:** KC/exam expanded; practical closeout still must confirm rate-confirmation discrepancy task, entity-vs-contact verification task and synchronized scoring.
+
+**Simulation:** SIM-005 Live Load Search Desk — PLANNED.
+
+**Open gate:** C-013 closeout → premium audit → SIM-005.
+
+---
+
+## MODULE 06 — Broker Verification & Fraud Prevention
+**Status:** LIVE TITLE/SCOPE VERIFIED / G-013 RESEARCH AUTHORIZED / PRODUCTION LOCKED
+
+**Student capability target:** Structured broker/opportunity verification, entity-vs-contact identity distinction, fraud-indicator reasoning, evidence preservation, STOP/VERIFY/escalate. Final wording waits for G-013 + full repo reconciliation.
+
+**Language:** authority, entity identity, contact identity, impersonation, double brokering, fraudulent load, surety/trust, BMC-84/BMC-85, callback, domain/email verification, evidence, escalation.
+
+**Assessment/tools:** exact inventory required before gap declarations.
+
+**Simulation:** SIM-006 — SCOPE VERIFY until research/reconciliation completes.
+
+**Open gate:** G-013 → reconciliation → production repair → aligned assessments/tools → simulation → premium QA.
+
+---
+
+## MODULE 07 — Rate Mathematics & Profitability
+**Status:** VERIFIED EXISTS / PRODUCTION DRAFT / FULL PREMIUM AUDIT REQUIRED
+
+**Student capability:** Calculate and compare load economics using total trip miles and carrier-specific costs; distinguish gross revenue, cash flow and profitability; evaluate deadhead, fuel, accessorials, factoring/quick pay, break-even and positioning.
+
+**Language:** gross revenue, loaded/effective RPM, deadhead, total trip miles, fuel cost, operating cost, contribution margin, break-even, detention, layover, TONU, lumper, factoring, quick pay, positioning.
+
+**Instruction:** three production-draft manual parts with formulas, worked examples and multiple scenarios.
+
+**Assessment:** exam + key created; practical corrected; scoring guide created; full package audit remains.
+
+**Simulation:** SIM-007 Profitability Decision Desk — PLANNED.
+
+**Open gate:** full component inventory + premium audit + SIM-007.
+
+---
+
+## MODULE 08
+**Status:** SCOPE VERIFY
+Prior work indicates negotiation. Direct live-repository verification required before authoritative branch creation.
+
+## MODULE 09
+**Status:** SCOPE VERIFY
+No authoritative title/competency assigned in this tree until repository evidence is inspected.
+
+## MODULE 10
+**Status:** SCOPE VERIFY
+No authoritative title/competency assigned in this tree until repository evidence is inspected.
+
+## MODULE 11
+**Status:** SCOPE VERIFY
+No authoritative title/competency assigned in this tree until repository evidence is inspected.
+
+## MODULE 12
+**Status:** SCOPE VERIFY
+No authoritative title/competency assigned in this tree until repository evidence is inspected.
+
+## MODULE 13
+**Status:** SCOPE VERIFY
+No authoritative title/competency assigned in this tree until repository evidence is inspected.
+
+## MODULE 14
+**Status:** SCOPE VERIFY
+No authoritative title/competency assigned in this tree until repository evidence is inspected.
+
+## MODULE 15
+**Status:** SCOPE VERIFY
+Final course/capstone relationship must be established from verified curriculum. SIM-015 is intended as the integrated dispatcher full-shift capstone, with exact dependencies derived from verified Modules 01–14.
+
+---
+
+# E. Assessment system
+
+Each module should trace:
+Instruction → Guided Practice → Knowledge Check → Scenario/Application → Exam → Practical → Simulation → Remediation → Competency Evidence.
+
+Assessment forms must not merely repeat the same questions. They measure increasing transfer:
+- recall/recognition;
+- interpretation;
+- applied decision;
+- integrated performance.
+
+Critical-failure rules are reserved for decisions where unsafe, materially unlawful, financially dangerous or professionally unacceptable action justifies a mandatory competency condition.
+
+---
+
+# F. Simulation system
+
+## Required simulation characteristics
+- realistic fictional work context;
+- incomplete information;
+- progressive events;
+- competing considerations;
+- stable decision IDs;
+- consequences;
+- targeted remediation;
+- first-attempt and corrected mastery where appropriate;
+- competency tracking;
+- accessible fallback;
+- runtime tests for coded simulations;
+- no copied proprietary UI.
+
+## Sequence
+SIM-001 → SIM-002 → SIM-003 → SIM-004 → SIM-005 → later simulations after verified scope → SIM-015 integrated capstone.
+
+Completed build status is **BUILD COMPLETE — RELEASE QA DEFERRED**, not PUBLICATION_READY.
+
+---
+
+# G. Capstone / graduation architecture
+
+## Integrated dispatcher performance — PLANNED
+The capstone should eventually require the student to integrate verified competencies from the full program in a realistic shift/workflow rather than answer a long final quiz.
+
+Potential dependency categories, subject to final module scope:
+- carrier/driver file awareness;
+- freight sourcing;
+- verification/fraud resistance;
+- equipment/load fit;
+- economic comparison;
+- communication/negotiation;
+- scheduling/status/document handling;
+- exception management;
+- professional notes/handoffs;
+- escalation and STOP/VERIFY decisions.
+
+## Graduation evidence
+- required module completion;
+- assessment thresholds;
+- practical competency;
+- simulation competency;
+- remediation completion;
+- capstone result;
+- completion record;
+- certificate eligibility.
+
+---
+
+# H. Customer-facing product package
+
+## Student products
+- branded manuals
+- worksheets/job aids
+- checklists/templates
+- scenario packets
 - assessments
-- student tools
-- simulation source/runtime
-- instructor resources
-- source/regulatory registers
-- production QA
-- master architecture
-- version/release history
+- interactive simulations
+- progress/competency record
+- glossary/dictionary access
+- certificate/completion artifacts
 
-### Downstream application ecosystem — DESIGN AFTER MASTER TREE
-- document design/rendering
-- cloud document review
-- LMS/student delivery
-- website/storefront
-- payments
-- email/CRM
-- analytics
-- certificate issuance
-- automation/integration
-- backups/archival
+## Instructor/operations products
+- instructor guides
+- answer keys
+- scoring rubrics
+- remediation guidance
+- source/date registers
+- release notes
+- version/change controls
 
-No application is selected merely because it can connect to GitHub. Each later integration must have a defined business function, source-of-truth rule, data flow, cost, security/access model, and failure/recovery path.
+## Presentation system — PLANNED
+- Academy logo/brand system
+- document templates
+- typography/layout rules
+- cover pages
+- headers/footers/page numbering
+- form fields/answer spaces
+- print and screen usability
+- accessibility
 
-## 9. Release Layer
-A release requires more than content completion:
-- premium instructional-depth gate
-- source/currentness review
-- editorial review
-- visual/brand QA
-- student/instructor separation QA
-- browser/device QA for digital components
-- accessibility QA
-- durable student-record integration where required
-- deployment QA
-- final release manifest
+---
 
-**Content PASS ≠ PUBLICATION_READY.**
+# I. Technology and delivery ecosystem — PLAN AFTER MASTER TREE
+
+The Academy master content remains controlled in GitHub. Specialized systems may later provide:
+- visual document authoring/rendering;
+- cloud file review;
+- LMS/student accounts;
+- web delivery;
+- simulation hosting;
+- payment/commerce;
+- email/CRM;
+- analytics;
+- certificates;
+- automation/integration;
+- backup/archive.
+
+No app should be connected merely because it is available. Each integration must map to a validated business function and avoid duplicate systems.
+
+---
+
+# J. Release control
+
+A module is not ready because its manual is written. Release requires the complete dependency chain to be reconciled.
+
+## Content/build gate
+- correct and current;
+- premium instructional depth;
+- professional language;
+- tools usable;
+- assessments aligned;
+- practical aligned;
+- simulation aligned;
+- instructor/scoring synchronized;
+- sources controlled;
+- contamination scan passed.
+
+## Assembled-system release gate
+- branded rendering;
+- LMS/student account integration;
+- durable student records;
+- deployment;
+- browser/device QA;
+- manual accessibility QA;
+- final editorial/legal/current-source review as applicable.
+
+Only the final release process may authorize PUBLICATION_READY.
