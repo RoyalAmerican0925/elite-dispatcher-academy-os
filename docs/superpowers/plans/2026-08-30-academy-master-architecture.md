@@ -2,65 +2,94 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Build the complete controlling master curriculum/product tree for Elite Dispatcher Academy without inventing unverified curriculum scope.
+**Goal:** Build a single Academy-wide control architecture that shows the complete curriculum/product system, professional-language layer, module dependencies, quality gates and release path without inventing unverified course scope.
 
-**Architecture:** A new `00-ACADEMY-MASTER/` control layer will map the Academy from student entry through module competency, simulations, capstone, production, and release. The master tree will point to live production assets rather than replacing them and will use status markers to expose gaps.
+**Architecture:** GitHub remains the content/control source. `00-ACADEMY-MASTER/` contains architecture and status controls while existing curriculum/assessment/tool/simulation directories remain the production assets. Module branches trace occupational outcome → instruction → language → tools → assessment → practical → simulation → evidence → release.
 
-**Tech Stack:** Markdown, GitHub repository/version control.
+**Tech Stack:** Markdown, GitHub version control, existing HTML/CSS/JS simulation runtime where applicable.
 
 **Spec:** `docs/superpowers/specs/2026-08-30-academy-master-architecture-design.md`
 
 ## Global Constraints
-- No filler or artificial content-count limits.
-- GitHub remains the curriculum/production source of truth.
-- Do not invent unverified later-module titles/scopes.
-- Professional language is a cumulative assessable competency.
-- Use EXISTS / NEEDS UPGRADE / PLANNED / MISSING / RELEASE-LAYER status language.
-- Trace competencies through TEACH → DEMONSTRATE → PRACTICE → ASSESS → SIMULATE → RECORD COMPETENCY.
-- PASS does not equal PUBLICATION_READY.
+- No filler or arbitrary content limits.
+- Unknown module scope must be labeled and verified, not invented.
+- Professional terminology is taught, practiced and assessed.
+- Existing verified course assets are preserved unless correction or synchronization requires change.
+- Legal/regulatory/date-sensitive claims require appropriate authoritative-source control.
+- Premium-content PASS does not equal `PUBLICATION_READY`.
+- App/integration selection follows validated business function.
 
 ---
 
-### Task 1: Inventory live Academy structure
-**Files:** Read repository curriculum, assessment, student-tool, simulation, production, and program-control paths.
-- [ ] Inspect module directories and manifests.
-- [ ] Identify verified module titles/scopes.
-- [ ] Identify existing assessment/tool/simulation assets.
-- [ ] Record uncertain later-module scope rather than guessing.
+### Task 1: Create isolated master-architecture branch
+- [x] Create `academy-master-architecture` from `main`.
+- [x] Keep architecture work off `main` pending review/merge decision.
 
-### Task 2: Create master control layer
-**Files:** Create `00-ACADEMY-MASTER/README.md` and `00-ACADEMY-MASTER/MASTER-CURRICULUM-AND-PRODUCT-TREE.md`.
-- [ ] Define status legend and governance.
-- [ ] Map program foundations.
-- [ ] Map verified Modules 01–15 at the deepest level supported by repository evidence.
-- [ ] Map capstone/graduation and commercial/release layers.
+### Task 2: Create Academy master-control directory
+- [x] Create `00-ACADEMY-MASTER/README.md`.
+- [x] Create master curriculum/product tree.
+- [x] Create master competency map.
+- [x] Create product dependency map.
+- [x] Create assessment architecture.
+- [x] Create simulation architecture.
+- [x] Create student journey map.
+- [x] Create release-readiness matrix.
+- [x] Create reputation/craftsmanship standard.
 
-### Task 3: Create professional-language architecture
-**Files:** Create `MASTER-PROFESSIONAL-DICTIONARY.md`, `MASTER-ACRONYM-DICTIONARY.md`, `PROFESSIONAL-LANGUAGE-STANDARDS.md`.
-- [ ] Define dictionary entry schema.
-- [ ] Seed only verified/high-confidence foundational terms.
-- [ ] Map cumulative module fluency and professional communication expectations.
+### Task 3: Create professional-language layer
+- [x] Create master professional dictionary.
+- [x] Create acronym dictionary.
+- [x] Create professional-language standards.
+- [x] Create professional-language progression map.
+- [x] Require professional-language competency in module architecture.
 
-### Task 4: Create competency/dependency controls
-**Files:** Create `MASTER-COMPETENCY-MAP.md`, `PRODUCT-DEPENDENCY-MAP.md`, `ASSESSMENT-ARCHITECTURE.md`.
-- [ ] Define competency IDs and evidence chain.
-- [ ] Map taught/practiced/assessed/simulated/recorded relationships.
-- [ ] Expose gaps instead of masking them.
+### Task 4: Establish complete-module and quality gates
+- [x] Create Module Deliverable Standard.
+- [x] Create Academy Content Quality Gate.
+- [x] Encode Occupational Necessity, Google, Employment, Buyer, Language, Evidence, Workflow, Practice, Assessment Trace, Simulation, Presentation and Contamination tests.
 
-### Task 5: Create simulation/capstone controls
-**Files:** Create `SIMULATION-ARCHITECTURE.md`, `STUDENT-JOURNEY-MAP.md`.
-- [ ] Map SIM-001 through SIM-015, preserving verified statuses.
-- [ ] Mark unverified scopes honestly.
-- [ ] Define capstone dependency on verified curriculum.
+### Task 5: Build verified module branches
+- [x] Create Module 01 master branch and record active premium rebuild/dependencies.
+- [x] Create Module 02 master branch and preserve earlier gate while requiring premium re-audit.
+- [x] Create Module 03 master branch and SIM-003 dependency.
+- [x] Create Module 04 master branch and SIM-004 gap.
+- [x] Create Module 05 master branch and active closeout gaps.
+- [x] Create Module 06 master branch from verified live title and preserve research/production gate.
+- [x] Create Module 07 master branch and production-draft status.
+- [x] Create Modules 08–15 scope-control file rather than inventing unverified titles.
 
-### Task 6: Create craftsmanship/release controls
-**Files:** Create `REPUTATION-AND-CRAFTSMANSHIP-STANDARD.md`, `RELEASE-READINESS-MATRIX.md`.
-- [ ] Encode accuracy/depth/language/usability/presentation/competency/commercial/craftsmanship standards.
-- [ ] Define premium-depth gates and release-layer distinction.
-- [ ] Establish future visual-branding/delivery integration placeholders as architecture categories, not implementation promises.
+### Task 6: Create production dashboard
+- [x] Create `MASTER-PRODUCTION-DASHBOARD.md`.
+- [x] Record active module/simulation states and next control actions.
+- [x] Separate content/build completion from assembled-system release QA.
 
-### Task 7: Verify master tree
-- [ ] Cross-check every named module/simulation against live repository evidence.
-- [ ] Check links/paths and status labels.
-- [ ] Scan for invented claims, filler, TODO/TBD language, duplicated control definitions, and AI/process chatter.
-- [ ] Record final architecture QA verdict without declaring publication readiness.
+### Task 7: Deep component inventory
+- [ ] Inventory every live Module 01 file and reconcile with the dedicated premium-rebuild branch.
+- [ ] Inventory every live Module 02 file and map it to the deliverable standard.
+- [ ] Inventory every live Module 03 file and map it to the deliverable standard.
+- [ ] Inventory every live Module 04 file and map it to the deliverable standard.
+- [ ] Inventory every live Module 05 file and reflect C-013 closeout state.
+- [ ] Inventory every live Module 06 file after/with G-013 reconciliation.
+- [ ] Inventory every live Module 07 file and identify missing premium components.
+
+### Task 8: Verify later-module scope
+- [ ] Inspect live Module 08 evidence and create authoritative Module 08 master branch.
+- [ ] Locate/verify Modules 09–15 or governing manifest evidence.
+- [ ] Create each later module branch only from verified scope.
+- [ ] Derive capstone dependencies from verified final program map.
+
+### Task 9: Reconcile parallel production branches
+- [ ] Reconcile Academy master architecture with `module-01-premium-depth-rebuild` before either merge decision.
+- [ ] Preserve useful work from both branches; do not overwrite newer verified content.
+- [ ] Update dashboard/status after reconciliation.
+
+### Task 10: Architecture completion verification
+- [ ] Confirm every verified module has outcome, language, tools, assessment, practical, simulation, source and release controls represented.
+- [ ] Confirm no unverified module title is presented as fact.
+- [ ] Confirm no `PUBLICATION_READY` claim is made prematurely.
+- [ ] Compare architecture branch against `main` and review all changed paths.
+- [ ] Present branch for merge/review decision.
+
+### Task 11: Next project — connected product ecosystem
+- [ ] After master-tree stabilization, design the app/integration architecture: document rendering, Drive/Docs or alternatives, LMS, web, simulation hosting, commerce, email/CRM, analytics, certificates, automation and backup.
+- [ ] Select apps only after business-function and data-flow requirements are mapped.
