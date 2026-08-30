@@ -19,77 +19,54 @@
 - Premium-content PASS does not equal `PUBLICATION_READY`.
 - App/integration selection follows validated business function.
 
----
-
-### Task 1: Create isolated master-architecture branch
-- [x] Create `academy-master-architecture` from `main`.
-- [x] Keep architecture work off `main` pending review/merge decision.
-
-### Task 2: Create Academy master-control directory
-- [x] Create `00-ACADEMY-MASTER/README.md`.
-- [x] Create master curriculum/product tree.
-- [x] Create master competency map.
-- [x] Create product dependency map.
-- [x] Create assessment architecture.
-- [x] Create simulation architecture.
-- [x] Create student journey map.
-- [x] Create release-readiness matrix.
-- [x] Create reputation/craftsmanship standard.
-
-### Task 3: Create professional-language layer
-- [x] Create master professional dictionary.
-- [x] Create acronym dictionary.
-- [x] Create professional-language standards.
-- [x] Create professional-language progression map.
-- [x] Require professional-language competency in module architecture.
-
-### Task 4: Establish complete-module and quality gates
-- [x] Create Module Deliverable Standard.
-- [x] Create Academy Content Quality Gate.
-- [x] Encode Occupational Necessity, Google, Employment, Buyer, Language, Evidence, Workflow, Practice, Assessment Trace, Simulation, Presentation and Contamination tests.
-
-### Task 5: Build verified module branches
-- [x] Create Module 01 master branch and record active premium rebuild/dependencies.
-- [x] Create Module 02 master branch and preserve earlier gate while requiring premium re-audit.
-- [x] Create Module 03 master branch and SIM-003 dependency.
-- [x] Create Module 04 master branch and SIM-004 gap.
-- [x] Create Module 05 master branch and active closeout gaps.
-- [x] Create Module 06 master branch from verified live title and preserve research/production gate.
-- [x] Create Module 07 master branch and production-draft status.
-- [x] Create Modules 08–15 scope-control file rather than inventing unverified titles.
-
-### Task 6: Create production dashboard
-- [x] Create `MASTER-PRODUCTION-DASHBOARD.md`.
-- [x] Record active module/simulation states and next control actions.
-- [x] Separate content/build completion from assembled-system release QA.
+### Tasks 1–6 — Foundation architecture
+- [x] Isolated `academy-master-architecture` branch.
+- [x] Academy master-control directory and core architecture.
+- [x] Professional-language layer.
+- [x] Complete-module and premium-quality gates.
+- [x] Module 01–07 master branches and later-scope control.
+- [x] Master production dashboard and release separation.
 
 ### Task 7: Deep component inventory
-- [ ] Inventory every live Module 01 file and reconcile with the dedicated premium-rebuild branch.
-- [ ] Inventory every live Module 02 file and map it to the deliverable standard.
-- [ ] Inventory every live Module 03 file and map it to the deliverable standard.
-- [ ] Inventory every live Module 04 file and map it to the deliverable standard.
-- [ ] Inventory every live Module 05 file and reflect C-013 closeout state.
-- [ ] Inventory every live Module 06 file after/with G-013 reconciliation.
-- [ ] Inventory every live Module 07 file and identify missing premium components.
+- [x] Inventory Module 01 architecture-branch assets and compare the dedicated premium-rebuild delta.
+- [x] Inventory Module 02 manual/tools/assessment/instructor/source/simulation chain.
+- [x] Inventory Module 03 manual/tools/assessment/instructor/source/simulation chain; identify SIM-003 QA/CI gap.
+- [x] Inventory Module 04 chain and confirm SIM-004 absence.
+- [x] Inventory Module 05 chain; confirm C-013 exam/tools advanced while practical closeout remains incomplete.
+- [x] Inventory current Module 06 chain and identify missing student tools/practical/simulation; final production conclusions remain subject to G-013/current-source reconciliation.
+- [x] Inventory Module 07 chain and identify scenario/instructor/simulation/source-control questions for premium audit.
+- [x] Create `DEEP-COMPONENT-INVENTORY-M01-M07-2026-08-30.md`.
 
 ### Task 8: Verify later-module scope
-- [ ] Inspect live Module 08 evidence and create authoritative Module 08 master branch.
-- [ ] Locate/verify Modules 09–15 or governing manifest evidence.
-- [ ] Create each later module branch only from verified scope.
-- [ ] Derive capstone dependencies from verified final program map.
+- [x] Locate governing program-map evidence for Modules 08–15.
+- [x] Confirm `01-NEAR-TERM-ACADEMY/MODULE-MAP.md` is explicitly labeled Authoritative Module Map.
+- [x] Confirm `00-PROJECT-CONTROL/MODULE-MAP.md` supplies purposes/dependencies.
+- [x] Confirm live curriculum directories for Modules 08–15 are absent in inspected snapshot.
+- [x] Create `MODULE-08-TO-15-VERIFIED-PROGRAM-SCOPE.md`.
+- [x] Identify Module 15 scope conflict: business operations/client service/systems + capstone versus capstone/integrated dispatch framing.
+- [ ] Resolve Module 15 architecture explicitly before production.
+- [ ] Create individual Module 08–15 production branches only when each module is authorized for production; do not confuse planned scope with completed assets.
 
 ### Task 9: Reconcile parallel production branches
 - [ ] Reconcile Academy master architecture with `module-01-premium-depth-rebuild` before either merge decision.
-- [ ] Preserve useful work from both branches; do not overwrite newer verified content.
-- [ ] Update dashboard/status after reconciliation.
+- [ ] Preserve Part 04, intake/verification map and premium competency map without overwriting newer architecture controls.
+- [ ] Update M01 status after reconciliation.
 
-### Task 10: Architecture completion verification
-- [ ] Confirm every verified module has outcome, language, tools, assessment, practical, simulation, source and release controls represented.
-- [ ] Confirm no unverified module title is presented as fact.
-- [ ] Confirm no `PUBLICATION_READY` claim is made prematurely.
+### Task 10: Close active architecture-discovered gaps
+- [ ] SIM-003: independent ChatGPT runtime/content/test inspection; establish CI workflow/status; issue build verdict.
+- [ ] Module 05: close practical/scoring C-013 defects.
+- [ ] Module 06: reconcile G-013/current authoritative sources; design/build missing student tools and practical when production is unlocked.
+- [ ] Define Academy-wide full instructor-guide product standard separate from answer keys.
+- [ ] Expand professional dictionary from verified module terminology and later-map language families.
+
+### Task 11: Architecture completion verification
+- [ ] Confirm every existing/verified module has outcome, language, tools, assessment, practical, simulation, source and release controls represented with truthful gap states.
+- [x] Confirm later module titles/scopes are grounded in repository control maps rather than memory.
+- [x] Confirm no `PUBLICATION_READY` claim is made merely from component existence.
 - [ ] Compare architecture branch against `main` and review all changed paths.
-- [ ] Present branch for merge/review decision.
+- [ ] Reconcile parallel M01 branch before merge decision.
+- [ ] Present branch for final architecture review/merge decision.
 
-### Task 11: Next project — connected product ecosystem
+### Task 12: Next project — connected product ecosystem
 - [ ] After master-tree stabilization, design the app/integration architecture: document rendering, Drive/Docs or alternatives, LMS, web, simulation hosting, commerce, email/CRM, analytics, certificates, automation and backup.
-- [ ] Select apps only after business-function and data-flow requirements are mapped.
+- [ ] Select apps only after business-function, source-of-truth and data-flow requirements are mapped.
