@@ -114,6 +114,12 @@
 **Common misuse:** Assuming consolidated freight always moves through an LTL network; some FTL partials are consolidated directly between two shippers without a hub.
 **Operational example:** Two small shippers' freight consolidated into one trailer to share transportation cost.
 
+### Interline / Interlining
+**What it means:** Freight moving between two or more different carriers to complete a single shipment's journey, with each carrier handling a portion of the route.
+**What it does NOT mean:** The same thing as a broker-arranged move — interlining specifically refers to a carrier-to-carrier handoff, often under a direct interline agreement between the carriers themselves.
+**Common misuse:** Assuming interlining is rare in FTL operations; it's more common in LTL but does occur in FTL for very long or specialized moves.
+**Operational example:** A shipment starting with one carrier is handed off to a second carrier partway through the route under an interline agreement.
+
 ## Section 3: Operating Scope & Routing
 
 ### OTR (Over-the-Road)
@@ -133,6 +139,18 @@
 **What it does NOT mean:** The same thing as "regional" — local implies daily or near-daily return, not just more frequent home time than OTR.
 **Common misuse:** Assuming local drivers are exempt from Hours of Service rules; local operation affects routing and scheduling, not automatic HOS exemption (HOS terminology is its own future branch — don't infer exemptions here).
 **Operational example:** A driver making multiple deliveries within a single metro area and returning to the yard each night.
+
+### Team Driver / Solo Driver
+**What it means:** A team operation uses two drivers alternating driving and rest so the truck can keep moving with minimal downtime; a solo operation uses one driver, whose own required rest determines when the truck stops.
+**What it does NOT mean:** That team driving eliminates HOS requirements — each driver individually remains subject to applicable Hours of Service rules; only the truck's overall downtime is reduced (HOS specifics are a future branch).
+**Common misuse:** Assuming team freight always moves faster in a way that changes legal requirements, rather than just reducing the truck's idle time between drivers' rest periods.
+**Operational example:** "This is a team load — expect significantly faster transit than a comparable solo-driver run covering the same distance."
+
+### Expedited Freight / Hot Shot
+**What it means:** Freight requiring unusually fast delivery, often using smaller, more flexible equipment and premium service; "hot shot" specifically often refers to time-sensitive freight moved with heavy-duty pickup-and-trailer configurations.
+**What it does NOT mean:** A defined regulatory category — both are industry/service descriptions, and which specific federal requirements apply still depends on the actual vehicle configuration, weight ratings, and operation (see Module 01's caution on this exact point).
+**Common misuse:** Treating "hot shot" as a self-defining regulatory category rather than an industry term requiring its own fact-specific analysis.
+**Operational example:** A time-critical part shipped via expedited/hot-shot service rather than standard FTL scheduling.
 
 ### Route
 **What it means:** The specific path of travel planned or taken between origin and destination.
@@ -186,6 +204,12 @@
 **Common misuse:** Assuming straight trucks and tractor-trailer combinations require the same CDL class; requirements depend on the specific vehicle's weight rating and configuration (see Module 04).
 **Operational example:** A local delivery straight truck making multiple stops within one metro area.
 
+### Doubles / Triples
+**What it means:** A combination where a tractor pulls two (doubles) or three (triples) smaller trailers connected in sequence, rather than one standard trailer.
+**What it does NOT mean:** A universally available configuration — doubles/triples operation requires specific equipment, driver qualifications, and applicable state/route permissions, and is not part of this academy's standard carrier-side model.
+**Common misuse:** Assuming any driver or carrier can run doubles/triples without the specific additional qualifications and equipment involved.
+**Operational example:** A driver pulling two connected pup trailers on a single tractor, common in certain LTL network operations.
+
 ### Combination Vehicle / CMV (Commercial Motor Vehicle)
 **What it means:** The tractor and trailer operating together as a single unit; CMV is the broader regulatory term covering commercial vehicles subject to applicable federal/state rules.
 **What it does NOT mean:** That every commercial vehicle is automatically a tractor-trailer combination — CMV also covers straight trucks and other configurations.
@@ -216,11 +240,29 @@
 **Common misuse:** Assuming a legal gross weight automatically means legal axle distribution.
 **Operational example:** "The drive tandem is carrying 35,000 lb" describes one specific axle group's load, checked separately from the combination's total gross weight.
 
+### Fifth Wheel
+**What it means:** The coupling device mounted on the tractor that connects to the trailer's kingpin, allowing the trailer to pivot during turns.
+**What it does NOT mean:** A generic term for any hitch — the fifth wheel is specifically the flat, horseshoe-shaped coupling plate used in tractor-trailer combinations.
+**Common misuse:** Confusing fifth-wheel coupling (tractor-trailer) with the ball-and-hitch or pintle-hook couplings used on other vehicle types.
+**Operational example:** "The fifth wheel needs to be properly greased and locked before the trailer is considered securely coupled."
+
+### Landing Gear
+**What it means:** The retractable support legs on a trailer that hold it level and stable when it is not coupled to a tractor.
+**What it does NOT mean:** A component that stays down during transport — landing gear must be raised before the loaded combination moves.
+**Common misuse:** Assuming landing gear is only relevant during loading/unloading; forgetting to raise it before departure is a real, consequential safety error.
+**Operational example:** "Confirm landing gear is fully raised before pulling out of the yard."
+
 ### Weigh Station
 **What it means:** A roadside facility where commercial vehicles may be checked for weight, credentials, and safety compliance.
 **What it does NOT mean:** An optional stop at the driver's discretion — weigh station requirements depend on applicable state rules and vehicle status, not personal preference.
 **Common misuse:** Assuming all weigh stations operate identically or are staffed at all times; practices vary by state and facility.
 **Operational example:** "The route passes two weigh stations — confirm the load's paperwork is in order before departure."
+
+### Pre-Trip Inspection / Post-Trip Inspection
+**What it means:** A driver's required check of the vehicle's condition before beginning a trip (pre-trip) and after completing one (post-trip), covering safety-critical components.
+**What it does NOT mean:** An optional or purely discretionary habit — inspection requirements exist because equipment condition affects safety and legal compliance, not just personal preference.
+**Common misuse:** Treating inspections as a formality to rush through rather than a genuine safety check.
+**Operational example:** "The driver's pre-trip inspection caught a low tire before departure, avoiding a roadside issue."
 
 ## Section 5: Facilities & Locations
 
@@ -266,6 +308,12 @@
 **Common misuse:** Assuming hub-and-spoke routing applies to a direct FTL move with no intermediate stops.
 **Operational example:** An LTL carrier's freight from multiple small shippers converges at a regional hub before being redistributed to final destinations.
 
+### Bumped Load / Bumped Appointment
+**What it means:** A situation where a scheduled load or appointment is displaced or delayed, often because a facility prioritized another shipment or ran out of capacity in the scheduled window.
+**What it does NOT mean:** A situation automatically caused by the carrier's own lateness — a bumped appointment can happen even when the driver arrives on time, due to facility-side congestion.
+**Common misuse:** Assuming a bumped appointment automatically qualifies for detention pay without checking the applicable agreement and documentation.
+**Operational example:** "The driver arrived on time, but got bumped for a higher-priority shipment and had to wait for a new appointment window."
+
 ## Section 6: Time & Scheduling
 
 ### Appointment
@@ -297,6 +345,12 @@
 **What it does NOT mean:** Automatic entitlement to a specific accessorial payment — whether layover pay applies depends entirely on the actual agreement and documentation (see Module 07's accessorial-verification discipline).
 **Common misuse:** Assuming any overnight delay automatically qualifies as a billable layover without checking the applicable agreement.
 **Operational example:** "The driver is on a layover at the receiver — check the rate confirmation for whether layover pay applies."
+
+### Reload
+**What it means:** Securing a new load for a truck immediately or soon after it becomes empty, to minimize idle/deadhead time.
+**What it does NOT mean:** A guaranteed immediate outcome — finding a reload takes active sourcing effort and isn't automatic just because a truck is empty.
+**Common misuse:** Assuming a reload is always available in every market and lane; availability varies significantly.
+**Operational example:** "The dispatcher is working on a reload out of this delivery area before the truck sits idle."
 
 ## Section 7: Movement & Freight-Source Variations
 
@@ -336,6 +390,18 @@
 **Common misuse:** Assuming refused freight can simply be left at the destination or disposed of without proper instruction from the appropriate party.
 **Operational example:** "The receiver refused the freight due to visible damage — document it and escalate to the broker/shipper for instructions."
 
+### Blind Shipment
+**What it means:** A shipment where one party's identity (often the shipper's) is intentionally withheld from another party (often the receiver), typically to protect a business relationship.
+**What it does NOT mean:** A shipment with genuinely missing or unknown information — a blind shipment's details are known to the arranging parties; they're deliberately not shared with a specific party for business reasons.
+**Common misuse:** Confusing a blind shipment (an intentional business arrangement) with a load that has incomplete information due to poor communication.
+**Operational example:** "This is a blind shipment — do not disclose the shipper's identity to the receiver on the paperwork."
+
+### Demurrage vs. Detention
+**What it means:** Demurrage is a charge for keeping a shipping container or rail car beyond its allotted free time at a port, rail ramp, or terminal. Detention (already a controlled term — see the Ledger) refers to time held at a shipper/receiver facility beyond agreed free time. The two apply in different contexts and are governed by different agreements.
+**What it does NOT mean:** Interchangeable terms — using "demurrage" and "detention" as synonyms causes real confusion about which agreement, which party, and which facility type is actually involved.
+**Common misuse:** Applying "demurrage" to a delay at an ordinary shipper/receiver dock, or "detention" to a container sitting at a port terminal.
+**Operational example:** "The container incurred demurrage at the port before drayage pickup" versus "the trailer incurred detention at the receiver's dock."
+
 ---
 
 ## Cross-References to Already-Controlled Terms
@@ -349,22 +415,25 @@ Per the Academy Master Dictionary's branch structure, the following are intentio
 - Carrier operational/business terms (owner-operator, fleet, for-hire vs. private authority detail) → **Carrier terminology**
 - Broker-specific terms (bona fide agent, allocation of traffic, brokerage authority detail) → **Broker terminology**
 - Deeper shipper/receiver-side terms (BOL specifics, consignee instructions, accessorial billing from the shipper side) → **Shipper/Receiver terminology**
-- Full equipment-type catalog (dry van, reefer, flatbed, step deck, Conestoga, specialized trailers) → **Equipment terminology**
+- Full equipment-type catalog (dry van, reefer, flatbed, step deck, Conestoga, specialized trailers, kingpin/pintle-hook detail beyond the basics above) → **Equipment terminology**
 - Load-board-specific vocabulary (posting, board fee structures, credit scores on boards) → **Load-Board terminology**
-- Rate/pricing depth (contribution margin, break-even, accessorial economics) → **Rate/Pricing terminology**
+- Rate/pricing depth (contribution margin, break-even, accessorial economics, fuel surcharge) → **Rate/Pricing terminology**
 - Document-specific deep dives (Bill of Lading fields, rate confirmation clauses) → **Documentation terminology**
-- Regulatory/compliance vocabulary (USDOT, MC, FMCSA structures) → **Compliance/Regulatory terminology**
+- Regulatory/compliance vocabulary (USDOT, MC, FMCSA structures, IFTA, IRP) → **Compliance/Regulatory terminology**
 - HOS-specific vocabulary (14-hour window, 30-minute break, sleeper-berth provision) → **HOS terminology**
-- Billing/factoring vocabulary (NOA, recourse/non-recourse, quick-pay) → **Billing/Factoring terminology**
+- Billing/factoring vocabulary (NOA, recourse/non-recourse, quick-pay, per diem) → **Billing/Factoring terminology**
 - Problem-resolution vocabulary (claims, exceptions beyond refused freight above) → **Exception/Problem-Resolution terminology**
 
 ## Status Note
 
 This is the first branch of the Academy Master Dictionary. Terms here are general-industry vocabulary, not regulatory citations — none of them required new regulatory research beyond what earlier modules already verified, and none introduce a new date-sensitive claim. Where a term touches something regulatory (CDL, GVWR, axle limits, HOS), this file points to the module that already carries the sourced, verified treatment rather than restating it here.
 
+**Completeness note:** At 55 terms across 7 sections, this file has now covered general trucking vocabulary in real depth. Any further additions start pulling in vocabulary that more naturally belongs to one of the 12 reserved branches (fuel surcharge → Rate/Pricing; BOL field-level detail → Documentation; IFTA/IRP → Compliance/Regulatory; per diem → Billing/Factoring; kingpin/pintle-hook depth → Equipment). Recommend treating this branch as functionally complete and moving to the next branch rather than continuing to search for marginal additions here.
+
 ## Revision Log
 
 | Date | Change |
 |---|---|
 | 2026-08-30 | Initial file: Sections 1–6 (30 terms) |
-| 2026-08-30 | Added: Consolidation, Practical Miles vs. Shortest-Route Miles, Bobtail, Straight Truck/Box Truck, Weigh Station, Terminal, Hub and Spoke, Layover, and new Section 7 (Spot Freight, Contract Freight, Split Delivery, Diversion, Reconsignment, Refused Freight) — 13 additional terms in response to a completeness check |
+| 2026-08-30 | Added: Consolidation, Practical Miles vs. Shortest-Route Miles, Bobtail, Straight Truck/Box Truck, Weigh Station, Terminal, Hub and Spoke, Layover, and new Section 7 (Spot Freight, Contract Freight, Split Delivery, Diversion, Reconsignment, Refused Freight) — 13 additional terms |
+| 2026-08-30 | Added: Interline/Interlining, Team Driver/Solo Driver, Expedited Freight/Hot Shot, Doubles/Triples, Fifth Wheel, Landing Gear, Pre-Trip/Post-Trip Inspection, Bumped Load/Appointment, Reload, Blind Shipment, Demurrage vs. Detention — 12 additional terms. Added explicit completeness note. |
