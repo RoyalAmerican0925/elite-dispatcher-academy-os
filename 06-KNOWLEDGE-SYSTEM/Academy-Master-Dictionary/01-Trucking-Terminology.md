@@ -108,6 +108,12 @@
 **Common misuse:** Failing to account for the extra mileage and time multi-stop routing adds beyond simple origin-to-destination distance (see Module 03's total-trip-miles discipline).
 **Operational example:** One trailer picks up partial freight at two different shippers before making a single delivery, or delivers to two different receivers from one pickup.
 
+### Consolidation
+**What it means:** Combining freight from multiple shippers into a single load or shipment to improve efficiency and reduce per-unit cost.
+**What it does NOT mean:** The same thing as multi-stop from one shipper — consolidation specifically implies freight originating from more than one source.
+**Common misuse:** Assuming consolidated freight always moves through an LTL network; some FTL partials are consolidated directly between two shippers without a hub.
+**Operational example:** Two small shippers' freight consolidated into one trailer to share transportation cost.
+
 ## Section 3: Operating Scope & Routing
 
 ### OTR (Over-the-Road)
@@ -146,6 +152,12 @@
 **Common misuse:** Assuming origin/destination determine interstate-vs-intrastate classification by themselves, without considering the broader movement (see Module 01's interstate/intrastate content).
 **Operational example:** "Origin: Omaha, NE. Destination: Des Moines, IA."
 
+### Practical Miles vs. Shortest-Route Miles
+**What it means:** Practical miles reflect a realistic, drivable route (accounting for truck restrictions, road types, and reasonable routing conventions). Shortest-route miles reflect the mathematically shortest path, which may not be legally or practically drivable for a commercial vehicle.
+**What it does NOT mean:** That the two figures are interchangeable — using shortest-route miles for RPM or fuel calculations can produce a misleadingly optimistic number.
+**Common misuse:** Quoting a rate-per-mile figure calculated on shortest-route miles when the truck will actually run a longer practical route.
+**Operational example:** A mapping tool's "shortest path" might route through a restricted road; the practical mileage used for planning and RPM should reflect the route the truck can actually run.
+
 ## Section 4: Vehicles & Basic Configuration
 
 **Note:** Full equipment-type depth (dry van, reefer, flatbed, step deck, Conestoga, specialized trailers, weight/dimension figures) belongs to the future **Equipment terminology** branch and Module 03. This section covers only the foundational vehicle vocabulary needed before that branch makes sense.
@@ -161,6 +173,18 @@
 **What it does NOT mean:** A self-contained vehicle — a trailer cannot move without a tractor (or another powered unit) attached.
 **Common misuse:** Assuming all trailers share identical dimensions or capacity because they share a nominal size label (see Module 03's "nominal size is a starting point, not a guarantee" discipline).
 **Operational example:** "The 53-foot dry van trailer is loaded and ready for pickup."
+
+### Bobtail
+**What it means:** A tractor operating without a trailer attached.
+**What it does NOT mean:** An empty trailer being pulled (that's deadheading with an empty trailer, not bobtailing) — bobtail specifically means no trailer at all.
+**Common misuse:** Using "bobtail" and "deadhead" interchangeably; deadhead can involve an empty trailer, while bobtail specifically means the tractor alone.
+**Operational example:** "The driver bobtailed to the shop for repairs" — no trailer was involved in that specific move.
+
+### Straight Truck / Box Truck
+**What it means:** A single vehicle where the cargo area and the power unit are part of the same, non-separable chassis (no separate tractor and trailer).
+**What it does NOT mean:** The same configuration as a tractor-trailer combination — a straight truck cannot be uncoupled the way a trailer can be dropped from a tractor.
+**Common misuse:** Assuming straight trucks and tractor-trailer combinations require the same CDL class; requirements depend on the specific vehicle's weight rating and configuration (see Module 04).
+**Operational example:** A local delivery straight truck making multiple stops within one metro area.
 
 ### Combination Vehicle / CMV (Commercial Motor Vehicle)
 **What it means:** The tractor and trailer operating together as a single unit; CMV is the broader regulatory term covering commercial vehicles subject to applicable federal/state rules.
@@ -191,6 +215,12 @@
 **What it does NOT mean:** A figure automatically covered by overall gross-weight legality — axle-group weight is an independent check (see Module 03's central lesson on this exact point).
 **Common misuse:** Assuming a legal gross weight automatically means legal axle distribution.
 **Operational example:** "The drive tandem is carrying 35,000 lb" describes one specific axle group's load, checked separately from the combination's total gross weight.
+
+### Weigh Station
+**What it means:** A roadside facility where commercial vehicles may be checked for weight, credentials, and safety compliance.
+**What it does NOT mean:** An optional stop at the driver's discretion — weigh station requirements depend on applicable state rules and vehicle status, not personal preference.
+**Common misuse:** Assuming all weigh stations operate identically or are staffed at all times; practices vary by state and facility.
+**Operational example:** "The route passes two weigh stations — confirm the load's paperwork is in order before departure."
 
 ## Section 5: Facilities & Locations
 
@@ -224,6 +254,18 @@
 **Common misuse:** Assuming a live load will always be quick; facility-specific delays are common and should be planned for, not assumed away.
 **Operational example:** "This is a live unload — the driver waits while the receiver's crew unloads the trailer."
 
+### Terminal
+**What it means:** A carrier or network facility used for sorting, transferring, or staging freight and equipment, often central to LTL and intermodal operations.
+**What it does NOT mean:** The same thing as a shipper's or receiver's facility — a terminal is carrier/network infrastructure, not the origin or destination business itself.
+**Common misuse:** Assuming every load passes through a terminal; most FTL point-to-point moves do not.
+**Operational example:** "The LTL shipment routes through the regional terminal before final delivery."
+
+### Hub and Spoke
+**What it means:** A network model where freight is routed through central hub facilities that connect to multiple outlying (spoke) destinations, common in LTL and some intermodal operations.
+**What it does NOT mean:** The typical model for FTL point-to-point dispatching, which this academy's carrier-side model is generally built around.
+**Common misuse:** Assuming hub-and-spoke routing applies to a direct FTL move with no intermediate stops.
+**Operational example:** An LTL carrier's freight from multiple small shippers converges at a regional hub before being redistributed to final destinations.
+
 ## Section 6: Time & Scheduling
 
 ### Appointment
@@ -234,7 +276,7 @@
 
 ### FCFS (First Come, First Served)
 **What it means:** A facility scheduling approach where arrival order — within the facility's actual operating hours — determines service order, rather than a pre-booked appointment time.
-**What it does NOT mean:** Guaranteed 24-hour facility access — FCFS still operates only within the facility's real hours and capacity (see TERMINOLOGY-LEDGER cross-reference discipline already established in Module 05 content).
+**What it does NOT mean:** Guaranteed 24-hour facility access — FCFS still operates only within the facility's real hours and capacity.
 **Common misuse:** Assuming FCFS means "show up any time, day or night, and get served immediately."
 **Operational example:** "This shipper runs FCFS from 6 AM to 4 PM — arrival order within that window determines your place in line."
 
@@ -249,6 +291,50 @@
 **What it does NOT mean:** A binding guarantee — an ETA is an estimate that should be updated as conditions change, not treated as a fixed commitment once given.
 **Common misuse:** Providing an ETA based on a guess rather than verified route/schedule information (see Module 01's verification discipline).
 **Operational example:** "Current ETA is 2 PM, based on the driver's last check-in and remaining distance."
+
+### Layover
+**What it means:** A period where a driver and equipment are held overnight or longer at a location, typically due to a delay or scheduling gap, separate from ordinary required rest.
+**What it does NOT mean:** Automatic entitlement to a specific accessorial payment — whether layover pay applies depends entirely on the actual agreement and documentation (see Module 07's accessorial-verification discipline).
+**Common misuse:** Assuming any overnight delay automatically qualifies as a billable layover without checking the applicable agreement.
+**Operational example:** "The driver is on a layover at the receiver — check the rate confirmation for whether layover pay applies."
+
+## Section 7: Movement & Freight-Source Variations
+
+### Spot Freight / Spot Market
+**What it means:** Freight priced and tendered on a one-time or short-term basis, outside a longer-term contracted lane arrangement.
+**What it does NOT mean:** Always emergency or last-minute freight — spot freight simply means the transaction isn't governed by an existing contract for that lane.
+**Common misuse:** Assuming spot rates are always higher (or always lower) than contract rates; the relationship shifts with market conditions.
+**Operational example:** A one-time load booked directly off a load board at the currently posted spot rate.
+
+### Contract Freight / Dedicated Freight
+**What it means:** Freight moved under an ongoing or prearranged relationship or lane agreement, rather than a one-off spot transaction.
+**What it does NOT mean:** A fixed rate that never changes — contract terms vary and can include rate adjustments.
+**Common misuse:** Assuming contract freight guarantees consistent volume; actual volume commitments depend on the specific agreement.
+**Operational example:** A carrier running the same shipper's freight on a recurring weekly schedule under a standing agreement.
+
+### Split Delivery
+**What it means:** A single shipment divided and delivered to more than one location.
+**What it does NOT mean:** The same thing as multi-stop pickup — split delivery specifically refers to dividing freight across multiple delivery points, though the two can occur on the same load.
+**Common misuse:** Failing to plan for the added complexity (multiple BOLs, multiple PODs) a split delivery requires.
+**Operational example:** One trailer's freight is divided and delivered to two different distribution centers.
+
+### Diversion
+**What it means:** Changing a load's destination or routing after it has already been dispatched or is in transit.
+**What it does NOT mean:** A routine or cost-free change — diversions often carry additional cost, documentation, and coordination requirements.
+**Common misuse:** Treating a diversion request casually without updating all affected paperwork and parties (broker, receiver, carrier records).
+**Operational example:** "The shipper requested a diversion — the load now delivers to a different distribution center than originally booked."
+
+### Reconsignment
+**What it means:** Formally changing the named consignee/receiver of a shipment, typically requiring updated documentation and authorization.
+**What it does NOT mean:** The same thing as a simple diversion — reconsignment specifically involves changing who the freight is legally being delivered to, not just the route or delivery point for the same consignee.
+**Common misuse:** Executing a consignee change without proper documentation or authorization from the party with the right to redirect the shipment.
+**Operational example:** A shipment is reconsigned to a different buyer after the original sale falls through.
+
+### Refused Freight
+**What it means:** Freight that a receiver declines to accept at delivery, for reasons ranging from damage to order discrepancy.
+**What it does NOT mean:** A situation the driver or dispatcher should resolve unilaterally on-site — refused freight typically requires escalation and documentation, not an independent decision.
+**Common misuse:** Assuming refused freight can simply be left at the destination or disposed of without proper instruction from the appropriate party.
+**Operational example:** "The receiver refused the freight due to visible damage — document it and escalate to the broker/shipper for instructions."
 
 ---
 
@@ -266,12 +352,19 @@ Per the Academy Master Dictionary's branch structure, the following are intentio
 - Full equipment-type catalog (dry van, reefer, flatbed, step deck, Conestoga, specialized trailers) → **Equipment terminology**
 - Load-board-specific vocabulary (posting, board fee structures, credit scores on boards) → **Load-Board terminology**
 - Rate/pricing depth (contribution margin, break-even, accessorial economics) → **Rate/Pricing terminology**
-- Document-specific deep dives (BOL fields, rate confirmation clauses) → **Documentation terminology**
+- Document-specific deep dives (Bill of Lading fields, rate confirmation clauses) → **Documentation terminology**
 - Regulatory/compliance vocabulary (USDOT, MC, FMCSA structures) → **Compliance/Regulatory terminology**
 - HOS-specific vocabulary (14-hour window, 30-minute break, sleeper-berth provision) → **HOS terminology**
 - Billing/factoring vocabulary (NOA, recourse/non-recourse, quick-pay) → **Billing/Factoring terminology**
-- Problem-resolution vocabulary (claims, exceptions, refusals) → **Exception/Problem-Resolution terminology**
+- Problem-resolution vocabulary (claims, exceptions beyond refused freight above) → **Exception/Problem-Resolution terminology**
 
 ## Status Note
 
 This is the first branch of the Academy Master Dictionary. Terms here are general-industry vocabulary, not regulatory citations — none of them required new regulatory research beyond what earlier modules already verified, and none introduce a new date-sensitive claim. Where a term touches something regulatory (CDL, GVWR, axle limits, HOS), this file points to the module that already carries the sourced, verified treatment rather than restating it here.
+
+## Revision Log
+
+| Date | Change |
+|---|---|
+| 2026-08-30 | Initial file: Sections 1–6 (30 terms) |
+| 2026-08-30 | Added: Consolidation, Practical Miles vs. Shortest-Route Miles, Bobtail, Straight Truck/Box Truck, Weigh Station, Terminal, Hub and Spoke, Layover, and new Section 7 (Spot Freight, Contract Freight, Split Delivery, Diversion, Reconsignment, Refused Freight) — 13 additional terms in response to a completeness check |
