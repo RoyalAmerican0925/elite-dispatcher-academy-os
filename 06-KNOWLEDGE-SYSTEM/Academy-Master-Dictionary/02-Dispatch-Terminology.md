@@ -84,6 +84,18 @@
 **Common misuse:** Assuming utilization figures are directly comparable across different carriers or systems without knowing how each one calculates it.
 **Operational example:** "This week's utilization improved after reducing empty time between loads."
 
+### Pre-Plan / Pre-Planning
+**What it means:** Lining up a truck's likely next load or general direction before its current load is even delivered, to reduce idle time.
+**What it does NOT mean:** A finalized booking — a pre-plan is a working assumption that still needs to be verified and confirmed as the current load nears completion.
+**Common misuse:** Treating a pre-planned load as guaranteed and communicating it to the driver as fixed before it's actually confirmed.
+**Operational example:** "Pre-planning a reload out of the delivery area so the truck doesn't sit once it's empty."
+
+### Standing Instructions / Carrier Preferences
+**What it means:** A carrier's general, ongoing operating preferences (preferred lanes, commodities to avoid, minimum rate expectations, home-time commitments) that inform routine dispatch decisions without needing to be re-confirmed on every single load.
+**What it does NOT mean:** A substitute for load-specific verification — standing preferences shape which opportunities get pursued, but each individual load still needs its own fit check.
+**Common misuse:** Assuming old standing instructions are still current without periodically confirming they haven't changed.
+**Operational example:** "Standing instructions: this carrier doesn't run into New York City — filter that out before presenting load options."
+
 ## Section 3: Verification & Decision Judgment
 
 ### FOUND vs. VERIFIED AVAILABLE
@@ -109,6 +121,12 @@
 **What it does NOT mean:** Permission to guess or assume — recognizing missing information should trigger verification, not invented facts (a theme repeated across every module in this academy).
 **Common misuse:** Filling a missing-information gap with an assumption based on a similar past load rather than verifying this specific one.
 **Operational example:** "Pickup appointment time is missing — verify with the broker before finalizing driver instructions."
+
+### Escalation Path
+**What it means:** The defined chain of who a dispatcher contacts when a decision exceeds their own authority or judgment — typically carrier ownership, a manager, or another appropriate specialist.
+**What it does NOT mean:** A last resort used only in emergencies — escalation is a normal, expected part of the STOP/VERIFY/ESCALATE discipline, not a sign of failure.
+**Common misuse:** Avoiding escalation out of a sense that asking for help reflects poorly on the dispatcher, leading to a decision made beyond one's actual authority.
+**Operational example:** "This is outside my authority to resolve — escalating to the carrier owner per our escalation path."
 
 ## Section 4: Communication & Status Tracking
 
@@ -136,6 +154,18 @@
 **Common misuse:** Skipping documentation of verbal instructions or decisions, leaving no record if a question comes up later.
 **Operational example:** "Dispatch note: driver authorized to wait for a new appointment window after being bumped at the dock."
 
+### No-Show
+**What it means:** A situation where a driver fails to arrive for a scheduled appointment without prior notice or cancellation.
+**What it does NOT mean:** The same thing as a documented, communicated delay — a no-show specifically implies the facility received no advance notice.
+**Common misuse:** Treating any late arrival as a no-show, even when the delay was communicated in advance.
+**Operational example:** "Contact the driver immediately — the receiver is reporting a no-show for the scheduled appointment."
+
+### Load Cancellation
+**What it means:** A formal decision by the broker, shipper, or carrier to call off a previously booked load before it's completed.
+**What it does NOT mean:** A cost-free or purely administrative event — cancellations can carry financial and relationship consequences depending on timing and the applicable agreement.
+**Common misuse:** Treating a cancellation casually without documenting the reason or checking whether any cancellation terms apply.
+**Operational example:** "The broker cancelled the load two hours before pickup — document the cancellation and reason."
+
 ## Section 5: Performance & Records
 
 ### On-Time Performance
@@ -156,6 +186,18 @@
 **Common misuse:** Conflating trip-sheet records with the broader dispatch board; they serve different tracking purposes.
 **Operational example:** "The trip sheet shows the delay occurred at the second stop, not in transit."
 
+### Detention Log
+**What it means:** A running record tracking detention time and circumstances across loads, used to support billing claims and identify problem facilities.
+**What it does NOT mean:** An automatic entitlement to payment — a detention log supports a claim, but whether detention pay actually applies still depends on the specific agreement and documentation (see TERMINOLOGY-LEDGER.md's Detention entry).
+**Common misuse:** Assuming logged detention time automatically converts to paid detention without confirming it against the applicable agreement.
+**Operational example:** "The detention log shows this receiver has caused delays on three of the last five loads — worth flagging to the carrier."
+
+### Dead Zone / Freight Desert
+**What it means:** A geographic area with historically low freight volume, making it difficult to find a reload without significant deadhead.
+**What it does NOT mean:** A permanent or universal condition — freight density in a given area can shift over time and by season.
+**Common misuse:** Assuming an area is a dead zone based on outdated experience rather than checking current conditions.
+**Operational example:** "That delivery area is a known dead zone — plan for likely deadhead before committing to the load."
+
 ---
 
 ## Cross-References to Already-Controlled Terms
@@ -168,8 +210,16 @@ The following terms already have a locked, controlled definition in `06-KNOWLEDG
 - Carrier business/ownership vocabulary (owner-operator, fleet structure) → **Carrier terminology**
 - Broker-specific vocabulary → **Broker terminology**
 - Load-board mechanics (posting, board features) → **Load-Board terminology**
-- Rate/pricing depth → **Rate/Pricing terminology**
+- Rate/pricing depth (dispatcher compensation/fee structure) → **Rate/Pricing terminology**
+- Exception/claims handling depth → **Exception/Problem-Resolution terminology**
 
 ## Status Note
 
 All terms here are operational/workflow vocabulary already consistent with Modules 01–07's established teaching — no new regulatory claims were introduced, and nothing here required fresh verification beyond what those modules already carry.
+
+## Revision Log
+
+| Date | Change |
+|---|---|
+| 2026-08-30 | Initial file: Sections 1–5 (28 terms) |
+| 2026-08-30 | Added Pre-Plan/Pre-Planning, Standing Instructions/Carrier Preferences (Section 2); Escalation Path (Section 3); No-Show, Load Cancellation (Section 4); Detention Log, Dead Zone/Freight Desert (Section 5) — 8 additional terms |
