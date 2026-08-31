@@ -46,6 +46,9 @@
 **Common misuse:** Letting a tender lapse without an explicit decision, creating ambiguity about whether the carrier is committed.
 **Operational example:** "We're declining this tender — driver hours don't support the delivery window."
 
+### Solicitation (Dispatcher Context)
+*(See Module 02 for the full legal-boundary treatment.)* A dispatcher soliciting freight specifically on behalf of one named, represented carrier is consistent with carrier-side agency; holding oneself out as generally able to arrange transportation for any shipper is a different activity that presents brokerage risk — the distinction Module 02 exists to teach.
+
 ## Section 2: Planning & Assignment
 
 ### Trip Planning
@@ -95,6 +98,18 @@
 **What it does NOT mean:** A substitute for load-specific verification — standing preferences shape which opportunities get pursued, but each individual load still needs its own fit check.
 **Common misuse:** Assuming old standing instructions are still current without periodically confirming they haven't changed.
 **Operational example:** "Standing instructions: this carrier doesn't run into New York City — filter that out before presenting load options."
+
+### Home Time
+**What it means:** A driver's scheduled or expected time away from the road, spent at home — a key planning factor when sourcing and assigning loads.
+**What it does NOT mean:** A fixed, universal schedule — home-time expectations vary by driver agreement, operating model (OTR/regional/local), and individual carrier policy.
+**Common misuse:** Assigning a load without checking whether it conflicts with a driver's committed home-time expectation.
+**Operational example:** "This load's delivery timing conflicts with the driver's home-time commitment — look for an alternative before assigning it."
+
+### Relay
+**What it means:** A method of moving a load using more than one driver in sequence, handing off the load (and sometimes the equipment) partway through the route rather than one driver completing the entire trip.
+**What it does NOT mean:** The same thing as team driving (see Trucking Terminology's Team Driver entry) — a relay uses separate drivers taking turns at different points, rather than two drivers riding together in one truck.
+**Common misuse:** Assuming a relay handoff happens automatically without confirming both drivers, timing, and location details in advance.
+**Operational example:** "This load uses a relay — the first driver hands off to a second driver at the halfway point."
 
 ## Section 3: Verification & Decision Judgment
 
@@ -222,4 +237,5 @@ All terms here are operational/workflow vocabulary already consistent with Modul
 | Date | Change |
 |---|---|
 | 2026-08-30 | Initial file: Sections 1–5 (28 terms) |
-| 2026-08-30 | Added Pre-Plan/Pre-Planning, Standing Instructions/Carrier Preferences (Section 2); Escalation Path (Section 3); No-Show, Load Cancellation (Section 4); Detention Log, Dead Zone/Freight Desert (Section 5) — 8 additional terms |
+| 2026-08-30 | Added Pre-Plan/Pre-Planning, Standing Instructions/Carrier Preferences (Section 2); Escalation Path (Section 3); No-Show, Load Cancellation (Section 4); Detention Log, Dead Zone/Freight Desert (Section 5) — 8 additional terms (36 total) |
+| 2026-08-30 | Added Solicitation (Section 1), Home Time, Relay (Section 2) — 3 additional terms (39 total) |
