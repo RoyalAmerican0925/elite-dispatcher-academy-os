@@ -60,7 +60,11 @@ You should now be able to explain what a load board does, distinguish spot from 
 
 # 25\. Transition to Module 06
 
-Module 05 taught you how to find and screen freight candidates. But screening for fit isn't the same as verifying that a broker is legitimate. Module 06 — Broker Verification & Fraud Prevention — picks up exactly where this module's Section 18 and Section 16 left off: identity verification, authority verification, fraud indicators, double-brokering investigation, suspicious contact changes, and payment/credit risk. Anything you flagged here for closer screening gets its full treatment there.
+Module 05 teaches freight sourcing and candidate screening, and Part 07 now adds an introductory verification layer: rate-confirmation discrepancy review, entity-versus-contact distinction, sourcing-stage fraud red flags, basic credit/factoring awareness, HOS-timing verification, account-security discipline, and professional broker communication. That introductory layer is intentionally limited.
+
+Module 06 — Broker Verification & Fraud Prevention — takes the unresolved verification problem deeper. It owns the more complete identity/authority verification workflow, deeper fraud-indicator analysis, double-brokering investigation, suspicious-contact escalation, and broker financial-security/payment-risk controls. A student should enter Module 06 already understanding this rule from Module 05: **a freight opportunity can look like a good fit and still require independent verification of the entity, the contact, the load, the instructions, or the document before the carrier relies on it.**
+
+In other words, Module 05 teaches **FIND → SCREEN → FLAG → FIRST-PASS VERIFY → ROUTE FOR DEEPER VERIFICATION**. Module 06 teaches the deeper verification and fraud-prevention process. Do not treat either module as a substitute for the other.
 
 # Appendix A: Module 05 — Terminology Ledger Candidates
 
