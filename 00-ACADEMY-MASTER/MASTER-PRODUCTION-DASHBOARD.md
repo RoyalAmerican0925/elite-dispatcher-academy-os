@@ -8,14 +8,15 @@ This dashboard answers: **What is actually present, what is active, and what blo
 | Deep M01–M07 inventory | COMPLETE for current architecture snapshot | use inventory as component-level baseline; update when production branches change |
 | Professional language layer | EXPANDED ARCHITECTURE | dictionary + progression now extend through verified M08–M15 scope; exact later-module entries finalize during production |
 | Instructor-guide product layer | STANDARD DEFINED | audit every existing instructor guide against the new Academy-wide standard |
-| Module 01 | PREMIUM REBUILD ACTIVE on separate branch | reconcile Part 04 + intake tool + competency map; repair/synchronize full chain; source verification; premium QA |
+| Module 01 | PREMIUM REBUILD ACTIVE on separate branch | full production reconciliation still open: repair/synchronize Parts 01–04, tools, assessments, sources and SIM-001 alignment |
+| M01 architecture reconciliation | CONTROL-LEVEL RECONCILIATION RECORDED | production branch remains authoritative for active rebuild; no force merge |
 | SIM-001 | BUILD COMPLETE — RELEASE QA DEFERRED | alignment audit after M01 rebuild; assembled release QA later |
 | Module 02 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT | stronger instructional-depth audit + instructor-guide audit |
 | SIM-002 | BUILD COMPLETE — RELEASE QA DEFERRED | premium-depth audit; assembled release QA later |
-| Module 03 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT | premium audit + reconcile with SIM-003 |
-| SIM-003 | CODED BUILD PRESENT / QA GATE OPEN | ChatGPT inspect runtime/content; verify tests/CI; issue build verdict |
-| Module 04 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT | premium audit; build SIM-004 after sequential simulation gate |
-| SIM-004 | ABSENT / PLANNED | design/build after SIM-003 gate |
+| Module 03 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT | premium audit; preserve SIM-003 synchronization if M03 changes |
+| SIM-003 | BUILD COMPLETE — RELEASE QA DEFERRED | 26/26 CI tests passed; assembled browser/device/accessibility/LMS/records/editorial/source QA later |
+| Module 04 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT | premium audit; SIM-004 is next sequential simulation build after regular workflow prerequisites |
+| SIM-004 | ABSENT / PLANNED | design/build after Module 04 premium/instructor alignment check |
 | Module 05 | C-013 PARTIALLY LANDED / REGULAR CLOSEOUT OPEN | add dedicated practical rate-confirmation discrepancy + entity-vs-contact tasks; sync scoring; then premium audit |
 | SIM-005 | ABSENT / PLANNED | build after M05 regular + premium prerequisites and sequential simulation gate |
 | Module 06 | SUBSTANTIAL CURRICULUM/ASSESSMENT EXISTS / RESEARCH-RECONCILIATION GATE | G-013/current-source reconciliation; build missing student tools + graded practical; then simulation/premium gate |
@@ -27,6 +28,14 @@ This dashboard answers: **What is actually present, what is active, and what blo
 | Branding/document rendering | PLANNED | start after master architecture/reconciliation stabilizes |
 | LMS/delivery/integrations | PLANNED | map validated business functions/data flows before selecting apps |
 | Final release QA | DEFERRED | branded rendering + deployment + browser/device + accessibility + durable records + editorial/current-source controls |
+
+## SIM-003 verified build evidence
+- Runtime: seven stages / fifteen decisions.
+- Product package: student simulation, scenario packet, instructor guide, scoring rubric, completion record and runtime.
+- Critical-decision concepts synchronized to the current Module 03 Practical: Load D driver-qualification mismatch and Load E gross-versus-axle trap.
+- GitHub Actions run **33346898280**, job **99352613208**, tested commit `3edd8966d2949a28ad53507df9d80a0a98986809`.
+- Result: **26 passed, 0 failed**.
+- Build status is therefore **BUILD COMPLETE — RELEASE QA DEFERRED**, not `PUBLICATION_READY`.
 
 ## Verified program sequence for Modules 08–15
 Repository control maps establish:
@@ -43,13 +52,14 @@ The capstone integrates Modules 01–14; it does not reteach them. Final capston
 
 ## Immediate execution sequence
 1. Keep `academy-master-architecture` isolated from `main`.
-2. Reconcile the master architecture with `module-01-premium-depth-rebuild` without overwriting newer work.
-3. Close SIM-003's independent QA/CI gate.
+2. Continue controlled M01 production reconciliation without overwriting the dedicated rebuild branch.
+3. **SIM-003 build gate is closed.** Preserve release-layer QA for assembled system testing.
 4. Close Module 05's remaining regular practical/scoring defects.
 5. Reconcile Module 06 against current G-013/current-source research and fill confirmed product gaps.
 6. Audit existing instructor guides against `INSTRUCTOR-GUIDE-PRODUCT-STANDARD.md`.
-7. Expand dictionary entries as each owning module is built; do not let module glossaries drift.
-8. Then design the connected document/LMS/commerce/analytics ecosystem after architecture stabilization.
+7. Begin SIM-004 only in the established sequential simulation workflow after Module 04 alignment controls are satisfied.
+8. Expand dictionary entries as each owning module is built; do not let module glossaries drift.
+9. Then design the connected document/LMS/commerce/analytics ecosystem after architecture stabilization.
 
 ## Non-negotiable release statement
 Neither an earlier commercial-content PASS nor a simulation build existing in GitHub means the Academy is `PUBLICATION_READY`. Final release occurs only after the complete customer-facing system is assembled and passes release controls.
