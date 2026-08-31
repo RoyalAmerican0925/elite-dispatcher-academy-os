@@ -32,7 +32,7 @@
 - [x] Inventory Module 02 manual/tools/assessment/instructor/source/simulation chain.
 - [x] Inventory Module 03 manual/tools/assessment/instructor/source/simulation chain; identify SIM-003 QA/CI gap.
 - [x] Inventory Module 04 chain and confirm SIM-004 absence.
-- [x] Inventory Module 05 chain; confirm C-013 exam/tools advanced while practical closeout remains incomplete.
+- [x] Inventory Module 05 chain; identify C-013 closeout requirements.
 - [x] Inventory current Module 06 chain and identify missing student tools/practical/simulation; final production conclusions remain subject to G-013/current-source reconciliation.
 - [x] Inventory Module 07 chain and identify scenario/instructor/simulation/source-control questions for premium audit.
 - [x] Create `DEEP-COMPONENT-INVENTORY-M01-M07-2026-08-30.md`.
@@ -48,15 +48,17 @@
 - [ ] Create individual Module 08–15 production branches only when each module is authorized for production; do not confuse planned scope with completed assets.
 
 ### Task 9: Reconcile parallel production branches
-- [x] Compare `academy-master-architecture` and `module-01-premium-depth-rebuild`; confirm they diverged from common plan base and identify the three premium-branch commits.
+- [x] Compare `academy-master-architecture` and `module-01-premium-depth-rebuild`; confirm they diverged from common plan base and identify the premium-branch commits.
 - [x] Re-read Part 04, Dispatch File Intake & Verification Map and Premium Competency Map from the dedicated rebuild branch.
-- [ ] Reconcile those premium assets into the architecture lineage without overwriting newer architecture controls.
-- [ ] Update M01 status after controlled reconciliation.
+- [x] Record control-level reconciliation in `MODULE-01-PREMIUM-BRANCH-RECONCILIATION.md` without force-resetting or overwriting either branch.
+- [ ] Complete production-level M01 reconciliation after Parts 01–04/tools/assessments/sources/SIM-001 are synchronized on the dedicated rebuild branch.
 
 ### Task 10: Close active architecture-discovered gaps
-- [ ] SIM-003: independent ChatGPT runtime/content/test inspection; establish CI workflow/status; issue build verdict.
-- [ ] Module 05: close practical/scoring C-013 defects.
-- [ ] Module 06: reconcile G-013/current authoritative sources; design/build missing student tools and practical when production is unlocked.
+- [x] SIM-003: independently inspect runtime/content/tests; add CI; verify GitHub Actions success; synchronize product package; issue `BUILD COMPLETE — RELEASE QA DEFERRED` verdict.
+- [x] Module 05: close C-013 regular practical/scoring defects, verify entity-vs-contact and rate-confirmation discrepancy events, synchronize scoring/instructor support, repair stale Module 06 transition, and record regular closeout PASS.
+- [x] Module 06: perform 2026-08-30 current-source supplement against current eCFR/FMCSA materials; verify live manual/instructor/exam high-risk federal wording is already corrected.
+- [ ] Module 06: receive/reconcile full G-013 independent occupational/competitor/regulatory research before production unlock.
+- [ ] Module 06: after unlock, design/build confirmed missing student tools and graded practical, then align assessment/instructor/simulation chain.
 - [x] Define Academy-wide full instructor-guide product standard separate from answer keys in `INSTRUCTOR-GUIDE-PRODUCT-STANDARD.md`.
 - [x] Expand professional-language progression through verified Modules 08–15 planned scope.
 - [x] Expand master dictionary with additional foundational, decision, verification and later-module architecture terms while labeling unbuilt-module terms as targets.
@@ -67,7 +69,7 @@
 - [x] Confirm later module titles/scopes are grounded in repository control maps rather than memory.
 - [x] Confirm no `PUBLICATION_READY` claim is made merely from component existence.
 - [ ] Compare architecture branch against `main` and review all changed paths.
-- [ ] Reconcile parallel M01 branch before merge decision.
+- [ ] Reconcile parallel M01 production branch before merge decision.
 - [ ] Present branch for final architecture review/merge decision.
 
 ### Task 12: Next project — connected product ecosystem
