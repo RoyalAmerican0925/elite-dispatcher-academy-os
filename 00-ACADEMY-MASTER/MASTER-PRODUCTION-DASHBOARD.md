@@ -7,27 +7,35 @@ This dashboard answers: **What is actually present, what is active, and what blo
 | Academy master architecture | ACTIVE / isolated branch | continue reconciliation; no merge to main yet |
 | Deep M01–M07 inventory | COMPLETE for current architecture snapshot | use inventory as component-level baseline; update when production branches change |
 | Professional language layer | EXPANDED ARCHITECTURE | dictionary + progression now extend through verified M08–M15 scope; exact later-module entries finalize during production |
-| Instructor-guide product layer | STANDARD DEFINED | audit every existing instructor guide against the new Academy-wide standard |
-| Module 01 | PREMIUM REBUILD ACTIVE on separate branch | full production reconciliation still open: repair/synchronize Parts 01–04, tools, assessments, sources and SIM-001 alignment |
+| Instructor-guide product layer | AUDIT COMPLETE / M01–M07 FULL GUIDES MISSING | build module-specific delivery guides from synchronized competency chains; answer guides do not substitute |
+| Module 01 | PREMIUM REBUILD ACTIVE on separate branch | full production reconciliation still open: repair/synchronize Parts 01–04, tools, assessments, sources and SIM-001 alignment; then build full instructor guide |
 | M01 architecture reconciliation | CONTROL-LEVEL RECONCILIATION RECORDED | production branch remains authoritative for active rebuild; no force merge |
 | SIM-001 | BUILD COMPLETE — RELEASE QA DEFERRED | alignment audit after M01 rebuild; assembled release QA later |
-| Module 02 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT | stronger instructional-depth audit + instructor-guide audit |
+| Module 02 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT | stronger instructional-depth audit + full instructor-guide build |
 | SIM-002 | BUILD COMPLETE — RELEASE QA DEFERRED | premium-depth audit; assembled release QA later |
-| Module 03 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT | premium audit; preserve SIM-003 synchronization if M03 changes |
+| Module 03 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT | premium audit + full instructor-guide build; preserve SIM-003 synchronization if M03 changes |
 | SIM-003 | BUILD COMPLETE — RELEASE QA DEFERRED | 26/26 CI tests passed; assembled browser/device/accessibility/LMS/records/editorial/source QA later |
-| Module 04 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT | premium audit; SIM-004 is next sequential simulation build after regular workflow prerequisites |
-| SIM-004 | ABSENT / PLANNED | design/build after Module 04 premium/instructor alignment check |
-| Module 05 | C-013 REGULAR CLOSEOUT PASS / PREMIUM RE-AUDIT | practical now includes entity-vs-contact + rate-confirmation discrepancy events; scoring synced; Part 04 transition repaired; premium-depth audit remains |
+| Module 04 | EARLIER COMMERCIAL PASS / PREMIUM RE-AUDIT / FULL INSTRUCTOR GUIDE MISSING | perform premium/instructor alignment; this blocks locking SIM-004 |
+| SIM-004 | ABSENT / PLANNED / BLOCKED BY M04 ALIGNMENT | design/build only after Module 04 premium/instructor alignment check |
+| Module 05 | C-013 REGULAR CLOSEOUT PASS / PREMIUM RE-AUDIT | practical/scoring defects closed; full instructor guide + premium audit remain |
 | SIM-005 | ABSENT / PLANNED | build after M05 premium prerequisites and sequential simulation gate |
-| Module 06 | SUBSTANTIAL CURRICULUM/ASSESSMENT EXISTS / RESEARCH-RECONCILIATION GATE | G-013/current-source reconciliation; build missing student tools + graded practical; then simulation/premium gate |
+| Module 06 | SUBSTANTIAL CURRICULUM/ASSESSMENT EXISTS / RESEARCH-RECONCILIATION GATE | G-013/current-source reconciliation; build missing student tools + graded practical + full instructor guide when unlocked |
 | SIM-006 | ABSENT / DESIGN AFTER RECONCILIATION | derive from verified entity→contact→load→payment workflow |
-| Module 07 | SUBSTANTIAL PRODUCTION DRAFT | premium component audit; decide scenario-lab need; build SIM-007; formal source/release controls |
+| Module 07 | SUBSTANTIAL PRODUCTION DRAFT | premium component audit; full instructor guide; decide scenario-lab need; build SIM-007; formal source/release controls |
 | SIM-007 | ABSENT / PLANNED | Profitability Decision Desk after preceding simulation sequence |
 | Modules 08–14 | PROGRAM SCOPE VERIFIED / CURRICULUM ABSENT | author sequentially from authoritative module map and dependency map after production authorization |
 | Module 15 | ARCHITECTURE SCOPE RESOLVED / CURRICULUM ABSENT | business operations/client service/systems + integrated capstone; final capstone scenario dependencies wait for M08–M14 competency maps |
 | Branding/document rendering | PLANNED | start after master architecture/reconciliation stabilizes |
 | LMS/delivery/integrations | PLANNED | map validated business functions/data flows before selecting apps |
 | Final release QA | DEFERRED | branded rendering + deployment + browser/device + accessibility + durable records + editorial/current-source controls |
+
+## Instructor-guide audit result
+- `03-ASSESSMENTS/Instructor-Answer-Guides/` contains module-specific answer guides for Modules 01–07.
+- `03-ASSESSMENTS/Instructor-Guides/` does **not** contain Module 01–07 full instructor guides in the inspected architecture snapshot; only `RES-LE-021A-LE-001-Instructor-Guide.md` was verified there.
+- The Academy standard intentionally separates answer keys from instructor delivery guides.
+- Audit record: `10-PRODUCTION/ACADEMY-INSTRUCTOR-GUIDE-AUDIT-M01-M07-2026-08-31.md`.
+- Release consequence: Modules 01–07 require full instructor-guide product coverage before commercial publication.
+- Simulation consequence: SIM-004 remains blocked until Module 04 premium/instructor alignment is complete.
 
 ## SIM-003 verified build evidence
 - Runtime: seven stages / fifteen decisions.
@@ -41,11 +49,11 @@ This dashboard answers: **What is actually present, what is active, and what blo
 - `Module-05-Practical.md` contains a dedicated **Entity vs. Contact** verification event.
 - The practical contains a dedicated **Rate Confirmation Discrepancy Review** using a $1,150 agreed exercise rate versus a $1,050 written rate plus an added $75 deduction condition.
 - The practical requires STOP/VERIFY, corrected/confirmed terms and actual signing-authority confirmation rather than silent processing.
-- `Modules-01-05-Instructor-Scoring-Guide.md` now scores those behaviors in a 30-point Module 05 rubric with synchronized critical-failure controls.
+- `Modules-01-05-Instructor-Scoring-Guide.md` scores those behaviors in a 30-point Module 05 rubric with synchronized critical-failure controls.
 - The Module 05 tool set includes the Broker Verification Worksheet and Rate Confirmation Review Checklist used by the practical.
 - Part 07 teaches the underlying verification/document-review concepts.
-- Part 04's stale Module 06 transition was repaired to preserve Module 05's new first-pass verification layer while reserving deeper verification/fraud-prevention work for Module 06.
-- Regular C-013 closeout therefore passes; premium-depth, SIM-005 and release-layer gates remain.
+- Part 04's stale Module 06 transition was repaired to preserve Module 05's first-pass verification layer while reserving deeper verification/fraud-prevention work for Module 06.
+- Regular C-013 closeout therefore passes; premium-depth, full instructor guide, SIM-005 and release-layer gates remain.
 
 ## Verified program sequence for Modules 08–15
 Repository control maps establish:
@@ -64,10 +72,10 @@ The capstone integrates Modules 01–14; it does not reteach them. Final capston
 1. Keep `academy-master-architecture` isolated from `main`.
 2. Continue controlled M01 production reconciliation without overwriting the dedicated rebuild branch.
 3. SIM-003 build gate remains closed; preserve release-layer QA for assembled system testing.
-4. **Module 05 regular C-013 closeout is closed.** Move it into premium-depth/instructor-guide/SIM-005 work rather than reopening the same defects.
-5. Reconcile Module 06 against current G-013/current-source research and fill confirmed product gaps.
-6. Audit existing instructor guides against `INSTRUCTOR-GUIDE-PRODUCT-STANDARD.md`.
-7. Begin SIM-004 only in the established sequential simulation workflow after Module 04 alignment controls are satisfied.
+4. Module 05 regular C-013 closeout remains closed; do not reopen the same defects.
+5. Reconcile Module 06 against G-013/current-source research before production unlock.
+6. Build full instructor guides module-by-module from synchronized competency chains; do not bulk-generate generic guides.
+7. Complete Module 04 premium/instructor alignment before locking or building SIM-004.
 8. Expand dictionary entries as each owning module is built; do not let module glossaries drift.
 9. Then design the connected document/LMS/commerce/analytics ecosystem after architecture stabilization.
 
