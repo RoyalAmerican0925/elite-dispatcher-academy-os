@@ -44,20 +44,23 @@
 - [x] Confirm live curriculum directories for Modules 08–15 are absent in inspected snapshot.
 - [x] Create `MODULE-08-TO-15-VERIFIED-PROGRAM-SCOPE.md`.
 - [x] Identify Module 15 scope conflict: business operations/client service/systems + capstone versus capstone/integrated dispatch framing.
-- [ ] Resolve Module 15 architecture explicitly before production.
+- [x] Resolve Module 15 architecture explicitly as business operations/client service/systems + integrated capstone; record in `MODULE-15-ARCHITECTURE-RESOLUTION.md`.
 - [ ] Create individual Module 08–15 production branches only when each module is authorized for production; do not confuse planned scope with completed assets.
 
 ### Task 9: Reconcile parallel production branches
-- [ ] Reconcile Academy master architecture with `module-01-premium-depth-rebuild` before either merge decision.
-- [ ] Preserve Part 04, intake/verification map and premium competency map without overwriting newer architecture controls.
-- [ ] Update M01 status after reconciliation.
+- [x] Compare `academy-master-architecture` and `module-01-premium-depth-rebuild`; confirm they diverged from common plan base and identify the three premium-branch commits.
+- [x] Re-read Part 04, Dispatch File Intake & Verification Map and Premium Competency Map from the dedicated rebuild branch.
+- [ ] Reconcile those premium assets into the architecture lineage without overwriting newer architecture controls.
+- [ ] Update M01 status after controlled reconciliation.
 
 ### Task 10: Close active architecture-discovered gaps
 - [ ] SIM-003: independent ChatGPT runtime/content/test inspection; establish CI workflow/status; issue build verdict.
 - [ ] Module 05: close practical/scoring C-013 defects.
 - [ ] Module 06: reconcile G-013/current authoritative sources; design/build missing student tools and practical when production is unlocked.
-- [ ] Define Academy-wide full instructor-guide product standard separate from answer keys.
-- [ ] Expand professional dictionary from verified module terminology and later-map language families.
+- [x] Define Academy-wide full instructor-guide product standard separate from answer keys in `INSTRUCTOR-GUIDE-PRODUCT-STANDARD.md`.
+- [x] Expand professional-language progression through verified Modules 08–15 planned scope.
+- [x] Expand master dictionary with additional foundational, decision, verification and later-module architecture terms while labeling unbuilt-module terms as targets.
+- [ ] Audit each existing module instructor guide against the new product standard.
 
 ### Task 11: Architecture completion verification
 - [ ] Confirm every existing/verified module has outcome, language, tools, assessment, practical, simulation, source and release controls represented with truthful gap states.
