@@ -22,7 +22,7 @@
 
 ### Brokerage
 **What it means:** The general business activity of arranging transportation for compensation, or the term for a company organized to conduct that activity.
-**What it does NOT mean:** A activity automatically triggered by any involvement in freight movement — whether specific conduct constitutes brokerage depends on the actual factors Module 02 teaches (who supplies the freight, who selects the carrier, allocation discretion), not just general industry proximity.
+**What it does NOT mean:** An activity automatically triggered by any involvement in freight movement — whether specific conduct constitutes brokerage depends on the actual factors Module 02 teaches (who supplies the freight, who selects the carrier, allocation discretion), not just general industry proximity.
 **Common misuse:** Assuming any company with "logistics" or "freight" in its name is automatically operating as a broker.
 **Operational example:** "This company operates a brokerage, arranging transportation for multiple shippers across various carriers."
 
@@ -34,6 +34,12 @@
 **What it does NOT mean:** The same thing as a broker — do not teach brokers and freight forwarders as interchangeable (see Module 01's explicit caution on this point).
 **Common misuse:** Using "broker" and "freight forwarder" interchangeably in professional communication; they carry different legal responsibilities.
 **Operational example:** "This freight forwarder handles multi-leg international shipments and assumes responsibility for the freight throughout the journey."
+
+### Third-Party Logistics (3PL)
+**What it means:** A general industry term for a company that provides outsourced logistics services — which can include brokerage, freight forwarding, warehousing, or other supply-chain functions, depending on the specific company.
+**What it does NOT mean:** A single defined legal category — "3PL" is broad industry shorthand covering companies with very different actual legal roles (broker, freight forwarder, warehouse operator, or some combination). What a specific 3PL is legally responsible for depends on its actual activities, not the label.
+**Common misuse:** Assuming "3PL" tells you a specific company's legal classification or responsibilities without checking what that company actually does.
+**Operational example:** "This 3PL both arranges transportation and operates warehousing — confirm which specific role applies to this particular transaction."
 
 ## Section 2: Legal Boundary Concepts (Cross-Referencing Module 02)
 
@@ -57,6 +63,12 @@
 ### Broker Authority
 *(Introduced in Module 02, Section 18.)* Federal operating authority, obtained through FMCSA registration, that authorizes a person to lawfully conduct brokerage of property transportation — introductory-level in Module 02; full compliance mechanics are reserved for the future Compliance/Regulatory branch.
 
+### Co-Brokering
+**What it means:** An arrangement where two or more properly authorized brokers work together on the same shipment, typically with disclosure and agreement between the parties involved.
+**What it does NOT mean:** The same thing as double brokering (see Section 4) — the distinguishing factor is proper authorization and disclosure; co-brokering done transparently between authorized parties is not the same fact pattern as unauthorized, undisclosed re-brokering.
+**Common misuse:** Treating any involvement of more than one broker in a shipment's history as automatically improper, without checking whether it was properly authorized and disclosed.
+**Operational example:** "This is a disclosed co-brokering arrangement between two authorized brokerages, not an unauthorized re-brokering situation."
+
 ## Section 3: Broker Verification (Cross-Referencing Module 06)
 
 ### Entity Verification
@@ -79,6 +91,12 @@
 **What it does NOT mean:** A one-time check that stays valid indefinitely — authority and financial-security status can change, and load-by-load verification of current status remains appropriate for what actually matters at the time (see Module 06).
 **Common misuse:** Relying on an outdated broker profile instead of confirming current status when it matters for a specific transaction.
 **Operational example:** "Broker profile on file shows active authority as of last month — reverify current status before this specific booking given the load's value."
+
+### Carrier Setup Packet (Broker-Requested)
+**What it means:** The set of documents a broker requests from a carrier when establishing a new working relationship — authority information, insurance, W-9, and references (the broker-side counterpart to the Carrier Packet already covered in Carrier Terminology).
+**What it does NOT mean:** A substitute for the broker's own independent verification of what the carrier submits — represented information still benefits from confirmation (the same principle Module 04 teaches about carrier onboarding, applied here from the broker's side of the relationship).
+**Common misuse:** A broker accepting every submitted document at face value without any independent check, mirroring the same COI-caution principle Module 04 teaches carriers to apply to brokers.
+**Operational example:** "The broker's carrier setup packet requires current authority and insurance documentation before the first load is booked."
 
 ## Section 4: Broker-Carrier/Dispatcher Interaction
 
@@ -105,6 +123,18 @@
 **What it does NOT mean:** A process with a single "correct" outcome — negotiated rates depend on market conditions, carrier costs, and both parties' positions, not a fixed formula (full rate-mathematics depth is Module 07's and the future Rate/Pricing branch's territory).
 **Common misuse:** Treating an initial posted rate as non-negotiable, or conversely assuming every posted rate is automatically negotiable regardless of context.
 **Operational example:** "Negotiating the rate up slightly to reflect the actual deadhead involved in reaching this pickup."
+
+### Book Direct
+**What it means:** Booking a load directly with a broker or shipper through an established relationship, without sourcing it fresh from a load board for that specific transaction.
+**What it does NOT mean:** A substitute for the same fit-check and verification discipline applied to any other load — an established relationship doesn't exempt a specific load from its own review.
+**Common misuse:** Skipping load-specific verification because the broker relationship is already established and trusted in general.
+**Operational example:** "Booking direct with our regular broker contact on this lane, but still reviewing this specific load's rate confirmation before signing."
+
+### Spot Quote
+**What it means:** A rate a broker offers for a specific one-time load, as distinct from a standing contract rate.
+**What it does NOT mean:** A binding commitment until formally accepted and confirmed — a quote is an offer, not yet a booking (see Tender/Tendering in Dispatch Terminology for the related acceptance step).
+**Common misuse:** Treating a verbal spot quote as a locked-in rate before it's actually confirmed in writing.
+**Operational example:** "Got a spot quote from the broker — need to confirm it in writing before treating the load as booked."
 
 ## Section 5: Fraud & Risk Recognition (Cross-Referencing Modules 05–06)
 
@@ -146,3 +176,4 @@ Every regulatory-adjacent term in this file points back to Module 02 or Module 0
 | Date | Change |
 |---|---|
 | 2026-08-30 | Initial file: Sections 1–5 (24 terms) |
+| 2026-08-30 | Added Third-Party Logistics/3PL (Section 1); Co-Brokering (Section 2); Carrier Setup Packet (Section 3); Book Direct, Spot Quote (Section 4) — 6 additional terms (30 total) |
