@@ -60,9 +60,10 @@
 - [ ] Module 06: receive/reconcile full G-013 independent occupational/competitor/regulatory research before production unlock.
 - [ ] Module 06: after unlock, design/build confirmed missing student tools and graded practical, then align assessment/instructor/simulation chain.
 - [x] Define Academy-wide full instructor-guide product standard separate from answer keys in `INSTRUCTOR-GUIDE-PRODUCT-STANDARD.md`.
+- [x] Audit the current instructor-guide layer against the standard: Modules 01–07 have answer guides but no full module Instructor Guides; record in `ACADEMY-INSTRUCTOR-GUIDE-AUDIT-M01-M07-2026-08-31.md`.
+- [ ] Build full Module 01–07 Instructor Guides only from each module's synchronized/finalized competency chain; do not bulk-generate generic guides.
 - [x] Expand professional-language progression through verified Modules 08–15 planned scope.
 - [x] Expand master dictionary with additional foundational, decision, verification and later-module architecture terms while labeling unbuilt-module terms as targets.
-- [ ] Audit each existing module instructor guide against the new product standard.
 
 ### Task 11: Architecture completion verification
 - [ ] Confirm every existing/verified module has outcome, language, tools, assessment, practical, simulation, source and release controls represented with truthful gap states.
