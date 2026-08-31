@@ -25,6 +25,12 @@
 **Common misuse:** Assuming a reefer and dry van of the same nominal length offer identical capacity.
 **Operational example:** "This load requires continuous -10°F — confirm the reefer unit's actual operating range and fuel status before dispatch."
 
+### Vented Van
+**What it means:** A dry van equipped with vents allowing airflow, commonly used for produce that needs ventilation but not active temperature control.
+**What it does NOT mean:** The same thing as a reefer — a vented van provides passive airflow only, with no active cooling capability, and cannot substitute for genuine temperature control.
+**Common misuse:** Assuming a vented van can handle freight requiring active temperature control simply because it has ventilation.
+**Operational example:** "This produce needs airflow but not active cooling — confirm whether a vented van or a reefer is actually required before assigning equipment."
+
 ### Flatbed
 **What it means:** An open-deck trailer with no sides or roof, used for freight that can be loaded from the top or sides, or that doesn't fit inside an enclosed trailer.
 **What it does NOT mean:** Equipment where "fits on the deck" alone confirms a load can legally move — fitting on the deck says nothing about legal height, required securement, weight distribution, or route feasibility (see Module 03, Myth 5).
@@ -49,6 +55,12 @@
 **Common misuse:** Assuming all Conestoga trailers can be crane-loaded from above without confirming the specific unit's configuration.
 **Operational example:** "Verify this specific Conestoga's retraction configuration before committing to overhead crane loading."
 
+### Curtain-Side Trailer
+**What it means:** An enclosed-box-style trailer with rigid roof and frame but curtain (rather than solid) side panels that slide open for side loading.
+**What it does NOT mean:** The same thing as a Conestoga — while both use a curtain concept, a curtain-side trailer typically has a fixed rigid structure with curtain sides specifically, distinct from a Conestoga's broader retractable tarp-and-frame system over a flatbed-style deck.
+**Common misuse:** Using "curtain-side" and "Conestoga" as fully interchangeable terms without confirming which specific configuration a given unit actually has.
+**Operational example:** "This curtain-side trailer allows side loading via forklift without needing rear dock access."
+
 ### Power-Only
 **What it means:** An arrangement where the carrier supplies only the tractor (power unit); the trailer comes from another party.
 **What it does NOT mean:** That the carrier supplies the trailer — this is a common beginner mix-up (see Module 03, Myth 8).
@@ -67,6 +79,12 @@
 **Common misuse:** Assuming any liquid commodity automatically requires tanker equipment and an N/X endorsement, without checking whether the freight is actually bulk or simply packaged liquid.
 **Operational example:** "Palletized bottled water in a standard dry van does not require tanker equipment or a tank-vehicle endorsement — confirm the commodity is genuinely bulk before assuming otherwise."
 
+### Pup Trailer
+**What it means:** A short trailer (commonly around 28 feet) used individually or, more often, coupled with another pup trailer to form a doubles/triples combination (see Trucking Terminology's Doubles/Triples entry).
+**What it does NOT mean:** A standard 53-foot trailer — pup trailers are a distinct, shorter category, typically associated with LTL network operations rather than standard FTL point-to-point dispatching.
+**Common misuse:** Assuming pup-trailer capacity or dimensions match a standard long-haul trailer.
+**Operational example:** "This LTL network move uses a pup trailer as part of a doubles combination, not a standard 53-foot unit."
+
 ## Section 2: Weight & Dimension (Cross-Referencing Module 03)
 
 ### Federal Gross Weight Baseline
@@ -74,6 +92,18 @@
 
 ### Federal Axle Weight Limits
 *(Established in Module 03, FACT-M03-002.)* The federal single-axle (20,000 lb) and tandem-axle (34,000 lb) limits on the Interstate System — independent checks from the gross weight baseline. A combination can be under 80,000 lb gross and still have an illegal individual axle group.
+
+### Spread Axle vs. Tandem Axle
+**What it means:** A tandem axle has its two axles positioned close together as a single group; a spread axle configuration positions the two axles further apart, which in some jurisdictions allows a higher permissible weight on that axle group under certain conditions.
+**What it does NOT mean:** A universal weight advantage in every jurisdiction — whether and how much additional weight a spread-axle configuration allows depends on the specific state's rules, and this is not a substitute for verifying the applicable limit for the actual axle configuration and location.
+**Common misuse:** Assuming a spread-axle weight allowance from one state automatically applies in a different state without verification.
+**Operational example:** "This trailer has a spread-axle configuration — verify the applicable weight allowance for the specific states on this route rather than assuming a standard tandem limit applies."
+
+### Sliding Tandem
+**What it means:** A trailer's rear axle assembly that can be repositioned (slid forward or backward) along the trailer frame, used to adjust weight distribution across axle groups for a specific load.
+**What it does NOT mean:** An automatic fix for an overweight axle condition — sliding the tandem can help redistribute weight, but the resulting distribution still must be verified against applicable axle-group limits, not simply assumed to now be legal.
+**Common misuse:** Sliding the tandem to address a flagged axle-weight problem without re-verifying the resulting distribution is actually within legal limits afterward.
+**Operational example:** "After sliding the tandem to redistribute weight, re-weigh the combination to confirm the new axle distribution is actually within legal limits."
 
 ### National Network Width
 *(Established in Module 03, FACT-M03-003.)* The standard 102-inch width figure federal rules generally require states to permit on the National Network — exceeding it does not automatically mean a load is illegal, and does not automatically mean a permit is guaranteed either; both require verification (see Module 03, Myth 12).
@@ -131,7 +161,33 @@
 **Common misuse:** Assuming placarding is or isn't required without checking the specific material and quantity's actual requirements.
 **Operational example:** "Verify the specific placarding requirement for this material and quantity rather than assuming based on the general commodity type."
 
-## Section 4: Equipment Condition & Maintenance
+## Section 4: Securement Equipment
+
+### Chains and Binders
+**What it means:** Securement equipment used primarily on flatbed-style trailers to hold heavy or rigid freight (like steel coils or machinery) firmly in place during transport.
+**What it does NOT mean:** A universal securement solution for every flatbed load — required securement method and equipment depends on the specific commodity, and some loads specifically require chains/binders while others require straps or other methods (see Module 03, Scenario S-03-06).
+**Common misuse:** Assuming chains and binders are on hand and appropriate without confirming the specific commodity's actual securement requirement.
+**Operational example:** "This steel coil load requires chain-and-binder securement per the customer's contract — confirm the equipment is on hand before dispatch."
+
+### Load Bars / Load Locks
+**What it means:** Adjustable bars placed inside an enclosed trailer (dry van or reefer) to prevent freight from shifting during transport, without the heavier-duty chains used on flatbeds.
+**What it does NOT mean:** Appropriate securement for flatbed or open-deck freight — load bars are specifically an enclosed-trailer securement method.
+**Common misuse:** Assuming load-bar securement is sufficient for freight that actually requires flatbed-style chain-and-binder securement, or vice versa.
+**Operational example:** "Use load bars to prevent this palletized freight from shifting during transit in the dry van."
+
+### Tarps
+**What it means:** Protective covers used on flatbed-style trailers to shield freight from weather, often required by the shipper or commodity type.
+**What it does NOT mean:** A universal requirement for every flatbed load — whether tarping is required depends on the specific commodity and shipper requirements, and must be confirmed rather than assumed.
+**Common misuse:** Assuming tarps are or aren't required without confirming the specific shipper's and commodity's actual requirement.
+**Operational example:** "Confirm whether this flatbed load requires tarping before dispatch — the shipper's instructions specify weather protection for this commodity."
+
+### Air Ride Suspension
+**What it means:** A trailer suspension system using air-filled bags rather than traditional leaf springs, providing a smoother ride, often required for sensitive or fragile freight.
+**What it does NOT mean:** A universal trailer feature — not every trailer has air ride suspension, and whether it's required depends on the specific commodity's sensitivity to vibration/shock.
+**Common misuse:** Assuming any available trailer has air ride suspension without confirming it for freight that specifically requires it.
+**Operational example:** "This fragile electronics shipment requires air ride suspension — confirm the assigned trailer has it before dispatch."
+
+## Section 5: Equipment Condition & Maintenance
 
 ### Pre-Trip / Post-Trip Inspection
 *(Already covered in `01-Trucking-Terminology.md`.)* A driver's required check of the vehicle's condition before beginning a trip and after completing one, covering safety-critical components.
@@ -178,3 +234,4 @@ All regulatory-adjacent terms in this file point back to Module 03's already-ver
 | Date | Change |
 |---|---|
 | 2026-08-31 | Initial file: Sections 1–4 (26 terms) |
+| 2026-08-31 | Added Vented Van, Curtain-Side Trailer, Pup Trailer (Section 1); Spread Axle vs. Tandem Axle, Sliding Tandem (Section 2); new Section 4 — Securement Equipment (Chains and Binders, Load Bars/Load Locks, Tarps, Air Ride Suspension) — 9 additional terms (35 total) |
