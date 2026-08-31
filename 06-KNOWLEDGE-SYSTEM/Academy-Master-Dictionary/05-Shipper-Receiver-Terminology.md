@@ -65,6 +65,18 @@
 **Common misuse:** Assuming any documented delay automatically qualifies for detention without checking the specific facility's free-time terms and the carrier's actual agreement.
 **Operational example:** "Document the exact check-in time — that's the detention-triggering event this claim will be measured from, if detention applies under the agreement."
 
+### Guard Shack / Security Check-In
+**What it means:** A security checkpoint at a facility's entrance where a driver must check in, often providing identification and load reference information, before proceeding further onto the property.
+**What it does NOT mean:** The same thing as the facility's actual loading office or dock check-in — a guard shack is often a separate, earlier step in a larger multi-stage entry process.
+**Common misuse:** Assuming a guard-shack check-in is the only step required, when many facilities have a subsequent separate check-in at the loading office itself.
+**Operational example:** "Check in at the guard shack first, then proceed to the shipping office for load-specific check-in."
+
+### Staging Area
+**What it means:** A designated area at a facility where trailers wait before being called to a specific dock for loading or unloading.
+**What it does NOT mean:** The same as an assigned dock — being in the staging area means waiting for dock assignment, not that loading has begun.
+**Common misuse:** Assuming a trailer in the staging area is already being loaded, rather than still waiting for dock assignment.
+**Operational example:** "The trailer is in the staging area, waiting to be called to a dock."
+
 ## Section 3: Loading, Unloading & Handling
 
 ### Loading Method
@@ -152,6 +164,44 @@
 **Common misuse:** Treating a clean signature as an absolute, permanent release from any possible future claim, when it specifically addresses only what was visible at the time of signing.
 **Operational example:** "Encourage the driver to note any visible damage on the POD at delivery — a clean signature only speaks to what was visible at that moment."
 
+## Section 6: Shipper Requirements & Advance Notice
+
+### Routing Guide
+**What it means:** A shipper's own written instructions specifying required carriers, procedures, or conditions for moving its freight — common with larger shippers and retail distribution.
+**What it does NOT mean:** A universal industry standard — each shipper's routing guide is its own specific set of requirements, and one shipper's rules don't transfer to another.
+**Common misuse:** Assuming a carrier already knows a shipper's routing guide requirements without confirming the current version, since routing guides can be updated.
+**Operational example:** "Check the shipper's current routing guide before booking — some retail shippers require specific carriers or specific appointment procedures."
+
+### Vendor Compliance
+**What it means:** A shipper's (often a retailer's) program of specific requirements and standards that carriers and vendors must follow, with penalties for non-compliance.
+**What it does NOT mean:** A government regulatory program — vendor compliance is a private business requirement set by the specific shipper, not a legal/regulatory standard.
+**Common misuse:** Confusing a shipper's private vendor-compliance penalty with a regulatory violation; they are different kinds of consequences from different sources.
+**Operational example:** "This retail shipper's vendor compliance program requires appointment scheduling through their specific online portal."
+
+### Chargeback
+**What it means:** A financial penalty a shipper (commonly a retailer) assesses against a carrier or vendor for failing to meet vendor-compliance requirements, such as a missed appointment.
+**What it does NOT mean:** A universal or automatic consequence of every delay — chargebacks are specific to shippers that maintain formal vendor-compliance programs, and terms vary by shipper.
+**Common misuse:** Assuming chargeback exposure exists with every shipper, or assuming a specific chargeback amount without checking that shipper's actual program terms.
+**Operational example:** "A missed appointment with this retail shipper could trigger a chargeback under their vendor-compliance program — confirm the appointment is protected before departure."
+
+### Advance Ship Notice (ASN)
+**What it means:** An electronic notification sent to a receiver in advance of a shipment's arrival, typically detailing contents, quantities, and expected timing — common in retail and larger distribution relationships.
+**What it does NOT mean:** A substitute for the physical bill of lading or other required shipping documents — an ASN is an advance electronic notice, not a replacement for physical/required paperwork.
+**Common misuse:** Assuming an ASN was sent or received without confirming it, when a missing ASN can itself trigger a vendor-compliance issue at some receivers.
+**Operational example:** "Confirm the shipper's ASN was transmitted before the truck departs — this receiver requires it in advance of arrival."
+
+### Consignee Instructions
+**What it means:** Specific delivery instructions provided by the receiver — e.g., delivery location details, contact requirements, or special handling notes for that specific delivery.
+**What it does NOT mean:** The same thing as general facility requirements (see Section 2) — consignee instructions are often shipment-specific, in addition to the receiver's standing facility rules.
+**Common misuse:** Relying only on general facility knowledge without checking for shipment-specific consignee instructions that might differ from the norm.
+**Operational example:** "Consignee instructions note a specific dock number for this delivery, different from where this driver usually delivers to this receiver."
+
+### Inside Delivery
+**What it means:** A delivery requirement where freight must be brought inside a building rather than simply unloaded at the dock or curb.
+**What it does NOT mean:** A standard or default delivery method — inside delivery is a specific requirement that must be identified in advance, since it affects time, labor, and sometimes required equipment.
+**Common misuse:** Assuming standard dock delivery when a shipment actually requires inside delivery, discovered only upon arrival.
+**Operational example:** "This delivery requires inside delivery to the receiving department — confirmed in advance so the driver and any needed equipment are prepared."
+
 ---
 
 ## Cross-References to Already-Controlled Terms
@@ -176,3 +226,4 @@ All terms here are operational vocabulary consistent with Modules 01–07's esta
 | Date | Change |
 |---|---|
 | 2026-08-30 | Initial file: Sections 1–5 (22 terms) |
+| 2026-08-30 | Added Guard Shack/Security Check-In, Staging Area (Section 2); new Section 6 (Routing Guide, Vendor Compliance, Chargeback, Advance Ship Notice/ASN, Consignee Instructions, Inside Delivery) — 8 additional terms (30 total) |
