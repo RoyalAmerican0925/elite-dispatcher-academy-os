@@ -1,90 +1,26 @@
-# Modules 01–05 Practical Assessments — Instructor Scoring Guide
+# Modules 01–05 Instructor Practical Scoring Guide
 
-**Instructor use only.** Keep separate from student practical files.  
-**Status:** DRAFT_COMPLETE — QA/instructor review required before PUBLICATION_READY  
-**Program policy:** `03-ASSESSMENTS/PROGRAM-ASSESSMENT-SCORING-AND-REMEDIATION-POLICY.md`
+**Status:** DRAFT_COMPLETE — instructor/editor QA required before PUBLICATION_READY
 
-## Scoring Scale
-
-Score each listed dimension 0–3:
-
-- **3 — Meets/Exceeds Standard:** correct, complete, defensible, no material unsupported assumption.
-- **2 — Near Standard:** generally correct with a limited omission that does not create an unsafe/unlawful decision.
-- **1 — Needs Remediation:** material gap or unsupported assumption affecting decision quality.
-- **0 — Unacceptable/Critical:** materially wrong/unsafe/unlawful response or no meaningful attempt.
-
-Default pass: **80% of available points and no critical failure.**
+Use this guide with the student-facing practical assessments. Do not expose expected classifications or scoring notes to students before assessment.
 
 ---
 
-# Module 01 — Freight Movement Role Map
+# Module 01
 
-Student file: `Module-01-Practical.md`
-
-## Expected Core Results
-
-- Blue River Foods = shipper.
-- Prairie Freight Brokers = broker/arranger.
-- North Star Transport = motor carrier.
-- North Star driver = physical transporter.
-- North Star dispatcher = carrier-side dispatcher.
-- Des Moines grocery distribution center = consignee/receiver.
-- Factoring company = purchases/advances against carrier receivable for faster cash flow.
-- USDOT identifier and operating authority are distinct concepts.
-- Omaha, Nebraska → Des Moines, Iowa is an interstate movement on the supplied facts.
-
-## Dimensions — 18 points
-
-1. Role identification accuracy — 0–3.
-2. Carrier vs. broker vs. dispatcher reasoning — 0–3.
-3. USDOT vs. operating-authority distinction — 0–3.
-4. Factoring/payment-flow explanation — 0–3.
-5. Interstate/consignee/shipper reasoning — 0–3.
-6. Freight/document-flow completeness + assumption control — 0–3.
-
-**Pass:** 15/18 or better. No critical-failure dimension designated.
+Use the current Module 01 practical and its active premium-rebuild competency controls. Module 01 remains subject to the dedicated premium-depth rebuild and later synchronization.
 
 ---
 
-# Module 02 — Agency Boundary Decision Desk
+# Module 02
 
-Student file: `Module-02-Practical.md`
-
-## Expected Classifications
-
-- A: Consistent with Carrier-Side Agency.
-- B: Significant Brokerage Risk — shipper freight allocated among overlapping carrier network.
-- C: Consistent with Carrier-Side Agency on supplied non-overlap facts.
-- D: Significant Brokerage Risk — rejected shipper freight redirected to another carrier based on dispatcher's discretion/fee.
-- E: Significant Brokerage Risk — contract label conflicts with actual freight-first/carrier-selection conduct.
-
-## Dimensions — 18 points
-
-1. Opportunity classifications — 0–3.
-2. Allocation-of-traffic identification — 0–3 **CRITICAL**.
-3. Actual-conduct vs. contract-label reasoning — 0–3.
-4. Cancellation/return vs. reassignment distinction — 0–3.
-5. Appropriate operational next-step/escalation — 0–3.
-6. Documentation and professional reasoning — 0–3.
-
-**Critical failure:** score 0 on Dimension 2 or explicitly classify Opportunity B or D as ordinary safe carrier-side agency without recognizing allocation risk.
-
-**Pass:** 15/18 and no critical failure.
+Use the current Module 02 practical and its Agency Boundary Decision Desk controls. Module 02 remains subject to the Academy premium-depth re-audit.
 
 ---
 
-# Module 03 — Equipment & Freight Fit Desk
+# Module 03 — Equipment & Freight Fit
 
 Student file: `Module-03-Practical.md`
-
-## Expected Classifications
-
-- A: GOOD FIT on supplied facts.
-- B: BAD FIT — frozen/temperature-controlled freight vs. dry van.
-- C: SPECIALIZED / ESCALATE or BAD FIT as presently stated — 104-inch width exceeds standard 102-inch width; no permit/specialized plan supplied.
-- D: BAD FIT / DO NOT DISPATCH — missing required H/X endorsement.
-- E: BAD FIT / DO NOT DISPATCH as stated — 35,000 lb tandem exceeds 34,000 lb federal tandem baseline even though gross is below 80,000 lb.
-- F: NEEDS MORE INFORMATION — generic 53-foot-van/weight description does not establish actual payload/axle/dimension/loading compatibility.
 
 ## Dimensions — 18 points
 
@@ -131,7 +67,7 @@ Student file: `Module-04-Practical.md`
 
 ---
 
-# Module 05 — Morning Load Board Shortlist
+# Module 05 — Morning Load Board Shortlist + Verification Events
 
 Student file: `Module-05-Practical.md`
 
@@ -144,9 +80,34 @@ Student file: `Module-05-Practical.md`
 - E: FOUND; BAD FIT / REJECT for current driver due stated required endorsement mismatch.
 - F: FOUND; NEEDS MORE INFORMATION / VERIFY; duplicate-looking postings do not prove double brokering.
 
-A should normally rank highest on the supplied facts. D may become viable after availability/time/home-return feasibility is confirmed; C and F require more information; B/E are conflicts as stated.
+A should normally rank highest on the supplied sourcing facts. D may become viable after availability/time/home-return feasibility is confirmed; C and F require more information; B/E are conflicts as stated.
 
-## Dimensions — 21 points
+## Verification Event 1 — Expected Result
+
+The brokerage **entity** has been confirmed in an appropriate current source. The new contact has **not** been authenticated merely because the entity exists.
+
+Full-credit reasoning must distinguish:
+- entity verification: the brokerage entity/registration/authority question;
+- contact verification: whether Marcus and the new email/instructions are actually authorized for this transaction.
+
+Expected action: VERIFY the new contact through an appropriate trusted/independently obtained channel before relying on the new instructions. Do not treat a legitimate entity record as authentication of the person or communication channel.
+
+## Verification Event 2 — Expected Result
+
+The fictional written rate-confirmation summary conflicts with the supplied confirmed call information in at least these material ways:
+
+1. agreed exercise rate = **$1,150**, written summary = **$1,050**;
+2. no extra deduction/tracking fee was discussed, but the written summary adds a **$75 tracking-compliance deduction** condition.
+
+Expected action:
+- mark the conflicting fields as discrepancies;
+- STOP rather than sign/process the document as though it matches;
+- verify the conflicting terms directly with the broker;
+- obtain corrected/confirmed terms through the carrier's authorized workflow;
+- confirm the dispatcher's actual signing/processing authority before any signature/action;
+- do not silently alter the document or make an independent legal determination about ultimate contract effect.
+
+## Dimensions — 30 points
 
 1. FOUND vs. VERIFIED AVAILABLE status control — 0–3.
 2. Candidate classification accuracy — 0–3.
@@ -155,10 +116,23 @@ A should normally rank highest on the supplied facts. D may become viable after 
 5. Shortlist ranking and reasoning — 0–3.
 6. Duplicate-posting verification/professional restraint — 0–3 **CRITICAL if student declares fraud as proven from duplication alone**.
 7. Module 02 shipper-direct/allocation boundary — 0–3 **CRITICAL**.
+8. Entity-versus-contact verification distinction and next action — 0–3 **CRITICAL if student treats entity verification as contact authentication**.
+9. Rate-confirmation discrepancy identification — 0–3 **CRITICAL if student treats the supplied mismatched document as matching/ready to process**.
+10. Rate-confirmation STOP/VERIFY/signing-authority response — 0–3 **CRITICAL if student assumes signing authority or proceeds through the unresolved discrepancy**.
 
 **Additional critical:** approving Candidate E for the stated driver despite required endorsement mismatch.
 
-**Pass:** 17/21 and no critical failure.
+**Pass:** 24/30 and no critical failure.
+
+### Module 05 scoring anchors
+
+**3 — Meets standard:** correct decision plus operationally usable reasoning; identifies the supplied evidence and the correct next action.
+
+**2 — Partially meets:** generally correct conclusion but incomplete verification reasoning, missing a material supplied fact, or vague next action.
+
+**1 — Below standard:** recognizes part of the issue but reasoning is materially incomplete or operationally unsafe without instructor correction.
+
+**0 — Not demonstrated:** wrong/missing answer, or a critical-failure behavior where designated.
 
 ---
 
