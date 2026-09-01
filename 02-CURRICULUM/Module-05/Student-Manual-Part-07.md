@@ -2,96 +2,175 @@
 
 Once a load moves toward booking, a rate confirmation typically follows. This section teaches you how to review one — not how to interpret contract law.
 
-**IMPORTANT:** Do not teach "the rate confirmation is always THE binding contract" or "the rate confirmation automatically controls every disagreement once signed." The actual legal effect of a rate confirmation can depend on the parties, authority, the specific agreement language, other applicable contracts, course of dealing, applicable law, and the surrounding facts. Module 05 does not train transportation attorneys — it trains dispatchers to review documents carefully and escalate discrepancies, not to make legal determinations.
+**IMPORTANT:** Do not teach "the rate confirmation is always THE binding contract" or "the rate confirmation automatically controls every disagreement once signed." The actual legal effect can depend on the parties, authority, agreement language, other applicable contracts, course of dealing, applicable law, and surrounding facts. Module 05 trains dispatchers to review documents carefully and escalate discrepancies, not make legal determinations.
 
-**The operational rule:** before accepting, signing, or processing a rate confirmation within your authorized role, review it carefully against the negotiated load information. Check:
+Before accepting, signing, or processing a rate confirmation within your authorized role, compare it against the information actually discussed and recorded. Check broker identity, carrier identity, load/reference number, origin, destination, pickup and delivery information, commodity where shown, weight, equipment, rate, accessorial provisions, special instructions, deductions/fees, payment/remittance information where relevant, and conflicting terms.
 
-* Broker identity
-* Carrier identity
-* Load/reference number
-* Origin
-* Destination
-* Pickup information
-* Delivery information
-* Commodity where shown
-* Weight
-* Equipment
-* Rate
-* Accessorial provisions
-* Special instructions
-* Deductions/fees
-* Payment/remittance information where relevant
-* Any conflicting terms
+## Written-Term Discrepancy Workflow
 
-**If the rate confirmation conflicts materially with what was negotiated: STOP.** Do not simply sign it. Verify the discrepancy directly with the broker. Request correction or clarification before proceeding.
+If the written document materially conflicts with what was discussed:
 
-**IMPORTANT:** Signing authority is controlled by the carrier's actual authorization — the carrier's Dispatch Agreement, an LPOA, or another applicable agreement (see Module 04, Sections 15–16). A dispatcher does not have blanket authority to sign simply because they are the one reviewing the document.
+**STOP → IDENTIFY THE DIFFERENCE → PRESERVE BOTH VERSIONS → CONTACT THE AUTHORIZED BROKER CONTACT → REQUEST CORRECTION OR CLARIFICATION → RECORD THE RESPONSE → CONFIRM YOUR AUTHORITY → PROCEED, HOLD OR ESCALATE**
 
-# 27. Introductory Rate Screening
+Your record should show what was discussed, what the written document says, the specific discrepancy, who was contacted, when contact occurred, what correction or clarification was received, and who authorized the final disposition.
 
-Module 07 owns full Rate Mathematics & Profitability. This section teaches only enough to screen candidate freight intelligently at the sourcing stage — not the full calculation methodology.
+Never silently rewrite a broker-issued document to make it match the conversation. Never treat a verbal statement as permission to ignore a conflicting written term without clarification. Never sign simply to "hold the load" when your authority or a material term remains unresolved.
 
-At the screening stage, consider together: posted rate, loaded miles, origin deadhead, total trip miles, destination positioning, appointment/time exposure, accessorial exposure, and carrier requirements.
+**IMPORTANT:** Signing authority is controlled by the carrier's actual authorization — the carrier's Dispatch Agreement, an LPOA, or another applicable agreement. A dispatcher does not have blanket authority to sign simply because they reviewed the document.
 
-**IMPORTANT:** The highest posted rate is not automatically the best load. The highest loaded rate-per-mile (RPM) is not automatically the most profitable load — a load with heavy deadhead can pay less per total mile driven than a lower-advertised-rate load with minimal deadhead. When a candidate looks financially interesting enough to pursue further, that's the signal to move it into Module 07's deeper profitability analysis — this module's job is only to recognize when that next step is warranted, not to perform it.
+# 27. Introductory Candidate Comparison
+
+Module 07 owns full Rate Mathematics & Profitability. Module 05 still needs a disciplined way to compare sourcing candidates before deeper financial analysis.
+
+Do not rank candidates by posted rate alone. Compare at least:
+
+* carrier/equipment/driver fit;
+* origin deadhead;
+* pickup and delivery timing exposure;
+* destination positioning relative to carrier goals;
+* missing or conflicting information;
+* confirmed availability status;
+* special handling or accessorial exposure;
+* carrier restrictions/preferences;
+* whether deeper Module 06 verification is required; and
+* whether the candidate deserves Module 07 profitability analysis.
+
+## Worked Sourcing-Stage Comparison
+
+Assume the same Fort Worth dry-van truck from Part 01 has two candidates.
+
+**Candidate A:** pickup 35 miles away, preferred destination region, $1,300 posted rate, confirmed available, but delivery hours are still unclear.
+
+**Candidate B:** pickup 90 miles away, acceptable destination, $1,475 posted rate, confirmed available, complete timing information, but the contact information differs from the carrier's established broker record and needs deeper verification.
+
+A beginner may choose B simply because $1,475 is higher. A professional dispatcher does not have enough evidence for that conclusion. A has a timing gap. B has a verification issue and more origin deadhead. Module 05 records those differences and routes the candidates appropriately. Module 07 later determines profitability; Module 06 resolves deeper identity/contact risk where needed.
+
+The sourcing decision is therefore not "Which number is bigger?" It is "Which candidates are operationally qualified enough to deserve the next decision step, and what unresolved facts travel with them?"
 
 # 28. Broker Credit, Payment Risk & Factoring Basics
 
-At the sourcing stage, you may encounter references to a broker's commercial credit information, days-to-pay history, or factoring relationship. Keep these concepts distinct — they are not interchangeable:
+At the sourcing stage, you may encounter references to commercial credit information, days-to-pay history, or factoring relationships. Keep these concepts distinct:
 
-* **Commercial credit information** — a private company's assessment of a broker's payment reliability. This is NOT a government safety rating and has no connection to FMCSA authority status.
-* **Days-to-pay information** — historical data on how quickly a broker typically pays. Informative, not a guarantee.
-* **Factoring approval** — a factoring company's decision to purchase a specific carrier's invoices from a specific broker relationship. This is a private financial-risk decision, not a legal certification of the broker's legitimacy.
-* **Broker financial security (BMC-84/BMC-85)** — covered in full in Module 06. Its existence does not guarantee any individual carrier will be paid on any individual load.
-* **Factoring decline** — a factor's decision not to purchase an invoice. This reflects that factor's own risk assessment; it is not proof of criminal conduct by the broker.
+* **Commercial credit information** — a private company's assessment of payment reliability. It is not a government safety rating and is separate from FMCSA authority status.
+* **Days-to-pay information** — historical payment-speed information. Informative, not a guarantee.
+* **Factoring approval** — a factoring company's decision concerning invoices in a broker/carrier relationship. It is a private financial-risk decision, not legal certification of legitimacy.
+* **Broker financial security (BMC-84/BMC-85)** — covered in full in Module 06. Its existence does not guarantee payment on an individual load.
+* **Factoring decline** — a factor's decision not to purchase an invoice. It reflects that factor's risk decision; it is not proof of criminal conduct.
 
-**IMPORTANT:** Do not teach that commercial credit score equals a government safety rating, that factoring approval equals legal certification, that a factoring decline equals a criminal broker, or that broker financial security guarantees payment. Also do not oversimplify factoring approval as meaning the factor universally assumes all financial risk — factoring agreements differ, including recourse and non-recourse structures and other contractual conditions that change who bears risk if a broker doesn't pay.
+Do not convert a private financial signal into a fraud conclusion. Record the signal and route unresolved financial-security/payment-path concerns into Module 06.
 
 # 29. HOS / Timing Feasibility Awareness
 
-When a candidate load's timing looks tight, do not draw an automatic conclusion from mileage and elapsed clock time alone. A statement like "600 miles in 12 hours is automatically an HOS violation" is too simplistic — actual feasibility depends on the driver's available hours, current duty status, required breaks and rest, realistic travel time accounting for conditions, and applicable Hours of Service requirements (full HOS mechanics are Module 11's territory).
+When candidate timing looks tight, do not draw an automatic conclusion from mileage and elapsed clock time alone. Actual feasibility depends on the driver's available hours, current duty status, required breaks/rest, realistic travel time, conditions, and applicable Hours of Service requirements. Full HOS mechanics belong to Module 11.
 
-**The correct beginner response to questionable timing is: VERIFY DRIVER AVAILABILITY / HOS FEASIBILITY, and do not commit to an unsupported schedule.** Check the driver's actual current hours and duty status (from the dispatch profile built in Module 04) before accepting or rejecting a load based on timing alone.
+The correct beginner response is: **VERIFY DRIVER AVAILABILITY / HOS FEASIBILITY, and do not commit to an unsupported schedule.**
 
 # 30. Entity Verification vs. Contact Verification
 
-This distinction matters at every stage of sourcing, not just during deep broker screening in Module 06 — it's worth naming explicitly here:
+* **Entity verification** asks whether the brokerage/entity exists and has the relevant current registration/authority information.
+* **Contact verification** asks whether the specific person, email, phone number or message actually belongs to or is authorized by that entity.
 
-* **Entity verification** confirms that a legitimate brokerage exists and holds appropriate current registration/authority through authoritative FMCSA sources.
-* **Contact verification** confirms that the specific person calling, emailing, or messaging you actually represents that legitimate entity.
+A legitimate brokerage existing does not prove that a person contacting you represents it. An MC number, screenshot, email address, message, or load-board account alone does not settle every identity question.
 
-**A legitimate brokerage existing does NOT prove that the person contacting you actually represents it.** Do not teach that a screenshot proves authority, that an MC number alone proves the contacting person is legitimate, that an email address alone proves identity, that a load-board account alone proves identity, or that a USDOT number alone proves broker authority. If anything about a contact feels inconsistent with what you'd expect from an established relationship, that's a signal to verify through a trusted, out-of-band contact method — not proceed on the message alone. Full identity- and authority-verification procedure is Module 06's territory; this module's job is to recognize when that closer look is warranted.
+Module 05's responsibility is to recognize inconsistency, stop reliance on the questionable information, preserve what triggered the concern, and route unresolved identity/contact questions to Module 06's deeper verification process.
 
 # 31. Freight-Fraud Red Flags at the Sourcing Stage
 
-Beyond the duplicate-posting pattern in Section 16, recognize these additional beginner-level warning signs during sourcing:
+Beginner-level warning signs can include look-alike email domains, unexpected contact changes, payment-redirection requests, written load details that conflict with what was discussed, or conflicting identity information across documents.
 
-* Look-alike or typosquatted email domains (a domain that looks almost right)
-* An unexpected change in contact information for an established relationship
-* A payment-redirection request arriving by email or text
-* A rate confirmation with details that don't match what was negotiated
-* Conflicting identity information across documents
+An inconsistency is not automatic proof of fraud. A duplicate posting is not automatic proof of double brokering. A commercial credit decline is not proof of criminal conduct.
 
-**IMPORTANT:** An inconsistency is not automatic proof of fraud. A duplicate posting is not automatic proof of double-brokering. A commercial credit decline is not proof of criminal conduct. This module's response to any of these signals is: STOP → VERIFY → ESCALATE (route to Module 06 if unresolved) — not an independent fraud determination.
+Module 05 response:
+
+**FLAG → STOP RELIANCE ON THE QUESTIONABLE FACT → PRESERVE THE EVIDENCE → FIRST-PASS VERIFY WHAT IS WITHIN THE SOURCING ROLE → ROUTE UNRESOLVED RISK TO MODULE 06**
+
+Do not turn the Module 05 Freight Fraud Red-Flag Checklist or Broker Verification Worksheet into a substitute for Module 06. In this module they are sourcing-stage flagging and handoff records only.
 
 # 32. Load-Board Account Security
 
-Apply basic account-security discipline to any load-board or freight-matching platform account:
+Apply basic account-security discipline: use unique passwords, use multi-factor authentication where offered, watch for suspicious login/account activity, recognize phishing/look-alike domains, and protect credentials from unnecessary sharing.
 
-* Unique passwords, not reused across platforms
-* Multi-factor authentication (MFA) where the platform offers it
-* Awareness of suspicious login or account activity
-* Recognition of phishing attempts and look-alike domains
-* Protecting login credentials from unnecessary sharing
-
-**IMPORTANT:** Do not state that every load board universally prohibits every form of credential sharing unless that is actually supported by that specific platform's current Terms of Service — platform account-sharing rules are [PLATFORM-SPECIFIC] and [CONTRACT-SPECIFIC], not a general legal rule. Keep these categories separate: LAW/REGULATION, PLATFORM CONTRACT/TERMS, INDUSTRY PRACTICE, and COURSE SAFETY CONTROL.
+Do not state that every load board universally prohibits every form of credential sharing unless supported by that platform's current terms. Keep LAW/REGULATION, PLATFORM CONTRACT/TERMS, INDUSTRY PRACTICE, and COURSE SAFETY CONTROL separate.
 
 # 33. Professional Broker Communication
 
-When contacting a broker about a posted load, represent yourself and your role accurately. A suitable model:
+A broker call is not just a script. It is a controlled information-gathering event.
+
+A suitable opening is:
 
 *"Hello, this is [Name], dispatching for [Carrier Legal Name], MC [number]. I'm calling about load [reference number] from [origin] to [destination]. Is it still available?"*
 
-Use this kind of professional framing to obtain missing information (see Section 14's missing-information categories) directly from the broker.
+Then use this sequence:
 
-**IMPORTANT:** Do not teach deceptive scripts. Do not teach students to falsely claim to be the carrier owner, the driver, the broker, or another employee or person. Always accurately represent your actual role and the carrier you're working for.
+**1. Identify.** State your actual role, represented carrier, and load reference.
+
+**2. Confirm availability.** Ask whether the specific load is still open before spending time on deeper questions.
+
+**3. Close material information gaps.** Ask only the questions the posting/profile review shows are needed: exact pickup/delivery details when appropriate for this stage, timing, commodity, weight/dimensions, equipment requirements, loading/unloading method, stops, driver-assist expectations, special handling, accessorial conditions, or other material facts.
+
+**4. Clarify conflicts.** If the broker's answer conflicts with the posting or another document, state the difference neutrally and ask which information is current.
+
+**5. Capture the commercial information.** Record the rate being discussed and any material special term communicated. Full profitability and negotiation occur in later modules.
+
+**6. Confirm the next action.** Know whether the broker expects a carrier packet, additional verification, a callback, a written confirmation, negotiation, or another step.
+
+**7. Document the contact.** Record date/time, contact name, method, load reference, material answers, unresolved questions and next action.
+
+Do not promise what you are not authorized to promise. Do not claim the driver can meet an unsupported schedule. Do not say the carrier accepts a term you have no authority to accept. Do not falsely claim to be the owner, driver, broker, or another person.
+
+## Converting Gaps Into Questions
+
+Weak question: "Anything else I need to know?"
+
+Stronger questions are tied to evidence gaps:
+
+* "The posting says FCFS but doesn't list receiving hours. What are the receiving hours?"
+* "The posting lists van equipment, but the notes mention temperature protection. What equipment or temperature-control capability is actually required?"
+* "I have the pickup listed as Dallas. What ZIP or facility location should we use for the operational review?"
+* "The posting says driver assist possible. What task is expected, and at which stop?"
+
+This is professional questioning: every question closes a specific operational gap.
+
+# 34. The Module 05 Handoff Record
+
+A qualified candidate should not arrive at the next module as a vague memory. The handoff should preserve:
+
+* source/platform and search date/time;
+* load/reference number;
+* carrier/truck/driver being considered;
+* contact name and method;
+* confirmed availability status;
+* known origin/destination/timing/equipment/commodity facts;
+* material missing, unclear or changed facts;
+* carrier fit decision;
+* rate discussed or posted, clearly labeled as such;
+* red flags or verification issues without unsupported fraud conclusions;
+* written-term discrepancies if a rate confirmation has been received;
+* current disposition; and
+* next required decision owner/module.
+
+Examples of clean handoffs:
+
+**To Module 06:** "Operational fit passes. Load confirmed available. Contact email differs from established broker domain; no fraud conclusion made. HOLD pending deeper contact verification."
+
+**To Module 07:** "Operational fit passes and availability confirmed. No unresolved sourcing-stage verification flag. Compare profitability using total-trip inputs."
+
+**To Module 11:** "Candidate otherwise fits, but pickup/delivery timing cannot be supported from mileage alone. Verify actual driver HOS/duty-status feasibility before commitment."
+
+The goal is continuity: the next person or workflow should know what is established, what is not established, and what decision remains.
+
+# 35. End-to-End Sourcing Desk Case
+
+Use the Fort Worth dry-van profile from Part 01. A candidate appears from Dallas to Memphis. The posting fits the equipment and preferred geography but lacks facility hours and says "driver assist possible." The dispatcher classifies those fields as unresolved, calls using the broker-call sequence, confirms the load remains available, learns receiving is FCFS from 7:00 a.m. to 3:00 p.m., and learns driver assist means pallet count only — no unloading labor. The dispatcher records the answers and contact source.
+
+A written rate confirmation then arrives. The discussed rate was $1,450, but the document shows $1,350 and adds a $75 tracking-compliance deduction that was not part of the recorded discussion.
+
+The dispatcher does not silently correct the document and does not sign it merely to keep the load. The dispatcher records both discrepancies, contacts the authorized broker contact, requests correction/clarification, confirms the carrier's signing/processing authority, and holds the load from further processing until the discrepancy is resolved.
+
+If the contact channel itself becomes questionable during that exchange, the dispatcher preserves the evidence and routes the identity/contact issue to Module 06 rather than making an unsupported fraud declaration.
+
+This single case demonstrates the Module 05 chain:
+
+**PROFILE → SEARCH → TRIAGE → READ → CLASSIFY → SCREEN → CALL → DOCUMENT → COMPARE → REVIEW WRITTEN TERMS → HAND OFF**
+
+That chain is the employment skill this module is intended to build.
