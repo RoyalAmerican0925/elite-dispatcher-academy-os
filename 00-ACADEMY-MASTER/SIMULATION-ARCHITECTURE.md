@@ -10,10 +10,10 @@ Each simulation should use the module's actual mental model and may include inco
 |---|---|---|
 | SIM-001 | Module 01 Freight Movement Desk | BUILD COMPLETE — RELEASE QA DEFERRED; premium alignment audit required |
 | SIM-002 | Module 02 Agency Boundary Desk | BUILD COMPLETE — RELEASE QA DEFERRED |
-| SIM-003 | Module 03 Load Compatibility Desk | ACTIVE BUILD |
-| SIM-004 | Module 04 Carrier Onboarding Command Desk | PLANNED |
-| SIM-005 | Module 05 Live Load Search Desk | PLANNED |
-| SIM-006 | Module 06 simulation | PLANNED — exact scope follows verified curriculum |
+| SIM-003 | Module 03 Load Compatibility Desk | BUILD COMPLETE — RELEASE QA DEFERRED; 26/26 CI tests passed |
+| SIM-004 | Module 04 Carrier Onboarding Command Desk | BUILD COMPLETE — RELEASE QA DEFERRED; 21/21 CI tests passed; current-date D11 requires reverification control |
+| SIM-005 | Module 05 Live Load Search Desk | NEXT SEQUENTIAL SIMULATION / design after M05 premium alignment |
+| SIM-006 | Module 06 simulation | PLANNED — exact scope follows verified curriculum/G-013 reconciliation |
 | SIM-007 | Module 07 Profitability Decision Desk | PLANNED |
 | SIM-008 | Module 08 simulation | PLANNED — SCOPE VERIFY |
 | SIM-009 | Module 09 simulation | PLANNED — SCOPE VERIFY |
@@ -22,7 +22,10 @@ Each simulation should use the module's actual mental model and may include inco
 | SIM-012 | Module 12 simulation | PLANNED — SCOPE VERIFY |
 | SIM-013 | Module 13 simulation | PLANNED — SCOPE VERIFY |
 | SIM-014 | Module 14 simulation | PLANNED — SCOPE VERIFY |
-| SIM-015 | Module 15 or integrated capstone simulation | PLANNED — final placement follows verified Module 15 architecture |
+| SIM-015 | Module 15 integrated capstone simulation | PLANNED — final design waits for M08–M14 competency maps |
+
+## SIM-004 control note
+SIM-004 uses 10 stages / 20 decisions and preserves three Module 04 critical-failure concepts: stated driver-qualification conflict, unverified payment redirect, and automatic compliance-program scope takeover. The September 2026 NRII/paper-MEC event is isolated as current-date material and must be reverified before use after October 11, 2026 or if procedure changes earlier.
 
 ## Simulation Evidence
 Each completed simulation requires:
