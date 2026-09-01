@@ -20,7 +20,7 @@
 | M01 | REPRESENTED; premium competency map exists on dedicated rebuild branch | REPRESENTED; premium synchronization active | VERIFIED EXISTS + premium intake tool on rebuild branch | VERIFIED EXISTS / NEEDS REALIGNMENT | VERIFIED EXISTS / NEEDS UPGRADE | SIM-001 BUILD COMPLETE — RELEASE QA DEFERRED / post-rebuild alignment required | answer guide exists; full guide MISSING | source controls require premium reconciliation | REPRESENTED | PREMIUM REBUILD ACTIVE; not complete |
 | M02 | REPRESENTED / earlier commercial-content pass | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-002 BUILD COMPLETE — RELEASE QA DEFERRED | answer guide exists; full guide MISSING | VERIFIED CONTROLS / pre-publication currentness remains | REPRESENTED | PREMIUM RE-AUDIT OPEN |
 | M03 | REPRESENTED / earlier commercial-content pass | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-003 BUILD COMPLETE — RELEASE QA DEFERRED; 26/26 CI tests passed | answer guide exists; full guide MISSING | VERIFIED CONTROLS / final currentness remains | REPRESENTED | PREMIUM RE-AUDIT OPEN |
-| M04 | REPRESENTED / earlier commercial-content pass | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-004 MISSING / PLANNED | answer guide exists; full guide MISSING | date-sensitive controls exist; final currentness required | REPRESENTED | PREMIUM RE-AUDIT + SIM-004 OPEN |
+| M04 | REPRESENTED / premium-instructor alignment passed | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-004 BUILD COMPLETE — RELEASE QA DEFERRED; 21/21 CI tests passed | full Module 04 Instructor Guide EXISTS | current-date controls exist; D11 NRII event isolated; final currentness required | REPRESENTED | INSTRUCTIONAL/SIM BUILD GATE CLOSED; RELEASE QA OPEN |
 | M05 | REPRESENTED | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS; expanded exam | VERIFIED EXISTS; C-013 regular closeout PASS and scoring synchronized | SIM-005 MISSING / PLANNED | answer guide/support exists; full guide MISSING | regulatory/date-sensitive registers exist; pre-publication review required | REPRESENTED | REGULAR CLOSEOUT PASS; PREMIUM + SIM OPEN |
 | M06 | REPRESENTED; research/reconciliation gate | REPRESENTED | MISSING dedicated student-tool package | VERIFIED EXISTS | MISSING graded practical | SIM-006 MISSING / design after reconciliation | answer guide exists; full guide MISSING | 2026 current-source supplement complete; G-013 independent reconciliation still required | REPRESENTED | PRODUCTION LOCKED PENDING G-013 |
 | M07 | REPRESENTED | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS + dedicated scoring | SIM-007 MISSING / PLANNED | answer guide exists; full guide MISSING | primary/date-sensitive controls require pre-publication reconfirmation | REPRESENTED | SUBSTANTIAL DRAFT / PREMIUM + SIM OPEN |
@@ -41,32 +41,18 @@ The following titles/scopes are grounded in the repository's authoritative/progr
 | M15 | Dispatcher Business Operations, Client Service, Systems & Integrated Capstone | REPRESENTED; two-layer architecture conflict resolved | MISSING / PLANNED; final capstone depends on M08–M14 competency maps | SIM-015 integrated capstone PLANNED | REPRESENTED; final scoring waits for upstream competency evidence | PROGRAM SCOPE VERIFIED / ARCHITECTURE RESOLVED |
 
 ## Cross-Academy controls verified as represented
-The master architecture now explicitly represents all of the following required layers:
-1. occupational outcome and module dependency;
-2. professional language and terminology progression;
-3. student manual/content layer;
-4. student tools/work products;
-5. knowledge checks and exams;
-6. graded practical assessment;
-7. simulation and competency evidence;
-8. instructor-guide product standard;
-9. source/currentness control;
-10. premium instructional-depth gate;
-11. release-readiness separation;
-12. student journey and competency progression;
-13. product dependency mapping;
-14. final assembled-system QA.
+The master architecture explicitly represents occupational outcome/dependencies, professional language, curriculum, tools, knowledge assessment, graded practicals, simulations/competency evidence, instructor products, source/currentness, premium depth, release separation, student journey, dependency mapping and assembled-system QA.
 
 ## Architecture-level blockers remaining
 1. Complete production-level M01 reconciliation on `module-01-premium-depth-rebuild`.
 2. Receive/reconcile full independent G-013 Module 06 research before production unlock.
-3. Build full instructor guides only after each module's competency chain is synchronized.
-4. Build SIM-004 through SIM-015 sequentially under the simulation gate.
+3. Build remaining full instructor guides only after each module's competency chain is synchronized.
+4. Build SIM-005 through SIM-015 sequentially under the simulation gate; SIM-004 is now complete at build level.
 5. Build Modules 08–15 production assets sequentially when authorized.
-6. Compare the architecture branch against `main` and inspect every changed path before any merge decision.
-7. Complete assembled release architecture for rendering, LMS, hosting, commerce, CRM/email, analytics, certificates, automation and backup only after master-tree stabilization.
+6. Resolve branch divergence with `main` through controlled reconciliation before any merge decision.
+7. Complete connected/release architecture only after master-tree stabilization.
 
 ## Completion finding
 **Task 11 architecture representation check: PASS WITH TRUTHFUL PRODUCTION GAPS.**
 
-Every existing or verified module now has the required outcome/language/tools/assessment/practical/simulation/source/release dimensions represented either as a verified asset or an explicit gap state. This is an architecture-completeness finding only. It does not declare the course, any unfinished module, or the Academy `PUBLICATION_READY`.
+Every existing or verified module has required dimensions represented either as a verified asset or explicit gap. This is not a `PUBLICATION_READY` declaration.
