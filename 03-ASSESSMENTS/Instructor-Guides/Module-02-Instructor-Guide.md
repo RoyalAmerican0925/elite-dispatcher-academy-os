@@ -1,15 +1,16 @@
 # Elite Dispatcher Academy — Module 02 Instructor Guide
 
 **Module:** 02 — Dispatcher Role & Legal Boundaries  
-**Instructor product status:** PREMIUM CONTENT DELIVERY LAYER — COMPLETE; RELEASE QA SEPARATE  
+**Instructor product status:** FULL INSTRUCTIONAL DELIVERY LAYER — COMPLETE; ACADEMY RELEASE QA SEPARATE  
 **Related simulation:** SIM-002 — Agency Boundary Desk  
 **Student manual:** `02-CURRICULUM/Module-02/Student-Manual-Part-01.md` through Part 04  
 **Student tool:** `04-STUDENT-TOOLS/Module-02-Tools/Module-02-Decision-Tool-Worksheet.md`  
 **Practical:** `03-ASSESSMENTS/Practical-Assessments/Module-02-Practical.md`  
-**Answer guide:** `03-ASSESSMENTS/Instructor-Answer-Guides/Module-02.md`
+**Answer guide:** `03-ASSESSMENTS/Instructor-Answer-Guides/Module-02.md`  
+**Completion control:** `10-PRODUCTION/Module-02-Full-Completion-Control-2026-09-02.md`
 
 ## 1. Employment Outcome
-The learner must be able to operate on the carrier side without relying on job titles, contract labels, payment method, or assumptions to determine legal boundaries. The learner identifies the represented principal, traces who supplied the freight opportunity, identifies who controls carrier selection, recognizes discretionary allocation of traffic, distinguishes cancellation from reassignment, and stops/escalates when facts or authority are insufficient.
+The learner must be able to operate on the carrier side without relying on job titles, contract labels, payment method, carrier count, tax status, or assumptions to determine legal boundaries. The learner identifies the represented principal, traces who supplied the freight opportunity, identifies who controls carrier selection, recognizes discretionary allocation of traffic, distinguishes cancellation from reassignment, and stops/escalates when facts or authority are insufficient.
 
 The module is not successful if the learner merely memorizes that a dispatcher is “not a broker.” Actual conduct and relationship facts control the decision analysis.
 
@@ -76,6 +77,12 @@ A professional dispatcher does not guess. “More facts required” is a valid r
 ### J. Escalation
 Teach escalation as a skilled operational act. A proper handoff states the known facts, unresolved issue, operational risk, documents reviewed, and exact decision requiring authorized review.
 
+### K. Multi-factor boundary drill
+Give the learner a fact pattern containing at least four potentially distracting facts—for example a written dispatch agreement, percentage-based fee, two represented carriers, and no direct handling of shipper money. Require the learner to explain why none of those facts independently resolves the boundary question and identify the conduct facts that actually require analysis.
+
+### L. Operational consequence drill
+Require the learner to explain the consequence of a bad dispatch-boundary decision in operational terms: an unauthorized commitment, an improper reassignment, a misrepresented role, a carrier relationship problem, or a matter requiring regulatory/legal review. Do not use fear-based teaching or unsupported legal conclusions.
+
 ## 6. Student Tool Facilitation
 Use the Module 02 Decision Tool Worksheet on fresh examples before the practical. The instructor should watch whether the student:
 
@@ -124,9 +131,11 @@ If the learner relies on a job title, return to actual-conduct analysis. If the 
 Reassessment must use a materially different scenario while measuring the same competency.
 
 ## 11. SIM-002 Alignment
-SIM-002 — Agency Boundary Desk remains the applied simulation for this module. Simulation decisions must measure the same operating model and may not create a conflicting legal rule or artificial safe harbor.
+SIM-002 — Agency Boundary Desk is required applied competency evidence for this module. Simulation decisions must measure the same operating model and may not create a conflicting legal rule or artificial safe harbor.
 
 The simulation must preserve evidence of first attempt, final mastery, remediation, critical-decision handling, competency status, and instructor-review state where applicable. Premium alignment review must confirm that correct answers require fact-based reasoning rather than pattern recognition.
+
+A learner who passes a written exam but has an unresolved simulation critical decision has not completed the Module 02 competency chain.
 
 ## 12. Source and Currentness Control
 Before release, reverify current primary sources governing the scored or date-sensitive propositions, including the applicable definitions and current FMCSA guidance. Recheck any inflation-adjusted civil penalty rather than treating a 2026 amount as permanent.
@@ -136,6 +145,8 @@ Maintain these labels in instructional materials:
 **STATUTE / REGULATION / FMCSA INTERPRETIVE GUIDANCE / CONTRACT TERM / CARRIER POLICY / INDUSTRY PRACTICE / ACADEMY CONTROL MODEL**
 
 A source that supports one proposition must not be stretched to support a broader legal conclusion.
+
+Current official-source reconciliation on 2026-09-02 confirms that FMCSA continues to present its June 16, 2023 final regulatory guidance as the guidance clarifying broker and bona fide-agent definitions, including dispatch-service considerations. That guidance is interpretive and must not be converted into an invented universal safe harbor.
 
 ## 13. Module Closeout
 Module 02 instructional competency is demonstrated only when the learner can independently:
@@ -149,7 +160,19 @@ Module 02 instructional competency is demonstrated only when the learner can ind
 - choose PROCEED, VERIFY, RETURN/DECLINE, or ESCALATE appropriately;
 - document a defensible handoff;
 - pass the required assessment and practical standards without unresolved critical failure;
-- demonstrate aligned mastery in SIM-002.
+- demonstrate aligned mastery in SIM-002;
+- complete required remediation for any failed competency evidence.
 
-## 14. Product-Control Boundary
-This guide completes the previously missing full Module 02 instructor-delivery layer. Answer keys, scoring guides, source registers, simulation instructor materials, and release QA remain separate controlled assets. LMS deployment, branding render, device/browser testing, and final assembled-product accessibility QA are release-system controls and are not represented as missing instructional content.
+## 14. Full-Completion Standard
+For Module 02, “complete” is reserved for the full instructional chain. It does not mean that most files exist or that a content audit passed.
+
+The required chain is:
+
+**TEACH → DEMONSTRATE → PRACTICE → ASSESS → SIMULATE → REMEDIATE → RECORD COMPETENCY**
+
+The module must also pass the premium value tests: it must teach occupational judgment beyond public definitions, produce a demonstrable workplace skill, and provide enough structured application that the buyer receives professional training rather than a compilation of free information.
+
+## 15. Product-Control Boundary
+This guide is the controlled Module 02 instructor-delivery layer. Answer keys, scoring guides, source registers, simulation instructor materials, and academy release QA remain separate controlled assets.
+
+LMS deployment, branding render, device/browser testing, durable production account records, final assembled-product accessibility QA, and final publication review are academy release-system controls. They are required before the academy itself is represented as publication-ready, but they are not to be mislabeled as missing Module 02 instructional content.
