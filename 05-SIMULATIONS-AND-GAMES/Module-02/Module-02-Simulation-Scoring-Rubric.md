@@ -1,29 +1,46 @@
 # SIM-002 — Module 02 Agency Boundary Desk — Scoring Summary
 
-**Status:** DRAFT_COMPLETE — QA required before PUBLICATION_READY
+**Status:** BUILD COMPLETE — RELEASE QA DEFERRED  
 **Instructor use only.**
 
 ## Mastery Model
 
-SIM-002 uses a mastery model rather than a point-based grade.
+SIM-002 uses mastery evidence rather than a point grade.
 
-- FIRST-ATTEMPT PERFORMANCE: X / 15
-- FINAL MASTERY: 15 / 15 required for completion
-- REMEDIATION COUNT: number of decisions requiring retry
-- COMPETENCY STATUS: Mastered / Mastered After Remediation / Needs Instructor Review / In Progress
+- **FIRST-ATTEMPT PERFORMANCE:** X / 15
+- **FINAL MASTERY:** 15 / 15 required
+- **REMEDIATION COUNT:** decisions requiring retry
+- **COMPETENCY STATUS:** Mastered / Mastered After Remediation / Needs Instructor Review / In Progress
 
-## Escalation Decisions
+## Competency Alignment
 
-The following decisions require instructor review after the defined repeated-error threshold:
+The simulation must remain aligned to:
 
-- SIM02-D06 — discretionary allocation of shipper-supplied freight among represented carriers
-- SIM02-D10 — return/decline versus reassignment of a rejected opportunity
-- SIM02-D13 — actual operating conduct versus agreement label
+**STOP → IDENTIFY → TRACE → CHECK → CLASSIFY → ACT → DOCUMENT → ESCALATE**
 
-These are the simulation's high-stakes boundary concepts. Ordinary beginner errors on other decisions receive remediation and retry without automatic escalation.
+The learner must demonstrate principal identification, freight-source tracing, known/unknown discipline, allocation analysis, fact-based classification, operational action, professional documentation, and escalation when qualified review is required.
+
+## High-Stakes Decisions
+
+Repeated error on these decisions triggers instructor review under the runtime's established escalation rule:
+
+- **SIM02-D06** — shipper-supplied freight plus discretionary carrier allocation
+- **SIM02-D10** — return/decline versus unauthorized reassignment
+- **SIM02-D13** — actual conduct contradicting the claimed agency label
+
+These runtime escalation points supplement, rather than replace, the Module 02 Practical's critical-failure controls. Do not claim that every simulation escalation maps one-to-one to a practical critical failure.
+
+## False-Safe-Harbor Control
+
+The learner may not rely on carrier count, non-overlap, compensation method, contract title, tax status, or “not touching freight” as a universal safe harbor. Non-overlap can be relevant evidence on supplied facts but is not a categorical legal rule.
 
 ## Completion Rule
 
-A student reaches COMPLETE only when all 15 decisions reach final mastery and no unresolved instructor-review condition remains.
+Status may be **COMPLETE** only when:
 
-See `Module-02-Simulation-Instructor-Guide.md` for the detailed decision map and remediation guidance.
+1. all 15 decisions reach final mastery; and
+2. no unresolved instructor-review condition remains.
+
+A complete score does not replace the Module 02 exam, practical, remediation record, or instructor closeout.
+
+**Release status remains:** **BUILD COMPLETE — RELEASE QA DEFERRED.**
