@@ -1,6 +1,6 @@
 # Modules 01–05 Instructor Practical Scoring Guide
 
-**Status:** DRAFT_COMPLETE — instructor/editor QA required before PUBLICATION_READY
+**Status:** ACTIVE INSTRUCTIONAL SCORING CONTROL — release/editor QA remains separate
 
 Use this guide with the student-facing practical assessments. Do not expose expected classifications or scoring notes to students before assessment.
 
@@ -12,9 +12,77 @@ Use the current Module 01 practical and its active premium-rebuild competency co
 
 ---
 
-# Module 02
+# Module 02 — Agency Boundary Decision Desk
 
-Use the current Module 02 practical and its Agency Boundary Decision Desk controls. Module 02 remains subject to the Academy premium-depth re-audit.
+Student file: `Module-02-Practical.md`
+
+## Expected Opportunity Treatment
+
+- **A — Consistent with Carrier-Side Agency.** One identified carrier, continuing relationship, carrier-specific opportunity, and no supplied allocation among competing carriers.
+- **B — Significant Brokerage Risk.** The shipper gives freight to the dispatch service and asks it to choose among overlapping client carriers. Discretionary carrier allocation is explicit.
+- **C — Consistent with Carrier-Side Agency on supplied facts.** The represented carriers operate in materially non-overlapping equipment/territory patterns and the dispatcher follows standing carrier-specific limits. Students should still avoid claiming that non-overlap creates an automatic legal safe harbor.
+- **D — Significant Brokerage Risk.** The dispatcher retains shipper-direct freight after Carrier A rejects it and redirects it to Carrier B based on the dispatch fee. This is materially different from returning/canceling the opportunity to its source and creates a direct allocation concern.
+- **E — Significant Brokerage Risk.** Contract language says “bona fide agent,” but actual conduct is shipper-first freight receipt followed by discretionary carrier selection. Actual conduct controls the operational risk analysis.
+
+## Dimensions — 30 points
+
+1. **Classification accuracy across A–E** — 0–3.
+2. **Principal/relationship identification** — 0–3.
+3. **Freight-source tracing and cancellation-versus-reassignment reasoning** — 0–3.
+4. **Allocation-of-traffic analysis** — 0–3 **CRITICAL**.
+5. **Known-versus-unknown fact discipline** — 0–3.
+6. **Fact-change and verification reasoning** — 0–3.
+7. **Operational next-action selection** — 0–3 **CRITICAL**.
+8. **Professional case-note quality** — 0–3.
+9. **False-safe-harbor rejection** — 0–3.
+10. **Escalation handoff quality** — 0–3.
+
+**Pass:** 24/30 and no critical failure.
+
+### Module 02 scoring anchors
+
+**3 — Meets standard:** correct, operationally usable decision; identifies controlling supplied facts; separates verified facts from assumptions; selects an appropriate next action; uses restrained professional language; documents or escalates where required.
+
+**2 — Partially meets:** generally correct conclusion but misses one material reasoning/documentation element, gives a vague verification step, or does not fully connect the evidence to the action.
+
+**1 — Below standard:** recognizes part of the issue but relies substantially on labels, carrier count, compensation, or intuition; reasoning requires instructor correction before it would be safe to use operationally.
+
+**0 — Not demonstrated:** wrong/missing decision or reasoning, unsupported legal conclusion, or designated critical-failure behavior.
+
+### Module 02 critical failures
+
+A learner fails the practical regardless of point total if the learner:
+
+1. treats **Opportunity B or D as ordinary safe carrier-side agency** without recognizing the supplied discretionary allocation among competing carriers;
+2. knowingly proceeds with a supplied high-risk allocation pattern after identifying the material boundary issue, rather than holding/returning/declining/escalating as appropriate; or
+3. uses a false categorical safe harbor — such as a carrier-count rule, contract title, 1099 status, compensation method, or “I never touch freight” — as the controlling reason to approve conduct despite contradictory facts.
+
+### Required evidence by dimension
+
+- **Classification:** A/B/C/D/E must be addressed separately; no blanket rule.
+- **Principal:** student identifies who the dispatcher is actually representing and notices when shipper-facing conduct expands beyond a named carrier relationship.
+- **Trace:** student identifies where the freight came from and distinguishes return/cancellation from redirection/reassignment.
+- **Allocation:** student identifies whether multiple carriers could receive the same opportunity and who exercises selection discretion.
+- **Unknowns:** student may use “More Facts Required” when material facts genuinely are missing and must identify what is missing; uncertainty is not penalized when justified.
+- **Verification:** student states what evidence/source would resolve a material unknown and what changed fact could alter the classification.
+- **Action:** student chooses a defensible operational response such as proceed within carrier scope, hold, verify, return/decline, or escalate; “proceed” is not treated as a legal certification.
+- **Documentation:** case note records situation, key facts, unknowns, reasoning, action, and follow-up ownership without unsupported legal conclusions.
+- **Safe-harbor control:** student explains why actual conduct and the full fact pattern cannot be replaced by a single factor.
+- **Handoff:** student states known facts, unresolved question, operational hold/risk, supporting materials, and the decision requiring qualified review.
+
+### Module 02 remediation routing
+
+| Deficiency | Required remediation |
+|---|---|
+| Principal/relationship confusion | Revisit Module 02 broker/bona fide-agent relationship sections; complete an alternate principal-identification exercise. |
+| Freight-source/reassignment error | Revisit cancellation vs. reassignment instruction; trace an alternate opportunity from source through proposed disposition. |
+| Allocation error | Mandatory allocation-of-traffic remediation using an alternate overlapping-carrier scenario. |
+| Unknown-fact discipline | Complete the Module 02 Decision Tool with at least three material facts deliberately withheld; learner must hold/verify rather than guess. |
+| False safe harbor | Correct the relevant myth and explain why the single factor cannot override contradictory conduct. |
+| Operational-action failure | Repeat with a materially different scenario requiring PROCEED/HOLD/VERIFY/ESCALATE/DO NOT PROCEED reasoning. |
+| Documentation/handoff weakness | Rewrite the case note and escalation handoff to include facts, unknowns, action status, owner, and review question. |
+
+Retesting must use a materially different scenario. Do not simply disclose the expected answer and repeat the original fact pattern.
 
 ---
 
