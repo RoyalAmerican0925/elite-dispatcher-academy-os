@@ -59,10 +59,13 @@ The architecture itself is substantially represented, but production is front-lo
 - ⏳ assembled release QA
 
 ### M05 — Load Boards & Freight Sourcing
-**Content/Production: 84% | Release: 55%**
+**Content/Production: 81% | Release: 55%**
 - ☑ Curriculum/assessment/practical/full guide substantially built
 - ☑ SIM-005 build reported complete with content-gap repair
-- ◐ Deep premium manual/tool/assessment audit
+- ☑ Content-level purge audit completed: `10-PRODUCTION/Module-05-Premium-Content-Purge-Audit-2026-09-04.md`
+- ◐ Core instruction retained; seven-part manual packaging requires restructuring because Parts 03–06 split scenarios/KC/glossary/dependency material across arbitrary file boundaries
+- ◐ Inspect/consolidate all nine tools and reconcile embedded vs dedicated assessment content
+- ◐ Independently verify SIM-005 curriculum alignment
 - ◐ Platform-currentness verification
 - ◐ Formal premium completion QA
 - ⏳ assembled release QA
@@ -186,12 +189,12 @@ The architecture itself is substantially represented, but production is front-lo
 - ☐ SIM-015 / integrated capstone
 
 ## Chat-to-GitHub recovery control
-The following project decisions from chat are production-significant and must remain represented in permanent repository controls/assets:
 - ☑ GitHub is CONTENT MASTER; Drive/Docs are design/render/review layers.
 - ☑ TEACH → DEMONSTRATE → PRACTICE → ASSESS → SIMULATE → RECORD COMPETENCY dependency.
 - ☑ Premium-depth Google/Employment/Buyer tests and no-filler standard are represented in master quality controls.
 - ☑ Instructor Guide product standard is represented.
 - ☑ M08 approved design/spec, plan, manuals, seven tools, diagnostic lab, exam, practical and Instructor Guide are now in GitHub.
+- ☑ M05 content-purge findings are now stored in the proper production folder rather than remaining only in chat.
 - ◐ M08 SIM-008 alignment findings/repair result must be reconciled into permanent QA/status controls after Claude's repair is received.
 - ◐ M01 selective-reconciliation decisions must be completed on the dedicated rebuild lineage and then reflected in master truth controls.
 - ◐ Any new course-build decision made in chat must be transferred to the relevant module/master/production folder during the same work block.
