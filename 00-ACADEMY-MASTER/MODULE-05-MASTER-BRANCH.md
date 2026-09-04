@@ -1,41 +1,50 @@
 # Module 05 Master Branch — Load Boards & Freight Sourcing
 
-**Control status:** VERIFIED EXISTS / REGULAR CLOSEOUT PENDING / PREMIUM-DEPTH RE-AUDIT REQUIRED
+**Control status:** REGULAR CLOSEOUT BUILT / SIM-005 BUILD COMPLETE — RELEASE QA DEFERRED / PREMIUM-DEPTH + PLATFORM-CURRENTNESS AUDIT OPEN
 
 ## Employment outcome
-Student can search for freight opportunities, screen them against carrier/equipment/route/basic economic constraints, distinguish entity verification from contact verification, identify suspicious or incomplete opportunities, and document a defensible next action.
+Student can search for freight opportunities, screen them against carrier/equipment/route/basic economic constraints, distinguish entity verification from contact verification, identify suspicious or incomplete opportunities, and document a defensible next action without overstating the dispatcher role.
+
+## Operational sourcing sequence
+**PROFILE → SEARCH → FIND → SCREEN → VERIFY AVAILABILITY → FIRST-PASS VERIFY → COMPARE → SHORTLIST → DOCUMENT → ROUTE FOR NEXT-STAGE DECISION**
 
 ## Core competency families
-- load-board search strategy
-- carrier/equipment/lane filtering
-- opportunity triage
-- broker/entity verification
-- contact/sender verification
-- fraud indicators without treating indicators as proof
-- rate-confirmation discrepancy recognition
-- truthful role identification
-- missing-information verification
-- shortlist / reject / escalate decisions
+- load-board search strategy;
+- carrier/equipment/lane filtering;
+- opportunity triage;
+- broker/entity verification;
+- contact/sender verification;
+- fraud indicators without treating indicators as proof;
+- rate-confirmation discrepancy recognition;
+- truthful role identification;
+- missing-information verification;
+- shortlist/reject/escalate decisions.
 
 ## Professional language layer
 Load board; posting; lane; origin radius; destination radius; equipment filter; deadhead; rate; RPM; broker; authority; surety/trust; BMC-84/BMC-85; rate confirmation; double brokering; identity verification; contact verification; shortlist.
 
 ## Student tools
-Existing tool set includes sourcing/screening materials plus a rate-confirmation checklist and broker call sheet from the active repair track. Exact live inventory must be re-verified at closeout.
+Nine sourcing/screening tools exist, including broker-call, verification, fraud-red-flag, comparison, screening, search-log/search, rate-confirmation review, and STOP-VERIFY-ESCALATE decision controls. Premium audit must judge occupational usefulness rather than mere file count.
 
 ## Assessment chain
-Knowledge check and exam were expanded during C-013 work. Practical still requires confirmed closeout of:
-1. dedicated rate-confirmation discrepancy review;
-2. dedicated entity-versus-contact verification task;
-3. synchronized scoring guide;
-4. stale Module 04→06 transition repair.
+- Knowledge Check — EXISTS.
+- Final Exam — 30 items; pass 24/30; Critical Item 24.
+- Practical — EXISTS; regular C-013 closeout/scoring synchronization completed.
+- Full Instructor Guide — EXISTS.
+- Six critical-failure families remain controlling: endorsement mismatch; unauthorized shipper solicitation/allocation treated as normal sourcing; duplicate posting treated as proven fraud; entity verification treated as contact authorization; mismatched rate confirmation ignored; dispatcher signing/commitment outside supplied authority.
 
 ## Simulation
-**SIM-005 — Live Load Search Desk**
-Status: PLANNED. Do not build as a simple load-board quiz. It must require search, screening, verification, comparison, incomplete information, fraud-resistance, and defensible next action.
+**SIM-005 — Live Load Search Desk**  
+Status: **BUILD COMPLETE — RELEASE QA DEFERRED.**
 
-## Source / regulatory controls
-Primary-source controls include FMCSA registration/authority and broker financial-responsibility information. Platform-specific mileage, credential-sharing and Terms-of-Service behavior must not be taught as universal. Duplicate postings are indicators, not automatic proof of double brokering.
+Latest build work added truthful-role competency coverage and reports 18 decisions / 14 competency families with 25/25 automated tests. Independent premium inheritance/content-alignment check remains before the module's final premium gate; build existence is not `PUBLICATION_READY`.
+
+## Source / currentness controls
+Primary-source controls include FMCSA registration/authority and broker financial-responsibility information. Platform-specific load-board behavior is high-change content and requires pre-publication currentness verification. Platform mileage, credential-sharing and Terms-of-Service behavior must not be taught as universal. Duplicate postings are indicators, not automatic proof of double brokering.
 
 ## Completion gate
-Regular C-013 closeout remains open. Premium-depth audit and SIM-005 follow. No PUBLICATION_READY status.
+**Regular instructional closeout: CLOSED.**  
+**Simulation build gate: CLOSED / release QA deferred.**  
+**Premium-depth/platform-currentness gate: OPEN.**
+
+Do not assign `PUBLICATION_READY` until the premium/currentness and assembled release controls pass.
