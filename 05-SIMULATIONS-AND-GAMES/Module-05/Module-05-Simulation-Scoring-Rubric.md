@@ -24,4 +24,4 @@ Six decisions (SIM05-D07, D09, D10, D11, D12, D15) escalate to instructor-review
 - **COMPLETE** — 17/17 final mastery, no unresolved instructor-review flags
 - **INSTRUCTOR_REVIEW_REQUIRED** — at least one of the six critical decisions escalated and remains unresolved
 
-Build QA (26/23 automated tests passing, see runtime README) does not replace instructor judgment on any transferred, in-person demonstration of the same competencies.
+Build QA (23/23 automated tests passing, see runtime README) does not replace instructor judgment on any transferred, in-person demonstration of the same competencies.
