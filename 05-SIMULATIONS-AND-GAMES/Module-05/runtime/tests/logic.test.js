@@ -29,8 +29,8 @@ test("content: 13 stages in locked order", () => {
   assert.deepEqual(STAGES.map(s => s.id), ["SIM05-S1","SIM05-S2","SIM05-S3","SIM05-S4","SIM05-S5","SIM05-S6","SIM05-S7","SIM05-S8","SIM05-S9","SIM05-S10","SIM05-S11","SIM05-S12","SIM05-S13"]);
 });
 
-test("content: 17 stable SIM05 decision IDs", () => {
-  assert.equal(DECISION_ORDER.length, 17);
+test("content: 18 stable SIM05 decision IDs", () => {
+  assert.equal(DECISION_ORDER.length, 18);
   for (const id of DECISION_ORDER) assert.match(id, /^SIM05-D\d\d$/);
 });
 
@@ -41,9 +41,20 @@ test("content: every stage decision resolves and every decision belongs to its s
   }
 });
 
-test("content: all 13 competency families are used by at least one decision", () => {
+test("content: all 14 competency families are used by at least one decision", () => {
   const used = new Set(DECISION_ORDER.map(id => DECISIONS[id].competency));
-  assert.equal(used.size, 13);
+  assert.equal(used.size, 14);
+});
+
+test("content: SIM05-D18 (truthful role identification) is correctly placed in Stage 8", () => {
+  assert.equal(DECISIONS["SIM05-D18"].stageId, "SIM05-S8");
+  assert.equal(DECISIONS["SIM05-D18"].competency, "N");
+});
+
+test("evaluateResponse: SIM05-D18 choice correct/incorrect", () => {
+  assert.equal(evaluateResponse("SIM05-D18", "B"), true);
+  assert.equal(evaluateResponse("SIM05-D18", "A"), false);
+  assert.equal(evaluateResponse("SIM05-D18", "C"), false);
 });
 
 test("evaluateResponse: choice correct/incorrect", () => {
@@ -119,14 +130,15 @@ const CORRECT = {
   "SIM05-D15":"B",
   "SIM05-D16":"B",
   "SIM05-D17":["shortlist","rejected","open","escalated"],
+  "SIM05-D18":"B",
 };
 
-test("full mastery produces COMPLETE 17/17", () => {
+test("full mastery produces COMPLETE 18/18", () => {
   let s=createInitialState();
   for (const id of DECISION_ORDER) s=submitAttempt(s,id,CORRECT[id],1000);
   assert.equal(computeSimulationStatus(s),"COMPLETE");
-  assert.deepEqual(computeFinalMasteryScore(s),{correct:17,total:17});
-  assert.deepEqual(computeFirstAttemptScore(s),{correct:17,total:17});
+  assert.deepEqual(computeFinalMasteryScore(s),{correct:18,total:18});
+  assert.deepEqual(computeFirstAttemptScore(s),{correct:18,total:18});
 });
 
 test("competency status distinguishes in-progress/mastered/remediated/review", () => {
@@ -155,16 +167,16 @@ test("persistence rejects corrupt and foreign simulation state", () => {
 
 test("persistence backfills partial state and repairs invalid pointer", () => {
   const p=normalizeLoadedState({simulationId:"SIM-005",decisions:{"SIM05-D01":{finalCorrect:true}},currentDecisionId:"BAD"});
-  assert.equal(Object.keys(p.decisions).length,17);
+  assert.equal(Object.keys(p.decisions).length,18);
   assert.equal(p.currentDecisionId,"SIM05-D01");
   assert.equal(p.decisions["SIM05-D01"].finalCorrect,true);
 });
 
-test("progression walks all 17 decisions", () => {
+test("progression walks all 18 decisions", () => {
   let id=DECISION_ORDER[0], count=0;
   while(id!==null){ id=getNextDecisionId(id); count+=1; }
-  assert.equal(count,17);
-  assert.deepEqual(getProgress("SIM05-D17"),{current:17,total:17});
+  assert.equal(count,18);
+  assert.deepEqual(getProgress("SIM05-D17"),{current:18,total:18});
   assert.equal(getStageForDecision("SIM05-D17").id,"SIM05-S13");
 });
 
