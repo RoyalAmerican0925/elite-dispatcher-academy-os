@@ -1,34 +1,40 @@
 # Modules 08–15 — Scope Control
 
+**Control date:** 2026-09-04
+
 ## Rule
 Do not create curriculum, competencies, assessments, tools, or simulations from memory merely to make the Academy appear complete. Distinguish **verified planned scope** from **live production assets**.
 
-## What is now verified
-Repository control evidence establishes the intended instructional sequence:
-- `01-NEAR-TERM-ACADEMY/MODULE-MAP.md` identifies itself as the **Authoritative Module Map** and controls the near-term Academy sequence.
-- `00-PROJECT-CONTROL/MODULE-MAP.md` provides working titles, primary purposes and dependencies.
-- `01-NEAR-TERM-ACADEMY/COURSE-SPECIFICATION.md` defines the required commercial product components and competency areas.
+## Verified sequence
+08 — Rate Negotiation and Broker Communication  
+09 — Booking Loads, Rate Confirmations, and Dispatch Documentation  
+10 — Trip Planning, Routing, Time, Fuel, and Appointment Management  
+11 — Hours of Service and ELD Operational Awareness  
+12 — Active Load Monitoring and Driver Communication  
+13 — Delays, Detention, TONU, Breakdowns, Claims, and Exception Management  
+14 — POD, Invoicing, Factoring Awareness, Recordkeeping, and Load Closeout  
+15 — Dispatcher Business Operations, Client Service, Systems, and Integrated Capstone
 
-Therefore Modules 08–15 are no longer `SCOPE VERIFY` at the program-map level. They are **PROGRAM SCOPE VERIFIED / PRODUCTION ASSETS ABSENT**.
+## Current production truth
+### Module 08
+Module 08 is no longer architecture-only. Verified production assets now include:
+- six Student Manual parts;
+- seven operational negotiation tools;
+- diagnostic Knowledge Check and progressive Applied Lab;
+- 30-item Final Exam plus answer/remediation control;
+- 30-point Broker Negotiation Desk Practical plus scoring/remediation;
+- full Instructor Guide;
+- SIM-008 runtime.
 
-## Verified planned sequence
-08 — Rate Negotiation and Broker Communication
-09 — Booking Loads, Rate Confirmations, and Dispatch Documentation
-10 — Trip Planning, Routing, Time, Fuel, and Appointment Management
-11 — Hours of Service and ELD Operational Awareness
-12 — Active Load Monitoring and Driver Communication
-13 — Delays, Detention, TONU, Breakdowns, Claims, and Exception Management
-14 — POD, Invoicing, Factoring Awareness, Recordkeeping, and Load Closeout
-15 — Dispatcher Business Operations, Client Service, Systems, and Capstone Practice
+Open M08 gates are SIM-008 curriculum-alignment repair/independent re-verification, commercial/current-source QA, and the final premium-content gate. It is **not** `PUBLICATION_READY`.
 
-## Module 15 conflict control
-A second project-control map describes Module 15 as `Capstone and Integrated Dispatch Operations`. The authoritative near-term map includes business operations/client service/systems **and** capstone practice. Before Module 15 production, explicitly decide how these requirements combine. Do not silently remove the business-operations competency and do not bury it inside a simulation without instruction/practice.
+### Modules 09–14
+Program scope is verified; full production curriculum/tools/assessments/instructor packages/simulations remain to be built.
 
-## Production-asset finding
-No live `02-CURRICULUM/Module-08` through `Module-15` production directories were found in the inspected architecture snapshot. A planned title is not a completed module.
+### Module 15
+Program scope is verified. The Academy's active architecture resolves Module 15 as business operations/client service/systems **plus an integrated capstone**, rather than treating those as competing alternatives. Its capstone depends on upstream competency evidence.
 
-## Required production procedure
-For each Module 08–15:
+## Required production procedure for M09–M15
 1. lock the occupational outcome from the program map;
 2. reconcile imports/exports and cross-module boundaries;
 3. define professional vocabulary and communication performance;
@@ -43,4 +49,4 @@ For each Module 08–15:
 12. defer assembled release QA until branding/LMS/deployment are ready.
 
 ## Quality control
-Unknown remains a valid production state. The verified program map gives us a legitimate destination; it does not give permission to pretend the road has already been built.
+Unknown remains a valid production state. A verified program map gives a legitimate destination; it does not permit architecture-only material to be presented as finished courseware. Module 08's later build supersedes the earlier snapshot that described all Modules 08–15 as production-assets absent.
