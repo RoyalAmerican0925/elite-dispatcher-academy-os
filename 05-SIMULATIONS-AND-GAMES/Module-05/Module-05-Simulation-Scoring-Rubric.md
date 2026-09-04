@@ -3,7 +3,7 @@
 **Simulation:** Live Load Search Desk  
 **Model:** Mastery, not points — no percentage grade anywhere in this simulation.
 
-## Tracked per decision (17 total)
+## Tracked per decision (18 total)
 - First-attempt response, correctness, timestamp (never overwritten by remediation)
 - Final response, correctness, timestamp
 - Remediation used (yes/no)
@@ -11,17 +11,17 @@
 - Instructor-review required (yes/no)
 
 ## Tracked overall
-- First-attempt score: X / 17
-- Final mastery: X / 17 (must be 17/17 for COMPLETE)
+- First-attempt score: X / 18
+- Final mastery: X / 18 (must be 18/18 for COMPLETE)
 - Remediation count
-- Competency status across all 13 families (A–M): Mastered / Mastered After Remediation / Needs Instructor Review / In Progress
+- Competency status across all 14 families (A–N): Mastered / Mastered After Remediation / Needs Instructor Review / In Progress
 
 ## Critical-decision escalation
-Six decisions (SIM05-D07, D09, D10, D11, D12, D15) escalate to instructor-review status after two incorrect attempts. This is a hard ceiling on ordinary retry — not a general rule applied to all 17 decisions. Escalation clears automatically if a later attempt is correct.
+Six decisions (SIM05-D07, D09, D10, D11, D12, D15) escalate to instructor-review status after two incorrect attempts. This is a hard ceiling on ordinary retry — not a general rule applied to all 18 decisions. Escalation clears automatically if a later attempt is correct. SIM05-D18 (truthful role identification, added after content-accuracy review) is NOT a critical decision — it follows the same ordinary retry track as every other non-escalating item.
 
 ## Simulation status values
-- **IN_PROGRESS** — not all 17 decisions have reached final mastery
-- **COMPLETE** — 17/17 final mastery, no unresolved instructor-review flags
+- **IN_PROGRESS** — not all 18 decisions have reached final mastery
+- **COMPLETE** — 18/18 final mastery, no unresolved instructor-review flags
 - **INSTRUCTOR_REVIEW_REQUIRED** — at least one of the six critical decisions escalated and remains unresolved
 
-Build QA (23/23 automated tests passing, see runtime README) does not replace instructor judgment on any transferred, in-person demonstration of the same competencies.
+Build QA (25/25 automated tests passing, see runtime README) does not replace instructor judgment on any transferred, in-person demonstration of the same competencies.
