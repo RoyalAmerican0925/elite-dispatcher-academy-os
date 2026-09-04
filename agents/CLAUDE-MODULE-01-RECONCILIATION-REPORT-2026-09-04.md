@@ -1,54 +1,64 @@
 # Module 01 Three-Branch Reconciliation Report
 
-**Performed by:** Claude, 2026-09-04
+**Performed by:** Claude, 2026-09-04 (updated same day with a conclusive Part 03 diff)
 **Branches compared:** `main`, `academy-master-architecture`, `module-01-premium-depth-rebuild`
 **Method:** Read-only investigation across all three branches. No files modified anywhere. No repair work performed — this is findings only, per explicit instruction.
 
 ---
 
+## UPDATE: The Part 03 Defect Question Is Now Fully Resolved
+
+I initially flagged this as needing a direct diff rather than an inference. I've now done that diff. **All three branches — `main`, `academy-master-architecture`, and `module-01-premium-depth-rebuild` — have the exact same SHA for `Student-Manual-Part-03.md`: `fffa8e4b5c2aee15061dac78a0eb2051a91956ee`.** This is not "similar content" — it is the literal identical file, byte-for-byte, in all three locations. The glossary correctly defines Shipper as "the party that owns the freight" and Private Carrier as transporting "its own property" in every copy.
+
+**Conclusion: the shipper=owner contradiction does not exist anywhere in the current repository, on any branch.** The defect listed in `academy-master-architecture`'s `MODULE-01-MASTER-BRANCH.md` is stale — most likely already corrected in an earlier session (consistent with repair work on Module 01's dispatcher-role language I recall performing earlier in this project's history) and simply never removed from that file's defect list. **This is a documentation-accuracy problem, not a content problem.** No repair to Part 03 itself is needed. What's needed is for `MODULE-01-MASTER-BRANCH.md`'s defect list to be corrected to stop naming a defect that isn't there — itself a small, safe, non-content edit, though I have not made it, per your instruction to wait for sequencing.
+
+This changes the shape of what "Module 01 repair" actually means: of the two concrete items named in the original discovery (the unmerged Premium Part 04, and the Part 03 defect), **one is confirmed real and unmerged (Part 04), and one is confirmed not to exist (the Part 03 defect).** That's a meaningfully smaller repair scope than the original framing suggested.
+
+---
+
 ## 1. The Two Master-Branch Status Claims Contradict Each Other
 
-`academy-master-architecture`'s `MODULE-01-MASTER-BRANCH.md` says: **"VERIFIED EXISTS / PREMIUM REBUILD ACTIVE"**, lists 5 open defects, and says Premium Part 04 "exists on the dedicated Module-01 rebuild branch and must be reconciled before merge."
+`academy-master-architecture`'s `MODULE-01-MASTER-BRANCH.md` says: **"VERIFIED EXISTS / PREMIUM REBUILD ACTIVE"**, lists 5 open defects (one of which, per the update above, is confirmed stale), and says Premium Part 04 "exists on the dedicated Module-01 rebuild branch and must be reconciled before merge."
 
 `module-01-premium-depth-rebuild`'s own `Modules/Module-01/README.md` says: **"MODULE 01: COMPLETED CONTENT — CONSOLIDATION IN PROGRESS"** — a materially different, more finished-sounding status.
 
-**These are not compatible descriptions of the same module.** One says active rebuild with known defects; the other says content is done and just needs folder consolidation. Whoever wrote the rebuild branch's README believed the content work was finished at the time they wrote it. Whoever wrote (or last updated) `academy-master-architecture`'s master-branch file either didn't know that, or disagreed with it, or the rebuild branch has since fallen behind. I can't determine which from content alone — this needs a human or ChatGPT call on which status is currently true.
+Given the Part 03 finding above, the rebuild branch's "COMPLETED" framing looks more accurate on at least that one point than the architecture branch's defect list. That doesn't resolve the full contradiction (Part 04 is still genuinely unmerged, which argues against "completed"), but it shifts my read: the architecture branch's defect list should be treated as **possibly stale in more than one place**, not as current ground truth, until each of its remaining 4 defects gets the same direct-diff treatment Part 03 just got.
 
 ## 2. Premium Part 04 — Located, Read in Full, Genuinely Strong
 
-**Location:** `02-CURRICULUM/Module-01/Student-Manual-Part-04.md` on `module-01-premium-depth-rebuild` (16,135 bytes). Does **not** exist on `academy-master-architecture` or `main` — confirmed by directory listing on `academy-master-architecture`, which shows only Parts 01–03.
+**Location:** `02-CURRICULUM/Module-01/Student-Manual-Part-04.md` on `module-01-premium-depth-rebuild` (16,135 bytes). Confirmed absent from both `academy-master-architecture` and `main` — this one is real and still unmerged.
 
-**Content assessment:** "Reading the Dispatch Desk" teaches the Four-Flow model (Physical/Information/Document/Payment), the KNOWN/UNKNOWN/VERIFY framework, and a STOP→IDENTIFY→TRACE→VERIFY→HAND OFF decision framework, with three Desk Drills and a four-file "Freight File Lab." This directly matches and extends the M01-C11 (KNOWN/UNKNOWN/VERIFY) and M01-C13 (STOP→IDENTIFY→TRACE→VERIFY→HAND OFF) competencies listed in `academy-master-architecture`'s own competency list — meaning this Part 04 was written to satisfy specific competency IDs that exist in the architecture doc but that I never saw implemented anywhere until now.
+**Content assessment:** "Reading the Dispatch Desk" teaches the Four-Flow model (Physical/Information/Document/Payment), the KNOWN/UNKNOWN/VERIFY framework, and a STOP→IDENTIFY→TRACE→VERIFY→HAND OFF decision framework, with three Desk Drills and a four-file "Freight File Lab." This directly matches and extends the M01-C11 and M01-C13 competencies listed in `academy-master-architecture`'s own competency list.
 
-**Continuity check:** File A in the Freight File Lab uses Prairie Freight Brokers, North Star Transport, and the Omaha→Des Moines route — the exact fictional entities SIM-001 already uses. This is not coincidental content; it was built to be consistent with existing SIM-001 material. Genuinely good sign for reconciliation — whoever wrote this either had SIM-001 in front of them or the entities were established as shared training data before both were written.
+**Continuity check:** File A in the Freight File Lab uses Prairie Freight Brokers, North Star Transport, and the Omaha→Des Moines route — the exact fictional entities SIM-001 already uses. Genuinely good sign for reconciliation.
 
-**Recommendation:** This file should be merged into whichever branch becomes authoritative. I did not copy it anywhere — flagging its existence and quality only, per your instruction not to modify anything yet.
+**Recommendation:** This file should be merged into whichever branch becomes authoritative. Not yet copied anywhere, per instruction.
 
-## 3. The Part 03 "Shipper=Owner" Defect — NOT Present in the Rebuild Branch's Version
+## 3. The Part 03 "Shipper=Owner" Defect — CONFIRMED NOT PRESENT (see Update above)
 
-Read `module-01-premium-depth-rebuild`'s `Student-Manual-Part-03.md` in full. The glossary explicitly defines:
-- **Shipper:** "The party that owns the freight and needs it moved from an origin point to a destination."
-- **Private Carrier:** "A motor carrier that generally transports its own property as part of its own business operations."
-
-Both definitions are correct and don't exhibit the contradiction `academy-master-architecture`'s master-branch file names as a known defect. Two possible explanations: (a) this defect was already fixed in the rebuild branch's version and the `academy-master-architecture` master-branch file's defect list is now stale, or (b) the defect exists elsewhere in Part 03 that I didn't see in this file's visible content (the file is only 3,853 bytes and appears to start mid-question — possibly truncated or split unusually; I did not see a "Part A" beginning, only starting at question 4/item "b)"). **This needs a direct side-by-side diff against whatever Part 03 currently lives on `main` or `academy-master-architecture` before anyone concludes the defect is actually fixed** — I'm flagging what I saw, not certifying it's resolved.
+See the Update section at the top of this report for the conclusive three-way SHA comparison.
 
 ## 4. A New Asset Exists That I Hadn't Seen Anywhere: EXAM-BLUEPRINT-Modules-01-06.md
 
-Found at `03-ASSESSMENTS/Module-Exams/EXAM-BLUEPRINT-Modules-01-06.md` (12,655 bytes) on the rebuild branch. This doesn't exist on `academy-master-architecture` (not seen in any prior listing) or, to my knowledge, `main`. Worth checking — this could be exactly the kind of cross-module exam-alignment document the M01–M06 Reference Implementation Audit Standard was asking for, already built and sitting on a branch nobody's merged yet.
+Found at `03-ASSESSMENTS/Module-Exams/EXAM-BLUEPRINT-Modules-01-06.md` (12,655 bytes) on the rebuild branch. Not seen on `academy-master-architecture` or `main`. Worth checking — could be existing work toward the M01–M06 audit standard's cross-module alignment ask, sitting unmerged.
 
 ## 5. The `Modules/Module-01/` Folder Is Not Where the Content Lives
 
-The rebuild branch has a new top-level `Modules/Module-01/` directory, but its own README states plainly: *"Module 01 content remains preserved in its existing production locations while consolidation is completed... Nothing is deleted from the established source paths."* This folder currently contains only that README — it's a planned future consolidation target, not actual duplicate content. **Anyone reconciling this branch should ignore `Modules/Module-01/` as a content source** and work from the standard paths (`02-CURRICULUM/Module-01/`, `03-ASSESSMENTS/...`, `04-STUDENT-TOOLS/...`, `05-SIMULATIONS-AND-GAMES/Module-01/`), which is where the real content is.
+The rebuild branch's new top-level `Modules/Module-01/` directory contains only a README stating content "remains preserved in its existing production locations." Ignore this folder as a content source — work from the standard paths.
 
-## 6. What I Did NOT Check (Scope Limits of This Pass)
+## 6. Remaining Scope Not Yet Checked
 
-- Did not diff Parts 01–02 of the Student Manual across all three branches line-by-line (only confirmed Part 03's glossary content and Part 04's existence/quality).
-- Did not compare SIM-001's actual decision content across branches (only confirmed file sizes suggest the `academy-master-architecture` copy matches what I built on `main`).
-- Did not open the Knowledge Check, Practical, or Instructor materials on the rebuild branch to check for premium-depth differences beyond the exam files listed above.
-- Did not check `main` branch's current Module 01 state directly in this pass (relied on my own prior knowledge from earlier in this session).
+- Parts 01–02 of the Student Manual not yet diffed across all three branches (Part 03 is now confirmed identical; 01–02 should get the same direct-SHA-comparison treatment before being assumed identical too).
+- SIM-001's actual decision content not yet diffed across branches (only file-size comparison done so far).
+- Knowledge Check, Practical, and Instructor materials on the rebuild branch not yet opened.
+- The remaining 4 items on `academy-master-architecture`'s Module 01 defect list have not been individually diff-checked the way the Part 03 item just was — given that item turned out to be stale, the other 4 should not be assumed current without the same check.
 
-## Recommendation
+## Recommendation (Updated)
 
-Before any repair work: get a direct answer on which status claim is current (rebuild branch's "COMPLETED" or architecture branch's "ACTIVE REBUILD"), since that determines whether the next step is "merge Part 04 and close out" or "continue active repair work." Part 04 is real, high-quality, and consistent with existing SIM-001 content — it should not be lost regardless of which status is correct. The Part 03 defect needs a direct diff, not an inference from one branch's version looking clean. The EXAM-BLUEPRINT file is worth a look before it's forgotten on an unmerged branch.
+The repair scope is smaller and clearer than originally framed:
+1. **Merge Part 04** into the authoritative branch — confirmed real, confirmed good, confirmed unmerged.
+2. **Correct `MODULE-01-MASTER-BRANCH.md`'s defect list** — remove the Part 03 item, and re-verify the remaining 4 the same way before trusting them.
+3. **Check the EXAM-BLUEPRINT file** before it's lost on an unmerged branch.
+4. Parts 01–02 and SIM-001 still need the same direct-diff treatment before anyone assumes they match across branches.
 
-No modifications were made to any branch during this investigation.
+No modifications were made to any branch during this investigation or this update.
