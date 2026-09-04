@@ -22,7 +22,7 @@ A correct answer with unsafe reasoning is not full competency evidence.
 | 5 | endorsement-conflict rejection |
 | 6 | carrier-policy-conflict rejection |
 | 7 | duplicate-postings response without unsupported accusation |
-| 8 | entity vs contact verification |
+| 8 | entity vs contact verification + truthful role identification |
 | 9 | rate-confirmation discrepancy + signing authority |
 | 10 | timing/HOS feasibility verification |
 | 11 | factor/credit-signal classification |
@@ -50,6 +50,9 @@ A shipper (not a broker) asks the dispatcher to choose which of several represen
 
 Do not invent additional critical failures.
 
+## Non-critical but required decision — SIM05-D18 (truthful role identification)
+Added after content-accuracy review confirmed "truthful role identification" is a required Module 05 competency family not otherwise tested. Placed in Stage 8 alongside the entity/contact verification event: while verifying a new, unconfirmed brokerage contact, the learner must also identify themselves accurately — name and the specific carrier represented — rather than withholding identity or borrowing a false one to get faster answers. This decision does NOT carry critical escalation; it is an ordinary decision on the same retry/remediation track as every other non-critical item. Do not treat it as a seventh critical failure.
+
 ## Progressive event — SIM05-D16/D17
 Stage 13 reintroduces Candidate A (confirmed good in Stage 2) with a new material fact — a 4-hour appointment delay. The learner must re-evaluate it against other live candidates rather than either ignoring the update or dropping Candidate A automatically. The final documented disposition (D17) must reflect the actual state of the session: what's shortlisted, what's rejected and why, what's still open, and what's escalated — nothing invented, nothing dropped.
 
@@ -72,8 +75,9 @@ Prefer:
 - “The rate confirmation doesn’t match what we negotiated; holding until the broker resolves it.”
 - “This contact isn’t verified yet, even though the brokerage itself checks out.”
 - “This is outside ordinary sourcing — it’s asking us to allocate freight among carriers, which needs to go up before we proceed.”
+- “Calling to verify — this is [name], dispatching for [carrier].” (SIM05-D18: identify accurately even while verifying someone else.)
 
-Avoid unsupported fraud accusations, blanket claims that a factor decline proves anything about authority, or statements that reviewing a document grants authority to sign it.
+Avoid unsupported fraud accusations, blanket claims that a factor decline proves anything about authority, statements that reviewing a document grants authority to sign it, or a dispatcher withholding/misstating their own identity even in service of a legitimate verification call.
 
 ## Evidence standard
 Preserve first attempt, final mastery, remediation, attempt count, critical-review state, competency status and final disposition. Do not convert remediation into a false first-attempt pass.
