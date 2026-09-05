@@ -1,0 +1,35 @@
+name: SIM-005 Runtime Tests
+
+on:
+  push:
+    branches: [academy-master-architecture, module-05-premium-reconciliation]
+    paths:
+      - '05-SIMULATIONS-AND-GAMES/Module-05/**'
+      - '03-ASSESSMENTS/Instructor-Guides/Module-05-Instructor-Guide.md'
+      - '03-ASSESSMENTS/Practical-Assessments/Module-05-Practical.md'
+      - '04-STUDENT-TOOLS/Module-05-Tools/**'
+      - '.github/workflows/sim005-runtime-tests.yml'
+  pull_request:
+    paths:
+      - '05-SIMULATIONS-AND-GAMES/Module-05/**'
+      - '03-ASSESSMENTS/Instructor-Guides/Module-05-Instructor-Guide.md'
+      - '03-ASSESSMENTS/Practical-Assessments/Module-05-Practical.md'
+      - '04-STUDENT-TOOLS/Module-05-Tools/**'
+      - '.github/workflows/sim005-runtime-tests.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 05-SIMULATIONS-AND-GAMES/Module-05/runtime
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run SIM-005 premium tests
+        run: npm test
