@@ -1,6 +1,6 @@
 # Elite Dispatcher Academy — Completion & Deadline Control
 
-**Audit date:** 2026-09-04  
+**Audit date:** 2026-09-05  
 **Target:** course production completion next week  
 **Branch audited:** `academy-master-architecture`  
 **Rule:** Academy build decisions/assets developed in project chat must be transferred into the proper GitHub production folder; chat is not a production repository.
@@ -15,10 +15,10 @@
 Percentages are planning estimates based on required production layers, not page counts. Content/Production includes curriculum, tools, assessments, instructor product, source/currentness controls, simulation/competency alignment, and premium QA. Release is tracked separately because rendering/LMS/browser/device/accessibility/durable-record QA is intentionally later.
 
 ## Academy snapshot
-**Estimated content/production completion: 49%**  
+**Estimated content/production completion: 50%**  
 **Estimated final-release completion: 31%**
 
-The architecture itself is substantially represented, but production is front-loaded: Modules 01–08 contain meaningful work while Modules 09–15 still require full production builds. Do not interpret architecture representation as course completion.
+The one-point production increase reflects verified Module 06 layers that were already present but incorrectly listed as missing in stale master controls. It is not a new completion certification. Modules 09–15 still require full production builds.
 
 ## Module checklist
 
@@ -71,16 +71,19 @@ The architecture itself is substantially represented, but production is front-lo
 - ⏳ assembled release QA
 
 ### M06 — Broker Verification & Fraud Prevention
-**Content/Production: 66% | Release: 38%**
-- ☑ Substantial curriculum and current-source work exists
-- ☑ KC/exam content exists
-- ◐ G-013 independent reconciliation remains controlling gate
-- ☐ Dedicated complete student-tool package per master matrix
-- ☐ Graded practical per master matrix
-- ☐ Full Instructor Guide after reconciliation
+**Content/Production: 80% | Release: 42%**
+- ☑ Five-file curriculum/manual package exists
+- ☑ G-013 independent research and repository reconciliation complete
+- ☑ Seven dedicated operational student tools verified present
+- ☑ KC / 28-item exam / 12-scenario guided lab exist
+- ☑ 30-point Broker Verification Case Desk practical verified present
+- ☑ Dedicated practical scoring guide exists
+- ☑ Full Instructor Guide verified present
+- ☑ Current-source/regulatory reconciliation exists
+- ◐ Final assessment-chain synchronization/currentness check
 - ☐ SIM-006 build/verification
-- ◐ Premium completion QA
-- ⏳ release QA later
+- ◐ Formal premium completion QA
+- ⏳ assembled release QA
 
 ### M07 — Rate Mathematics & Profitability
 **Content/Production: 76% | Release: 45%**
@@ -193,8 +196,9 @@ The architecture itself is substantially represented, but production is front-lo
 - ☑ TEACH → DEMONSTRATE → PRACTICE → ASSESS → SIMULATE → RECORD COMPETENCY dependency.
 - ☑ Premium-depth Google/Employment/Buyer tests and no-filler standard are represented in master quality controls.
 - ☑ Instructor Guide product standard is represented.
-- ☑ M08 approved design/spec, plan, manuals, seven tools, diagnostic lab, exam, practical and Instructor Guide are now in GitHub.
-- ☑ M05 content-purge findings are now stored in the proper production folder rather than remaining only in chat.
+- ☑ M08 approved design/spec, plan, manuals, seven tools, diagnostic lab, exam, practical and Instructor Guide are in GitHub.
+- ☑ M05 content-purge findings are stored in the production folder.
+- ☑ M06 stale missing-tool/practical/Instructor-Guide claims have been reconciled against verified repository assets.
 - ◐ M08 SIM-008 alignment findings/repair result must be reconciled into permanent QA/status controls after Claude's repair is received.
 - ◐ M01 selective-reconciliation decisions must be completed on the dedicated rebuild lineage and then reflected in master truth controls.
 - ◐ Any new course-build decision made in chat must be transferred to the relevant module/master/production folder during the same work block.
@@ -203,7 +207,7 @@ The architecture itself is substantially represented, but production is front-lo
 1. **Freeze status truth first:** use this control as the live checklist; update it whenever a gate closes.
 2. **Close M08:** reconcile SIM-008 repair → commercial/current-source QA → premium gate.
 3. **Close near-finished M02–M05:** final premium/currentness cleanup rather than rebuilding them.
-4. **Unblock/finish M01 and M06:** reconciliation gates, missing instructor/assessment/tool/sim layers.
+4. **Finish M01 and M06:** M01 reconciliation; M06 assessment synchronization + SIM-006 + premium QA.
 5. **Close M07:** premium QA + SIM-007.
 6. **Build M09–M14 sequentially** with the standard package: curriculum → tools → KC/lab → exam/practical → instructor guide → source QA → simulation → premium gate.
 7. **Build M15 last** because its capstone depends on upstream competency maps.
