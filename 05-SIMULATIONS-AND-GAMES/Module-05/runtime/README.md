@@ -1,6 +1,6 @@
 # SIM-005 Runtime — Live Load Search Desk
 
-**Status:** PREMIUM REPAIR CANDIDATE — final QA pending
+**Status:** BUILD COMPLETE — RELEASE QA DEFERRED
 
 ## Purpose
 SIM-005 is a 13-stage / 18-decision browser simulation for Module 05. It trains the sourcing workflow:
@@ -40,10 +40,12 @@ python3 -m http.server 8080
 npm test
 ```
 
+Verified premium gate evidence is recorded in `10-PRODUCTION/Module-05-Premium-Content-QA-2026-09-05.md`.
+
 ## Currentness boundary
 Vendor-specific load-board interfaces, pricing, filters, proprietary mileage, credential-sharing rules and Terms of Service can change. The runtime uses fictional training artifacts and transferable sourcing concepts rather than hard-coding a vendor UI as a universal rule.
 
 FMCSA registration/authority and broker-financial-responsibility claims require current authoritative-source verification before commercial publication.
 
 ## Release boundary
-Passing the content/runtime gate supports only **BUILD COMPLETE — RELEASE QA DEFERRED**. Browser/device matrix, manual accessibility, production deployment, LMS/durable records, branding/editorial rendering and assembled release QA remain separate. `PUBLICATION_READY` is not authorized by this runtime.
+**BUILD COMPLETE — RELEASE QA DEFERRED** does not mean publication-ready. Browser/device matrix, manual accessibility, production deployment, LMS/durable records, branding/editorial rendering and assembled release QA remain separate. `PUBLICATION_READY` is not authorized by this runtime.
