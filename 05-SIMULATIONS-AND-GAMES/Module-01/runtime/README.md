@@ -1,85 +1,75 @@
 # SIM-001 Runtime — Module 01 Freight Movement Desk
 
+**Status:** PREMIUM BUILD CANDIDATE — independent QA required before build-gate closure
+
 This directory contains the browser runtime for the Elite Dispatcher Academy Module 01 simulation.
 
 ## Purpose
-
-The runtime delivers the approved six-stage, 13-decision simulation as an interactive browser experience. It preserves the Markdown simulation files in the parent directory as the printable/non-interactive fallback.
+The runtime delivers the premium **8-stage / 18-decision** Module 01 simulation. The original 13 decisions are preserved and five occupational decisions extend the simulation to the full M01-C01–C15 competency model.
 
 ## Architecture
-
 - `index.html` — browser entry point.
-- `content.js` — approved simulation content/data: stages, decisions, artifacts, competencies, correct responses, feedback, remediation, and escalation metadata.
-- `logic.js` — DOM-free state, evaluation, mastery, remediation, competency, progression, and instructor-review logic.
-- `app.js` — browser rendering, event handling, progressive reveal, local persistence, reset, and completion screens.
-- `styles.css` — responsive and accessibility-focused presentation.
-- `runtime.test.mjs` — Node regression tests for structure and core simulation logic.
-- `package.json` — minimal ESM/test configuration.
+- `content.js` — original approved SIM-001 content/data.
+- `premium-extension.js` — additive premium competency mapping plus Decisions D14–D18; preserves D01–D13.
+- `logic.js` — DOM-free state, evaluation, mastery, remediation, competency, progression and instructor-review logic; loads the premium extension.
+- `app.js` — browser rendering, event handling, progressive reveal, local persistence, reset and completion screens.
+- `styles.css` — responsive/accessibility-focused presentation.
+- `runtime.test.mjs` — runtime/state regression tests.
+- `premium-alignment.test.mjs` — M01-C01–C15 and architecture gate.
+- `package.json` — ESM/test configuration.
 
 ## Run locally
-
-Because the runtime uses JavaScript modules, serve this directory over HTTP rather than opening `index.html` directly with `file://`.
-
-Example with Python 3:
-
 ```bash
 cd 05-SIMULATIONS-AND-GAMES/Module-01/runtime
 python3 -m http.server 8080
 ```
-
-Then open `http://localhost:8080/` in a browser.
-
-Any ordinary static web server can host the directory. The simulation has no paid API dependency and no backend requirement for this version.
+Then open `http://localhost:8080/`.
 
 ## Tests
-
-From this directory:
-
 ```bash
 npm test
 ```
-
-The tests use Node's built-in test runner and require no third-party packages.
+Tests use Node's built-in test runner and require no third-party package.
 
 ## State and persistence
+Student progress is stored locally under `sim001-state-v1`. State includes current decision, immutable first-attempt evidence, final responses, remediation use, attempt count, instructor-review flags and timestamps.
 
-Student progress is stored locally in the browser under the key `sim001-state-v1`. The state includes the current decision, first-attempt evidence, final responses, remediation use, attempt counts, instructor-review flags, and simulation timestamps.
+Reset requires confirmation because it erases local attempt history. Local browser storage is **not** durable LMS/student-account evidence.
 
-The runtime intentionally preserves first-attempt evidence after retries. Resetting the simulation requires confirmation because reset erases the local attempt history.
-
-## Progression and mastery
-
-Stages run in the approved order:
-
+## Premium progression
 1. `SIM01-S1` — New Freight File
 2. `SIM01-S2` — Who Does What?
 3. `SIM01-S3` — Carrier Identity Check
 4. `SIM01-S4` — Dispatch Desk Decisions
 5. `SIM01-S5` — Freight & Document Flow
 6. `SIM01-S6` — Missing Information Event
+7. `SIM01-S7` — Evidence & Document State
+8. `SIM01-S8` — Handoff & Next Safe Action
 
-Decisions are `SIM01-D01` through `SIM01-D13`.
+Decisions are `SIM01-D01` through `SIM01-D18`.
 
-Normal completion requires 13/13 final mastery. Incorrect ordinary decisions route through remediation and retry. `SIM01-D13` escalates to instructor review after the configured repeated-failure threshold instead of allowing endless guessing.
+Normal runtime completion requires 18/18 final mastery. Ordinary incorrect decisions receive remediation/retry. The missing-information/unsafe-assumption controls can escalate repeated failure to instructor review. M01 does **not** invent an automatic critical-failure family; instructor review is a formative/competency safeguard.
+
+## Competency model
+Runtime evidence maps to all 15 controlled Module 01 families:
+M01-C01 through M01-C15, including four-flow separation, file reading, USDOT/authority distinction, interstate/intrastate nuance, KNOWN/UNKNOWN/VERIFY, STOP framework, specialized-workflow handoff and misconception correction.
 
 ## Interaction types
+- choice;
+- matching with labeled select controls;
+- sequencing with keyboard-accessible Up/Down controls.
 
-The runtime supports:
+## Content/package controls
+The original printable SIM files remain active. Premium Stages 7–8 are controlled by the companion premium addenda in the parent directory. Curriculum/runtime wording must remain aligned to the four-part manual and current instructor controls.
 
-- choice decisions;
-- matching decisions using labeled select controls;
-- sequencing decisions using keyboard-accessible Up/Down controls.
+## Release boundary
+Deferred before commercial release:
+- browser/device matrix;
+- manual accessibility review;
+- production deployment validation;
+- LMS/student-account integration;
+- durable competency-record storage;
+- assembled package QA;
+- final current-source recheck of date-sensitive FMCSA registration terminology.
 
-The architecture keeps content, logic, and presentation separate so the interaction patterns can be reused later without turning SIM-001 into an oversized universal simulation platform.
-
-## Accessibility and responsive behavior
-
-The current implementation includes semantic controls, visible keyboard focus, text labels in addition to color feedback, screen-reader labels/status regions, and a mobile layout that stacks matching, statistics, header, and sequencing controls when space is limited.
-
-## Content control
-
-The approved Module 01 simulation Markdown remains the curriculum source of truth. Runtime implementation should not silently change regulatory or role-language claims. Any factual curriculum change should be handled through curriculum QA first.
-
-## Future simulations
-
-Future simulations may reuse the same general pattern — structured content data, DOM-free logic, interaction rendering, mastery tracking, remediation, and persistence — but SIM-002 remains a separate production task and is not included here.
+A passing content/runtime gate supports only **BUILD COMPLETE — RELEASE QA DEFERRED**. It does not establish `PUBLICATION_READY`.
