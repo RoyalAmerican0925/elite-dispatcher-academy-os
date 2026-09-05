@@ -1,9 +1,1 @@
-{
-  "name": "sim-006-runtime",
-  "version": "0.1.0",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "test": "node tests/logic.test.js"
-  }
-}
+{"name":"sim-006-runtime","version":"1.1.0","type":"module","scripts":{"test":"node tests/logic.test.js && node tests/alignment.test.js"}}
