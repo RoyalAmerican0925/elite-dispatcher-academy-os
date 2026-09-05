@@ -1,0 +1,28 @@
+name: SIM-007 Runtime Tests
+
+on:
+  push:
+    paths:
+      - '05-SIMULATIONS-AND-GAMES/Module-07/**'
+      - '.github/workflows/sim007-runtime-tests.yml'
+  pull_request:
+    paths:
+      - '05-SIMULATIONS-AND-GAMES/Module-07/**'
+      - '.github/workflows/sim007-runtime-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 05-SIMULATIONS-AND-GAMES/Module-07/runtime
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
