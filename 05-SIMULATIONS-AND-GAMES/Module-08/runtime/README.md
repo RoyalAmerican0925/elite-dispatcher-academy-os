@@ -1,6 +1,6 @@
 # SIM-008 Runtime — Broker Negotiation Lab
 
-**Status:** PREMIUM REBUILD CANDIDATE — AUTOMATED QA PENDING
+**Status:** BUILD COMPLETE — RELEASE QA DEFERRED
 
 This runtime implements the premium SIM-008 architecture for Module 08 — Rate Negotiation & Broker Communication.
 
@@ -16,6 +16,13 @@ This runtime implements the premium SIM-008 architecture for Module 08 — Rate 
 - final mastery and critical-family completion record
 - printable browser competency summary
 - explicit Module 09 booking boundary
+
+## Verification evidence
+
+GitHub Actions workflow `SIM-008 Runtime Tests`, run `33979248568`, completed successfully against commit `23d44bbeb7cabe0474e895d03387ba184809828d`. The full `npm test` command completed with the logic, premium-gate and package-alignment suites passing.
+
+Independent QA record:
+`../../../10-PRODUCTION/SIM-008-Premium-Content-QA-2026-09-05.md`
 
 ## Critical-failure behavior
 
@@ -91,4 +98,4 @@ Still deferred to release QA:
 - LMS/student-account integration;
 - durable production records.
 
-Do not change this README to `PUBLICATION_READY` based solely on content/runtime tests. A passing automated build gate supports only **BUILD COMPLETE — RELEASE QA DEFERRED** after independent QA confirms the committed files and test results.
+This build-gate status does not establish `PUBLICATION_READY`.
