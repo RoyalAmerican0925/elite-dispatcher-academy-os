@@ -21,7 +21,7 @@
 | M02 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-002 BUILD COMPLETE — RELEASE QA DEFERRED | full guide VERIFIED EXISTS | final currentness/re-audit remains | PREMIUM RE-AUDIT OPEN |
 | M03 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-003 BUILD COMPLETE — RELEASE QA DEFERRED | full guide VERIFIED EXISTS | final currentness remains | PREMIUM RE-AUDIT OPEN |
 | M04 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-004 BUILD COMPLETE — RELEASE QA DEFERRED | full guide VERIFIED EXISTS | date-sensitive pre-publication check remains | INSTRUCTIONAL/SIM BUILD GATE CLOSED; RELEASE QA OPEN |
-| M05 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-005 BUILD COMPLETE — RELEASE QA DEFERRED; independent premium inheritance check remains | full guide VERIFIED EXISTS | platform-currentness/premium audit remains | PREMIUM RE-AUDIT OPEN |
+| M05 | REPRESENTED; premium sourcing chain independently reconciled | **nine-tool package VERIFIED EXISTS / occupationally differentiated** | **Knowledge Check + 30-item Final Exam VERIFIED EXISTS / premium aligned** | **Morning Load Board Shortlist VERIFIED EXISTS; 24/30 + zero critical failure** | **SIM-005 BUILD COMPLETE — RELEASE QA DEFERRED; 13-stage/18-decision premium build, 14 competencies, exactly six CF families, materially different reassessment, persistent critical history and automated gates independently verified** | **full Module 05 guide + SIM instructor controls VERIFIED EXISTS** | **2026-09-05 FMCSA/Motus + vendor-platform currentness recheck recorded; final pre-publication recheck remains** | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
 | M06 | REPRESENTED; G-013 COMPLETE/RECONCILED | seven-tool package VERIFIED EXISTS | VERIFIED EXISTS | 30-point graded practical + scoring VERIFIED EXISTS | **SIM-006 BUILD COMPLETE — RELEASE QA DEFERRED; 10-stage/22-decision premium build independently repaired/verified** | full Module 06 guide + SIM instructor package VERIFIED EXISTS | current-source reconciliation recorded; final pre-publication recheck remains | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
 | M07 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | **SIM-007 BUILD COMPLETE — RELEASE QA DEFERRED; 10-stage/33-decision premium build, 18 competencies, exactly five CF families, materially different reassessment, five-doc package and automated gates independently verified** | full guide + premium alignment addendum + SIM instructor package VERIFIED EXISTS | fictional exercise inputs labeled; final pre-publication source/currentness check remains | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
 | M08 | REPRESENTED | seven-tool package VERIFIED EXISTS | diagnostic KC/lab + 30-item exam VERIFIED EXISTS | 30-point practical/scoring VERIFIED EXISTS | **SIM-008 BUILD COMPLETE — RELEASE QA DEFERRED; 12-stage/24-decision premium build, 15 competencies, exactly six CF families, materially different reassessment, five-doc package and automated gates independently verified** | full Module 08 guide + SIM instructor package VERIFIED EXISTS | final browser/device/LMS/accessibility/release QA deferred | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
@@ -44,8 +44,8 @@ Required competency dependency:
 
 ## Architecture-level blockers remaining
 1. **M01 content/runtime premium gate is closed.** Remaining work is browser/device/LMS/manual-accessibility/durable-record/assembled release QA plus final pre-publication source recheck.
-2. Complete independent premium inheritance/currentness cleanup for M02–M05 where still open.
-3. **M06, M07 and M08 content/runtime premium gates are closed.** Do not reopen their simulations based on superseded status text unless a new verified defect appears.
+2. Complete independent premium/currentness cleanup for M02–M03 where still open.
+3. **M04, M05, M06, M07 and M08 content/runtime/instructional gates are closed.** Do not reopen their core simulations based on superseded status text unless a new verified defect appears.
 4. Build M09–M14 production assets sequentially under the approved product standard.
 5. Build M15 integrated capstone after upstream competency maps exist.
 6. Resolve divergence with `main` only through separately authorized reconciliation.
@@ -59,6 +59,16 @@ Current M01/SIM-001 build-gate truth is controlled by:
 - the active three-tool package, premium assessment chain, full Instructor Guide, SIM-001 package/addenda, 8-stage/18-decision runtime and automated tests.
 
 The earlier 6-stage/13-decision/8-legacy-competency runtime state is superseded by the verified premium extension.
+
+## Module 05 evidence authority
+Current M05/SIM-005 build-gate truth is controlled by:
+- `00-ACADEMY-MASTER/MODULE-05-MASTER-BRANCH.md`;
+- `10-PRODUCTION/Module-05-Premium-Repository-Audit-2026-09-05.md`;
+- `10-PRODUCTION/Module-05-Premium-Content-QA-2026-09-05.md`;
+- `10-PRODUCTION/Module-05-Current-Source-Recheck-2026-09-05.md`;
+- the actual nine-tool package, assessment/practical/instructor controls, SIM-005 package, `critical-controls.js`, runtime and automated tests.
+
+The earlier same-screen critical-clearing state and open premium inheritance/currentness status are superseded.
 
 ## Module 07 evidence authority
 Current M07/SIM-007 build-gate truth is controlled by:

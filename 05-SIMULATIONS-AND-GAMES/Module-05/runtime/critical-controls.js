@@ -1,0 +1,19 @@
+export const CRITICAL_FAMILIES={
+ "CF-01":{decisionId:"SIM05-D07",label:"Endorsement mismatch approved"},
+ "CF-02":{decisionId:"SIM05-D09",label:"Fraud asserted from duplicate posting alone"},
+ "CF-03":{decisionId:"SIM05-D10",label:"Entity verification treated as contact authentication"},
+ "CF-04":{decisionId:"SIM05-D11",label:"Mismatched rate confirmation processed as matching"},
+ "CF-05":{decisionId:"SIM05-D12",label:"Signing authority assumed from document review"},
+ "CF-06":{decisionId:"SIM05-D15",label:"Shipper-first discretionary carrier allocation treated as ordinary sourcing"}
+};
+
+export const REASSESSMENTS={
+ "CF-01":{familyId:"CF-01",materiallyDifferent:true,scenario:"A reefer opportunity requires a tanker endorsement because the trailer contains a permanently mounted liquid tank. The assigned driver profile shows Class A with no N or X endorsement.",prompt:"What is the correct sourcing disposition for this assigned driver?",choices:{A:"Shortlist it because Class A is enough",B:"BAD FIT / REJECT for this assigned driver until the stated required qualification is satisfied",C:"Book it and fix the qualification later"},correctKey:"B"},
+ "CF-02":{familyId:"CF-02",materiallyDifferent:true,scenario:"Three similar Kansas City to Dallas postings appear with slightly different rates and reference numbers. You have not verified whether the brokers are co-brokering, reposting, or representing separate freight.",prompt:"What conclusion is supportable now?",choices:{A:"The postings prove double brokering",B:"The pattern is a verification flag; document it neutrally and verify before making a fraud conclusion",C:"The duplication can be ignored"},correctKey:"B"},
+ "CF-03":{familyId:"CF-03",materiallyDifferent:true,scenario:"An FMCSA/Motus check confirms Apex Freight Brokerage as an active registered entity. A new email from an unfamiliar domain claims to be Apex's after-hours desk and changes the pickup instructions.",prompt:"What must happen before relying on the new instructions?",choices:{A:"Proceed because the entity is active",B:"Authenticate the specific contact/instruction through an independently trusted channel",C:"Declare the email fraudulent immediately"},correctKey:"B"},
+ "CF-04":{familyId:"CF-04",materiallyDifferent:true,scenario:"Your call notes show $1,900 linehaul with one pickup and one delivery. The written confirmation shows $1,750 and adds a second delivery stop.",prompt:"What is the correct document action?",choices:{A:"Process it because the load number matches",B:"STOP, identify the discrepancies, verify and obtain corrected/confirmed terms before authorized processing",C:"Change the PDF yourself to match the call"},correctKey:"B"},
+ "CF-05":{familyId:"CF-05",materiallyDifferent:true,scenario:"A dispatcher receives corrected load terms but the carrier's agreement on file does not state that this dispatcher may sign rate confirmations.",prompt:"What controls signing?",choices:{A:"The dispatcher may sign because they negotiated the correction",B:"Actual carrier authorization controls; reviewing or negotiating does not create signing authority",C:"The broker can grant the dispatcher signing authority"},correctKey:"B"},
+ "CF-06":{familyId:"CF-06",materiallyDifferent:true,scenario:"A manufacturer sends an unaffiliated dispatch service four loads and says: 'Choose whichever one of your unrelated carrier clients you want for each load.' No broker authority is supplied.",prompt:"What is the correct sourcing response?",choices:{A:"Allocate the loads among clients as ordinary dispatching",B:"STOP and escalate the shipper-first allocation/brokerage-boundary concern rather than exercising carrier-selection discretion",C:"Allocate only to the carrier paying the highest dispatch fee"},correctKey:"B"}
+};
+
+export function familyForDecision(decisionId){return Object.entries(CRITICAL_FAMILIES).find(([,v])=>v.decisionId===decisionId)?.[0]||null;}
