@@ -3,8 +3,8 @@
 **Module:** 05 — Load Boards & Freight Sourcing  
 **Instructor product status:** PREMIUM INSTRUCTIONAL BUILD — RELEASE QA SEPARATE  
 **Related simulation:** SIM-005 — Live Load Search Desk  
-**Student manual:** `02-CURRICULUM/Module-05/Student-Manual-Part-01.md` through Part 07  
-**Student tools:** `04-STUDENT-TOOLS/Module-05-Tools/`  
+**Student manual:** `02-CURRICULUM/Module-05/` — controlled premium instructional package; final part structure follows the current Module 05 production reconciliation rather than the legacy seven-file split  
+**Student tools:** `04-STUDENT-TOOLS/Module-05-Tools/` — nine controlled operational tools  
 **Exam standard:** 24/30 plus Critical Item 24 correct  
 **Practical standard:** 24/30 plus no critical failure
 
@@ -41,7 +41,8 @@ Never allow `FOUND = BOOKABLE` or `POSTED = VERIFIED`.
 
 ## 4. Instructor Preparation
 Before instruction:
-- verify that all seven manual parts and nine operational tools are available;
+- verify that the current controlled Module 05 manual package and all nine operational tools are available;
+- do not rely on legacy Part 03–06 file boundaries as lesson boundaries; those files are under controlled restructuring because they split scenario, assessment, glossary and dependency material across arbitrary files;
 - use fictional load-board data rather than real credentials or private carrier data;
 - verify current FMCSA registration/authority lookup instructions used in demonstrations;
 - avoid presenting any load-board vendor's interface, mileage engine, subscription tier, credential-sharing rule or terms of service as universal;
@@ -228,7 +229,8 @@ Required competency families:
 10. conduct/document broker-contact verification;
 11. identify rate-confirmation discrepancies and signing-authority boundary;
 12. identify scope/brokerage escalation;
-13. issue final shortlist/reject/verify/escalate disposition.
+13. issue final shortlist/reject/verify/escalate disposition;
+14. identify the dispatcher truthfully and name the represented carrier when verifying a contact or transaction.
 
 Simulation events must include incomplete information and at least one later fact that changes the attractiveness or viability of an earlier candidate. First-attempt decisions, remediation, final mastery, critical-decision state and competency result must be preserved.
 
