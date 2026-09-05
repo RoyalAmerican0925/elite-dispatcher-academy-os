@@ -2,14 +2,22 @@ name: SIM-003 Runtime Tests
 
 on:
   push:
+    branches: [academy-master-architecture, modules-02-03-premium-reconciliation]
     paths:
-      - '05-SIMULATIONS-AND-GAMES/Module-03/runtime/**'
+      - '05-SIMULATIONS-AND-GAMES/Module-03/**'
+      - '03-ASSESSMENTS/Practical-Assessments/Module-03-Practical.md'
+      - '00-PROJECT-CONTROL/MODULE-03-*'
       - '.github/workflows/sim003-runtime-tests.yml'
   pull_request:
     paths:
-      - '05-SIMULATIONS-AND-GAMES/Module-03/runtime/**'
+      - '05-SIMULATIONS-AND-GAMES/Module-03/**'
+      - '03-ASSESSMENTS/Practical-Assessments/Module-03-Practical.md'
+      - '00-PROJECT-CONTROL/MODULE-03-*'
       - '.github/workflows/sim003-runtime-tests.yml'
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   test:
@@ -18,13 +26,9 @@ jobs:
       run:
         working-directory: 05-SIMULATIONS-AND-GAMES/Module-03/runtime
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22'
-
-      - name: Run SIM-003 logic tests
+      - name: Run SIM-003 premium tests
         run: npm test
