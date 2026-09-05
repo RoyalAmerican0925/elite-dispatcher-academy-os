@@ -1,62 +1,38 @@
 # Module 02 Master Branch — Dispatcher Role & Legal Boundaries
 
-**Control status:** PREMIUM INSTRUCTIONAL CONTENT COMPLETE / RELEASE-SYSTEM QA SEPARATE
+**Control status:** BUILD COMPLETE — RELEASE QA DEFERRED
 
 ## Employment outcome
-Student distinguishes carrier-side dispatch coordination from conduct that may create broker/arranging-for-transportation risk, reasons from actual facts rather than labels, recognizes when facts are insufficient, and stops/verifies/escalates instead of improvising legal conclusions.
+Student distinguishes carrier-side dispatch coordination from conduct that may create broker/arranging-for-transportation risk, reasons from actual facts rather than labels, recognizes insufficient information, and stops/verifies/escalates instead of improvising legal conclusions.
 
-## Core competency families
-- dispatcher role and represented principal
-- broker / bona fide-agent concepts and factual nuance
-- authority and role boundaries
-- freight-source tracing
-- allocation / arrangement risk recognition
-- cancellation versus reassignment
-- truthful role representation
-- false-safe-harbor rejection
-- STOP — IDENTIFY — TRACE — CHECK — CLASSIFY — ACT — DOCUMENT — ESCALATE
-- insufficient-information discipline
-- professional handoff
+## Core competency chain
+**STOP → IDENTIFY → TRACE → CHECK → CLASSIFY → ACT → DOCUMENT → ESCALATE**
 
-## Student manual
-`02-CURRICULUM/Module-02/` — four parts verified present. Premium instructional control requires primary-source distinctions, fact-based reasoning, and no categorical safe-harbor wording.
+Competencies include represented principal, broker/bona-fide-agent concepts, freight-source/control tracing, allocation/arrangement risk, cancellation versus reassignment, truthful role representation, false-safe-harbor rejection, insufficient-information discipline and professional handoff.
 
-## Professional language layer
-Broker; motor carrier; dispatcher; bona fide agent; shipper; allocation; arranging transportation; compensation; authority; representation; principal; agent; reassignment; cancellation; verification; escalation; handoff.
+## Premium package
+- four-part Student Manual — KEEP — ACTIVE;
+- Module 02 Decision Tool Worksheet — KEEP — ACTIVE;
+- Knowledge Check, 26-item Exam, Agency Boundary Decision Desk Practical and scoring/remediation controls — ACTIVE;
+- full Module 02 Instructor Guide — ACTIVE;
+- SIM-002 student/scenario/instructor/scoring/completion package and browser runtime — ACTIVE.
 
-## Student tools
-`04-STUDENT-TOOLS/Module-02-Tools/Module-02-Decision-Tool-Worksheet.md` — verified present and used as the operational reasoning tool.
+## SIM-002 premium control
+Locked 7 stages / 15 decisions. Exactly three existing simulation high-stakes families are retained:
+- M02-CF-01 / D06 — shipper-supplied freight + discretionary carrier allocation;
+- M02-CF-02 / D10 — unauthorized redirect/reassignment instead of return to source;
+- M02-CF-03 / D13 — actual allocation conduct contradicting the agency label.
 
-## Assessment chain
-- Knowledge check: 20-question diagnostic — EXISTS
-- Practical: Agency Boundary Decision Desk — PREMIUM ALIGNMENT COMPLETE
-- Shared scoring guide — EXISTS
-- Exam: 26 items; 85% / 23; designated critical item mandatory — EXISTS
-- Instructor Answer Guide — EXISTS
-- Full Module 02 Instructor Guide — EXISTS
+Critical trigger history is immutable. Same-screen correction may improve final mastery but cannot erase a triggered family. Resolution requires a materially different alternate reassessment, with trigger and reassessment evidence recorded separately. COMPLETE requires 15/15 final mastery plus zero unresolved high-stakes families.
 
-The practical now requires classification, controlling facts, allocation analysis, fact-change/verification analysis, professional case notes, false-safe-harbor reasoning, and an escalation handoff. A classification without reasoning is not full competency evidence.
+## Source/currentness control
+2026-09-05 current-source recheck passed the content/runtime gate. The module keeps statute/regulation, FMCSA interpretive guidance, contract term, carrier policy, industry practice and Academy control model distinct. Current financial-responsibility timing controls and date-sensitive civil-penalty sourcing remain subject to final pre-publication recheck.
 
-## Instructor delivery layer
-`03-ASSESSMENTS/Instructor-Guides/Module-02-Instructor-Guide.md`
-
-The guide supplies employment outcome, prerequisite transfer, operating model, instructor preparation, lesson delivery, tool facilitation, professional-language coaching, practical administration, assessment administration, diagnostic remediation, SIM-002 alignment, source/currentness control, and module closeout.
-
-## Simulation
-**SIM-002 — Agency Boundary Desk**
-
-Status: **BUILD COMPLETE — RELEASE QA DEFERRED.** Runtime previously passed 26 tests / 0 failures. It remains the applied simulation for the same competency chain and must not create a conflicting legal rule or artificial safe harbor.
-
-## Source / regulatory controls
-Primary-source controls include the applicable broker/bona-fide-agent definitions, FMCSA interpretive guidance, and current penalty framework where scored content depends on it. Date-sensitive amounts and procedures must be reverified at assembled publication.
-
-Instruction must distinguish:
-**STATUTE / REGULATION / FMCSA INTERPRETIVE GUIDANCE / CONTRACT TERM / CARRIER POLICY / INDUSTRY PRACTICE / ACADEMY CONTROL MODEL.**
-
-## Premium completion finding
-At the instructional-content level, Module 02 now contains the required teach → practice → assess → simulate → remediate chain. The full instructor-delivery layer is no longer missing, and the practical has been strengthened from answer classification to occupational reasoning and documentation.
+## Premium QA
+`10-PRODUCTION/Module-02-Premium-Content-QA-2026-09-05.md` — PASS for Google Test, Employment Test and Buyer Test.
 
 ## Release-system boundary
-LMS/account integration, durable production records, browser/device QA, final accessibility QA, branding/rendering, deployment, and final assembled current-source/editorial review are academy release-system controls. They remain separate from the determination that Module 02 instructional content is complete.
+Manual accessibility, browser/device QA, production deployment, durable LMS/student records, branding/rendering, assembled editorial/legal-risk review and final live-source verification remain release gates.
 
-Do not use `PUBLICATION_READY` until those assembled release controls are passed.
+**MODULE 02 / SIM-002 — BUILD COMPLETE — RELEASE QA DEFERRED.**  
+Do not use `PUBLICATION_READY` until assembled release controls pass.

@@ -1,208 +1,22 @@
-// SIM-002 runtime logic module.
-// Isolated from SIM-001's logic.js by design (no shared import) — this guarantees zero
-// regression risk to the approved SIM-001 runtime. The two files are structurally similar
-// on purpose (same function names/shapes) so a future shared engine extraction, if ever
-// justified by a third simulation, would be a mechanical merge rather than a rewrite.
-//
-// New in SIM-002 relative to SIM-001: a "multiselect" interaction type (select all that
-// apply from a fixed option list, evaluated as an exact set match) and per-decision
-// escalateAfterAttempts on three decisions carrying the module's critical allocation-of-
-// traffic concept (mirroring the graded Practical's critical-failure list for Opportunities
-// B, D, and E) rather than only one, since Module 02's curriculum treats all three patterns
-// as equally serious rather than singling out one.
-
 import { DECISIONS, DECISION_ORDER, STAGES } from "./content.js";
+import { CRITICAL_FAMILIES, DECISION_TO_CRITICAL_FAMILY, REASSESSMENTS } from "./critical-controls.js";
 
-export function createInitialState() {
-  const decisions = {};
-  for (const id of DECISION_ORDER) {
-    decisions[id] = {
-      firstAttemptResponse: null,
-      firstAttemptCorrect: null,
-      firstAttemptTimestamp: null,
-      finalResponse: null,
-      finalCorrect: null,
-      remediationUsed: false,
-      attemptCount: 0,
-      finalTimestamp: null,
-      instructorReviewRequired: false,
-    };
-  }
-  return {
-    simulationId: "SIM-002",
-    currentDecisionId: DECISION_ORDER[0],
-    decisions,
-    status: "IN_PROGRESS",
-    startedAt: null,
-    completedAt: null,
-  };
-}
-
-function arraysEqualAsSets(a, b) {
-  if (!Array.isArray(a) || !Array.isArray(b)) return false;
-  if (a.length !== b.length) return false;
-  const sa = new Set(a);
-  const sb = new Set(b);
-  if (sa.size !== sb.size) return false;
-  for (const v of sa) if (!sb.has(v)) return false;
-  return true;
-}
-
-export function evaluateResponse(decisionId, response) {
-  const decision = DECISIONS[decisionId];
-  if (!decision) throw new Error(`Unknown decision: ${decisionId}`);
-
-  if (decision.type === "choice") {
-    return response === decision.correctKey;
-  }
-
-  if (decision.type === "matching") {
-    if (!response || typeof response !== "object") return false;
-    return decision.items.every((item) => response[item] === decision.correctMap[item]);
-  }
-
-  if (decision.type === "sequencing") {
-    if (!Array.isArray(response)) return false;
-    if (response.length !== decision.correctOrder.length) return false;
-    return decision.correctOrder.every((key, i) => response[i] === key);
-  }
-
-  if (decision.type === "multiselect") {
-    return arraysEqualAsSets(response, decision.correctSet);
-  }
-
-  throw new Error(`Unknown decision type: ${decision.type}`);
-}
-
-export function submitAttempt(state, decisionId, response, now = Date.now()) {
-  const decision = DECISIONS[decisionId];
-  if (!decision) throw new Error(`Unknown decision: ${decisionId}`);
-
-  const record = { ...state.decisions[decisionId] };
-  const correct = evaluateResponse(decisionId, response);
-
-  if (record.firstAttemptResponse === null) {
-    record.firstAttemptResponse = response;
-    record.firstAttemptCorrect = correct;
-    record.firstAttemptTimestamp = now;
-  } else {
-    record.remediationUsed = true;
-  }
-
-  record.attemptCount += 1;
-  record.finalResponse = response;
-  record.finalCorrect = correct;
-  record.finalTimestamp = now;
-
-  if (!correct && decision.escalateAfterAttempts && record.attemptCount >= decision.escalateAfterAttempts) {
-    record.instructorReviewRequired = true;
-  } else if (correct) {
-    record.instructorReviewRequired = false;
-  }
-
-  const decisions = { ...state.decisions, [decisionId]: record };
-  return { ...state, decisions };
-}
-
-export function shouldAdvance(state, decisionId) {
-  const record = state.decisions[decisionId];
-  return record.finalCorrect === true || record.instructorReviewRequired === true;
-}
-
-export function getNextDecisionId(decisionId) {
-  const idx = DECISION_ORDER.indexOf(decisionId);
-  if (idx === -1 || idx === DECISION_ORDER.length - 1) return null;
-  return DECISION_ORDER[idx + 1];
-}
-
-export function computeSimulationStatus(state) {
-  const records = Object.values(state.decisions);
-  const anyReviewRequired = records.some((r) => r.instructorReviewRequired);
-  if (anyReviewRequired) return "INSTRUCTOR_REVIEW_REQUIRED";
-
-  const allFinalCorrect = DECISION_ORDER.every((id) => state.decisions[id].finalCorrect === true);
-  if (allFinalCorrect) return "COMPLETE";
-
-  return "IN_PROGRESS";
-}
-
-export function computeFirstAttemptScore(state) {
-  const correct = DECISION_ORDER.filter((id) => state.decisions[id].firstAttemptCorrect === true).length;
-  return { correct, total: DECISION_ORDER.length };
-}
-
-export function computeFinalMasteryScore(state) {
-  const correct = DECISION_ORDER.filter((id) => state.decisions[id].finalCorrect === true).length;
-  return { correct, total: DECISION_ORDER.length };
-}
-
-export function computeRemediationCount(state) {
-  return DECISION_ORDER.filter((id) => state.decisions[id].remediationUsed).length;
-}
-
-export function computeCompetencyStatus(state) {
-  const byCompetency = {};
-  for (const id of DECISION_ORDER) {
-    const decision = DECISIONS[id];
-    (byCompetency[decision.competency] ||= []).push(id);
-  }
-
-  const result = {};
-  for (const [competency, ids] of Object.entries(byCompetency)) {
-    const records = ids.map((id) => state.decisions[id]);
-
-    if (records.some((r) => r.instructorReviewRequired)) {
-      result[competency] = "Needs Instructor Review";
-      continue;
-    }
-    if (records.some((r) => r.finalCorrect === null)) {
-      result[competency] = "In Progress";
-      continue;
-    }
-    if (records.every((r) => r.finalCorrect === true && !r.remediationUsed)) {
-      result[competency] = "Mastered";
-      continue;
-    }
-    if (records.every((r) => r.finalCorrect === true)) {
-      result[competency] = "Mastered After Remediation";
-      continue;
-    }
-    result[competency] = "In Progress";
-  }
-  return result;
-}
-
-export function getStageForDecision(decisionId) {
-  const decision = DECISIONS[decisionId];
-  return STAGES.find((s) => s.id === decision.stageId) || null;
-}
-
-export function getProgress(decisionId) {
-  const idx = DECISION_ORDER.indexOf(decisionId);
-  return { current: idx + 1, total: DECISION_ORDER.length };
-}
-
-/**
- * Normalizes/validates a saved state object loaded from persistence. Returns a fresh
- * initial state if the input is missing required shape (corrupt/legacy/partial state),
- * rather than trusting it blindly. This is what makes loadState() safe against schema
- * drift or corrupted localStorage content.
- */
-export function normalizeLoadedState(raw) {
-  if (!raw || typeof raw !== "object") return createInitialState();
-  if (raw.simulationId !== "SIM-002") return createInitialState();
-  if (!raw.decisions || typeof raw.decisions !== "object") return createInitialState();
-
-  const fresh = createInitialState();
-  const decisions = {};
-  for (const id of DECISION_ORDER) {
-    const saved = raw.decisions[id];
-    decisions[id] = saved && typeof saved === "object" ? { ...fresh.decisions[id], ...saved } : fresh.decisions[id];
-  }
-  return {
-    ...fresh,
-    ...raw,
-    decisions,
-    currentDecisionId: DECISION_ORDER.includes(raw.currentDecisionId) ? raw.currentDecisionId : DECISION_ORDER[0],
-  };
-}
+function freshDecision(){return {firstAttemptResponse:null,firstAttemptCorrect:null,firstAttemptTimestamp:null,finalResponse:null,finalCorrect:null,remediationUsed:false,attemptCount:0,finalTimestamp:null,instructorReviewRequired:false,criticalFailureOccurred:false,criticalFailureFamily:null,criticalFailureTriggeredAt:null,criticalFailureResolved:false};}
+function freshCritical(){const out={};for(const family of Object.keys(CRITICAL_FAMILIES))out[family]={occurred:false,decisionId:CRITICAL_FAMILIES[family].decisionId,triggeredAt:null,resolved:false,reassessment:null};return out;}
+export function createInitialState(){const decisions={};for(const id of DECISION_ORDER)decisions[id]=freshDecision();return {simulationId:"SIM-002",currentDecisionId:DECISION_ORDER[0],decisions,criticalFailures:freshCritical(),reassessmentHistory:[],status:"IN_PROGRESS",startedAt:null,completedAt:null};}
+function arraysEqualAsSets(a,b){if(!Array.isArray(a)||!Array.isArray(b)||a.length!==b.length)return false;const sa=new Set(a),sb=new Set(b);if(sa.size!==sb.size)return false;for(const v of sa)if(!sb.has(v))return false;return true;}
+export function evaluateResponse(id,response){const d=DECISIONS[id];if(!d)throw new Error(`Unknown decision: ${id}`);if(d.type==="choice")return response===d.correctKey;if(d.type==="matching")return !!response&&typeof response==="object"&&d.items.every(item=>response[item]===d.correctMap[item]);if(d.type==="sequencing")return Array.isArray(response)&&response.length===d.correctOrder.length&&d.correctOrder.every((key,i)=>response[i]===key);if(d.type==="multiselect")return arraysEqualAsSets(response,d.correctSet);throw new Error(`Unknown decision type: ${d.type}`);}
+export function submitAttempt(state,id,response,now=Date.now()){const d=DECISIONS[id];if(!d)throw new Error(`Unknown decision: ${id}`);const record={...state.decisions[id]},correct=evaluateResponse(id,response);if(record.firstAttemptResponse===null){record.firstAttemptResponse=response;record.firstAttemptCorrect=correct;record.firstAttemptTimestamp=now}else record.remediationUsed=true;record.attemptCount+=1;record.finalResponse=response;record.finalCorrect=correct;record.finalTimestamp=now;let criticalFailures={...state.criticalFailures};const family=DECISION_TO_CRITICAL_FAMILY[id];if(!correct&&d.escalateAfterAttempts&&record.attemptCount>=d.escalateAfterAttempts){record.instructorReviewRequired=true;record.criticalFailureOccurred=true;record.criticalFailureFamily=family;record.criticalFailureTriggeredAt=record.criticalFailureTriggeredAt??now;record.criticalFailureResolved=false;criticalFailures={...criticalFailures,[family]:{...criticalFailures[family],occurred:true,triggeredAt:criticalFailures[family]?.triggeredAt??now,resolved:false}}}else if(correct&&record.criticalFailureOccurred){record.instructorReviewRequired=!record.criticalFailureResolved;}else if(correct){record.instructorReviewRequired=false;}return {...state,decisions:{...state.decisions,[id]:record},criticalFailures};}
+export function submitReassessment(state,family,response,now=Date.now()){const r=REASSESSMENTS[family];if(!r)throw new Error(`Unknown critical family: ${family}`);const existing=state.criticalFailures?.[family];if(!existing?.occurred)throw new Error(`Critical family not triggered: ${family}`);const correct=response===r.correctKey;const assessment={family,response,correct,timestamp:now,scenario:r.scenario};const criticalFailures={...state.criticalFailures,[family]:{...existing,resolved:correct,reassessment:assessment}};const decisionId=CRITICAL_FAMILIES[family].decisionId,decision={...state.decisions[decisionId],criticalFailureResolved:correct,instructorReviewRequired:!correct};return {...state,criticalFailures,decisions:{...state.decisions,[decisionId]:decision},reassessmentHistory:[...(state.reassessmentHistory||[]),assessment]};}
+export function computeCriticalFailureStatus(state){const out={};for(const family of Object.keys(CRITICAL_FAMILIES)){const r=state.criticalFailures?.[family];out[family]=!r?.occurred?"NOT_TRIGGERED":r.resolved?"RESOLVED_BY_REASSESSMENT":"REASSESSMENT_REQUIRED";}return out;}
+export function shouldAdvance(state,id){const r=state.decisions[id];return r.finalCorrect===true||r.instructorReviewRequired===true;}
+export function getNextDecisionId(id){const i=DECISION_ORDER.indexOf(id);return i===-1||i===DECISION_ORDER.length-1?null:DECISION_ORDER[i+1];}
+export function computeSimulationStatus(state){const allFinalCorrect=DECISION_ORDER.every(id=>state.decisions[id].finalCorrect===true);const unresolved=Object.values(computeCriticalFailureStatus(state)).some(v=>v==="REASSESSMENT_REQUIRED");if(unresolved)return "INSTRUCTOR_REVIEW_REQUIRED";return allFinalCorrect?"COMPLETE":"IN_PROGRESS";}
+export function computeFirstAttemptScore(state){return {correct:DECISION_ORDER.filter(id=>state.decisions[id].firstAttemptCorrect===true).length,total:DECISION_ORDER.length};}
+export function computeFinalMasteryScore(state){return {correct:DECISION_ORDER.filter(id=>state.decisions[id].finalCorrect===true).length,total:DECISION_ORDER.length};}
+export function computeRemediationCount(state){return DECISION_ORDER.filter(id=>state.decisions[id].remediationUsed).length;}
+export function computeCompetencyStatus(state){const by={};for(const id of DECISION_ORDER)(by[DECISIONS[id].competency]||=[]).push(id);const result={};for(const [c,ids] of Object.entries(by)){const rs=ids.map(id=>state.decisions[id]);if(rs.some(r=>r.instructorReviewRequired)){result[c]="Needs Instructor Review";continue}if(rs.some(r=>r.finalCorrect===null)){result[c]="In Progress";continue}if(rs.every(r=>r.finalCorrect===true&&!r.remediationUsed)){result[c]="Mastered";continue}if(rs.every(r=>r.finalCorrect===true)){result[c]="Mastered After Remediation";continue}result[c]="In Progress";}return result;}
+export function computeCompletionRecord(state){return {simulationId:"SIM-002",firstAttemptScore:computeFirstAttemptScore(state),finalMasteryScore:computeFinalMasteryScore(state),remediationCount:computeRemediationCount(state),competencies:computeCompetencyStatus(state),criticalFailures:state.criticalFailures||freshCritical(),reassessmentHistory:state.reassessmentHistory||[],instructorReviewState:computeSimulationStatus(state)==="INSTRUCTOR_REVIEW_REQUIRED"?"REQUIRED":"CLEAR",finalStatus:computeSimulationStatus(state)};}
+export function getStageForDecision(id){return STAGES.find(s=>s.id===DECISIONS[id].stageId)||null;}
+export function getProgress(id){return {current:DECISION_ORDER.indexOf(id)+1,total:DECISION_ORDER.length};}
+export function normalizeLoadedState(raw){if(!raw||typeof raw!=="object"||raw.simulationId!=="SIM-002"||!raw.decisions||typeof raw.decisions!=="object")return createInitialState();const fresh=createInitialState(),decisions={};for(const id of DECISION_ORDER)decisions[id]=raw.decisions[id]&&typeof raw.decisions[id]==="object"?{...fresh.decisions[id],...raw.decisions[id]}:fresh.decisions[id];const criticalFailures={...fresh.criticalFailures};for(const family of Object.keys(criticalFailures))if(raw.criticalFailures?.[family])criticalFailures[family]={...criticalFailures[family],...raw.criticalFailures[family]};return {...fresh,...raw,decisions,criticalFailures,reassessmentHistory:Array.isArray(raw.reassessmentHistory)?raw.reassessmentHistory:[],currentDecisionId:DECISION_ORDER.includes(raw.currentDecisionId)?raw.currentDecisionId:DECISION_ORDER[0]};}
