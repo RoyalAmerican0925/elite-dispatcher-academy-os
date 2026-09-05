@@ -1,76 +1,38 @@
 # SIM-003 — Module 03 Load Compatibility Desk — Completion Record
 
-**Build status:** BUILD QA  
-**Release status:** RELEASE QA DEFERRED  
-**Purpose:** Per-student evidence template for first-attempt performance, remediation, final mastery and instructor-review status.
+**Build status:** BUILD COMPLETE  
+**Release status:** RELEASE QA DEFERRED
 
-## Student Information
+## Learner / Session
+Learner: __________________  Student ID: ________________  Instructor: ________________  Date: __________
 
-- Student Name / ID: ______________________________
-- Simulation ID: SIM-003
-- Date started: __________________
-- Date completed: __________________
+## Performance
+| Measure | Result |
+|---|---|
+| First-attempt performance | ____ / 15 |
+| Final mastery | ____ / 15 |
+| Remediated decisions | ____ |
+| Triggered critical families | ____ |
+| Unresolved critical families | ____ |
 
-## Decision-by-Decision Record
+## Critical History and Alternate Reassessment
+| Family | Main decision | Triggered? | Trigger time | Same-screen final mastery | Alternate scenario | Reassessment result/time | Final state |
+|---|---|---|---|---|---|---|---|
+| M03-CF-01 | D09 qualification mismatch | ☐ Yes ☐ No | ____ | ☐ Correct ☐ Not yet | ____ | ____ | ☐ Not triggered ☐ Required ☐ Resolved |
+| M03-CF-02 | D11 gross-vs-axle | ☐ Yes ☐ No | ____ | ☐ Correct ☐ Not yet | ____ | ____ | ☐ Not triggered ☐ Required ☐ Resolved |
 
-| Decision | Primary competency | First attempt | Remediation? | Final mastery | Instructor review? |
-|---|---|---|---|---|---|
-| SIM03-D01 | A — Equipment identification | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D02 | G — Verification discipline | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D03 | B — Commodity/equipment fit | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D04 | B — Fit reasoning | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D05 | C — Temperature compatibility | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D06 | C/H — Operational response | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D07 | D — Overwidth issue spotting | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D08 | D/G — Specialized verification | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D09 | E — Driver qualification | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D10 | E — Endorsement distinction | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D11 | F — Gross-vs-axle reasoning | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D12 | F — Axle-limit reasoning | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D13 | G/I — Missing load data | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D14 | H/I — Classification/action | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM03-D15 | G/H/I — Verification sequence | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
+A same-screen correction never erases a critical trigger. A materially different reassessment is required to resolve the family, and both records remain visible.
 
-## Critical Escalation Record
+## Competency Evidence
+Record status for A–I: Mastered / Mastered After Remediation / Needs Instructor Review / In Progress.
 
-Repeated error on the following decisions requires special review:
-- SIM03-D09 — endorsement/qualification mismatch
-- SIM03-D11 — gross-versus-axle trap
+## Completion Gate
+☐ All 15 decisions at final mastery  
+☐ M03-CF-01 resolved if triggered  
+☐ M03-CF-02 resolved if triggered  
+☐ First-attempt evidence preserved  
+☐ Reassessment evidence recorded separately  
 
-**Decision(s) flagged:** ____________________________________________
+Instructor disposition: ☐ Complete ☐ Additional remediation required
 
-**Underlying misunderstanding observed:**
-____________________________________________________________________________
-____________________________________________________________________________
-
-**Remediation assigned:**
-____________________________________________________________________________
-
-**Student explanation after remediation:**
-____________________________________________________________________________
-____________________________________________________________________________
-
-**Instructor disposition:** ☐ Cleared ☐ Additional remediation required
-
-## Summary
-
-- **FIRST-ATTEMPT PERFORMANCE:** ______ / 15
-- **REMEDIATION COUNT:** ______
-- **FINAL MASTERY:** ______ / 15
-- **COMPETENCIES MASTERED IMMEDIATELY:** ______________________________
-- **COMPETENCIES MASTERED AFTER REMEDIATION:** _________________________
-- **COMPETENCIES REQUIRING INSTRUCTOR REVIEW:** ________________________
-
-## Simulation Status
-
-☐ **IN PROGRESS**
-
-☐ **COMPLETE** — 15/15 final mastery and no unresolved instructor-review condition
-
-☐ **INSTRUCTOR REVIEW REQUIRED** — decision(s): ______________________________
-
-## Instructor Notes
-
-____________________________________________________________________________
-____________________________________________________________________________
-____________________________________________________________________________
+**Limitation:** browser-local evidence and this printable form are not durable LMS/student-account records. Device/browser, accessibility, production deployment and final release QA remain deferred.
