@@ -14,13 +14,13 @@
 ## Percentage method
 Percentages are planning estimates based on required production layers, not page counts. Content/Production includes curriculum, tools, assessments, instructor product, source/currentness controls, simulation/competency alignment, and premium QA. Release is tracked separately because rendering/LMS/browser/device/accessibility/durable-record QA is intentionally later.
 
-**Truth rule for this update:** closing the SIM-006 build gate does not justify inventing a new Academy-wide percentage. The existing Academy estimates remain unchanged until a deliberate full-matrix recomputation is performed.
+**Truth rule for this update:** closing individual module gates does not justify inventing a new Academy-wide percentage. The existing Academy estimates remain unchanged until a deliberate full-matrix recomputation is performed.
 
 ## Academy snapshot
 **Estimated content/production completion: 50%**  
 **Estimated final-release completion: 31%**
 
-These remain planning estimates, not completion certifications. The 2026-09-05 Module 06 SIM-006 gate closure is recorded explicitly below rather than converted into a fabricated percentage increase. Modules 09–15 still require full production builds.
+These remain planning estimates, not completion certifications. The 2026-09-05 Module 06 and Module 08 content/runtime gate closures are recorded explicitly below rather than converted into fabricated percentage increases. Modules 09–15 still require full production builds.
 
 ## Module checklist
 
@@ -104,24 +104,36 @@ These remain planning estimates, not completion certifications. The 2026-09-05 M
 - ☑ Substantial manuals/tools/assessment/practical
 - ☑ Full Instructor Guide exists
 - ◐ Premium-depth audit/current-source confirmation
-- ☐ SIM-007 build and curriculum alignment
+- ◐ SIM-007 build exists and independent premium QA/reconciliation is required before gate closure
 - ☐ Formal premium completion QA
 - ⏳ release QA later
 
 ### M08 — Rate Negotiation & Broker Communication
-**Content/Production: 88% | Release: 52%**
-- ☑ Six Student Manual parts
+**Content/Production: CURRENT PREMIUM BUILD GATE CLOSED | Release: 52% planning estimate retained pending release-layer work**
+- ☑ Six Student Manual parts retained after premium audit
 - ☑ Seven operational tools
 - ☑ Diagnostic Knowledge Check + rationale control
-- ☑ Progressive Broker Negotiation Applied Lab
+- ☑ Progressive Broker Negotiation Applied Lab + answer/rationale control
 - ☑ 30-item Final Exam + answer/remediation control
-- ☑ 30-point Broker Negotiation Desk Practical + scoring/remediation
-- ☑ Full Instructor Guide
-- ☑ SIM-008 runtime exists
-- ◐ Claude curriculum-alignment repair must be reconciled/independently checked
-- ☐ Current-source/commercial-depth QA
-- ☐ Final premium-content gate
-- ⏳ browser/device/accessibility/assembled release QA
+- ☑ 30-point Broker Negotiation Desk Practical + scoring/remediation control
+- ☑ Full Module 08 Instructor Guide
+- ☑ SIM-008 five-document premium package
+- ☑ SIM-008 **12-stage / 24-decision** browser runtime
+- ☑ All 15 M08 competency families mapped into simulation evidence
+- ☑ Exactly six critical-failure families explicitly mapped
+- ☑ Same-screen correction cannot erase critical history
+- ☑ Materially different reassessment exists for each critical family
+- ☑ Practical-compatible 30-point scaled first-attempt score and final mastery record
+- ☑ Module 09 handoff boundary prevents false `BOOKED` status
+- ☑ Logic + premium-gate + package-alignment tests
+- ☑ GitHub Actions run `33979248568` succeeded
+- ☑ Independent premium QA: `10-PRODUCTION/SIM-008-Premium-Content-QA-2026-09-05.md`
+- ⏳ browser/device compatibility QA
+- ⏳ manual accessibility review
+- ⏳ LMS/student-account and durable production competency-record integration
+- ⏳ assembled final release QA
+
+**M08 controlling status:** **SIM-008 — BUILD COMPLETE — RELEASE QA DEFERRED. Module 08 is not `PUBLICATION_READY`.**
 
 ### M09 — Booking Loads, Rate Confirmations & Dispatch Documentation
 **Content/Production: 12% | Release: 5%**
@@ -195,8 +207,8 @@ These remain planning estimates, not completion certifications. The 2026-09-05 M
 - ⏳ SIM-004 build complete; release QA deferred
 - ⏳ SIM-005 build reported complete; independent inheritance/premium alignment check remains
 - ⏳ **SIM-006 BUILD COMPLETE — RELEASE QA DEFERRED; independent premium repair/verification completed 2026-09-05**
-- ☐ SIM-007
-- ◐ SIM-008 runtime exists; curriculum-alignment repair/reverification required
+- ◐ SIM-007 build exists; independent premium QA/reconciliation required
+- ⏳ **SIM-008 BUILD COMPLETE — RELEASE QA DEFERRED; 12-stage/24-decision premium rebuild independently verified 2026-09-05**
 - ☐ SIM-009
 - ☐ SIM-010
 - ☐ SIM-011
@@ -214,22 +226,22 @@ These remain planning estimates, not completion certifications. The 2026-09-05 M
 - ☑ M05 content-purge findings are stored in the production folder.
 - ☑ M06 stale missing-tool/practical/Instructor-Guide claims have been reconciled against verified repository assets.
 - ☑ M06 SIM-006 production decisions, independent audit, repairs, scoring standard and completion evidence are stored in GitHub; the original Claude handoff is historical evidence, not current status authority.
-- ◐ M08 SIM-008 alignment findings/repair result must be reconciled into permanent QA/status controls after Claude's repair is received.
+- ☑ M08 SIM-008 premium runtime/package, automated verification and independent QA are stored in permanent GitHub controls; older 15-stage/19-decision status is superseded.
 - ◐ M01 selective-reconciliation decisions must be completed on the dedicated rebuild lineage and then reflected in master truth controls.
 - ◐ Any new course-build decision made in chat must be transferred to the relevant module/master/production folder during the same work block.
 
 ## Critical path to next-week production completion
 1. **Freeze status truth first:** use this control as the live checklist; update it whenever a gate closes.
-2. **M06 content/runtime gate is closed:** do not spend core production time rebuilding SIM-006 unless new verified defects emerge; leave its release-layer QA in the deferred release queue.
-3. **Close M08:** reconcile SIM-008 repair → commercial/current-source QA → premium gate.
+2. **M06 and M08 content/runtime gates are closed:** do not spend core production time rebuilding SIM-006 or SIM-008 unless new verified defects emerge; leave their release-layer QA in the deferred queue.
+3. **Close M07:** independently inspect/repair the SIM-007 build, run premium QA and reconcile master truth.
 4. **Close near-finished M02–M05:** final premium/currentness cleanup rather than rebuilding them.
-5. **Finish M01 and M07:** M01 reconciliation; M07 premium QA + SIM-007.
+5. **Finish M01:** controlled reconciliation and downstream assessment/instructor/SIM synchronization.
 6. **Build M09–M14 sequentially** with the standard package: curriculum → tools → KC/lab → exam/practical → instructor guide → source QA → simulation → premium gate.
 7. **Build M15 last** because its capstone depends on upstream competency maps.
 8. **Do not spend production week on deferred browser/device/LMS/accessibility polish until core M01–M15 content/build gates are closed**, except where required to prove a simulation functions.
 
 ## Deadline risk
-**HIGH.** Seven modules (M09–M15) are still essentially architecture-only, while M01/M05/M07/M08 retain open production gates. Module 06 is no longer an open core content/runtime blocker. Finishing next week requires parallel work, strict reuse of the approved module product standard, and no unnecessary rework of already-passing modules.
+**HIGH.** Seven modules (M09–M15) are still essentially architecture-only, while M01/M05/M07 retain open production gates. Modules 06 and 08 are no longer open core content/runtime blockers. Finishing next week requires parallel work, strict reuse of the approved module product standard, and no unnecessary rework of already-passing modules.
 
 ## Module 06 authority hierarchy
 For current M06/SIM-006 truth, use:
@@ -238,6 +250,14 @@ For current M06/SIM-006 truth, use:
 3. actual SIM-006 package/runtime files on `academy-master-architecture`.
 
 Any older status saying SIM-006 is missing/not built is superseded. The original Claude handoff remains **ARCHIVE — HISTORICAL EVIDENCE**, not a controlling completion record.
+
+## Module 08 authority hierarchy
+For current M08/SIM-008 truth, use:
+1. `00-ACADEMY-MASTER/MODULE-08-MASTER-BRANCH.md`;
+2. `10-PRODUCTION/SIM-008-Premium-Content-QA-2026-09-05.md`;
+3. actual SIM-008 five-document package/runtime/tests.
+
+Any older status saying SIM-008 requires curriculum-alignment repair or uses the prior 15-stage/19-decision build is superseded.
 
 ## Truth rule
 A percentage is a planning indicator, not a certification. A module is not complete merely because its percentage is high. Gate status and checked deliverables control the claim. `PUBLICATION_READY` remains separate from content/build completion.

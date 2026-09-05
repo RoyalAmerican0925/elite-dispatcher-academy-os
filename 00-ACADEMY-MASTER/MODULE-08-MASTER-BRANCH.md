@@ -1,6 +1,6 @@
 # Module 08 Master Branch — Rate Negotiation and Broker Communication
 
-**Control status:** PREMIUM INSTRUCTIONAL PACKAGE REPAIRED / SIM-008 DESIGN LOCKED / RUNTIME BUILD PENDING
+**Control status:** BUILD COMPLETE — RELEASE QA DEFERRED
 
 ## Employment outcome
 The student can prepare for a broker rate conversation, establish a carrier-specific negotiating position from verified facts and Module 07 economics, conduct professional discovery, make evidence-supported counters and conditional trades, protect supplied authority limits, document the conversation, and issue an ACCEPT / DECLINE / ESCALATE decision without confusing negotiation with formal booking.
@@ -31,7 +31,7 @@ The student can prepare for a broker rate conversation, establish a carrier-spec
 | M08-C01 | Build a negotiation position from verified load/carrier facts | P02 | Preparation Sheet | Assess | Apply | Apply |
 | M08-C02 | Convert Module 07 economics into supplied target/floor/walk-away positions | P02 | Target/Floor/Walk-Away | Assess | Apply | Apply |
 | M08-C03 | Distinguish asking rate, target, floor/minimum and walk-away | P01-P02 | Position Worksheet | Assess | Apply | Apply |
-| M08-C04 | Open professionally and identify role/load without misrepresentation | P01/P03 | Discovery Sheet | Assess | Apply | Apply |
+| M08-C04 | Open professionally and identify role/load without misrepresentation | P01/P03 | Discovery Sheet | Assess | Apply | Critical |
 | M08-C05 | Ask purposeful discovery questions and isolate missing/material facts | P03 | Discovery Sheet | Assess | Apply | Apply |
 | M08-C06 | Listen for constraints, objections, assumptions and usable evidence | P03 | Call Record | Assess | Apply | Apply |
 | M08-C07 | Construct an evidence-supported counteroffer | P04 | Counteroffer Builder | Assess | Apply | Apply |
@@ -70,7 +70,7 @@ All seven required tools exist:
 ### Applied Lab
 `03-ASSESSMENTS/Module-08/Broker-Negotiation-Applied-Lab.md`
 
-Instructor answer/rationale control added:
+Instructor answer/rationale control:
 `03-ASSESSMENTS/Module-08/Broker-Negotiation-Applied-Lab-Answer-and-Rationale-Control.md`
 
 ### Practical
@@ -78,11 +78,11 @@ Instructor answer/rationale control added:
 
 Passing standard: **24/30 AND zero unresolved critical failures.**
 
-Permanent scoring/remediation control added:
+Permanent scoring/remediation control:
 `03-ASSESSMENTS/Module-08/Broker-Negotiation-Desk-Practical-Scoring-and-Remediation-Control.md`
 
 ### Instructor control
-Dedicated premium instructor guide added:
+Dedicated premium instructor guide:
 `03-ASSESSMENTS/Instructor-Guides/Module-08-Instructor-Guide.md`
 
 It controls competency evidence, demonstrations, progressive release, first-attempt preservation, six critical-failure families, materially different reassessment, scope boundaries and release-status discipline.
@@ -99,30 +99,52 @@ Exactly six:
 No seventh critical family is authorized without architecture revision.
 
 ## Remediation control
-- First-attempt evidence must remain in the record.
+- First-attempt evidence remains in the record.
 - A correction does not erase a critical failure.
-- Critical reassessment must use materially different facts.
+- Critical reassessment uses materially different facts.
 - Corrected performance is recorded separately.
 - Raw score cannot override an unresolved critical failure.
+- Resolved critical history is labeled RESOLVED BY REASSESSMENT rather than rewritten as no failure observed.
 
-## SIM-008 contract
-**SIM-008 — Broker Negotiation Lab**
+## SIM-008 — Broker Negotiation Lab
 
-Build-grade design specification:
+Design specification:
 `10-PRODUCTION/Module-08-SIM-008-Design-Spec-2026-09-05.md`
 
-Locked architecture:
-- 12 progressive stages;
-- at least 24 meaningful decisions/actions;
+Permanent package:
+- `05-SIMULATIONS-AND-GAMES/Module-08/SIM-008-Student-Instructions.md`
+- `05-SIMULATIONS-AND-GAMES/Module-08/SIM-008-Scenario-and-Evidence-Packet.md`
+- `05-SIMULATIONS-AND-GAMES/Module-08/SIM-008-Instructor-Guide.md`
+- `05-SIMULATIONS-AND-GAMES/Module-08/SIM-008-Scoring-and-Competency-Map.md`
+- `05-SIMULATIONS-AND-GAMES/Module-08/SIM-008-Completion-and-Competency-Record.md`
+- browser runtime and automated tests under `05-SIMULATIONS-AND-GAMES/Module-08/runtime/`
+
+Verified architecture:
+- exactly 12 progressive stages;
+- 24 meaningful decisions/actions;
 - all 15 competency families evidenced;
 - exactly six critical-failure families;
 - broker resistance, silence, conditional trades, changed facts, agreement-specific terms, authority pressure, three-bucket closeout and Module 09 handoff;
 - first-attempt persistence;
-- materially different remediation/reassessment;
-- answer-key isolation;
-- printable/exportable competency summary where feasible without pretending an LMS durability layer exists.
+- materially different critical reassessment;
+- printable competency summary;
+- practical-compatible 30-point scaled first-attempt score;
+- no successful `BOOKED` status inside Module 08.
 
-**Current SIM state:** DESIGN LOCKED / RUNTIME BUILD PENDING.
+**Current SIM state:** BUILD COMPLETE — RELEASE QA DEFERRED.
+
+## Automated verification
+GitHub Actions workflow: `SIM-008 Runtime Tests`  
+Run ID: `33979248568`  
+Tested commit: `23d44bbeb7cabe0474e895d03387ba184809828d`  
+Conclusion: **success**
+
+Full test command covers runtime logic, premium architecture/state controls and package alignment.
+
+Independent QA:
+`10-PRODUCTION/SIM-008-Premium-Content-QA-2026-09-05.md`
+
+QA result: **PASS — BUILD COMPLETE / RELEASE QA DEFERRED**.
 
 ## Boundary controls
 - M02 owns advanced agency/legal boundary analysis.
@@ -148,23 +170,28 @@ Repository audit:
 Implementation plan:
 `10-PRODUCTION/Module-08-Premium-Implementation-Plan-2026-09-05.md`
 
-The audit found and repaired three material pre-SIM package defects: missing dedicated instructor guide, missing Applied Lab rationale control, and missing Practical scoring/remediation control.
+Premium SIM QA:
+`10-PRODUCTION/SIM-008-Premium-Content-QA-2026-09-05.md`
+
+The premium pass repaired material package defects, replaced the obsolete 15-stage/19-decision runtime contract with the locked 12-stage/24-decision architecture, added durable critical-family evidence and materially different reassessment, and completed the five-document simulation package.
 
 ## Premium gate
-The instructional package now satisfies the pre-SIM structure for:
+The module passes the content/runtime build gate for:
 - **Google Test:** operational decision training rather than generic negotiation tips.
-- **Employment Test:** learner performs preparation, discovery, countering, authority, documentation and closeout work.
-- **Buyer-Value Test:** six manuals, seven desk tools, guided lab, final exam, graded practical, instructor control and remediation logic form a coherent occupational package.
-
-The module is **not yet build complete** because SIM-008 runtime/package and independent runtime QA remain open.
+- **Employment Test:** learner performs preparation, discovery, countering, authority control, documentation, closeout and handoff work.
+- **Buyer-Value Test:** six manuals, seven desk tools, guided lab, final exam, graded practical, instructor control, premium simulation, remediation logic and competency records form a coherent occupational package.
 
 ## Release status rule
 Current truthful status:
 
-**PREMIUM INSTRUCTIONAL PACKAGE REPAIRED — SIM-008 RUNTIME BUILD PENDING**
-
-After successful runtime/content QA, maximum permissible status is:
-
 **BUILD COMPLETE — RELEASE QA DEFERRED**
 
-This control does **not** establish `PUBLICATION_READY`, and nothing here authorizes a merge to `main`.
+Still deferred before `PUBLICATION_READY`:
+- browser/device compatibility QA;
+- production deployment validation;
+- LMS/student-account integration;
+- durable production records;
+- manual accessibility QA;
+- final release packaging QA.
+
+Nothing here authorizes a merge to `main`.

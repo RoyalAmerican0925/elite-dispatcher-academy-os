@@ -29,7 +29,7 @@
 
 | Module | Verified program scope | Production curriculum/tools/assessment/practical | Simulation | Instructor/source/release | Current state |
 |---|---|---|---|---|---|
-| M08 | Rate Negotiation and Broker Communication | **VERIFIED EXISTS:** six manuals, seven operational tools, diagnostic KC/applied lab, 30-item final exam/key, 30-point practical/scoring | **SIM-008 runtime VERIFIED EXISTS / curriculum-alignment repair + independent re-verification required** | full Instructor Guide VERIFIED EXISTS; commercial/current-source QA and final premium gate open | **PRODUCTION BUILD ADVANCED; PREMIUM CLOSEOUT OPEN** |
+| M08 | Rate Negotiation and Broker Communication | **VERIFIED EXISTS:** six manuals, seven operational tools, diagnostic KC/applied lab, 30-item final exam/key, 30-point practical/scoring | **SIM-008 BUILD COMPLETE — RELEASE QA DEFERRED; 12-stage/24-decision premium build, 15 competencies, exactly six CF families, materially different reassessment, five-doc package and automated gates independently verified** | full Module 08 guide + SIM instructor package VERIFIED EXISTS; final browser/device/LMS/accessibility/release QA deferred | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
 | M09 | Booking Loads, Rate Confirmations, and Dispatch Documentation | MISSING / PLANNED | SIM-009 PLANNED | future production layers represented | PROGRAM SCOPE VERIFIED |
 | M10 | Trip Planning, Routing, Time, Fuel, and Appointment Management | MISSING / PLANNED | SIM-010 PLANNED | future production layers represented | PROGRAM SCOPE VERIFIED |
 | M11 | Hours of Service and ELD Operational Awareness | MISSING / PLANNED | SIM-011 PLANNED | high regulatory-currentness requirement represented | PROGRAM SCOPE VERIFIED |
@@ -47,8 +47,8 @@ Required competency dependency:
 ## Architecture-level blockers remaining
 1. Complete controlled M01 premium branch reconciliation and then synchronize assessment/instructor/SIM evidence.
 2. **Module 06 content/runtime premium gate is closed.** Remaining M06 work is release-layer browser/device/LMS/manual-accessibility/durable-record/assembled QA plus final pre-publication current-source recheck; do not reopen SIM-006 based on superseded status files.
-3. Close M08 SIM-008 curriculum alignment and premium/current-source QA.
-4. Build SIM-007 and SIM-009–SIM-015 under their module curriculum locks.
+3. **Module 08 content/runtime premium gate is closed.** Remaining M08 work is release-layer browser/device/LMS/manual-accessibility/durable-record/assembled QA; do not reopen SIM-008 based on the superseded 15-stage/19-decision status.
+4. Build/independently close SIM-007 and SIM-009–SIM-015 under their module curriculum locks.
 5. Build M09–M15 production assets sequentially; do not confuse scope controls with finished courseware.
 6. Resolve branch divergence with `main` only through separately authorized reconciliation.
 7. Complete connected/release architecture after core master production stabilizes.
@@ -60,6 +60,14 @@ Current Module 06 build-gate truth is controlled by:
 - the actual SIM-006 student/scenario/instructor/scoring/completion package and runtime on `academy-master-architecture`.
 
 The original Claude SIM-006 handoff is historical build evidence, not current status authority.
+
+## Module 08 evidence authority
+Current Module 08/SIM-008 build-gate truth is controlled by:
+- `00-ACADEMY-MASTER/MODULE-08-MASTER-BRANCH.md`;
+- `10-PRODUCTION/SIM-008-Premium-Content-QA-2026-09-05.md`;
+- the actual five-document SIM-008 package, runtime and automated tests.
+
+The older 15-stage/19-decision runtime status is superseded by the verified premium rebuild.
 
 ## Completion finding
 **Architecture representation: PASS WITH TRUTHFUL PRODUCTION GAPS.**
