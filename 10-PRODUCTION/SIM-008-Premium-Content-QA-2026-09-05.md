@@ -1,87 +1,146 @@
 # SIM-008 Premium Content QA — 2026-09-05
 
 **Module:** 08 — Rate Negotiation & Broker Communication  
-**Branch inspected:** `academy-master-architecture`  
-**Gate result:** **FAIL — PREMIUM REPAIR REQUIRED**
+**Branch independently inspected:** `sim-008-premium-build`  
+**Gate result:** **PASS — BUILD COMPLETE / RELEASE QA DEFERRED**
 
-## Scope independently inspected
-- `00-ACADEMY-MASTER/MODULE-08-MASTER-BRANCH.md`
-- `10-PRODUCTION/Module-08-SIM-008-Design-Spec-2026-09-05.md`
-- `03-ASSESSMENTS/Instructor-Guides/Module-08-Instructor-Guide.md`
-- existing SIM-008 runtime `content.js`, `logic.js`, `app.js`, `README.md`, `package.json`, `tests/logic.test.js`
-- SIM-006 and current SIM-007 runtime patterns for regression/control comparison
+## Verification evidence
 
-## Findings
+- GitHub Actions workflow: `SIM-008 Runtime Tests`
+- Run ID: `33979248568`
+- Head commit tested: `23d44bbeb7cabe0474e895d03387ba184809828d`
+- Job conclusion: **success**
+- Test step: `npm test` — **success**
+- Test command executes:
+  1. `tests/logic.test.js`
+  2. `tests/premium-gate.test.js`
+  3. `tests/alignment.test.js`
 
-### Q1 — Locked architecture mismatch — FAIL
-Current runtime: **15 stages / 19 decisions**.  
-Locked premium design: **12 progressive stages / at least 24 meaningful decisions/actions**.
+Independent repository inspection after the run confirmed the five permanent package documents are committed beside the runtime and the build branch is ahead of `academy-master-architecture` with no behind divergence at this gate.
 
-This is not a cosmetic naming difference. The design requires a deeper decision trail while the current runtime has fewer meaningful learner actions than the locked minimum.
+## Premium requirements checklist
 
-### Q2 — Critical-failure mapping — FAIL
-The master and premium design require exactly six critical-failure families:
-CF-01 below-floor unauthorized acceptance; CF-02 fabricated leverage; CF-03 material fact misrepresentation; CF-04 unauthorized carrier commitment; CF-05 false agreement state; CF-06 premature booking representation.
+### Q1 — Locked architecture — PASS
+Runtime implements **exactly 12 progressive stages and 24 meaningful decisions**.
 
-Current runtime does not expose these six families as explicit `criticalFailureFamily` data across the scenario. Five older critical decisions use `escalateAfterAttempts:2`; CF-05 is described only in README/test comments. This prevents durable family-level evidence and clean completion reporting.
+The previous 15-stage/19-decision build was not merely relabeled. Existing strong decisions were preserved where valid and regrouped into the approved operating arc, while five added decisions deepen evidence for changed-position recalibration, silence/professional resistance, unauthorized operating commitment, Module 09 handoff completeness and final disposition.
 
-### Q3 — Critical-failure persistence — FAIL
-Current logic can clear `instructorReviewRequired` when the learner later submits the correct answer on the same decision. This conflicts with the premium rule: a critical failure is not erased by same-screen correction and requires a materially different reassessment before resolution.
+### Q2 — All 15 competencies — PASS
+All `M08-C01` through `M08-C15` are explicitly represented in decision metadata and the durable scoring map.
 
-### Q4 — First-attempt preservation — PARTIAL PASS
-Current logic preserves first-attempt response/correctness/timestamp and marks remediation. This is useful and must be retained. However, it does not preserve a durable critical-family trigger/resolution record independent of the mutable instructor-review flag.
+### Q3 — Exactly six critical-failure families — PASS
+The runtime explicitly maps exactly:
+- CF-01 unauthorized below-floor acceptance — D15
+- CF-02 fabricated leverage — D08
+- CF-03 material fact misrepresentation — D04
+- CF-04 unauthorized carrier commitment — D22
+- CF-05 false agreement state — D16
+- CF-06 premature booking representation — D18
 
-### Q5 — Competency coverage — PASS WITH DEPTH REPAIR REQUIRED
-All 15 M08 competency IDs are represented in the current runtime. The existing curriculum-alignment repair materially improved discovery, four-part accessorial clarification, three-bucket closeout and Module 09 boundary language. Preserve these strengths in the premium rebuild.
+No seventh family is introduced.
 
-### Q6 — Completion gate — FAIL
-Current `computeSimulationStatus` completes only when all 19 decisions are finally correct. The premium design instead requires a practical-compatible raw threshold, sufficient competency evidence, and zero unresolved critical failures. The current runtime does not implement that combined gate.
+### Q4 — Critical persistence and reassessment — PASS
+The state model preserves the first triggering response, timestamp and family. A same-screen correction can improve the final response but cannot erase the critical event. Resolution requires the family-specific **materially different reassessment**. Successful reassessment changes the family state to `RESOLVED_BY_REASSESSMENT` while retaining original evidence.
 
-### Q7 — Completion record — FAIL
-The UI displays first-attempt/final mastery/remediation and competency summary, but there is no pure `computeCompletionRecord` control that exports first-attempt score, final score, competency map, critical-failure status/history, reassessment history and instructor-review state as one testable record.
+### Q5 — First-attempt vs corrected performance — PASS
+The runtime separately records:
+- first-attempt response/correctness/timestamp;
+- final response/correctness;
+- ordinary remediation;
+- critical trigger history;
+- separate critical reassessment history.
 
-### Q8 — Package completeness — FAIL
-`05-SIMULATIONS-AND-GAMES/Module-08/` contains only `runtime/`. The premium package documents required by the module framework are absent. Required build package:
+### Q6 — Practical-compatible completion gate — PASS
+First-attempt performance is scaled to 30 points:
+
+`round((first-attempt correct / 24) × 30)`
+
+Completion requires:
+- scaled score at least **24/30**;
+- final mastery across required evidence or approved reassessment equivalent;
+- zero unresolved critical failures.
+
+### Q7 — Completion record — PASS
+`computeCompletionRecord` exports first-attempt score, scaled practical score, final score, remediation count, competency statuses, critical-family statuses, reassessment state and instructor-review/completion state. The UI presents the same categories and supports printing the summary.
+
+### Q8 — Premium package completeness — PASS
+Committed package:
 - `SIM-008-Student-Instructions.md`
 - `SIM-008-Scenario-and-Evidence-Packet.md`
 - `SIM-008-Instructor-Guide.md`
 - `SIM-008-Scoring-and-Competency-Map.md`
 - `SIM-008-Completion-and-Competency-Record.md`
+- browser runtime
+- automated tests
+- runtime README
 
-### Q9 — Automated alignment gate — FAIL
-Current M08 has only `tests/logic.test.js`. It lacks the separate package/alignment test pattern already used by SIM-006. A premium gate must verify package docs, locked stage/decision architecture, six CF families, competency coverage, answer-key isolation/boundaries and completion-record controls.
+### Q9 — Negotiation depth / Google / Employment / Buyer tests — PASS AT CONTENT-RUNTIME BUILD GATE
+The scenario requires occupational decisions rather than rate-script recall. It tests verified-fact preparation, asking/target/floor distinctions, missing-information verification, purposeful discovery, evidence-supported countering, truthful leverage, conditional trades, accessorial clarification, material-fact recalibration, pressure and silence, supplied authority, closeout classification, documentation, Module 09 handoff and professional decline.
 
-### Q10 — README status — FAIL
-Current README claims `BUILD COMPLETE — RELEASE QA DEFERRED`, but the newly locked premium architecture and instructor controls are stricter than the older build. Until repaired and independently retested, the truthful status is **PREMIUM REPAIR REQUIRED**.
+Highest rate is not automatically the correct answer. Blanket conservatism is not rewarded. The learner must make a defensible decision from the supplied evidence and authority.
 
-## Preserve from existing runtime
-KEEP — ACTIVE / PORT INTO REPAIR:
-- verified-fact preparation logic;
+### Q10 — Agreement-specific term control — PASS
+The runtime and documentation preserve the four-part test:
+
+**TRIGGER → AMOUNT/METHOD → EVIDENCE → PROCESS**
+
+No universal Academy detention rate is invented.
+
+### Q11 — Scenario continuity — PASS
+The rate progression is explicitly controlled:
+- supplied floor $2,300;
+- broker later offers $2,275 below floor;
+- dispatcher declines/escalates;
+- carrier reauthorizes holding at the original $2,300 floor and no lower;
+- broker later agrees to $2,300.
+
+The return to $2,300 is therefore event-driven, not an unexplained number jump.
+
+### Q12 — Module 09 boundary — PASS
+No successful Module 08 outcome is labeled `BOOKED`. Approved successful status is:
+
+**AGREED IN PRINCIPLE / PENDING BOOKING CONTROL**
+
+Formal booking and rate-confirmation review remain Module 09 controls.
+
+### Q13 — Automated alignment gate — PASS
+A dedicated `alignment.test.js` verifies the five-document package, 12-stage/24-decision architecture, exactly six CF families and reassessments, explicit CF metadata, Module 09 boundary, accessorial four-part control and three-bucket closeout.
+
+### Q14 — Runtime limitations disclosed — PASS
+README and student/instructor documents state that local browser storage is not durable LMS/student-account storage.
+
+## Preserved strengths from prior SIM-008 build
+
+The rebuild intentionally retained and strengthened:
+- verified-fact preparation;
 - target/floor/walk-away distinctions;
 - VERIFY-before-assume behavior;
-- truthful leverage controls;
+- truthful leverage;
 - professional opening and purposeful discovery;
-- evidence-supported counter without forced disclosure of internal economics;
+- evidence-supported counter without forced internal-cost disclosure;
 - conditional trade logic;
-- TRIGGER → AMOUNT/METHOD → EVIDENCE → PROCESS;
-- material-fact-change re-evaluation;
+- TRIGGER / AMOUNT / EVIDENCE / PROCESS;
+- changed-evidence recalibration;
 - authority boundary;
 - three-bucket closeout;
-- Module 09 booking boundary;
-- first-attempt evidence fields;
-- local-storage limitation disclosure.
+- Module 09 boundary;
+- first-attempt preservation.
 
-## Repair order
-1. Write premium-gate tests before changing production logic.
-2. Rebuild scenario to exactly 12 stages and at least 24 meaningful decisions while preserving strong current content.
-3. Explicitly map all six critical families in content.
-4. Persist first critical action and require materially different reassessment for resolution.
-5. Implement practical-compatible completion gate and pure completion-record output.
-6. Add five package documents.
-7. Add separate alignment/package tests and run full runtime test command.
-8. Independently inspect actual committed files before changing master status.
+## Deferred release-layer QA
 
-## Status
-**SIM-008 PREMIUM QA: FAIL — REPAIR IN PROGRESS.**
+This gate does **not** establish `PUBLICATION_READY`.
 
-This QA document does not authorize a merge to `main` and does not establish `PUBLICATION_READY`.
+Still required before public/commercial release:
+- browser/device compatibility QA;
+- headless/DOM interaction testing if adopted;
+- manual accessibility QA;
+- production deployment validation;
+- LMS/student-account integration;
+- durable production record validation;
+- final release packaging QA.
+
+## Final build-gate status
+
+**SIM-008 — BUILD COMPLETE — RELEASE QA DEFERRED**
+
+This QA result authorizes reconciliation into the `academy-master-architecture` working branch only. It does **not** authorize a merge to `main`.
