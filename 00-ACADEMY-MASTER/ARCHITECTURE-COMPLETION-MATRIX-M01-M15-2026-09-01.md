@@ -2,7 +2,7 @@
 
 **Control date:** 2026-09-05  
 **Branch:** `academy-master-architecture`  
-**Authority note:** This matrix tracks architecture and verified asset existence. Current completion percentages and deadline priority are controlled by `ACADEMY-COMPLETION-DEADLINE-CONTROL-2026-09-04.md`. Historical claims superseded by verified later assets have been purged from live status rows.
+**Authority note:** This matrix tracks architecture and verified asset existence. Completion percentages and deadline priority are controlled by `ACADEMY-COMPLETION-DEADLINE-CONTROL-2026-09-04.md`. Historical claims superseded by verified later assets are not live authority.
 
 ## Status vocabulary
 - **REPRESENTED** — master architecture explicitly controls the component.
@@ -10,10 +10,10 @@
 - **NEEDS AUDIT / UPGRADE** — asset exists but stronger premium/currentness/synchronization gate remains.
 - **MISSING / PLANNED** — required production asset absent.
 - **PROGRAM SCOPE VERIFIED** — scope is grounded but production curriculum is absent.
-- **BUILD COMPLETE — RELEASE QA DEFERRED** — simulation build gate passed; assembled-system release QA remains.
+- **BUILD COMPLETE — RELEASE QA DEFERRED** — content/runtime build gate passed; release QA remains.
 - **PUBLICATION_READY** — not assigned by this matrix.
 
-## Modules 01–07
+## Modules 01–08
 
 | Module | Outcome/scope | Student tools | KC/exam | Practical | Simulation | Instructor product | Source/currentness | Truthful current state |
 |---|---|---|---|---|---|---|---|---|
@@ -22,14 +22,14 @@
 | M03 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-003 BUILD COMPLETE — RELEASE QA DEFERRED | full guide VERIFIED EXISTS | final currentness remains | PREMIUM RE-AUDIT OPEN |
 | M04 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-004 BUILD COMPLETE — RELEASE QA DEFERRED | full guide VERIFIED EXISTS | date-sensitive pre-publication check remains | INSTRUCTIONAL/SIM BUILD GATE CLOSED; RELEASE QA OPEN |
 | M05 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-005 BUILD COMPLETE — RELEASE QA DEFERRED; independent premium inheritance check remains | full guide VERIFIED EXISTS | platform-currentness/premium audit remains | PREMIUM RE-AUDIT OPEN |
-| M06 | REPRESENTED; G-013 COMPLETE/RECONCILED | seven-tool package VERIFIED EXISTS | VERIFIED EXISTS | 30-point graded practical + scoring VERIFIED EXISTS | **SIM-006 BUILD COMPLETE — RELEASE QA DEFERRED; 10-stage/22-decision premium build independently repaired/verified** | full Module 06 guide + SIM-006 instructor guide VERIFIED EXISTS | current-source reconciliation + 2026-09-05 FMCSA recheck recorded; final pre-publication recheck remains | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
-| M07 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-007 MISSING | full guide VERIFIED EXISTS | pre-publication currentness remains | SUBSTANTIAL DRAFT / PREMIUM + SIM OPEN |
+| M06 | REPRESENTED; G-013 COMPLETE/RECONCILED | seven-tool package VERIFIED EXISTS | VERIFIED EXISTS | 30-point graded practical + scoring VERIFIED EXISTS | **SIM-006 BUILD COMPLETE — RELEASE QA DEFERRED; 10-stage/22-decision premium build independently repaired/verified** | full Module 06 guide + SIM instructor package VERIFIED EXISTS | current-source reconciliation recorded; final pre-publication recheck remains | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
+| M07 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | **SIM-007 BUILD COMPLETE — RELEASE QA DEFERRED; 10-stage/33-decision premium build, 18 competencies, exactly five CF families, materially different reassessment, five-doc package and automated gates independently verified** | full guide + premium alignment addendum + SIM instructor package VERIFIED EXISTS | fictional exercise inputs labeled; final pre-publication source/currentness check remains | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
+| M08 | REPRESENTED | seven-tool package VERIFIED EXISTS | diagnostic KC/lab + 30-item exam VERIFIED EXISTS | 30-point practical/scoring VERIFIED EXISTS | **SIM-008 BUILD COMPLETE — RELEASE QA DEFERRED; 12-stage/24-decision premium build, 15 competencies, exactly six CF families, materially different reassessment, five-doc package and automated gates independently verified** | full Module 08 guide + SIM instructor package VERIFIED EXISTS | final browser/device/LMS/accessibility/release QA deferred | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
 
-## Modules 08–15
+## Modules 09–15
 
 | Module | Verified program scope | Production curriculum/tools/assessment/practical | Simulation | Instructor/source/release | Current state |
 |---|---|---|---|---|---|
-| M08 | Rate Negotiation and Broker Communication | **VERIFIED EXISTS:** six manuals, seven operational tools, diagnostic KC/applied lab, 30-item final exam/key, 30-point practical/scoring | **SIM-008 BUILD COMPLETE — RELEASE QA DEFERRED; 12-stage/24-decision premium build, 15 competencies, exactly six CF families, materially different reassessment, five-doc package and automated gates independently verified** | full Module 08 guide + SIM instructor package VERIFIED EXISTS; final browser/device/LMS/accessibility/release QA deferred | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
 | M09 | Booking Loads, Rate Confirmations, and Dispatch Documentation | MISSING / PLANNED | SIM-009 PLANNED | future production layers represented | PROGRAM SCOPE VERIFIED |
 | M10 | Trip Planning, Routing, Time, Fuel, and Appointment Management | MISSING / PLANNED | SIM-010 PLANNED | future production layers represented | PROGRAM SCOPE VERIFIED |
 | M11 | Hours of Service and ELD Operational Awareness | MISSING / PLANNED | SIM-011 PLANNED | high regulatory-currentness requirement represented | PROGRAM SCOPE VERIFIED |
@@ -39,35 +39,31 @@
 | M15 | Dispatcher Business Operations, Client Service, Systems & Integrated Capstone | MISSING / PLANNED; capstone depends on upstream competency evidence | SIM-015 integrated capstone PLANNED | final scoring/release waits for upstream evidence | PROGRAM SCOPE VERIFIED / ARCHITECTURE RESOLVED |
 
 ## Cross-Academy controls
-The active architecture represents occupational outcomes/dependencies, professional language, curriculum, tools, knowledge assessment, graded practicals, simulations/competency evidence, instructor products, source/currentness, premium depth, release separation, student journey, dependency mapping and assembled-system QA.
-
 Required competency dependency:
 **TEACH → DEMONSTRATE → PRACTICE → ASSESS → SIMULATE → RECORD COMPETENCY**
 
 ## Architecture-level blockers remaining
-1. Complete controlled M01 premium branch reconciliation and then synchronize assessment/instructor/SIM evidence.
-2. **Module 06 content/runtime premium gate is closed.** Remaining M06 work is release-layer browser/device/LMS/manual-accessibility/durable-record/assembled QA plus final pre-publication current-source recheck; do not reopen SIM-006 based on superseded status files.
-3. **Module 08 content/runtime premium gate is closed.** Remaining M08 work is release-layer browser/device/LMS/manual-accessibility/durable-record/assembled QA; do not reopen SIM-008 based on the superseded 15-stage/19-decision status.
-4. Build/independently close SIM-007 and SIM-009–SIM-015 under their module curriculum locks.
-5. Build M09–M15 production assets sequentially; do not confuse scope controls with finished courseware.
-6. Resolve branch divergence with `main` only through separately authorized reconciliation.
-7. Complete connected/release architecture after core master production stabilizes.
+1. Complete controlled M01 premium branch reconciliation and downstream assessment/instructor/SIM synchronization.
+2. Complete independent premium inheritance/currentness cleanup for M02–M05 where still open.
+3. **M06, M07 and M08 content/runtime premium gates are closed.** Do not reopen their simulations based on superseded status text unless a new verified defect appears.
+4. Build M09–M14 production assets sequentially under the approved product standard.
+5. Build M15 integrated capstone after upstream competency maps exist.
+6. Resolve divergence with `main` only through separately authorized reconciliation.
+7. Complete browser/device/LMS/manual-accessibility/durable-record/assembled release QA after core master production stabilizes.
 
-## Module 06 evidence authority
-Current Module 06 build-gate truth is controlled by:
-- `00-ACADEMY-MASTER/MODULE-06-MASTER-BRANCH.md`;
-- `10-PRODUCTION/SIM-006-Premium-Content-QA-2026-09-05.md`;
-- the actual SIM-006 student/scenario/instructor/scoring/completion package and runtime on `academy-master-architecture`.
+## Module 07 evidence authority
+Current M07/SIM-007 build-gate truth is controlled by:
+- `00-ACADEMY-MASTER/MODULE-07-MASTER-BRANCH.md`;
+- `10-PRODUCTION/SIM-007-Premium-Content-QA-2026-09-05.md`;
+- the actual five-document SIM-007 package, runtime, reassessment controls and automated tests.
 
-The original Claude SIM-006 handoff is historical build evidence, not current status authority.
+The earlier runtime-only / same-screen-critical-clearing state is superseded.
 
 ## Module 08 evidence authority
-Current Module 08/SIM-008 build-gate truth is controlled by:
+Current M08/SIM-008 build-gate truth is controlled by:
 - `00-ACADEMY-MASTER/MODULE-08-MASTER-BRANCH.md`;
 - `10-PRODUCTION/SIM-008-Premium-Content-QA-2026-09-05.md`;
 - the actual five-document SIM-008 package, runtime and automated tests.
-
-The older 15-stage/19-decision runtime status is superseded by the verified premium rebuild.
 
 ## Completion finding
 **Architecture representation: PASS WITH TRUTHFUL PRODUCTION GAPS.**
