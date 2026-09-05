@@ -1,9 +1,9 @@
 {
   "name": "sim-007-runtime",
-  "version": "0.2.0-red-gate",
+  "version": "0.3.0-premium",
   "type": "module",
   "private": true,
   "scripts": {
-    "test": "node tests/logic.test.js && node tests/premium-gate.test.js"
+    "test": "node tests/logic.test.js && node tests/premium-gate.test.js && node tests/alignment.test.js"
   }
 }
