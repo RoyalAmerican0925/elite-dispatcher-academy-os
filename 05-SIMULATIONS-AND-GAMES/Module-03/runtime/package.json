@@ -4,6 +4,6 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "test": "node --check app.js && node tests/logic.test.js && node tests/premium-gate.test.js"
+    "test": "node --check app.js && node tests/logic.test.js && node tests/premium-gate.test.js && node tests/alignment.test.js"
   }
 }
