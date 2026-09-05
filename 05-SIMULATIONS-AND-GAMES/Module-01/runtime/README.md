@@ -1,6 +1,6 @@
 # SIM-001 Runtime — Module 01 Freight Movement Desk
 
-**Status:** PREMIUM BUILD CANDIDATE — independent QA required before build-gate closure
+**Status:** BUILD COMPLETE — RELEASE QA DEFERRED
 
 This directory contains the browser runtime for the Elite Dispatcher Academy Module 01 simulation.
 
@@ -16,6 +16,7 @@ The runtime delivers the premium **8-stage / 18-decision** Module 01 simulation.
 - `styles.css` — responsive/accessibility-focused presentation.
 - `runtime.test.mjs` — runtime/state regression tests.
 - `premium-alignment.test.mjs` — M01-C01–C15 and architecture gate.
+- `package-alignment.test.mjs` — cross-package curriculum/tool/assessment/instructor alignment gate.
 - `package.json` — ESM/test configuration.
 
 ## Run locally
@@ -54,6 +55,15 @@ Normal runtime completion requires 18/18 final mastery. Ordinary incorrect decis
 Runtime evidence maps to all 15 controlled Module 01 families:
 M01-C01 through M01-C15, including four-flow separation, file reading, USDOT/authority distinction, interstate/intrastate nuance, KNOWN/UNKNOWN/VERIFY, STOP framework, specialized-workflow handoff and misconception correction.
 
+## Verification authority
+Independent premium QA:
+- `../../../10-PRODUCTION/Module-01-Premium-Content-QA-2026-09-05.md`
+
+Current-source check:
+- `../../../10-PRODUCTION/Module-01-Current-Source-Recheck-2026-09-05.md`
+
+The premium build used a verified TDD cycle: the prior 6-stage/13-decision runtime failed the premium gate before the extension; the completed 8-stage/18-decision package passed the full runtime, premium-competency and cross-package test command.
+
 ## Interaction types
 - choice;
 - matching with labeled select controls;
@@ -72,4 +82,4 @@ Deferred before commercial release:
 - assembled package QA;
 - final current-source recheck of date-sensitive FMCSA registration terminology.
 
-A passing content/runtime gate supports only **BUILD COMPLETE — RELEASE QA DEFERRED**. It does not establish `PUBLICATION_READY`.
+**BUILD COMPLETE — RELEASE QA DEFERRED** does not establish `PUBLICATION_READY`.
