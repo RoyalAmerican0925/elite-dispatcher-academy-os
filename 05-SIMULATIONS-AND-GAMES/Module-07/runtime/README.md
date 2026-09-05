@@ -1,6 +1,6 @@
 # SIM-007 Runtime — Rate & Profitability Decision Desk
 
-**Status:** PREMIUM REPAIR CANDIDATE — AUTOMATED QA PENDING
+**Status:** BUILD COMPLETE — RELEASE QA DEFERRED
 
 ## Architecture
 - 10 progressive stages
@@ -12,6 +12,12 @@
 - first-attempt evidence preserved separately from corrected performance
 - HOLD FOR DATA and TAKE / COUNTER / DECLINE decision controls
 - printable competency summary
+
+## Verification evidence
+GitHub Actions workflow `SIM-007 Runtime Tests`, run `33979935097`, completed successfully against commit `f797020c2c75238b0c0df730a34edbf4a6414a3d`. The full `npm test` command completed with logic, premium-remediation and package-alignment suites passing.
+
+Independent QA:
+`../../../10-PRODUCTION/SIM-007-Premium-Content-QA-2026-09-05.md`
 
 ## Critical-failure rule
 Critical behavior is durable historical evidence. Correcting the original screen does not erase the trigger. The learner must demonstrate the competency again using a materially different reassessment case. A resolved family is recorded as **RESOLVED BY REASSESSMENT**.
@@ -35,12 +41,12 @@ python3 -m http.server 8000
 npm test
 ```
 
-The test command must cover runtime logic, premium remediation/state controls and package/curriculum alignment.
+The test command executes runtime logic, premium critical-remediation/state controls and package/curriculum alignment.
 
 ## Case assumptions
 All carrier names, load rates, fees, fuel prices and percentages in SIM-007 are fictional instructional assumptions. They are not current market claims.
 
-Core independently recomputed figures include:
+Independently recomputed core figures include:
 - Alpha 790 total miles, $2.89 effective RPM, approximately $472.80 fuel.
 - Bravo 580 total miles, $3.21 effective RPM, approximately $347.12 fuel.
 - Charlie 680 total miles, $2.96 effective RPM, approximately $406.97 fuel.
@@ -58,4 +64,4 @@ Deferred release QA:
 - durable competency records;
 - assembled release packaging QA.
 
-A passing content/runtime gate may support **BUILD COMPLETE — RELEASE QA DEFERRED** only. It does not establish `PUBLICATION_READY`.
+This status does not establish `PUBLICATION_READY`.
