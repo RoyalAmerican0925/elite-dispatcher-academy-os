@@ -1,6 +1,6 @@
 # Module 07 Master Branch — Rate Mathematics & Profitability
 
-**Control status:** PREMIUM PRE-SIM REPAIR ACTIVE / SIM-007 INDEPENDENT QA PENDING
+**Control status:** BUILD COMPLETE — RELEASE QA DEFERRED
 
 ## Employment outcome
 Student can calculate and compare load economics using total trip miles and carrier-specific costs, distinguish revenue/cash flow/profit concepts, identify loaded-mile blindness, evaluate accessorial/factoring/quick-pay effects, identify material unknowns, calculate a carrier-supported economic threshold when sufficient criteria exist, and issue a defensible TAKE / COUNTER / HOLD FOR DATA / DECLINE recommendation while preserving carrier final decision authority.
@@ -27,73 +27,116 @@ Student can calculate and compare load economics using total trip miles and carr
 Gross revenue; loaded RPM; effective RPM; deadhead; total trip miles; fuel cost; operating cost; contribution margin; break-even; detention; layover; TONU; lumper; multi-stop; factoring; quick pay; dispatcher compensation; positioning; material unknown; HOLD FOR DATA; carrier decision criterion.
 
 ## Student manual
-Existing three production-draft parts remain active and substantial. A premium occupational decision addendum was added:
-
+Three production-draft manual parts remain active. Premium occupational decision protocol:
 - `02-CURRICULUM/Module-07/Student-Manual-Premium-Decision-Protocol.md`
 
-It closes the gap between formula practice and SIM-007 by teaching P/U/A input classification, materiality, HOLD FOR DATA, arithmetic counter thresholds, changed-evidence recalculation, possible-versus-current revenue control, and decision-record discipline.
-
-Status remains pre-release; no publication claim is authorized.
+The protocol teaches P/U/A input classification, materiality, HOLD FOR DATA, arithmetic counter thresholds, changed-evidence recalculation, possible-versus-current revenue control and decision-record discipline.
 
 ## Student tools
 Active tools:
-- `04-STUDENT-TOOLS/Module-07-Tools/Module-07-Calculation-Worksheet.md` — premium decision controls added 2026-09-05.
-- `04-STUDENT-TOOLS/Module-07-Tools/Module-07-Load-Comparison-Worksheet.md` — premium comparison/evidence controls added 2026-09-05.
-- `04-STUDENT-TOOLS/Module-07-Tools/Module-07-Carrier-Onboarding-Cost-Information-Worksheet.md` — active.
+- `04-STUDENT-TOOLS/Module-07-Tools/Module-07-Calculation-Worksheet.md`
+- `04-STUDENT-TOOLS/Module-07-Tools/Module-07-Load-Comparison-Worksheet.md`
+- `04-STUDENT-TOOLS/Module-07-Tools/Module-07-Carrier-Onboarding-Cost-Information-Worksheet.md`
 
-The calculation/comparison tools now distinguish provided/verified, unknown/unresolved, and fictional training assumptions; prohibit silent unknown-to-zero conversion; support HOLD FOR DATA; and record TAKE / COUNTER / HOLD / DECLINE reasoning.
+The calculation/comparison tools distinguish provided/verified, unknown/unresolved and fictional training assumptions; prohibit silent unknown-to-zero conversion; support HOLD FOR DATA; and record TAKE / COUNTER / HOLD / DECLINE reasoning.
 
 ## Assessment chain
 - Module 07 Knowledge Check — CREATED / diagnostic.
-- Module 07 Exam — CREATED. Existing critical items include Unsupported Revenue and Profit Mislabeling.
+- Module 07 Exam — CREATED.
 - Exam answer key — CREATED.
-- Practical — EXISTS; explicitly treats unearned detention counted as guaranteed/current revenue as a critical failure.
+- Practical — EXISTS; includes unsupported/unearned-revenue control.
 - Practical scoring guide — CREATED; arithmetic independently rechecked 2026-09-05.
-- Full SIM-007 alignment gate remains required after the runtime/build handoff.
+- Premium decision knowledge check + key — CREATED.
 
 ## Instructor controls
-Existing full guide remains active with this controlling premium addendum:
-
+Existing full guide remains active with controlling addendum:
 - `03-ASSESSMENTS/Instructor-Guides/Module-07-Premium-Alignment-Addendum.md`
 
-The addendum reconciles stale critical-failure wording by distinguishing assessment-inherited controls from SIM-007-specific occupational controls.
+The addendum distinguishes assessment-inherited controls from SIM-007-specific occupational controls.
 
-## Simulation
-**SIM-007 — Rate & Profitability Decision Desk**
-
-Approved design/spec:
+## SIM-007 — Rate & Profitability Decision Desk
+Approved design:
 - `10-PRODUCTION/Module-07-SIM-007-Design-Spec-2026-09-05.md`
 
 Implementation plan:
 - `10-PRODUCTION/Module-07-SIM-007-Implementation-Plan-2026-09-05.md`
 
-Current state: **HEAVY BUILD IN PROGRESS / INDEPENDENT CHATGPT QA REQUIRED AFTER HANDOFF.**
+Permanent simulation package:
+- `05-SIMULATIONS-AND-GAMES/Module-07/SIM-007-Student-Instructions.md`
+- `05-SIMULATIONS-AND-GAMES/Module-07/SIM-007-Scenario-and-Evidence-Packet.md`
+- `05-SIMULATIONS-AND-GAMES/Module-07/SIM-007-Instructor-Guide.md`
+- `05-SIMULATIONS-AND-GAMES/Module-07/SIM-007-Scoring-and-Competency-Map.md`
+- `05-SIMULATIONS-AND-GAMES/Module-07/SIM-007-Completion-and-Competency-Record.md`
+- browser runtime + README + automated tests.
 
-Do not mark SIM-007 complete from a builder completion statement alone. Inspect actual committed files, recompute case math, run logic/alignment tests, repair defects, and create permanent QA evidence first.
+Verified runtime architecture:
+- exactly 10 progressive stages;
+- 33 meaningful decisions;
+- all 18 approved competencies;
+- numeric tolerance controls;
+- HOLD FOR DATA;
+- TAKE / COUNTER / HOLD / DECLINE reasoning;
+- changed-evidence recalculation;
+- total-trip counter threshold;
+- printable competency summary.
 
-## Source / regulatory controls
-Where broker transaction-record rights or other legal rules are taught, use authoritative source control. Market/fuel figures used for arithmetic must be clearly labeled current-source data or fictional training data. Do not present fictional rates, fuel prices, fee percentages, tolls, or accessorial amounts as universal benchmarks.
+## Exactly five critical-failure families
+- CF-01 Unsupported revenue
+- CF-02 Profit mislabeling
+- CF-03 Loaded-mile blindness
+- CF-04 Fabricated input
+- CF-05 Carrier-authority override
 
-## Production audit
-Current premium repository audit:
-- `10-PRODUCTION/Module-07-Premium-Repository-Audit-2026-09-05.md`
+CF-01/CF-02 inherit the existing assessment chain. CF-03–CF-05 are simulation-specific occupational controls.
 
-Verified findings include sound core arithmetic and a prior gap in missing-data/HOLD decision discipline, now repaired at curriculum/tool/instructor-control level pending SIM validation.
+## Remediation control
+- first-attempt evidence remains immutable;
+- a critical trigger cannot be erased by same-screen correction;
+- each critical family has a materially different reassessment case;
+- corrected/original/reassessment evidence is recorded separately;
+- resolved critical history is labeled `RESOLVED_BY_REASSESSMENT` rather than rewritten as no failure observed.
 
-## Completion gate
-Module 07 cannot close until all of the following are verified against actual repository files:
+## Arithmetic verification
+Independent 2026-09-05 recomputation verified:
+- Alpha: 790 total miles; effective RPM ≈ $2.89; fuel ≈ $472.80; 5% contribution margin ≈ $1,693.20; 7% contribution margin ≈ $1,647.60.
+- Bravo: 580 total miles; effective RPM ≈ $3.21; fuel ≈ $347.12; 5% contribution margin ≈ $1,374.88; 7% contribution margin ≈ $1,337.68.
+- Charlie: 680 total miles; effective RPM ≈ $2.96; fuel ≈ $406.97; 5% contribution margin ≈ $1,482.53; 7% contribution margin ≈ $1,442.33.
+- Charlie fictional 3% quick-pay fee $60.30; resulting 5%-case margin $1,422.23.
+- Alpha $3.00 effective-RPM counter threshold = $2,370 using 790 total trip miles.
 
-1. premium instructional chain teaches every material SIM-007 competency;
-2. assessment and critical-control terminology are aligned;
-3. calculation/tool arithmetic is correct;
-4. professional-language fluency is enforced;
-5. SIM-007 actual runtime/package passes independent content/runtime tests;
-6. first-attempt and remediation evidence behave as specified;
-7. permanent QA record is created;
-8. remaining browser/device/LMS/manual-accessibility/durable-record release QA is explicitly deferred rather than misrepresented as complete.
+## Automated verification
+GitHub Actions workflow: `SIM-007 Runtime Tests`  
+Run ID: `33979935097`  
+Tested commit: `f797020c2c75238b0c0df730a34edbf4a6414a3d`  
+Conclusion: **success**
 
-Passing the premium content/runtime build gate permits only:
+The full test command covers logic, premium critical-remediation/state controls and package alignment.
 
-**BUILD COMPLETE — RELEASE QA DEFERRED**
+Independent QA:
+- `10-PRODUCTION/SIM-007-Premium-Content-QA-2026-09-05.md`
 
-It does not permit `PUBLICATION_READY` or a merge to `main`.
+QA result: **PASS — BUILD COMPLETE / RELEASE QA DEFERRED**.
+
+## Source / currentness controls
+Market/fuel figures used for arithmetic are explicitly fictional training data rather than universal/current benchmarks. Any future legal/regulatory statement added to the module must be reverified against authoritative sources before commercial release.
+
+## Premium gate result
+The module passes the content/runtime build gate for:
+- **Google Test:** teaches decision discipline beyond generic RPM formulas.
+- **Employment Test:** learner performs real load-economics calculations, comparison, changed-evidence recalculation, HOLD decisions, counter-threshold math and carrier briefing.
+- **Buyer Test:** manuals, tools, assessments, instructor controls, simulation, remediation and competency records form a coherent occupational package.
+
+## Release status rule
+Current truthful status:
+
+**SIM-007 — BUILD COMPLETE — RELEASE QA DEFERRED**
+
+Still deferred before `PUBLICATION_READY`:
+- browser/device compatibility QA;
+- production deployment validation;
+- LMS/student-account integration;
+- durable competency records;
+- manual accessibility QA;
+- assembled final release packaging QA.
+
+Nothing here authorizes a merge to `main`.
