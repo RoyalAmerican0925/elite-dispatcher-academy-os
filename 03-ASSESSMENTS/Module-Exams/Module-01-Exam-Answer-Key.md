@@ -1,56 +1,89 @@
 # Module 01 Exam — Instructor Answer Key
 
-**Instructor use only.** Keep separate from the student edition.
-**Corresponds to:** `03-ASSESSMENTS/Module-Exams/Module-01-Exam.md`
-**Status:** DRAFT_COMPLETE — instructor review required before PUBLICATION_READY
+**Instructor use only.** Keep separate from the student edition.  
+**Corresponds to:** `03-ASSESSMENTS/Module-Exams/Module-01-Exam.md`  
+**Status:** ACTIVE PREMIUM ASSESSMENT CONTROL — release/current-source QA remains separate
 
 ## Answer Key
 
 ### Part A — Roles
-1. **b** — Broker definition: arranges transportation without taking possession of freight.
-2. **b** — Carrier-side dispatch model: dispatcher represents the motor carrier.
-3. **c** — The motor carrier, through its driver, physically transports freight.
-4. **b** — A dispatcher does not physically operate the truck; that's the driver's role.
+1. **b**  
+2. **b**  
+3. **c**  
+4. **b** — Driving the tractor-trailer is the driver/motor-carrier transportation function. Communication/tracking alone does not make the dispatcher the motor carrier or broker.
 
-### Part B — USDOT vs. Operating Authority
-5. **b** — USDOT number: registered identifier for FMCSA safety/registration purposes.
-6. **b** — Operating authority: legal permission to operate as for-hire carrier/broker/forwarder in interstate commerce.
-7. **b** — A company can have a USDOT number without holding the specific operating authority its function requires; these are separate registrations.
-8. **b** — Correct distinction: USDOT number identifies the entity; operating authority is the separate legal permission for specific operations.
+### Part B — USDOT / Operating Authority
+5. **b**  
+6. **b**  
+7. **b**  
+8. **b**
 
-### Part C — Factoring Company
-9. **b** — Purchases outstanding invoices at a discount for faster payment.
-10. **b** — Cash flow / faster payment than standard shipper/broker terms.
-11. **c** — The factoring company's relationship is with the carrier, purchasing that carrier's receivables.
+### Part C — Factoring / Payment Foundation
+9. **b**  
+10. **b**  
+11. **b**
 
-### Part D — DOT and FMCSA
-12. **b** — FMCSA is the agency within DOT focused on motor carrier safety/registration.
-13. **c** — DOT is the broader federal transportation department that FMCSA operates within.
-14. **b** — FMCSA is a subagency of DOT and is the specific agency for that verification.
+### Part D — DOT / FMCSA / Classification Discipline
+12. **b**  
+13. **b**  
+14. **c** — Geography of the visible truck leg alone is not enough for every legal interstate/intrastate conclusion.
 
 ### Part E — True / False
-15. **False** — Intrastate vs. interstate classification depends on more than whether a specific truck crosses a state line on a specific trip; the nature of the shipment's origin/destination and commerce classification matters, not just this single trip's route. (Instructor note: expect students to explain that "never crosses a state line" on a given move does not automatically settle interstate/intrastate classification for regulatory purposes — this is a common oversimplification error to correct.)
-16. **False** — Private carriers are not automatically exempt from USDOT numbering; the requirement can depend on vehicle weight and operation type, not private-carrier status alone.
-17. **False** — Freight forwarders and freight brokers do not carry identical legal responsibilities; they are distinct regulatory categories.
+15. **False.** Present information may still be stale, conflicting, copied, or otherwise require verification.  
+16. **False.** Missing is not zero. Record UNKNOWN unless a legitimate source establishes a true zero.  
+17. **False.** Broker and freight-forwarder categories are distinct.
 
-### Part F — Scenario: Cascade Millwork
-18. **c** — The distribution center in Reno is the consignee (the party receiving the freight).
-19. **a** — Cascade Millwork is the shipper (the party tendering the freight for transport).
-20. **b** — The broker arranged transportation between Cascade Millwork and the carrier without transporting the freight itself.
-21. **b** — The carrier's MC (or equivalent) operating authority number is the relevant identifier for verifying authority to conduct for-hire transportation.
-22. **b** — The dispatcher is representing the carrier and sourcing/coordinating the load on the carrier's behalf — communicating with a broker does not make the dispatcher a broker.
+### Part F — Cascade Millwork
+18. **c**  
+19. **a**  
+20. **b**  
+21. **b**  
+22. **b**
+
+### Part G — Freight File Decision Desk
+23. **c — VERIFY.** The broker message says FCFS 07:00–14:00 while a copied internal note says 10:00 appointment. The learner must identify and resolve the conflict rather than choose a favorite source silently.
+
+24. **b — UNKNOWN.** Commodity is absent.
+
+25. **b.** Correct M01 behavior is STOP → identify supplied facts/contradictions → trace the information/document state → verify material unknowns/conflicts → hand off to the correct next workflow.
+
+26. **b.** Messages are information/communication. A rate confirmation is a commercial document and is not yet present in the scenario.
+
+27. **a.** M01 recognizes the deadhead/positioning fact but does not perform M07 profitability mathematics.
+
+28. **b.** Absence of special instructions is an UNKNOWN field, not proof that no instructions exist.
+
+29. **b.** Equipment/weight fit belongs to Module 03 once sufficient facts are available.
+
+30. **Constructed response — 4 evidence elements required.** Full-credit response should contain:
+- at least two known facts, e.g. North Star carrier, Dallas truck location, Fort Worth→Little Rock city pair, 41,000-lb stated weight, $1,600 stated offer;
+- at least two unresolved/verification facts, including pickup-time contradiction and commodity/special-instruction gaps;
+- next action: hold in information-gathering/verification status and reconcile the controlling pickup facts/material missing information;
+- at least one correct later-workflow handoff such as M03 equipment fit, M06 broker/contact verification, M07 profitability, M09 formal booking/document review, M10 trip planning, or M11 HOS.
+
+A response loses credit if it books/accepts the load, declares profitability, assumes “no special instructions,” or silently resolves the conflicting pickup information.
 
 ## Scoring
 
-Passing standard: 80% (18/22). No critical-failure items in this module.
+30 items total.  
+**Pass:** 24/30 (80%).
+
+For Item 30, award one point only when all four required evidence categories are present. For course analytics, instructors may separately record which category was missing even though the exam item remains one point.
+
+No automatic M01 critical-failure family is designated. However, a learner who passes numerically while repeatedly converting missing/conflicting facts into assumptions must complete remediation before M01 competency is recorded.
 
 ## Remediation Routing
 
 | Missed items | Route student to |
 |---|---|
-| 1–4 | Student Manual, role-definitions sections (broker/carrier/dispatcher/driver) |
-| 5–8 | Student Manual, USDOT number vs. operating authority sections |
-| 9–11 | Student Manual, factoring company section |
-| 12–14 | Student Manual, DOT/FMCSA relationship section |
-| 15–17 | Student Manual, interstate/intrastate and carrier-type sections |
-| 18–22 | Student Manual, Section 12 (Northgate Produce scenario pattern) and consignee/shipper definitions |
+| 1–4 | Manual role sections + Freight Role Map |
+| 5–8 | USDOT/operating-authority instruction + current-source instructor note |
+| 9–11 | Four-flow payment/document instruction |
+| 12–17 | regulatory/classification and KNOWN/UNKNOWN/VERIFY sections |
+| 18–22 | role and physical-flow scenario work |
+| 23–30 | Part 04 + Dispatch File Intake & Verification Map + STOP framework |
+
+For assumption-control failure, retest with a materially different fictional freight file. Do not merely reveal the original expected answer and repeat the same fact pattern.
+
+## Currentness Control
+FMCSA registration/authority terminology, docket-display practices and related platform wording must be reverified against current authoritative sources before commercial release.
