@@ -1,119 +1,131 @@
 # Module 06 Master Branch — Broker Verification & Fraud Prevention
 
-**Control status:** LIVE SCOPE VERIFIED / CURRENT-SOURCE SUPPLEMENT COMPLETE / FULL G-013 INDEPENDENT RESEARCH STILL OPEN / PRODUCTION NOT YET UNLOCKED
+**Control status:** G-013 RECONCILIATION COMPLETE / TARGETED PRODUCTION LAYERS BUILT / SIM-006 + FINAL PREMIUM QA OPEN
 
 ## Verified scope
-Live Module 06 student manual identifies the module as **Broker Verification & Fraud Prevention**.
+Module 06 is **Broker Verification & Fraud Prevention**.
 
-## Intended employment outcome
-Student should be able to perform a structured broker/opportunity verification workflow, distinguish entity legitimacy from the identity of the person contacting the carrier, recognize fraud indicators, preserve evidence, and stop/escalate when verification fails. Final competency wording must be reconciled to G-013 research and the complete live Module 06 package before production.
+## Employment outcome
+Student can receive a suspicious or incomplete broker transaction, isolate claims, verify the entity, independently authenticate the contact, cross-check load/documents, protect the payment path, preserve evidence, classify risk, and issue a defensible proceed/verify/hold/escalate/decline decision without unsupported accusations.
 
-## Core operating model already present
-The current manual establishes:
+## Core models
+Student memory model:
 
 **VERIFY THE ENTITY → VERIFY THE CONTACT → VERIFY THE LOAD → VERIFY THE PAYMENT PATH**
 
-and a decision discipline of observing/cross-checking/verifying/documenting before classifying the risk as CLEAR, CLEAR WITH DOCUMENTED QUALIFICATION, VERIFY, HOLD, ESCALATE, DO NOT USE or DO NOT BOOK.
+Operational desk model:
 
-That existing framework is a strong foundation but must still pass the Academy premium-depth test after independent research.
+**RECEIVE → ISOLATE CLAIMS → VERIFY ENTITY → AUTHENTICATE CONTACT → CROSS-CHECK LOAD/DOCUMENTS → VERIFY PAYMENT PATH → RECORD EVIDENCE → CLASSIFY RISK → PROCEED / VERIFY / HOLD / ESCALATE / DECLINE**
 
-## Required professional-language families
+The four-layer model is the memory model; the longer sequence is the execution model.
+
+## Professional-language families
 Broker authority; entity identity; contact identity; impersonation; double brokering; co-brokering; fraudulent load; surety/trust; BMC-84/BMC-85; verification source; trusted callback; domain/email verification; rate confirmation; payment instruction; payment redirection; red flag; evidence; risk classification; hold; escalation; DNU/carrier policy; Motus; SAFER; legacy L&I.
 
-## Verified live component inventory
-The current repository already contains substantial Module 06 production material:
+## Verified production inventory
+The repository now contains:
 - five Module 06 curriculum/manual files;
 - Module 06 Knowledge Check;
 - 28-item Module 06 Exam + answer key;
 - 12-scenario Module 06 Scenario Lab;
 - Instructor Answer Guide;
-- current-source/regulatory verification controls.
+- seven dedicated Module 06 operational tools;
+- integrated `Broker Verification Case Desk` graded practical;
+- dedicated practical scoring guide;
+- full Module 06 Instructor Guide;
+- current-source/regulatory verification controls;
+- completed G-013 independent research and repository reconciliation.
 
-Confirmed product gaps from the deep inventory remain:
-- no dedicated `04-STUDENT-TOOLS/Module-06-Tools/` directory in the inspected snapshot;
-- no dedicated `03-ASSESSMENTS/Practical-Assessments/Module-06-Practical.md` in the inspected snapshot;
-- no SIM-006 build/package yet;
-- full instructor-guide product layer still requires audit/upgrade under the Academy standard.
+The earlier snapshot claims that the tool package, practical and full Instructor Guide were missing are superseded by the actual files now present on `academy-master-architecture`.
 
-These are product gaps, not evidence that the existing Module 06 content is weak; they are missing parts of the complete teach → practice → assess → simulate → record chain.
+## Seven operational tools
+1. Broker Verification Evidence Record
+2. Entity vs Contact Authentication Worksheet
+3. Trusted Callback Verification Record
+4. Load & Document Cross-Check Sheet
+5. Payment-Instruction Change Verification Record
+6. Risk Classification & Decision Record
+7. Verification Evidence & Escalation Packet
 
-## Current-source reconciliation — 2026-08-30
-`00-PROJECT-CONTROL/MODULE-06-CURRENT-SOURCE-RECONCILIATION-2026-08-30.md` supplements the August 19 verification.
+These tools convert verification into documented desk work and are deliberately deeper than Module 05 first-pass sourcing forms.
 
-High-risk federal controls were rechecked against current eCFR/Federal Motor Carrier Safety Administration materials.
+## Assessment chain
+### Knowledge / practice
+- Knowledge Check — EXISTS.
+- 12-scenario lab — EXISTS and remains guided practice, not the secure graded practical.
 
-### Confirmed distinctions
-- Broker financial-responsibility baseline: **$75,000**, BMC-84/BMC-85 under current 49 CFR § 387.307.
-- BMC-85 acceptable trust assets: capable of liquidation to cash within **7 calendar days** — asset-liquidity rule.
-- Current § 387.307(e)(5)–(6) FMCSA notice/suspension response period: **7 business days** after service of the relevant notice.
-- Current BMC-85 trustee/provider ineligibility replacement scenario: **30 days** for affected brokers/freight forwarders to obtain a compliant replacement filing before suspension under current FMCSA guidance.
-- Motus remains the current FMCSA registration environment; legacy L&I remains historical-record review and does not reflect current Motus filings according to current FMCSA guidance.
+### Final exam
+- 28 items.
+- Pass: **26/28 (90%) plus Critical Items 25 and 27 correct**.
+- Critical Item 25 protects against unverified payment redirection.
+- Critical Item 27 protects against unsupported fraud conclusions from inconclusive indicators.
 
-### Agency-summary precision control
-A current FMCSA overview page uses simplified “7 calendar days” shortfall language, while the current eCFR notice/suspension provisions expressly use 7 business days. The Academy will use the exact regulatory context in graded content and will not collapse the separate clocks into one generic rule.
+### Integrated practical
+**Broker Verification Case Desk — EXISTS.**
 
-### Repository state after recheck
-Current Student Manual Part 01, Instructor Answer Guide and Exam Items 5–7 already reflect the required 30-day / 7-business-day / 7-calendar-day distinctions. No repair is required to those inspected passages in this branch snapshot.
+Pass: **24/30 plus no critical failure.**
 
-## Research gate
-G-013 independent research/regulatory QA remains authorized and is still required by the established production workflow. It must independently evaluate:
-- actual occupational broker-verification workflow;
-- evidence/documentation practices;
-- failure modes and beginner misconceptions;
-- fraud/impersonation/payment-redirection patterns appropriate for dispatcher training;
-- primary-source regulatory controls;
-- competitor/training-depth gaps;
-- tool requirements;
-- practical-assessment concepts;
-- simulation concepts;
-- commercial-value opportunities that are not merely searchable facts.
+Critical-failure families:
+1. acts on unverified/contradicted payment redirection;
+2. treats active/real broker entity as proof an unverified contact is authorized;
+3. proceeds through confirmed impersonation/contact contradiction;
+4. knowingly books in a supplied case where required broker authority is verified inactive;
+5. declares fraud/double brokering solely from ambiguous duplicate/similar postings or other inconclusive indicators;
+6. bypasses a material unresolved identity/document/payment mismatch rather than HOLD/VERIFY/ESCALATE.
 
-The current-source supplement does not replace G-013 because it verifies high-risk current federal facts rather than independently benchmarking the complete occupational training need.
+## Instructor product
+A full Module 06 Instructor Guide now exists and covers employment outcome, preparation, facilitation, professional language, tools, assessment administration, critical failures, diagnostic remediation, source/currentness control, SIM-006 alignment and closeout.
 
-## Tool architecture — preliminary, not yet production-unlocked
-Based on the verified current curriculum and missing-component inventory, likely tool families to test against G-013 include:
-- Broker Verification Record / evidence log;
-- Entity vs. Contact Verification Worksheet;
-- Trusted Callback Verification Record;
-- Load/Document Cross-Check Sheet;
-- Payment-Instruction Change Verification Record;
-- Red-Flag / Risk Classification Matrix;
-- HOLD / ESCALATE / DO NOT USE / DO NOT BOOK decision record;
-- verification-source log with date/time/source/result;
-- handoff/escalation evidence packet.
+An answer key remains separate from the full Instructor Guide.
 
-Do not build these simply because they sound useful. G-013 and repo reconciliation must confirm which are distinct occupational tools versus duplicate forms already owned by Module 05 or later modules.
+## Current-source controls
+Current federal controls retained in the course include:
+- broker financial-responsibility baseline: **$75,000**, BMC-84/BMC-85 under current 49 CFR § 387.307;
+- BMC-85 acceptable trust-asset liquidity context: **7 calendar days**;
+- current § 387.307 notice/suspension response context: **7 business days**;
+- current BMC-85 trustee/provider ineligibility replacement context: **30 days** under the applicable FMCSA guidance;
+- Motus as the current FMCSA registration environment, with legacy L&I treated as historical-record review rather than current filing display.
 
-## Practical architecture — preliminary
-A future Module 06 graded practical should require integrated verification rather than a quiz-like list of red flags. Candidate structure after research validation:
-1. known broker entity + unfamiliar contact;
-2. current authority/status check;
-3. contact-channel mismatch;
-4. document identity/MC mismatch;
-5. suspicious or changed payment instruction;
-6. factor/credit signal that is risk evidence but not proof of fraud;
-7. duplicate/similar posting that requires verification rather than accusation;
-8. student evidence log and final CLEAR / VERIFY / HOLD / ESCALATE / DO NOT USE / DO NOT BOOK decision.
+Do not collapse those separate clocks into a single generic seven-day rule. Reverify date-sensitive procedures before publication.
 
-The practical must force the student to explain what evidence supports the status and what remains unresolved.
+## G-013 status
+**COMPLETE AND RECONCILED.**
 
-## SIM-006 architecture
-**SIM-006 — Broker Verification & Fraud Prevention Desk** remains design-controlled until G-013 reconciliation.
+`10-PRODUCTION/Module-06-G-013-Repository-Reconciliation-2026-09-02.md` unlocked the targeted production build. The prior language saying G-013 was still open or production was locked is stale and no longer controls.
 
-Likely occupational spine, subject to research confirmation:
-**ENTITY → CONTACT → LOAD → DOCUMENT → PAYMENT PATH → EVIDENCE → RISK CLASSIFICATION → PROCEED / HOLD / ESCALATE / DECLINE**
+## SIM-006
+**SIM-006 — Broker Verification & Fraud Prevention Desk**
 
-The simulation should use progressive events and incomplete information rather than obvious “spot the scam” questions.
+Status: **NOT YET VERIFIED BUILT ON THIS BRANCH.**
+
+Locked simulation contract:
+- progressive verification desk, not a quiz;
+- plausible broker/load offer;
+- authoritative entity evidence;
+- contact/channel inconsistency;
+- trusted callback decision;
+- document mismatch;
+- financial-security/current-status interpretation;
+- factor/credit signal;
+- duplicate/re-brokering ambiguity;
+- payment-change event;
+- urgency/social-pressure event;
+- later evidence changing case state;
+- evidence preservation and escalation handoff;
+- critical controls aligned to the practical;
+- first-attempt, remediation, corrected-decision and competency evidence retained.
 
 ## Boundary controls
-- Module 05 teaches sourcing, screening and first-pass verification/flagging.
-- Module 06 deepens entity/contact/load/payment verification and fraud-prevention judgment.
-- Module 07 teaches advanced rate mathematics/profitability.
-- Module 09 will later own deeper booking/rate-confirmation workflow under verified scope.
-- Module 14 will later own deeper billing/factoring/closeout workflow under verified scope.
-- Avoid duplicate instruction unless deliberate spaced practice has a new competency purpose.
+- Module 05 owns sourcing, screening and first-pass verification/flagging.
+- Module 06 owns deeper entity/contact/load/document/payment-path verification and evidence-based risk classification.
+- Module 07 owns advanced rate mathematics/profitability.
+- Module 09 owns deeper booking/rate-confirmation workflow.
+- Module 14 owns deeper billing/factoring/closeout operations.
+- Avoid duplicate instruction unless deliberate spaced practice serves a new competency purpose.
 
 ## Completion gate
-**G-013 independent research → ChatGPT reconciliation → production unlock decision → targeted tools/practical/instructor repair → assessment alignment → SIM-006 design/build → premium-depth QA.**
+**Targeted curriculum/tool/practical/instructor build: BUILT.**  
+**G-013 reconciliation: CLOSED.**  
+**Remaining:** assessment-chain final synchronization check → SIM-006 design/build/test/repair → premium-depth/current-source completion QA → later assembled release QA.
 
-Production remains locked until the independent research/reconciliation gate is satisfied or the project owner explicitly changes that workflow.
+Module 06 is **not** `PUBLICATION_READY`.
