@@ -1,6 +1,6 @@
 # Elite Dispatcher Academy — Architecture Completion Matrix
 
-**Control date:** 2026-09-04  
+**Control date:** 2026-09-05  
 **Branch:** `academy-master-architecture`  
 **Authority note:** This matrix tracks architecture and verified asset existence. Current completion percentages and deadline priority are controlled by `ACADEMY-COMPLETION-DEADLINE-CONTROL-2026-09-04.md`. Historical claims superseded by verified later assets have been purged from live status rows.
 
@@ -22,7 +22,7 @@
 | M03 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-003 BUILD COMPLETE — RELEASE QA DEFERRED | full guide VERIFIED EXISTS | final currentness remains | PREMIUM RE-AUDIT OPEN |
 | M04 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-004 BUILD COMPLETE — RELEASE QA DEFERRED | full guide VERIFIED EXISTS | date-sensitive pre-publication check remains | INSTRUCTIONAL/SIM BUILD GATE CLOSED; RELEASE QA OPEN |
 | M05 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-005 BUILD COMPLETE — RELEASE QA DEFERRED; independent premium inheritance check remains | full guide VERIFIED EXISTS | platform-currentness/premium audit remains | PREMIUM RE-AUDIT OPEN |
-| M06 | REPRESENTED; G-013 reconciliation gate | dedicated complete package MISSING | VERIFIED EXISTS | MISSING graded practical | SIM-006 MISSING | full guide held pending reconciliation | current-source supplement exists; reconciliation remains | PRODUCTION LOCKED PENDING G-013 |
+| M06 | REPRESENTED; G-013 COMPLETE/RECONCILED | seven-tool package VERIFIED EXISTS | VERIFIED EXISTS | 30-point graded practical + scoring VERIFIED EXISTS | SIM-006 MISSING | full guide VERIFIED EXISTS | current-source reconciliation exists; final pre-publication/currentness QA remains | TARGETED PRODUCTION BUILD ADVANCED; SIM + PREMIUM QA OPEN |
 | M07 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-007 MISSING | full guide VERIFIED EXISTS | pre-publication currentness remains | SUBSTANTIAL DRAFT / PREMIUM + SIM OPEN |
 
 ## Modules 08–15
@@ -46,9 +46,9 @@ Required competency dependency:
 
 ## Architecture-level blockers remaining
 1. Complete controlled M01 premium branch reconciliation and then synchronize assessment/instructor/SIM evidence.
-2. Complete/reconcile Module 06 G-013 research gate before building its missing production layers.
+2. Build/test/reconcile SIM-006 and close Module 06 assessment/premium/current-source QA; G-013 and the targeted tools/practical/Instructor Guide are already built.
 3. Close M08 SIM-008 curriculum alignment and premium/current-source QA.
-4. Build SIM-006, SIM-007 and SIM-009–SIM-015 under their module curriculum locks.
+4. Build SIM-007 and SIM-009–SIM-015 under their module curriculum locks.
 5. Build M09–M15 production assets sequentially; do not confuse scope controls with finished courseware.
 6. Resolve branch divergence with `main` only through separately authorized reconciliation.
 7. Complete connected/release architecture after core master production stabilizes.
