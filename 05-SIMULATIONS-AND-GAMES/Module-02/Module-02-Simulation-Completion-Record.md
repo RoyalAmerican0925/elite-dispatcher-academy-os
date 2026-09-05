@@ -1,73 +1,47 @@
 # SIM-002 — Module 02 Agency Boundary Desk — Completion Record
 
-**Status:** BUILD COMPLETE — RELEASE QA DEFERRED  
-**Purpose:** Per-student record for first-attempt performance, remediation, final mastery, critical-decision handling, and instructor review.
+**Status:** BUILD COMPLETE — RELEASE QA DEFERRED
 
-## Student Information
+## Learner / Session
+- Learner: ______________________________
+- Student ID: ___________________________
+- Instructor: ___________________________
+- Date started: _________________________
+- Date completed: _______________________
+- Runtime/session reference: ____________
 
-- Student Name / ID: ______________________________
-- Simulation ID: SIM-002
-- Date started: __________________
-- Date completed: __________________
+## Performance
+| Measure | Result |
+|---|---|
+| First-attempt performance | ____ / 15 |
+| Final mastery | ____ / 15 |
+| Decisions requiring remediation | ____ |
+| Triggered high-stakes families | ____ |
+| Unresolved high-stakes families | ____ |
 
-## Decision Record
+## High-Stakes History and Alternate Reassessment
+| Family | Main decision | Triggered? | Trigger timestamp | Same-screen final mastery | Alternate scenario ID | Reassessment result | Reassessment timestamp | Final family state |
+|---|---|---|---|---|---|---|---|---|
+| M02-CF-01 | D06 — discretionary allocation | ☐ Yes ☐ No | ______ | ☐ Correct ☐ Not yet | ______ | ☐ Pass ☐ Remediate | ______ | ☐ Not triggered ☐ Required ☐ Resolved |
+| M02-CF-02 | D10 — return vs redirect | ☐ Yes ☐ No | ______ | ☐ Correct ☐ Not yet | ______ | ☐ Pass ☐ Remediate | ______ | ☐ Not triggered ☐ Required ☐ Resolved |
+| M02-CF-03 | D13 — label vs conduct | ☐ Yes ☐ No | ______ | ☐ Correct ☐ Not yet | ______ | ☐ Pass ☐ Remediate | ______ | ☐ Not triggered ☐ Required ☐ Resolved |
 
-| Decision ID | Competency | First Attempt | Remediation? | Final Mastery | Instructor Review? |
-|---|---|---|---|---|---|
-| SIM02-D01 | Principal identification | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D02 | Known/unknown + source control | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D03 | Carrier-side classification | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D04 | Controlling facts | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D05 | Freight-source tracing | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D06 | Allocation-risk recognition | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D07 | Risk-factor discrimination | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D08 | Multiple-carrier reasoning | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D09 | Non-overlap / no-safe-harbor reasoning | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D10 | Return vs reassignment | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D11 | Allocation + compensation reasoning | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D12 | Label vs conduct | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D13 | Actual-conduct classification | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D14 | Insufficient-information operational response | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
-| SIM02-D15 | Full eight-stage workflow | ☐ Correct ☐ Incorrect | ☐ Yes ☐ No | ☐ Yes ☐ No | ☐ Yes ☐ No |
+**Control:** a same-screen correction does not erase a triggered family. Resolution requires a materially different reassessment and the original trigger remains part of the evidence history.
 
-## High-Stakes Review Decisions
+## Competency Evidence
+Record Mastered / Mastered After Remediation / Needs Instructor Review / In Progress for A–H and note the supporting decision(s).
 
-Repeated error on SIM02-D06, D10, or D13 invokes the runtime instructor-review rule. Record the failed reasoning pattern, remediation assigned, alternate evidence used, and the final resolution.
+## Completion Gate
+☐ All 15 decisions at final mastery  
+☐ Every triggered high-stakes family resolved by alternate reassessment  
+☐ First-attempt evidence preserved separately  
+☐ Remediation/reassessment history recorded  
+☐ No false-safe-harbor reasoning remains unresolved  
 
-## Full Workflow Evidence
+## Instructor Disposition
+☐ Simulation instructional completion recorded  
+☐ Additional remediation required  
 
-Before closeout, confirm the learner can apply:
+Instructor signature: ____________________  Date: __________
 
-**STOP → IDENTIFY → TRACE → CHECK → CLASSIFY → ACT → DOCUMENT → ESCALATE**
-
-☐ Identifies represented principal  
-☐ Traces freight source  
-☐ Separates verified facts from unknowns  
-☐ Recognizes allocation discretion  
-☐ Uses insufficient information instead of guessing  
-☐ Rejects false categorical safe harbors  
-☐ Chooses a defensible operational action  
-☐ Documents reasoning and follow-up ownership  
-☐ Escalates with a specific professional handoff when required
-
-## Summary
-
-- **FIRST-ATTEMPT SCORE:** ______ / 15
-- **REMEDIATION COUNT:** ______
-- **FINAL MASTERY:** ______ / 15
-- **UNRESOLVED HIGH-STAKES DECISIONS:** ______________________________
-- **INSTRUCTOR CLOSEOUT:** ☐ Approved ☐ Additional remediation required
-
-## Simulation Status
-
-☐ **IN PROGRESS**  
-☐ **COMPLETE** — 15/15 final mastery and no unresolved instructor-review condition  
-☐ **INSTRUCTOR REVIEW REQUIRED** — decision(s): ______________________
-
-## Instructor Notes
-
-____________________________________________________________________________
-
-____________________________________________________________________________
-
-**Release note:** Completion of this record is instructional evidence only. Production LMS persistence, deployment, browser/device QA, accessibility QA, and final publication controls remain separate.
+**Record limitation:** this form/browser runtime is not a claim of durable LMS/student-account persistence. Production durable records, browser/device QA, manual accessibility QA and final release QA remain deferred.
