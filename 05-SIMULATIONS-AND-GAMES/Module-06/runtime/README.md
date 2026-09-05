@@ -1,55 +1,81 @@
-# SIM-006 Runtime — Broker Verification & Fraud Prevention Command Desk
+# SIM-006 Runtime — Broker Verification & Fraud Command Desk
 
-**Status:** BUILD COMPLETE — RELEASE QA DEFERRED
+**Branch:** `academy-master-architecture`  
+**Status:** CONTENT/RUNTIME BUILD CANDIDATE — INDEPENDENT PREMIUM GATE IN PROGRESS  
+**Release status:** NOT `PUBLICATION_READY`; browser/device/LMS/manual accessibility/durable-record release QA remains separate.
 
-Coded interactive runtime for SIM-006 (Module 06 — Broker Verification & Fraud Prevention), 8 stages, 20 decisions, built directly from the Module 06 Student Manual (Parts 01, 01B, 02, 03, 04), `MODULE-06-MASTER-BRANCH.md`, and two of the seven Module 06 production tools (`Module-06-Risk-Classification-and-Decision-Record.md`, `Module-06-Entity-vs-Contact-Authentication-Worksheet.md`) on `academy-master-architecture`.
+## Current architecture
+SIM-006 is a continuous **10-stage / 22-decision** verification case aligned to the approved 2026-09-05 design and implementation plan.
 
-## Isolation
+1. Intake — isolate claims and evidence states.
+2. Entity verification.
+3. Contact authentication.
+4. Load/document cross-check.
+5. Financial-security/current-status interpretation, including factor/credit evidence and a separate inactive-authority critical mini-case.
+6. Duplicate/re-brokering ambiguity.
+7. Payment-path attack.
+8. Urgency/social-engineering pressure.
+9. Evidence-state change and reclassification.
+10. Final disposition and escalation packet.
 
-No sibling-simulation files were opened for writing during this build. The 12-scenario Module 06 Scenario Lab (S-06-01 through S-06-12) was read for classification logic and is reflected in this simulation's decision-correctness rules, but no Scenario Lab scenario is reused verbatim — SIM-006 runs a single progressive fictional case (Kestrel Logistics Group / Bristlecone Freight) distinct from every Scenario Lab item.
+The case deliberately verifies the Kestrel entity while later contradicting the questioned contact, document and payment path. The similar duplicate posting remains ambiguous. This prevents both major failure modes: trusting a contact because the company is legitimate, and labeling every suspicious indicator as proven fraud.
 
-## Scenario arc
+## Core doctrine
+**ENTITY VERIFICATION IS NOT CONTACT VERIFICATION.**
 
-A single continuous case runs across all 8 stages, per the assignment's locked contract (a progressive verification desk, not a quiz):
+Execution model:
 
-1. **Intake** — classify posting/email content as KNOWN / CLAIMED / NEEDS VERIFICATION.
-2. **Entity verification** — an authoritative FMCSA lookup confirms the broker entity is real, authorized, and financially current.
-3. **Contact authentication** — the inbound email's domain doesn't match the known corporate domain; an independently-obtained trusted number is called, and the company confirms the sender is *not* who they claim to be — a confirmed contact contradiction.
-4. **Load/document cross-check** — the rate confirmation's broker name and MC number don't match the posting or the entity record (an unresolved material mismatch, distinct from the contact issue).
-5. **Payment-path event** — a payment-instruction change arrives; it cannot be confirmed through the trusted channel.
-6. **Pressure/social engineering** — an artificial deadline, then a claimed-but-unverifiable manager approval instructing the dispatcher to skip verification.
-7. **Evidence record + risk classification** — the student must keep the verified entity, contradicted contact, unresolved document mismatch, and unconfirmed payment change in separate lanes, and select the risk classification the evidence actually supports (DO NOT BOOK, not CLEAR).
-8. **Final disposition + handoff** — DECLINE with escalation of the contact contradiction, full disposition reasoning, and professional (non-accusatory) language.
+**RECEIVE → ISOLATE CLAIMS → VERIFY ENTITY → AUTHENTICATE CONTACT → CROSS-CHECK LOAD/DOCUMENTS → VERIFY PAYMENT PATH → RECORD EVIDENCE → CLASSIFY RISK → PROCEED / VERIFY / HOLD / ESCALATE / DECLINE**
 
-The entity check clearing in Stage 2 deliberately does **not** resolve the Stage 3–6 problems — this is the core "verified entity ≠ verified contact ≠ verified load ≠ verified payment path" doctrine, tested by keeping each layer's evidence state independently trackable through to Stage 7.
+## Six controlling critical-failure families
+These are inherited from the Module 06 Practical/Instructor Scoring Guide; SIM-006 does not invent a seventh family.
 
-## How to Run
+1. Acts on unverified/contradicted payment redirection.
+2. Treats active/real entity status as proof an unverified contact is authorized.
+3. Proceeds through confirmed contact contradiction/impersonation evidence.
+4. Knowingly proceeds where required broker authority is verified inactive.
+5. Declares fraud/double brokering solely from ambiguous/inconclusive indicators.
+6. Bypasses a material unresolved identity/document/payment mismatch.
 
-```
-cd 05-SIMULATIONS-AND-GAMES/Module-06/runtime
-python3 -m http.server 8000
-```
+A critical failure is retained as durable competency evidence in runtime state. Same-screen correction does not erase it; instructor remediation/reassessment must use a materially different fictional fact pattern.
 
-## How to Test
+## Simulation package
+The Module-06 simulation directory contains:
+- `Module-06-Simulation-Student.md`
+- `Module-06-Simulation-Scenario-Packet.md`
+- `Module-06-Simulation-Instructor-Guide.md`
+- `Module-06-Simulation-Scoring-Rubric.md`
+- `Module-06-Simulation-Completion-Record.md`
+- browser runtime
+- logic tests
+- curriculum/package alignment tests
 
-```
+The package is aligned to all seven Module 06 operational tools, the Module 06 Instructor Guide, Practical and Instructor Scoring Guide. The completion record is the manual competency-record layer; browser storage remains local-only until later LMS/durable-record integration.
+
+## Current-source controls
+Current FMCSA verification was rechecked on 2026-09-05 for the controlled concepts used by this build:
+- $75,000 BMC-84/BMC-85 baseline;
+- applicable 7-calendar-day liquidity/replenishment context;
+- separate 7-business-day FMCSA notice-response context;
+- separate 30-day replacement context for an ineligible BMC-85 provider;
+- Motus as FMCSA's current registration environment in 2026.
+
+Do not collapse those clocks or treat financial-security/factor evidence as contact authentication or transaction-specific payment certainty.
+
+## Test command
+```bash
 cd 05-SIMULATIONS-AND-GAMES/Module-06/runtime
 npm test
 ```
 
-51 assertions covering: stage/decision structure, all 14 competencies (C01–C14), claims-vs-facts classification (categorize type), entity-verification source selection, all seven named critical-failure families (CF-01–CF-07) via attempt-based escalation, trusted-channel/callback logic, document cross-check and materiality judgment, payment-path verification, pressure resistance, evidence-lane separation at the classification stage, final disposition and non-accusatory professional language, scenario continuity across artifacts, first-attempt evidence preservation (including after critical-decision remediation), remediation persistence, final competency calculation, and instructor-review/completion state.
+`npm test` runs:
+- `tests/logic.test.js` — architecture, competencies, six critical controls, evidence-state logic and durable critical-failure behavior;
+- `tests/alignment.test.js` — required package files, ten-stage structure, current-status/factor concepts, inactive-authority control, duplicate ambiguity, payment-path control and entity/transaction language separation.
 
-Two genuine defects were caught and fixed by this test suite before commit: C01 was not covered by any decision (D01 was miscategorized under C02), and D05 had an accidental `escalateAfterAttempts` flag that didn't belong to any of the seven named critical-failure families. Both were corrected and the full suite re-run clean.
-
-## Critical-Failure Design Note
-
-The assignment names seven critical-failure behaviors (CF-01 through CF-07). Eight decisions carry attempt-based escalation: CF-01 (D04), CF-02 (D12), CF-03 (D10 and D18 — the same unresolved-material-mismatch judgment tested once mid-transaction and once at final booking, which is deliberate spaced practice rather than duplication), CF-05 (D07), CF-06 (D20), and CF-07 (D15). CF-04 (knowingly representing an unverified claim as verified fact) is tested at D02 and reinforced at D16.
-
-## Known Limitations
-
-- Built from 5 of the 5 Module 06 Student Manual parts and 2 of the 7 production tools (Risk Classification & Decision Record, Entity vs Contact Authentication Worksheet) — the remaining five tools (Broker Verification Evidence Record, Trusted Callback Verification Record, Load & Document Cross-Check Sheet, Payment-Instruction Change Verification Record, Verification Evidence & Escalation Packet) were not individually opened; this simulation's artifacts and decisions were checked for consistency with the risk-classification vocabulary and entity/contact-separation doctrine that all seven tools share, per the master branch's description of them, but exact field-level mirroring of the other five was not verified.
-- The Module 06 Instructor Guide, Exam, Exam Answer Key, and Practical Scoring Guide referenced in `MODULE-06-MASTER-BRANCH.md` were not opened during this build.
-- No headless-browser DOM test coverage.
-- No device/accessibility QA performed.
-- Browser/device QA, production deployment, LMS/student-account integration, durable production records, and manual accessibility QA remain deferred.
-- Per `MODULE-06-MASTER-BRANCH.md`, current-date FMCSA material (Motus/SAFER/Legacy L&I, BMC-84/85 timing rules) must be reverified before commercial publication; this simulation's artifacts reference these systems only at the level the manual already establishes and do not restate specific dates as settled fact beyond what the manual states.
+## Deferred release QA
+Not claimed by this build gate:
+- browser/device matrix;
+- manual accessibility review;
+- LMS/student-account integration;
+- production durable-record integration;
+- final assembled release QA.
