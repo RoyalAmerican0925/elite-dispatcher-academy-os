@@ -1,26 +1,49 @@
 # SIM-001 — Module 01 Freight Movement Desk — Scoring Summary
 
-**Status:** DRAFT_COMPLETE — QA required before PUBLICATION_READY
+**Status:** ACTIVE PREMIUM SIMULATION SCORING CONTROL — release QA remains separate  
 **Instructor use only.**
-**SIM-001-R1 note:** This file previously contained a 110-point competency rubric. That rubric has been retired — it contradicted the simulation's own formative, no-numeric-threshold design. The authoritative scoring model now lives in `Module-01-Simulation-Instructor-Guide.md` under "Mastery Model." This file is kept as a short pointer/summary rather than deleted, so any existing reference to it doesn't break.
 
----
+## Mastery model
+SIM-001 uses a mastery model rather than a raw passing-point threshold:
 
-## Scoring Model: Mastery, Not Points
+- **FIRST-ATTEMPT PERFORMANCE:** X / 18 decisions correct before remediation.
+- **FINAL MASTERY:** 18 / 18 required for normal runtime completion.
+- **REMEDIATION COUNT:** number of decisions requiring correction.
+- **COMPETENCY STATUS:** M01-C01 through M01-C15 — Mastered / Mastered After Remediation / Needs Instructor Review / In Progress.
 
-SIM-001 uses a mastery model, not a point-based grade:
+The original 13 decisions remain active. Premium Decisions D14–D18 add document-state, evidence-classification, interstate/intrastate nuance, later-workflow handoff and next-safe-action evidence.
 
-- **FIRST-ATTEMPT PERFORMANCE:** X / 13 decisions correct before remediation
-- **FINAL MASTERY:** 13 / 13 required for completion
-- **REMEDIATION COUNT:** number of decisions that required remediation
-- **COMPETENCY STATUS** (A–H, instructional grouping only, not point-weighted): Mastered / Mastered After Remediation / Needs Instructor Review
+## No invented automatic critical-failure family
+Module 01 does not designate a formal critical-failure family. It is a foundation module.
 
-See `Module-01-Simulation-Instructor-Guide.md` for the full Normalized Decision Table, remediation paths, and open-matching tracking rules.
+However, repeated unsafe assumption behavior can require instructor review, including:
+- converting UNKNOWN to an invented fact/zero;
+- ignoring a material contradiction;
+- guessing operational instructions;
+- treating document presence as proof of verification/payment;
+- jumping into a later specialized conclusion instead of handing off.
 
-## No Module-Specific Critical Failure
+Instructor review/remediation is competency control, not a fabricated M01 critical-failure taxonomy.
 
-Consistent with the existing Module 01 Practical Assessment, no critical-failure item is designated for this simulation — Module 01 content does not carry the safety/legal stakes later modules do, so inventing one here would not reflect genuine stakes in the content.
+## Completion rule
+Normal completion requires all 18 decisions to reach final mastery and no unresolved instructor-review state.
 
-## Completion Rule
+If the runtime escalates an unsafe-assumption decision to instructor review, instructor must preserve first-attempt evidence and require a materially different freight-file exercise before recording the affected competency as mastered.
 
-All 13 decisions must reach FINAL MASTERY. There is no numeric passing threshold that blocks progress — see the Instructor Guide for full remediation logic.
+## Competency evidence map
+| Decision(s) | Primary evidence |
+|---|---|
+| D01–D03 | M01-C01, C07, C10 — parties/functions/vocabulary |
+| D04–D05, D10 | M01-C02, C10, C15 — arranging vs transporting; dispatcher distinction |
+| D06 | M01-C08, C15 — USDOT vs operating authority |
+| D07–D09 | M01-C03, C06, C10, C11, C15 — operating communication/file use |
+| D11–D12 | M01-C02–C05, C12 — lifecycle and four flows |
+| D13 | M01-C06, C11, C13, C15 — missing information / verify discipline |
+| D14 | M01-C04–C07 — document/lifecycle purpose |
+| D15 | M01-C06, C11, C13, C15 — KNOWN/UNKNOWN/VERIFY |
+| D16 | M01-C09, C15 — interstate/intrastate nuance |
+| D17 | M01-C07, C14 — later-workflow handoff |
+| D18 | M01-C06, C11, C13–C15 — STOP framework / next safe action |
+
+## Reporting
+Use `Module-01-Simulation-Completion-Record.md` to capture decision and competency evidence. Browser-local storage is not a durable production LMS record.
