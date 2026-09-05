@@ -18,20 +18,37 @@ Percentages are planning estimates based on required production layers, not page
 **Estimated content/production completion: 50%**  
 **Estimated final-release completion: 31%**
 
-These remain planning estimates, not completion certifications. M06, M07 and M08 content/runtime gate closures are recorded explicitly rather than converted into fabricated percentage increases. Modules 09–15 still require full production builds.
+These remain planning estimates, not completion certifications. M01, M06, M07 and M08 content/runtime gate closures are recorded explicitly rather than converted into fabricated percentage increases. Modules 09–15 still require full production builds.
 
 ## Module checklist
 
 ### M01 — Trucking Industry Foundations
-**Content/Production: 72% | Release: 45%**
-- ☑ Existing curriculum/assets and SIM-001 build
-- ☑ Premium Part 04 and competency-map work exists on dedicated rebuild branch
-- ◐ Complete controlled branch reconciliation
-- ◐ Realign KC/exam/practical to reconciled C01–C15 chain
-- ☐ Build full Instructor Guide after reconciliation
-- ◐ Re-align SIM-001 after premium curriculum lock
-- ◐ Premium/current-source final QA
-- ⏳ assembled release QA
+**Content/Production: CURRENT PREMIUM BUILD GATE CLOSED | Release: 45% planning estimate retained**
+- ☑ Four-part Student Manual sequence
+- ☑ Three operational student tools: Freight Role Map, Load Lifecycle Sequencing, Dispatch File Intake & Verification Map
+- ☑ 20-item premium diagnostic Knowledge Check + synchronized instructor answer guide
+- ☑ 30-item graded Exam + synchronized answer/remediation key; 24/30 passing standard
+- ☑ 30-point Freight Movement Desk Practical + dedicated instructor scoring guide
+- ☑ Full Module 01 Instructor Guide
+- ☑ M01-C01–C15 competency chain synchronized to one operating model
+- ☑ SIM-001 printable package + premium student/instructor addenda
+- ☑ SIM-001 **8-stage / 18-decision** browser runtime
+- ☑ Original D01–D13 preserved; D14–D18 add document state, KNOWN/UNKNOWN/VERIFY, interstate/intrastate nuance, later-workflow handoff and STOP/next-safe-action evidence
+- ☑ All 15 M01 competency families represented in simulation evidence
+- ☑ First-attempt/remediation/final-mastery evidence controls
+- ☑ Runtime regression + premium competency + package-alignment test suites
+- ☑ TDD RED run `33980893267` proved the prior 6-stage/13-decision build failed the premium gate
+- ☑ Full GREEN GitHub Actions run `33981159043` succeeded
+- ☑ Current FMCSA/Motus source recheck: `10-PRODUCTION/Module-01-Current-Source-Recheck-2026-09-05.md`
+- ☑ Independent premium QA: `10-PRODUCTION/Module-01-Premium-Content-QA-2026-09-05.md`
+- ⏳ browser/device compatibility matrix
+- ⏳ manual accessibility review
+- ⏳ production deployment validation
+- ⏳ LMS/student-account + durable competency-record integration
+- ⏳ assembled print/export/final release QA
+- ◐ final pre-publication recheck of date-sensitive FMCSA/Motus terminology
+
+**M01 controlling status:** **SIM-001 — BUILD COMPLETE — RELEASE QA DEFERRED. Module 01 is not `PUBLICATION_READY`.**
 
 ### M02 — Dispatcher Role & Legal Boundaries
 **Content/Production: 94% | Release: 65%**
@@ -187,7 +204,7 @@ These remain planning estimates, not completion certifications. M06, M07 and M08
 - ☐ Premium QA
 
 ## Simulation snapshot
-- ⏳ SIM-001 build exists; post-M01 rebuild alignment remains
+- ⏳ **SIM-001 BUILD COMPLETE — RELEASE QA DEFERRED; 8-stage/18-decision premium reconciliation independently verified 2026-09-05**
 - ⏳ SIM-002 build complete; release QA deferred
 - ⏳ SIM-003 build complete; release QA deferred
 - ⏳ SIM-004 build complete; release QA deferred
@@ -201,20 +218,18 @@ These remain planning estimates, not completion certifications. M06, M07 and M08
 - ☑ GitHub is CONTENT MASTER; Drive/Docs are design/render/review layers.
 - ☑ TEACH → DEMONSTRATE → PRACTICE → ASSESS → SIMULATE → RECORD COMPETENCY dependency.
 - ☑ Premium-depth Google/Employment/Buyer tests and no-filler standard are represented.
-- ☑ M06/M07/M08 simulation production decisions, automated verification and independent QA are stored in permanent GitHub controls.
-- ◐ M01 selective reconciliation must be completed on its dedicated rebuild lineage and reflected in master truth controls.
+- ☑ M01/M06/M07/M08 simulation production decisions, automated verification and independent QA are stored in permanent GitHub controls.
 - ◐ Any new course-build decision made in chat must be transferred to the relevant module/master/production folder during the same work block.
 
 ## Critical path to next-week production completion
-1. **Do not reopen M06, M07 or M08 core simulation builds** unless a new verified defect appears; their release-layer QA stays deferred.
-2. **Close M01** through controlled reconciliation and downstream assessment/instructor/SIM synchronization.
-3. **Close M02–M05 premium/currentness cleanup**, prioritizing M05 independent SIM inheritance verification and packaging cleanup.
-4. **Build M09–M14 sequentially** using the standard package: curriculum → tools → KC/lab → exam/practical → instructor guide → source QA → simulation → premium gate.
-5. **Build M15 last** because the capstone depends on upstream competency maps.
-6. Defer browser/device/LMS/accessibility polish until core M01–M15 content/build gates close, except where needed to prove runtime function.
+1. **Do not reopen M01, M06, M07 or M08 core simulation builds** unless a new verified defect appears; their release-layer QA stays deferred.
+2. **Close M02–M05 premium/currentness cleanup**, prioritizing M05 independent SIM inheritance verification and packaging cleanup.
+3. **Build M09–M14 sequentially** using the standard package: curriculum → tools → KC/lab → exam/practical → instructor guide → source QA → simulation → premium gate.
+4. **Build M15 last** because the capstone depends on upstream competency maps.
+5. Defer browser/device/LMS/accessibility polish until core M01–M15 content/build gates close, except where needed to prove runtime function.
 
 ## Deadline risk
-**HIGH.** M09–M15 remain essentially architecture-only, while M01 and portions of M02–M05 remain open. M06–M08 are no longer core content/runtime blockers.
+**HIGH.** M09–M15 remain essentially architecture-only, while portions of M02–M05 remain open. M01 and M06–M08 are no longer core content/runtime blockers.
 
 ## Authority hierarchy
 For current simulation gate truth use, in order:

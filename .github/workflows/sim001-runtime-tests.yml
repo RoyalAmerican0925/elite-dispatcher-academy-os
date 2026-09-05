@@ -2,11 +2,15 @@ name: SIM-001 Runtime Tests
 
 on:
   push:
-    branches: [main]
+    branches:
+      - module-01-premium-reconciliation
+      - academy-master-architecture
     paths:
       - '05-SIMULATIONS-AND-GAMES/Module-01/runtime/**'
       - '.github/workflows/sim001-runtime-tests.yml'
   pull_request:
+    branches:
+      - academy-master-architecture
     paths:
       - '05-SIMULATIONS-AND-GAMES/Module-01/runtime/**'
       - '.github/workflows/sim001-runtime-tests.yml'

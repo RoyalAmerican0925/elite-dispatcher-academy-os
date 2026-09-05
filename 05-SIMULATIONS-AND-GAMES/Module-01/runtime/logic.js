@@ -3,6 +3,7 @@
 // rendering layer (this browser app today, a different framework later if needed).
 
 import { DECISIONS, DECISION_ORDER, STAGES } from "./content.js";
+import "./premium-extension.js";
 
 export function createInitialState() {
   const decisions = {};

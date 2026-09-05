@@ -17,7 +17,7 @@
 
 | Module | Outcome/scope | Student tools | KC/exam | Practical | Simulation | Instructor product | Source/currentness | Truthful current state |
 |---|---|---|---|---|---|---|---|---|
-| M01 | REPRESENTED; premium competency work exists on dedicated rebuild branch | VERIFIED EXISTS + premium intake work on rebuild branch | VERIFIED EXISTS / NEEDS REALIGNMENT | VERIFIED EXISTS / NEEDS UPGRADE | SIM-001 BUILD EXISTS / post-rebuild alignment required | full guide held pending reconciliation | premium reconciliation required | PREMIUM REBUILD ACTIVE |
+| M01 | REPRESENTED; M01-C01–C15 premium chain independently reconciled | **three-tool package VERIFIED EXISTS** | **20-item diagnostic + 30-item graded exam/key VERIFIED EXISTS / premium aligned** | **30-point Freight Movement Desk + dedicated scoring VERIFIED EXISTS** | **SIM-001 BUILD COMPLETE — RELEASE QA DEFERRED; 8-stage/18-decision premium build, all 15 competencies, original D01–D13 preserved + D14–D18 extension, automated runtime/premium/package gates independently verified** | **full Module 01 guide + SIM instructor controls VERIFIED EXISTS** | 2026-09-05 FMCSA/Motus source recheck recorded; final pre-publication recheck remains | **CONTENT/RUNTIME PREMIUM BUILD GATE CLOSED; RELEASE QA OPEN** |
 | M02 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-002 BUILD COMPLETE — RELEASE QA DEFERRED | full guide VERIFIED EXISTS | final currentness/re-audit remains | PREMIUM RE-AUDIT OPEN |
 | M03 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-003 BUILD COMPLETE — RELEASE QA DEFERRED | full guide VERIFIED EXISTS | final currentness remains | PREMIUM RE-AUDIT OPEN |
 | M04 | REPRESENTED | VERIFIED EXISTS | VERIFIED EXISTS | VERIFIED EXISTS | SIM-004 BUILD COMPLETE — RELEASE QA DEFERRED | full guide VERIFIED EXISTS | date-sensitive pre-publication check remains | INSTRUCTIONAL/SIM BUILD GATE CLOSED; RELEASE QA OPEN |
@@ -43,13 +43,22 @@ Required competency dependency:
 **TEACH → DEMONSTRATE → PRACTICE → ASSESS → SIMULATE → RECORD COMPETENCY**
 
 ## Architecture-level blockers remaining
-1. Complete controlled M01 premium branch reconciliation and downstream assessment/instructor/SIM synchronization.
+1. **M01 content/runtime premium gate is closed.** Remaining work is browser/device/LMS/manual-accessibility/durable-record/assembled release QA plus final pre-publication source recheck.
 2. Complete independent premium inheritance/currentness cleanup for M02–M05 where still open.
 3. **M06, M07 and M08 content/runtime premium gates are closed.** Do not reopen their simulations based on superseded status text unless a new verified defect appears.
 4. Build M09–M14 production assets sequentially under the approved product standard.
 5. Build M15 integrated capstone after upstream competency maps exist.
 6. Resolve divergence with `main` only through separately authorized reconciliation.
 7. Complete browser/device/LMS/manual-accessibility/durable-record/assembled release QA after core master production stabilizes.
+
+## Module 01 evidence authority
+Current M01/SIM-001 build-gate truth is controlled by:
+- `00-ACADEMY-MASTER/MODULE-01-MASTER-BRANCH.md`;
+- `10-PRODUCTION/Module-01-Premium-Content-QA-2026-09-05.md`;
+- `10-PRODUCTION/Module-01-Current-Source-Recheck-2026-09-05.md`;
+- the active three-tool package, premium assessment chain, full Instructor Guide, SIM-001 package/addenda, 8-stage/18-decision runtime and automated tests.
+
+The earlier 6-stage/13-decision/8-legacy-competency runtime state is superseded by the verified premium extension.
 
 ## Module 07 evidence authority
 Current M07/SIM-007 build-gate truth is controlled by:
