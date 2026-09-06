@@ -1,0 +1,8 @@
+{
+  "name": "sim-009-booking-control-desk",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/game-experience.test.js && node tests/logic.test.js && node tests/premium-gate.test.js && node tests/alignment.test.js"
+  }
+}
