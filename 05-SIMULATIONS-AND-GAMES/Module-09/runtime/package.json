@@ -1,0 +1,8 @@
+{
+  "name": "sim-009-booking-control-desk",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/premium-gate.test.js"
+  }
+}
