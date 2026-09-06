@@ -1,0 +1,34 @@
+name: SIM-009 Runtime Tests
+
+on:
+  push:
+    branches:
+      - module-09-premium-build
+      - academy-master-architecture
+    paths:
+      - '05-SIMULATIONS-AND-GAMES/Module-09/**'
+      - '03-ASSESSMENTS/Module-09/**'
+      - '03-ASSESSMENTS/Instructor-Guides/Module-09-Instructor-Guide.md'
+      - '10-PRODUCTION/Module-09-**'
+      - '.github/workflows/sim009-runtime-tests.yml'
+  pull_request:
+    branches:
+      - academy-master-architecture
+    paths:
+      - '05-SIMULATIONS-AND-GAMES/Module-09/**'
+      - '03-ASSESSMENTS/Module-09/**'
+      - '03-ASSESSMENTS/Instructor-Guides/Module-09-Instructor-Guide.md'
+      - '10-PRODUCTION/Module-09-**'
+      - '.github/workflows/sim009-runtime-tests.yml'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run SIM-009 premium gate
+        working-directory: 05-SIMULATIONS-AND-GAMES/Module-09/runtime
+        run: npm test
