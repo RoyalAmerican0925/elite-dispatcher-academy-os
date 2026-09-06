@@ -3,6 +3,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/premium-gate.test.js"
+    "test": "node tests/logic.test.js && node tests/premium-gate.test.js && node tests/alignment.test.js"
   }
 }
