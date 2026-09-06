@@ -1,46 +1,40 @@
-# SIM-009 — Booking Control Desk
-## Student Instructions
+# SIM-009 — Booking Desk: Save the Load
+## Student Game Brief
 
-**Module:** 09 — Booking Loads, Rate Confirmations, and Dispatch Documentation
-**Status:** BUILD COMPLETE — RELEASE QA DEFERRED
+**Module:** 09 — Booking Loads, Rate Confirmations, and Dispatch Documentation  
+**Build status:** RELEASE QA DEFERRED
 
----
+## Your shift
+You are working the carrier-side booking desk for fictional training carrier **Palmetto Line Logistics**. A negotiated load is coming in from Module 08. Your screen behaves like a workdesk: communications arrive, documents appear, revisions replace older versions, authority limits matter, and the driver eventually needs a clean dispatch packet.
 
-## What this simulation is
+This is **not another multiple-choice test**. The exam and practical already do that job. Here, you work the file.
 
-You are the dispatcher for Palmetto Line Logistics. Your Module 08 negotiation with Cascade Freight Brokers on Load CFB-8842 has reached agreement-in-principle: $2,450 all-in, Tuesday 14:00 pickup in Charlotte, NC, Thursday 10:00 delivery in Richmond, VA, 53' dry van, no driver assist. **That agreement is not a booking.** Over twelve stages you will receive the written rate confirmation, authenticate it, extract every material term, reconcile it against what was actually negotiated, correct or escalate what doesn't match, stay inside your supplied authority, build a traceable booking record, assemble a correct dispatch packet, and hand a controlled result to Module 10 — or determine that the load must HOLD or ESCALATE instead.
+## Mission
+Protect the carrier and move the load to the correct controlled state:
 
-## The controlling workflow
+**BOOK / HOLD / CORRECT / ESCALATE**
 
-**NEGOTIATION HANDOFF → VERIFY AGREEMENT → RECEIVE DOCUMENT → AUTHENTICATE/IDENTIFY → READ ALL MATERIAL TERMS → RECONCILE VERBAL vs WRITTEN → CLASSIFY DISCREPANCIES → CORRECT/ESCALATE → CONFIRM AUTHORITY → ACCEPT/SIGN WITHIN AUTHORITY → BUILD BOOKING RECORD → BUILD DISPATCH PACKET → ISSUE CONTROLLED DRIVER HANDOFF → RECORD COMPETENCY**
+You will inspect evidence, compare the negotiated deal to written documents, classify mismatches, request or recognize corrections, protect document versions, stay inside supplied authority, assemble the current packet, and close the booking desk file. A load only reaches **BOOKED / DISPATCH PACKET READY** when the evidence supports it.
 
-Every stage in this simulation exists to move you one step along this chain — not to test trivia.
+## How the game works
+- **Inbox / Comms:** new broker, operations, carrier, or driver information reaches the desk.
+- **Document Viewer:** inspect the evidence attached to the current event.
+- **Live Queue:** shows where the file is in the 12-stage booking workflow.
+- **Booking Workbench:** take the occupational action required by the evidence.
+- **Load Status Controls:** keep the file in the defensible BOOK, HOLD, CORRECT, or ESCALATE state.
 
-## The states you will use
-
-Rather than guessing, this simulation requires explicit classification at every step: VERIFIED, MATCH, MISMATCH — MATERIAL, MISMATCH — NONMATERIAL/CLERICAL, UNKNOWN/MISSING, SUPERSEDED, HOLD, CORRECT, ESCALATE, AUTHORIZED, NOT AUTHORIZED, BOOKED/DISPATCH PACKET READY, HAND OFF TO M10.
-
-## Critical decisions
-
-Six decision patterns are treated as **critical failures** if you get them wrong twice in a row:
-
-- **M09-CF-01 — Unauthorized carrier commitment:** accepting, signing, or committing the carrier outside your supplied authority.
-- **M09-CF-02 — Material rate-confirmation acceptance error:** knowingly accepting or dispatching from a document containing a material term that conflicts with the negotiated agreement, without correction or authorization.
-- **M09-CF-03 — Unresolved discrepancy represented as resolved:** telling anyone this load is agreed/booked while a material conflict is still open.
-- **M09-CF-04 — Wrong/obsolete document used for dispatch:** building or sending the dispatch packet from a superseded, wrong-load, or otherwise uncontrolled document version.
-- **M09-CF-05 — Document fabrication/material alteration:** fabricating, altering, backdating, or deleting booking evidence — even to "match" a number that happens to be correct, even done by someone else with your knowledge.
-- **M09-CF-06 — False booking completion:** declaring BOOKED/DISPATCH PACKET READY while a required booking control is still outstanding.
-
-If you trigger one of these, your original response is preserved permanently — it does not disappear if your next attempt is correct. You may continue through the rest of the simulation, but the family stays flagged `REASSESSMENT_REQUIRED` until you correctly resolve a separate reassessment scenario using **materially different facts** (a different load, different numbers, a different clause) at the end. Only that clears it — correcting your answer on the original screen never does. Simulation completion is blocked while any triggered family remains unresolved, no matter how high your raw score is.
-
-## Module boundaries
-
-M08 owns negotiation — this simulation does not reopen or rewrite what was negotiated, only verifies it against what's written. M10 owns detailed trip planning/routing/fuel/appointments; M11 owns HOS/ELD feasibility; M12 owns active-load monitoring; M13 owns detention/TONU/breakdowns/claims; M14 owns POD/invoicing/factoring/closeout. **A correct `BOOKED / DISPATCH PACKET READY` result at the end of this simulation means the booking is controlled — it does not mean the trip is operationally complete.** You are never asked to calculate HOS feasibility, plan a route, or make trip-planning judgments here; doing so anyway is treated as overstepping this module's boundary.
+Your evaluation runs underneath the desk. Do not chase points. Make the decision you would want preserved in the carrier's file.
 
 ## Evidence rules
+Do not guess missing facts. Do not invent authority. Do not silently change a document. Do not treat a superseded rate confirmation as current. Use explicit evidence states such as VERIFIED, MATCH, MISMATCH — MATERIAL, MISMATCH — NONMATERIAL/CLERICAL, UNKNOWN/MISSING, SUPERSEDED, AUTHORIZED, and NOT AUTHORIZED.
 
-All names, companies, rates, and clauses are **fictional training entities**, clearly labeled as such. No accessorial amount, detention trigger, or payment term here is presented as a universal industry rule — they are specific to this fictional agreement. Federal legal claims are not made in this simulation.
+## Critical controls
+Exactly six critical-failure families are controlled: unauthorized carrier commitment; material rate-confirmation acceptance error; unresolved material discrepancy represented as resolved; wrong/obsolete/unverified booking document used for dispatch; document fabrication/material alteration; and false booking completion.
 
-## Completion standard
+If a first attempt triggers a controlled critical family, that event remains in the attempt history. Correcting the immediate desk action does **not** erase it. Resolution requires a later quality-control reassessment using materially different facts. Raw score cannot override an unresolved critical family.
 
-You have completed SIM-009 when all 27 decisions across 12 stages are answered correctly and every critical-failure family you triggered has been resolved through its reassessment. Your Completion & Competency Record shows your first-attempt score, final mastery score, remediation count, and the status of each of the six critical-failure families — separately, never averaged into a passing raw score.
+## Scope boundary
+M09 controls booking and dispatch-document handoff. M10 owns detailed trip planning; M11 detailed HOS/ELD; M12 active-load monitoring; M13 deeper exceptions/claims/detention/TONU/breakdowns; M14 POD/invoicing/factoring/closeout. `BOOKED / DISPATCH PACKET READY` is therefore a booking-control state, not proof that the trip is operationally complete.
+
+## Training-data notice
+All companies, people, rates, clauses, messages, and case facts in SIM-009 are fictional instructional assumptions. Agreement-specific terms are not presented as universal industry rules.
