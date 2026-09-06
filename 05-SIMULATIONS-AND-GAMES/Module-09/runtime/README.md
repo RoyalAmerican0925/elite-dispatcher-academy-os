@@ -1,6 +1,6 @@
 # SIM-009 Runtime — Booking Desk: Save the Load
 
-**Current gate:** rebuild implemented; release QA remains deferred. Do not label `PUBLICATION_READY`.
+**Current gate:** rebuild implemented; release QA remains deferred.
 
 SIM-009 is the Module 09 occupational workdesk game for Booking Loads, Rate Confirmations, and Dispatch Documentation. It retains the controlled 12-stage / 27-action content engine, 15 competency families, exactly six critical-failure families, immutable first-attempt critical evidence, and materially different reassessment while replacing the old quiz-shaped player experience.
 
@@ -35,7 +35,7 @@ cd 05-SIMULATIONS-AND-GAMES/Module-09/runtime
 npm test
 ```
 
-`npm test` runs the game-experience contract, state-engine tests, premium architecture gate, and package-alignment gate. `game-experience.test.js` specifically prevents regression to the old numbered-question / Submit / Try-again loop and requires the dispatcher-desktop work surfaces.
+`npm test` runs the game-experience contract, state-engine tests, premium architecture gate, and package-alignment gate. `game-experience.test.js` prevents regression to the old numbered-question / Submit / Try-again loop and requires the dispatcher-desktop work surfaces.
 
 ## Persistence and release boundary
 Attempt state uses browser `localStorage` for demonstration continuity only. It is not durable LMS/student-account evidence. Browser/device compatibility, production deployment, durable records, manual accessibility, and final release-layer QA remain deferred.
